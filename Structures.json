@@ -230,7 +230,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Concrete Bridge",
+"Name": "Short Concrete Bridge",
 "Codename": "ConcreteBridge",
 "Health": "3250",
 "MitigationType": "Tier3Structure",
@@ -483,7 +483,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Bridge ",
+"Name": "Bridge",
 "Codename": "Drawbridge",
 "Health": "3250",
 "MitigationType": "Tier2BStructure",
@@ -506,7 +506,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Bridge A",
+"Name": "Medium Bridge",
 "Codename": "DrawbridgeA",
 "Health": "5600",
 "MitigationType": "Tier2BStructure",
@@ -529,7 +529,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Bridge B",
+"Name": "Small Medium Bridge",
 "Codename": "DrawbridgeB",
 "Health": "4200",
 "MitigationType": "Tier2BStructure",
@@ -552,7 +552,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Bridge C",
+"Name": "Large Bridge",
 "Codename": "DrawbridgeC",
 "Health": "7000",
 "MitigationType": "Tier2BStructure",
@@ -575,7 +575,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Bridge Wooden",
+"Name": "Small Wooden Bridge",
 "Codename": "DrawbridgeWood",
 "Health": "1200",
 "MitigationType": "Tier2BStructure",
@@ -2116,7 +2116,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Static Crane",
+"Name": "Depot Crane",
 "Codename": "StaticCrane",
 "Health": "1000",
 "MitigationType": "Tier3Structure",
@@ -2806,7 +2806,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "Wood bridge?",
+"Name": "Wooden bridge",
 "Codename": "WoodBridge",
 "Health": "1200",
 "MitigationType": "Tier2BStructure",
@@ -2829,7 +2829,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "TrainBridgeA",
+"Name": "Train Bridge",
 "Codename": "TrainBridgeA",
 "Health": "3250",
 "MitigationType": "Tier2BStructure",
@@ -2852,7 +2852,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "TrainBridgeC",
+"Name": "Train Bridge (Rail Bridge)",
 "Codename": "TrainBridgeC",
 "Health": "3250",
 "MitigationType": "Tier2BStructure",
@@ -2875,30 +2875,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "TrainBridgeB",
-"Codename": "TrainBridgeB",
-"Health": "3250",
-"MitigationType": "Tier2BStructure",
-"Rmatcost": "",
-"Bmatcost": "300",
-"Concretecost": "",
-"Shoveldigs": "",
-"Sandbagcost": "",
-"Barbedwirecost": "",
-"Metalbeamcost": "",
-"DecayStartHours": "0",
-"DecayDurationHours": "0",
-"RepairCost": "300",
-"StructuralIntegrity": "1",
-"StoredItemCapacity": "0",
-"RamDamageReceivedFlags": "0",
-"bCanBeHarvested": "FALSE",
-"IsVaultable": "TRUE",
-"bIsDamagedWhileDrivingOver": "FALSE"
-    },
-    {
-"ObjectType":"Structures",
-"Name": "LargeCrane",
+"Name": "Sky Hauler Rail Crane",
 "Codename": "LargeCrane",
 "Health": "1000",
 "MitigationType": "Tier3Structure",
@@ -3933,7 +3910,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "FacilityCrane",
+"Name": "Facility Crane",
 "Codename": "FacilityCrane",
 "Health": "1000",
 "MitigationType": "Tier2Structure",
@@ -4048,7 +4025,7 @@
     },
     {
 "ObjectType":"Structures",
-"Name": "FacilityCatwalkBridge",
+"Name": "Facility Catwalk Bridge",
 "Codename": "FacilityCatwalkBridge",
 "Health": "150",
 "MitigationType": "Tier1Structure",
@@ -4183,7 +4160,7 @@
     },
     {
 "ObjectType":"Multitier_Structures",
-"Name": "Safe House T3",
+"Name": "Safe House",
 "Codename": "GarrisonStation",
 "Health": "2000",
 "Bmatcost": "250",
@@ -4373,27 +4350,7 @@
     },
     {
 "ObjectType":"Multitier_Structures",
-"Name": "Mortar House T1",
-"Codename": "TownWSmall1",
-"Health": "800",
-"Bmatcost": "200",
-"RepairCost": "200",
-"StoredItemCapacity": "5",
-"MitigationType": "Tier1GarrisonHouse"
-    },
-    {
-"ObjectType":"Multitier_Structures",
-"Name": "Mortar House T2",
-"Codename": "TownWSmall1",
-"Health": "800",
-"Bmatcost": "200",
-"RepairCost": "200",
-"StoredItemCapacity": "5",
-"MitigationType": "Tier2GarrisonHouse"
-    },
-    {
-"ObjectType":"Multitier_Structures",
-"Name": "Mortar House T3",
+"Name": "Mortar House",
 "Codename": "TownWSmall1",
 "Health": "800",
 "Bmatcost": "200",
@@ -4513,7 +4470,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "40-45 \u201cSmelter\u201d Heavy Field Gun (HVFAT)",
+        "Name": "40-45 \u201cSmelter\u201d Heavy Field Gun (HVFC)",
         "Cost": "-",
         "Health": "4000",
         "ArmourHealth": "0",
@@ -4777,7 +4734,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Balfour Rampart 68mm (HVFC)",
+        "Name": "Balfour Rampart 68mm (HVFAT)",
         "Cost": "-",
         "Health": "4000",
         "ArmourHealth": "0",
@@ -4821,7 +4778,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS - Aquatipper",
+        "Name": "BMS - Aquatipper (Barge)",
         "Cost": "150",
         "Health": "1440",
         "ArmourHealth": "0",
@@ -4843,7 +4800,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS - Class 2 Mobile Auto-Crane",
+        "Name": "Mobile Crane",
         "Cost": "125",
         "Health": "1500",
         "ArmourHealth": "0",
@@ -4865,7 +4822,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS - Grouper (boat)",
+        "Name": "BMS - Grouper (motorboat)",
         "Cost": "60",
         "Health": "200",
         "ArmourHealth": "0",
@@ -4909,7 +4866,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS - Packmule Flatbed",
+        "Name": "Flatbed",
         "Cost": "30",
         "Health": "1125",
         "ArmourHealth": "0",
@@ -4931,7 +4888,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS - Scrap Hauler (Harvester)",
+        "Name": "Harvester",
         "Cost": "-",
         "Health": "1250",
         "ArmourHealth": "0",
@@ -4953,7 +4910,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS - Universal Assembly Rig",
+        "Name": "Construction Vehicle (CV)",
         "Cost": "100",
         "Health": "1000",
         "ArmourHealth": "0",
@@ -5151,7 +5108,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Dunne Caravaner 2f (Bus)",
+        "Name": "Bus",
         "Cost": "100",
         "Health": "600",
         "ArmourHealth": "0",
@@ -5657,7 +5614,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Kivela Power Wheel 80-1 (bike)",
+        "Name": "Kivela Power Wheel 80-1 (Bicycle)",
         "Cost": "85",
         "Health": "300",
         "ArmourHealth": "0",
@@ -6361,7 +6318,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Noble Firebrand Mk. XVII",
+        "Name": "Noble Firebrand Flame HTD",
         "Cost": "-",
         "Health": "2200",
         "ArmourHealth": "17650",
@@ -6559,7 +6516,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Gallagher Thornfall Mk. VI",
+        "Name": "Gallagher Thornfall Mk. VI (Bonelaw)",
         "Cost": "-",
         "Health": "2400",
         "ArmourHealth": "10000",
@@ -6823,7 +6780,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "O\u2019Brien Warsmith v.215",
+        "Name": "Warsmith Warden Combat Car",
         "Cost": "-",
         "Health": "3250",
         "ArmourHealth": "100000",
@@ -6845,7 +6802,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS Black Bolt",
+        "Name": "BMS Black Bolt (Locomotive)",
         "Cost": "-",
         "Health": "3250",
         "ArmourHealth": "0",
@@ -6867,7 +6824,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "BMS Holdout",
+        "Name": "BMS Holdout (Infantry Car)",
         "Cost": "-",
         "Health": "3250",
         "ArmourHealth": "0",
@@ -7131,7 +7088,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Grenade Launcher Armored Car",
+        "Name": "Grenade Launcher Armored Car (GAC)",
         "Cost": "40",
         "Health": "1000",
         "ArmourHealth": "2100",

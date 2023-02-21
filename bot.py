@@ -74,7 +74,7 @@ def damage_handler(weapon,structure):
     mitigation_type_damage = damages_dict[damage_type]
     mitigation_value = mitigation_type_damage[mitigation_type]
     real_damage = float(weapon['Damage']) * float((1 - float(mitigation_value)))
-    return real_damage
+    return math.ceil(real_damage)
 
 def calculate_hits_to_kill_raw(weapon, structure):
     weapon_name = fuzzy_match_weapon_name(weapon)
