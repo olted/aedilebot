@@ -266,7 +266,7 @@ def collie_server_checker(message):
         return False
 
 def run_discord_bot():
-    TOKEN = f'{DEV_TOKEN}'
+    TOKEN = f'{DEPLOYMENT_TOKEN}'
     #Dev token: DEV_TOKEN
     #Deployment token: DEPLOYMENT_TOKEN
     intents = discord.Intents.default()
