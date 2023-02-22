@@ -19,7 +19,7 @@
 "DamageType": "BPAntiTankKineticDamageType"
     },
     {
-"Informalname": "20mm(HWM)",
+"Informalname": "Highwayman20mm",
 "Damage": "123.75",
 "DamageType": "BPAntiTankKineticDamageType"
     },
@@ -164,7 +164,7 @@
 "DamageType": "LightKinetic"
     },
     {
-"Informalname": "Buckshot",
+"Informalname": "Buckshot (Shotgun)",
 "Damage": "225",
 "DamageType": "LightKinetic"
     },
@@ -209,7 +209,7 @@
 "DamageType": "BPIncendiaryHighExplosiveDamageType"
     },
     {
-"Informalname": "FireRocketAmmo",
+"Informalname": "Fire Rocket",
 "Damage": "145",
 "DamageType": "BPIncendiaryHighExplosiveDamageType"
     },
@@ -219,17 +219,17 @@
 "DamageType": "BPArmourPiercingLargeDamageType"
     },
     {
-"Informalname": "SuperTank94.5mm",
+"Informalname": "Predator94.5mm",
 "Damage": "2187.5",
 "DamageType": "BPArmourPiercingLargeDamageType"
     },
     {
-"Informalname": "Emplacement75mm",
+"Informalname": "Ruptura75mm",
 "Damage": "2362.5",
 "DamageType": "BPExplosivePenetratingLargeDamageType"
     },
     {
-"Informalname": "Emplacement94.5mm",
+"Informalname": "Starbreaker94.5mm",
 "Damage": "2625",
 "DamageType": "BPArmourPiercingLargeDamageType"
     }

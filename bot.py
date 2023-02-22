@@ -4,10 +4,11 @@ from discord.ext import commands
 import re
 import json
 from fuzzywuzzy import fuzz
-from discord import app_commands
+import discord.app_commands
 import math
 from dotenv import load_dotenv
 import os
+
 
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
