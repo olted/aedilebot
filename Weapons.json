@@ -29,6 +29,11 @@
 "DamageType": "BPArmourPiercingDamageType"
     },
     {
+"Informalname": "AT Garrison Return",
+"Damage":"600",
+"DamageType": "BPArmourPiercingDamageType"
+    },
+    {
 "Informalname": "ATRPG Shell",
 "Damage": "550",
 "DamageType": "BPArmourPiercingDamageType"
@@ -102,6 +107,11 @@
 "Informalname": "120mm",
 "Damage": "400",
 "DamageType": "BPHighExplosiveRuinDamageType"
+    },
+    {
+"Informalname": "Howitzer Garrison Shells",
+"Damage":"500",
+"DamageType": "BPHighExplosiveDamageType"
     },
     {
 "Informalname": "HTD68mm",

@@ -276,7 +276,7 @@ def collie_server_checker(message):
         return False
 
 def run_discord_bot():
-    TOKEN = f'MTA3NTQzODMxMDkxMjE2MzkyMQ.GaZ_bV.3QcA0OSuLGhS2HwWKPLSZYyTjPoJVES6D61-Sw'
+    TOKEN = f'MTA3NTQzODMxMDkxMjE2MzkyMQ.GfRsfK.Aiu3thdAP_INaHQIYRTBWCXm89sH75f0Eh8ecg'
     #Dev token: DEV_TOKEN
     #Deployment token: DEPLOYMENT_TOKEN
     intents = discord.Intents.default()
@@ -297,7 +297,7 @@ def run_discord_bot():
 
     @client.tree.command(name="help")
     async def help(interaction: discord.Interaction):
-        await interaction.response.send_message("I'm currently configured to answer any prompts containing 'How many/much x to kill/destroy y'. This can be vehicles *and* structures. Any values given for vehicles assumes shell penetration.")
+        await interaction.response.send_message("I'm currently configured to answer any prompts containing 'How many/much x to kill/destroy y'. This can be vehicles *and* structures, including specific town hall/relics by name. Any values given for vehicles assumes shell penetration. \n \n Try asking me these questions:\n How many 150 to destroy Abandoned Ward \n How much Predator94.5mm to kill Ares \n How much 40mm to kill bt pad \n How many stickies to kill hatchet \n How many satchels to kill Feirmor\n How many satchels to kill t3 bb husk")
         
     @client.event
     async def on_message(message):
