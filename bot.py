@@ -146,7 +146,6 @@ async def message_handler(message, user_message, is_private):
         if str(e.args[0])=="Target name not found. Try again with the full name of your target.":
             entity_not_found_error_response="I couldn't find the name of at least one of the entities you requested. Please try again."
             await message.author.send(entity_not_found_error_response) if is_private else await message.channel.send(entity_not_found_error_response)
-        print(e)
 
 async def message_handler_collie(message, user_message, is_private):
     try:
@@ -157,7 +156,7 @@ async def message_handler_collie(message, user_message, is_private):
         if str(e)=="float division by zero":
             dbz_response = "I couldn't process your request because this weapon does no damage to this entity."
             await message.author.send(dbz_response) if is_private else await message.channel.send(dbz_response)
-        print(e)
+
     
 def move_string_to_rear(string, tier_string):
     res = string.replace(tier_string, "") + " " + str(tier_string)
@@ -276,7 +275,7 @@ def collie_server_checker(message):
         return False
 
 def run_discord_bot():
-    TOKEN = f'MTA3NTQzODMxMDkxMjE2MzkyMQ.GfRsfK.Aiu3thdAP_INaHQIYRTBWCXm89sH75f0Eh8ecg'
+    TOKEN = f'MTA3NTQzODMxMDkxMjE2MzkyMQ.GhsQJj.SuCATqvbL65EhCycBq-rSqjuKtS494l7wydhnU'
     #Dev token: DEV_TOKEN
     #Deployment token: DEPLOYMENT_TOKEN
     intents = discord.Intents.default()
