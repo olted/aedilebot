@@ -5614,7 +5614,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Kivela Power Wheel 80-1 (Bicycle)",
+        "Name": "Kivela Power Wheel 80-1 (Motorcycle)",
         "Cost": "85",
         "Health": "300",
         "ArmourHealth": "0",
@@ -5834,7 +5834,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "O\u2019Brien v.110 (AC)",
+        "Name": "O\u2019Brien v.110 (Warden AC)",
         "Cost": "35",
         "Health": "900",
         "ArmourHealth": "2700",
@@ -6142,7 +6142,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "T3 \u201cXiphos\u201d (AC)",
+        "Name": "T3 \u201cXiphos\u201d (Colonial AC)",
         "Cost": "40",
         "Health": "1000",
         "ArmourHealth": "2100",
@@ -6384,7 +6384,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "H-19 \u201cVulcan\u201d",
+        "Name": "H-19 \u201cVulcan\u201d (Flame LT)",
         "Cost": "-",
         "Health": "1950",
         "ArmourHealth": "9100",
@@ -6450,7 +6450,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Cullen Predator Mk. III",
+        "Name": "Cullen Predator (Warden SHT)",
         "Cost": "-",
         "Health": "12000",
         "ArmourHealth": "17650",
@@ -6538,7 +6538,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Niska-Rycker Mk. IX Skycaller",
+        "Name": "Niska-Rycker Skycaller (Rocket HT)",
         "Cost": "60",
         "Health": "1500",
         "ArmourHealth": "4600",
@@ -6560,7 +6560,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "R-17 \u201cRetiarius\u201d Skirmisher",
+        "Name": "R-17 \u201cRetiarius\u201d Skirmisher (Rocket Truck)",
         "Cost": "-",
         "Health": "900",
         "ArmourHealth": "0",
@@ -6582,7 +6582,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Rycker 4/3-F Wasp Nest",
+        "Name": "Rycker 4/3-F Wasp Nest (Flame Rocket Launcher)",
         "Cost": "30",
         "Health": "2850",
         "ArmourHealth": "0",
@@ -6604,7 +6604,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "DAE 1o-3 \u201cPolybolos\u201d",
+        "Name": "DAE 1o-3 \u201cPolybolos\u201d (BEAT)",
         "Cost": "125",
         "Health": "1500",
         "ArmourHealth": "0",
@@ -6626,7 +6626,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "DAE 2a-1 \u201cRuptura\u201d",
+        "Name": "DAE 2a-1 \u201cRuptura\u201d ",
         "Cost": "-",
         "Health": "2650",
         "ArmourHealth": "0",
@@ -6670,7 +6670,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "DAE 1b-2 \u201cSerra\u201d",
+        "Name": "DAE 1b-2 \u201cSerra\u201d (EMG)",
         "Cost": "100",
         "Health": "1650",
         "ArmourHealth": "0",
@@ -6692,7 +6692,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "O-75b \"Ares\"",
+        "Name": "O-75b \"Ares\" (Colonial SHT)",
         "Cost": "-",
         "Health": "9250",
         "ArmourHealth": "15650",
@@ -6714,7 +6714,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Aegis Steelbreaker K5a",
+        "Name": "Aegis Steelbreaker Combat Car",
         "Cost": "-",
         "Health": "4000",
         "ArmourHealth": "100000",
@@ -6780,7 +6780,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Warsmith Warden Combat Car",
+        "Name": "Warsmith Combat Car",
         "Cost": "-",
         "Health": "3250",
         "ArmourHealth": "100000",
