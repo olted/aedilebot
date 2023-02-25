@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 import calculator
 import re
-
+import traceback
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
@@ -83,6 +83,7 @@ def handle_response_inner(weapon,target):
         return e.show_message()
     except Exception as e:
         print(e)
+        traceback.print_exc
         return ("Inner error happened during processing of your request. "
                 "Please, contact bot's devs about this.")
 

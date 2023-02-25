@@ -20,8 +20,14 @@ damages_dict=load_array_to_dict('data\Damage.json','Damagetypes')
 th_relics_dict=load_json_to_dict('data\\th_relic_types.json')
 
 #slang
-with open('data\Dictionary.json') as f:
+with open('data\Structure_Dictionary.json') as f:
     DictionaryArray = json.load(f)
-    slang_dict = {}
+    structure_slang_dict = {}
 for slang in DictionaryArray:
-    slang_dict.update(slang)
+    structure_slang_dict.update(slang)
+
+with open('data\Weapon_Dictionary.json') as f:
+    DictionaryArray = json.load(f)
+    weapon_slang_dict = {}
+for slang in DictionaryArray:
+    weapon_slang_dict.update(slang)
