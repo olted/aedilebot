@@ -36,11 +36,11 @@ def unslangify(name):
             tier_string = word
             name = move_string_to_rear(name, tier_string)
             break
-    if fuzz.fuzzy_match_to_slang(name) in parse.slang_dict:
+    if name in parse.slang_dict:
         return parse.slang_dict[name]
         # if entire input detects as a specific slang piece, itll return it and wont continue past here in the method
     for word in name_parsed:
-        if fuzz.fuzzy_match_to_slang(word) in parse.slang_dict:
+        if word in parse.slang_dict:
             name = name.replace(word, parse.slang_dict[word])
     return name
 
@@ -58,7 +58,7 @@ def list_guilds(client):
 if __name__ == '__main__':
     # run
     message = "how much 40mm to kill Patridia"
-    print(parse.slang_dict)
+    #print(parse.slang_dict)
 
     #print(handle_response(message))
     bot.run_discord_bot()

@@ -66,15 +66,3 @@ def fuzzy_match_weapon_name(name):
         raise bot.WeaponNotFoundError(name)
     utils.debug_fuzzy(name,'Null for weapons',max_key)
     return max_key
-
-def fuzzy_match_to_slang(name):
-    max_score = 0
-    max_key = None
-    for key in parse.slang_dict.keys():
-        if fuzz.token_set_ratio(name, key) > max_score:
-            max_score = fuzz.token_set_ratio(name, key)
-            max_key = key
-    utils.debug_fuzzy(name,'Null for weapons',max_key)
-    if max_score>0:
-        return max_key
-    return name
