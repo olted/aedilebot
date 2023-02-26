@@ -3407,7 +3407,7 @@
 "Name": "Heavy Assembly Station",
 "Codename": "FacilityVehicleFactory2",
 "Health": "2700",
-"MitigationType": "Tier2Structure",
+"MitigationType": "Tier3Structure",
 "Rmatcost": "",
 "Bmatcost": "",
 "Concretecost": "",
