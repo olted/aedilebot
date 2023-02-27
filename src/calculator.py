@@ -91,3 +91,39 @@ def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
     for tier in ["T1", "T2", "T3"]:
         t.append(damage_calculator(weapon_name, f"{target_name} {tier}")['htk'])
     return output_string + f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
+
+def statsheet_handler(entity_name):
+    try:
+        weapon = parse.weapons_dict[fuzz.fuzzy_match_weapon_name(entity_name)]
+        weapon_name = weapon["Informalname"]
+        weapon_damage = weapon["Damage"]
+        weapon_damage_type = weapon["DamageType"]
+        print("im here")
+        return f"Weapon name: {weapon_name} \nWeapon raw damage: {weapon_damage} \nWeapon damage type: {weapon_damage_type}"
+    except bot.WeaponNotFoundError as e:
+        try:
+            entity=parse.structures_dict[fuzz.fuzzy_match_structure_name(entity_name)]
+            if entity["ObjectType"]=="Structures":
+                structure_name = entity["Name"]
+                structure_raw_hp = entity["Health"]
+                structure_mitigation = entity["MitigationType"]
+                structure_repair_cost = entity["RepairCost"]
+                structure_decay_start = entity["DecayStartHours"]
+                structure_decay_duration = entity["DecayDurationHours"]
+                return f"Structure name: {structure_name}\nStructure Raw HP: {structure_raw_hp}\nStructure Mitigation Type: {structure_mitigation}\nStructure Repair Cost: {structure_repair_cost}\nStructure Decay Timer: {structure_decay_start}\nStructure Time to Decay: {structure_decay_duration}"
+            else:
+                if entity["ObjectType"]=="Vehicles_Tripods_Emplacements":
+                    vehicle_name = entity["Name"]
+                    vehicle_raw_hp = entity["Health"]
+                    vehicle_mitigation = entity["MitigationType"]
+                    vehicle_min_pen = entity["MinBasePenetrationChance"]
+                    vehicle_max_pen = entity["MaxBasePenetrationChance"]  #note to self: make decimals into fractions, make timer into hours
+                    vehicle_armour_hp = entity["ArmourHealth"]
+                    vehicle_reload = entity["Reloadtime"]
+                    vehicle_main = entity["MainWeapon"]
+                    vehicle_main_disable = entity["MainGunDisableChance"]
+                    vehicle_track_disable = entity["TracksDisableChance"]
+                    return f"Vehicle name: {vehicle_name}\nVehicle Raw HP: {vehicle_raw_hp}\nVehicle Mitigation Type: {vehicle_mitigation}\nVehicle Minimum Penetration Chance (Max Armour): {vehicle_min_pen}\nVehicle Maximum Penetration Chance (Stripped Armour): {vehicle_max_pen}\nVehicle Armour HP (Penetration damage to strip): {vehicle_armour_hp}\nVehicle Reload Time: {vehicle_reload}\nVehicle Track Chance: {vehicle_track_disable}\nVehicle Main Gun Disable Chance: {vehicle_main_disable}\nVehicle Main Weapon: {vehicle_main}"
+            return "Null"
+        except bot.EntityNotFoundError as e:
+            return e.show_message()

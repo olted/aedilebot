@@ -60,7 +60,9 @@ def run_discord_bot():
     async def help(interaction: discord.Interaction):
         await interaction.response.send_message(
             "I'm currently configured to answer any prompts containing 'How many/much x to kill/destroy y'. This can be vehicles *and* structures, including specific town hall/relics by name. Any values given for vehicles assumes shell penetration. \n \n Try asking me these questions:\n How many 150 to destroy Abandoned Ward \n How much Predator94.5mm to kill Ares \n How much 40mm to kill bt pad \n How many stickies to kill hatchet \n How many satchels to kill Feirmor\n How many satchels to kill t3 bb husk")
-    
+    @client.tree.command(name="statsheet")
+    async def statsheet(interaction: discord.Interaction, entity: str):
+        await interaction.response.send_message(calculator.statsheet_handler(entity))
 
     #Not in use yet, kill command
     """

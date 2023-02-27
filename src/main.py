@@ -48,7 +48,7 @@ def unslangify(name):
 async def message_handler(message_, user_message):
     response = bot.handle_response(user_message)
     if response:
-        await message_.reply(response)
+        await message_.reply(response, mention_author = False)
 
 def list_guilds(client):
     for guild in client.guilds:

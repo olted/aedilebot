@@ -39,6 +39,11 @@
 "DamageType": "BPArmourPiercingDamageType"
     },
     {
+"Informalname": "Coastal Gun Shell",
+"Damage": "1000",
+"DamageType": "BPExplosiveDamageType"
+    },
+    {
 "Informalname": "Ignifist",
 "Damage": "325",
 "DamageType": "BPArmourPiercingDamageType"
