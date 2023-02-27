@@ -1,10 +1,15 @@
 import discord
+from discord.ext import commands
+from discord import app_commands
 import main
 import dotenv
 import os
 from dotenv import load_dotenv
 import calculator
 import re
+import parse
+import typing
+
 
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
@@ -52,10 +57,36 @@ def run_discord_bot():
     
 
     #Not in use yet, kill command
-    #@client.tree.command(name="kill")
-    #async def kill(interaction: discord.Interaction, target: str="", weapon: str=""):
-    #    await interaction.response.send_message(handle_response_inner(weapon,target))
-
+    """
+    @client.tree.command(name="kill")
+    async def kill(interaction: discord.Interaction,
+                    target: str,
+                    weapon: str):
+        await interaction.response.send_message(handle_response_inner(weapon,target))
+    
+    @kill.autocomplete("target")
+    async def kill_autocompletion(
+        interaction:discord.Interaction,
+        current: str
+    ) -> typing.List[app_commands.Choice[str]]:
+        data = []
+        for target in parse.structures_dict.keys():
+                if current in target:
+                    data.append(app_commands.Choice(name=target, value=target))
+        return data
+    
+    @kill.autocomplete("weapon")
+    async def kill_autocompletion(
+        interaction:discord.Interaction,
+        current: str
+    ) -> typing.List[app_commands.Choice[str]]:
+        data = []
+        for weapon in (parse.weapons_dict.keys()):
+                if current in weapon.lower():
+                    data.append(app_commands.Choice(name=weapon, value=weapon))
+        return data
+    """
+    
 
     @client.event
     async def on_message(message):
@@ -100,4 +131,5 @@ def handle_response(message_) -> str:
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
         return handle_response_inner(weapon,target)
-    return ""
+
+
