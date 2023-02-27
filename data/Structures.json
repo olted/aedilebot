@@ -1657,6 +1657,7 @@
     {
 "ObjectType":"Structures",
 "Name": "Small Relic Base",
+"AdditionalNames":"grief mother;lion's head;peripti landing;oceanwatch;fort ember;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;protos;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;bone haft;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;",
 "Codename": "RelicBase1",
 "Health": "4450",
 "MitigationType": "Tier3Structure",
@@ -1680,6 +1681,7 @@
     {
 "ObjectType":"Structures",
 "Name": "Medium Relic Base",
+"AdditionalNames":"tomb father;reliqua;base akri;arise;the calamity;camp upsilon;climb;sourtooth;lost greensward;swordfort;nereid keep;thunderbolt;fort barley;second man;titancall;surge gate;reef;bastard's block;the fleece road;fort windham;fort esterwild;fort rider;stoic;inari base;stem;fort blather;camp hollow;wyattwick;lost partition;rancher's fast;the plough;barronswall;dendro field;overland;belaying trace;frostmarch;necropolis;fort mac connail;wiccwalk;spade;trammel pool;the dais;the long fast;terra;scythe;tomb of the first;westmarch;vagrant bastion;the wash;eastmarch;wisps warning;sanctum;scath passing;fort duncan;the pits;sun's hollow;the salt march;",
 "Codename": "RelicBase2",
 "Health": "5150",
 "MitigationType": "Tier3Structure",
@@ -1703,6 +1705,7 @@
     {
 "ObjectType":"Structures",
 "Name": "Large Relic Base",
+"AdditionalNames":"gold;the satyr stone;camp omega;sootflow ;victoria hill;night's regret;camp omicron;cerberus wake;bloody palm fort;the tusk;warmonger bay;anchor beach;fort ealar;slipgate outpost;sickleshire;basinhome;wound;scouts jest;zeus' demise;fort providence;camp senti;lionsfort;the bell toll;simo's run;evil eye;turncoat;shattered advance;friars;the ark;limestone holdfast;wind hills;reaching river;gravekeeper holdfast;the reach;pleading wharf;market road;goldenroot ranch;lachesis' tally;splinter pens;osterwall;procession;hardline;iron's end;",
 "Codename": "RelicBase3",
 "Health": "5850",
 "MitigationType": "Tier3Structure",
@@ -4147,13 +4150,12 @@
     },
     {
 "ObjectType":"Multitier_Structures",
-"Name": "Town Base (Post Office) T1",
+"Name": "Town Base (Post Office)",
 "Codename": "TownBase1",
 "Health": "7000",
 "Bmatcost": "200",
 "RepairCost": "200",
-"StoredItemCapacity": "15",
-"MitigationType": "Tier1GarrisonHouse"
+"StoredItemCapacity": "15"
     },
     {
 "ObjectType":"Multitier_Structures",
@@ -4162,8 +4164,7 @@
 "Health": "7000",
 "Bmatcost": "200",
 "RepairCost": "200",
-"StoredItemCapacity": "15",
-"MitigationType": "Tier2GarrisonHouse"
+"StoredItemCapacity": "15"
     },
     {
 "ObjectType":"Multitier_Structures",
@@ -4172,8 +4173,7 @@
 "Health": "7000",
 "Bmatcost": "200",
 "RepairCost": "200",
-"StoredItemCapacity": "15",
-"MitigationType": "Tier3GarrisonHouse"
+"StoredItemCapacity": "15"
     },
     {
 "ObjectType":"Multitier_Structures",
@@ -4182,8 +4182,7 @@
 "Health": "5000",
 "Bmatcost": "200",
 "RepairCost": "200",
-"StoredItemCapacity": "15",
-"MitigationType":"Tier1GarrisonHouse"
+"StoredItemCapacity": "15"
     },
     {
 "ObjectType":"Multitier_Structures",
@@ -4192,8 +4191,7 @@
 "Health": "5000",
 "Bmatcost": "200",
 "RepairCost": "200",
-"StoredItemCapacity": "15",
-"MitigationType":"Tier2GarrisonHouse"
+"StoredItemCapacity": "15"
     },
     {
 "ObjectType":"Multitier_Structures",
@@ -4202,12 +4200,12 @@
 "Health": "5000",
 "Bmatcost": "200",
 "RepairCost": "200",
-"StoredItemCapacity": "15",
-"MitigationType":"Tier3GarrisonHouse"
+"StoredItemCapacity": "15"
     },
     {
 "ObjectType":"Multitier_Structures",
 "Name": "Town Base (Town Centre) T1",
+"AdditionalNames":"teichotima;dormio;cannonsmoke;baccae ridge;patridia;therizo;allsight;great warden dam;cuttail station;tine;callum's keep;longstone;blemish;silk farm;saltbrook channel;mercy's wail;port of rime;kirknell;ogmaran;buckler sound;jade cove;abandonned ward;        ",
 "Codename": "TownBase3",
 "Health": "4000",
 "Bmatcost": "200",
@@ -4336,7 +4334,7 @@
 "MitigationType": "Tier3GarrisonHouse"
     },
     {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "00MS \u201cStinger\u201d (MG bike)",
         "Cost": "-",
         "Health": "300",
@@ -4358,7 +4356,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "03MM \u201cCaster\u201d (bike)",
         "Cost": "85",
         "Health": "300",
@@ -4380,7 +4378,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "12.7mm Anti Infantry Flak Gun (EMG)",
         "Cost": "75",
         "Health": "6000",
@@ -4402,7 +4400,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "120-68 \u201cKoronides\u201d Field Gun (FA)",
         "Cost": "25",
         "Health": "1000",
@@ -4424,7 +4422,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "50-500 Thunderbolt 150mm",
         "Cost": "195",
         "Health": "1000",
@@ -4446,7 +4444,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "50-500 Thunderbolt 150mm (Emplaced)",
         "Cost": "195",
         "Health": "4000",
@@ -4468,7 +4466,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "40-45 \u201cSmelter\u201d Heavy Field Gun (HVFC)",
         "Cost": "-",
         "Health": "4000",
@@ -4490,7 +4488,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "68mm Anti-Tank Cannon (EAT)",
         "Cost": "150",
         "Health": "1500",
@@ -4512,7 +4510,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "68mm Anti-Tank Cannon (EAT) (Emplaced)",
         "Cost": "150",
         "Health": "6000",
@@ -4534,7 +4532,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "74b-1 Ronan Gunship (GB)",
         "Cost": "160",
         "Health": "1320",
@@ -4556,7 +4554,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "74c-2 Ronan Meteora Gunship (DGB)",
         "Cost": "160",
         "Health": "1320",
@@ -4578,7 +4576,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "85K-a \u201cSpatha\u201d",
         "Cost": "-",
         "Health": "3000",
@@ -4593,14 +4591,14 @@
         "MainWeapon": "40mm(+20%)(40m)",
         "Reloadtime": "7s(2+5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,25",
-        "EngineDisableChance": "0,25",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.25",
+        "EngineDisableChance": "0.25",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "85K-b Falchion (MPT)",
         "Cost": "135",
         "Health": "3000",
@@ -4615,14 +4613,14 @@
         "MainWeapon": "40mm (40m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,25",
-        "EngineDisableChance": "0,25",
-        "MainGunDisableChance": "0,25",
+        "TracksDisableChance": "0.25",
+        "EngineDisableChance": "0.25",
+        "MainGunDisableChance": "0.25",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "86K-a Bardiche",
         "Cost": "165",
         "Health": "4000",
@@ -4637,14 +4635,14 @@
         "MainWeapon": "68mm (35m)",
         "Reloadtime": "5.5s(2+3.5)",
         "SecondaryWeapon": "12.7mm(35m)",
-        "TracksDisableChance": "0,25",
-        "EngineDisableChance": "0,25",
-        "MainGunDisableChance": "0,15",
+        "TracksDisableChance": "0.25",
+        "EngineDisableChance": "0.25",
+        "MainGunDisableChance": "0.15",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "86K-c Ranseur (Quadiche)",
         "Cost": "-",
         "Health": "4000",
@@ -4659,14 +4657,14 @@
         "MainWeapon": "4xRPG (35m, 40m?)",
         "Reloadtime": "1s(4r)(4 * (5.5 +1)s)",
         "SecondaryWeapon": "12.7mm(+20%)(35m,40m)(4.5s)(200r)",
-        "TracksDisableChance": "0,25",
-        "EngineDisableChance": "0,25",
-        "MainGunDisableChance": "0,25",
+        "TracksDisableChance": "0.25",
+        "EngineDisableChance": "0.25",
+        "MainGunDisableChance": "0.25",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "AA-2 Battering Ram (FAT)",
         "Cost": "20",
         "Health": "2850",
@@ -4688,7 +4686,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "AB-11 Doru (MGAPC)",
         "Cost": "-",
         "Health": "1650",
@@ -4703,14 +4701,14 @@
         "MainWeapon": "12.7mm(40m)",
         "Reloadtime": "3.5s (75r)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,25",
+        "TracksDisableChance": "0.25",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "AB-8 Acheron (APC)",
         "Cost": "20",
         "Health": "2000",
@@ -4725,14 +4723,14 @@
         "MainWeapon": "",
         "Reloadtime": "",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,25",
+        "TracksDisableChance": "0.25",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Balfour Falconer (FM)",
         "Cost": "35",
         "Health": "2850",
@@ -4754,7 +4752,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Balfour Rampart 68mm (HVFAT)",
         "Cost": "-",
         "Health": "4000",
@@ -4776,7 +4774,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Balfour Wolfhound 40mm (FC)",
         "Cost": "30",
         "Health": "2850",
@@ -4798,7 +4796,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "BMS - Aquatipper Barge",
         "Cost": "150",
         "Health": "1440",
@@ -4820,7 +4818,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Mobile Crane",
         "Cost": "125",
         "Health": "1500",
@@ -4842,7 +4840,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Motorboat",
         "Cost": "60",
         "Health": "200",
@@ -4864,7 +4862,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Ironship (Freighter)",
         "Cost": "100",
         "Health": "4000",
@@ -4886,7 +4884,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Flatbed",
         "Cost": "30",
         "Health": "1125",
@@ -4908,7 +4906,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Harvester",
         "Cost": "-",
         "Health": "1250",
@@ -4930,7 +4928,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Construction Vehicle (CV)",
         "Cost": "100",
         "Health": "1000",
@@ -4952,7 +4950,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Landing Ship (Undeployed)",
         "Cost": "100",
         "Health": "4000",
@@ -4974,7 +4972,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "White Whale (Undeployed)",
         "Cost": "100",
         "Health": "4000",
@@ -4996,7 +4994,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Collins 68mm (FAT)",
         "Cost": "20",
         "Health": "2850",
@@ -5018,7 +5016,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Tripod",
         "Name": "Cutler Foebreaker",
         "Cost": "40",
         "Health": "750",
@@ -5040,7 +5038,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Devitt Ironhide Mk. IV",
         "Cost": "-",
         "Health": "1950",
@@ -5055,14 +5053,14 @@
         "MainWeapon": "40mm (40m)",
         "Reloadtime": "7s(2+5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,25",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.25",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Devitt Mark III (LT)",
         "Cost": "120",
         "Health": "1950",
@@ -5077,14 +5075,14 @@
         "MainWeapon": "40mm (40m)",
         "Reloadtime": "7s(2+5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,25",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.25",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Devitt-Caine Mk. IV (Mortar Light Tank)",
         "Cost": "-",
         "Health": "1950",
@@ -5099,14 +5097,14 @@
         "MainWeapon": "mortar (45m-80m)",
         "Reloadtime": "3.5s (2.5m-9.45m)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,25",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.25",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Drummond Loscann (ALUV)",
         "Cost": "-",
         "Health": "900",
@@ -5128,7 +5126,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Drummond Spitfire (MG Jeep)",
         "Cost": "-",
         "Health": "1150",
@@ -5150,7 +5148,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Bus",
         "Cost": "100",
         "Health": "600",
@@ -5172,7 +5170,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Dunne Fuelrunner (Fuel tanker)",
         "Cost": "100",
         "Health": "1125",
@@ -5194,7 +5192,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Dunne Landrunner (Tracked)",
         "Cost": "-",
         "Health": "900",
@@ -5216,7 +5214,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Dunne Leatherback (Armored)",
         "Cost": "-",
         "Health": "1000",
@@ -5238,7 +5236,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Dunne Loadlugger (Raw Materials truck)",
         "Cost": "-",
         "Health": "1000",
@@ -5260,7 +5258,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Dunne Responder (Ambulance)",
         "Cost": "150",
         "Health": "750",
@@ -5282,7 +5280,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Dunne Transport (Truck)",
         "Cost": "100",
         "Health": "900",
@@ -5304,7 +5302,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "G40 Sagittarii (FMG)",
         "Cost": "25",
         "Health": "1850",
@@ -5326,7 +5324,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Gallagher Highwayman (20mm Outlaw)",
         "Cost": "-",
         "Health": "2700",
@@ -5341,14 +5339,14 @@
         "MainWeapon": "20mm(-50%)(30m,35m)",
         "Reloadtime": "0.5s ((5+0.5)s) (16r)",
         "SecondaryWeapon": "7.92mm(40m+5m) (50 rounds)",
-        "TracksDisableChance": "0,2",
-        "EngineDisableChance": "0,3",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.2",
+        "EngineDisableChance": "0.3",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Gallagher Outlaw Mk. II",
         "Cost": "165",
         "Health": "2700",
@@ -5363,14 +5361,14 @@
         "MainWeapon": "40mm (45m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "7.92mm(40m+5m) (50 rounds)",
-        "TracksDisableChance": "0,2",
-        "EngineDisableChance": "0,3",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.2",
+        "EngineDisableChance": "0.3",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "H-10 Pelekys (LTD)",
         "Cost": "145",
         "Health": "1750",
@@ -5385,14 +5383,14 @@
         "MainWeapon": "68mm (45m)",
         "Reloadtime": "6.5s(2+4.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,25",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.25",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "H-8 Kranesca (Fastboi)",
         "Cost": "-",
         "Health": "2250",
@@ -5407,14 +5405,14 @@
         "MainWeapon": "40mm (40m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,25",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.25",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "H5 Hatchet (LT)",
         "Cost": "115",
         "Health": "1950",
@@ -5429,14 +5427,14 @@
         "MainWeapon": "40mm (40m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,25",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.25",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Half-Track (Javelin)",
         "Cost": "55",
         "Health": "1350",
@@ -5451,14 +5449,14 @@
         "MainWeapon": "",
         "Reloadtime": "",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "HC-2 Scorpion (IST)",
         "Cost": "-",
         "Health": "3300",
@@ -5473,14 +5471,14 @@
         "MainWeapon": "2x 12.7mm(+20%)(35m,40m)",
         "Reloadtime": "5s (200r)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,2",
-        "SecondaryGunDisableChance": "0,2",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.2",
+        "SecondaryGunDisableChance": "0.2",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "HC-7 Ballista",
         "Cost": "155",
         "Health": "3300",
@@ -5495,14 +5493,14 @@
         "MainWeapon": "250mm (6m-25m, 40m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "HH-b Hoplite",
         "Cost": "-",
         "Health": "1500",
@@ -5517,14 +5515,14 @@
         "MainWeapon": "",
         "Reloadtime": "",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "HH-d Peltast (Mortar Half Track)",
         "Cost": "-",
         "Health": "1350",
@@ -5539,14 +5537,14 @@
         "MainWeapon": "mortar (45m-80m)",
         "Reloadtime": "3s (2.5m-9.45m)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "Huber Exalt 150mm",
         "Cost": "175",
         "Health": "1250",
@@ -5568,7 +5566,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "Huber Exalt 150mm (Emplaced)",
         "Cost": "175",
         "Health": "5000",
@@ -5590,7 +5588,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "Huber Lariat 120mm",
         "Cost": "35",
         "Health": "750",
@@ -5612,6 +5610,7 @@
         "": ""
             },
             {
+        "ObjectType":"Emplacement",
         "Name": "Huber Lariat 120mm (Emplaced)",
         "Cost": "35",
         "Health": "3000",
@@ -5633,7 +5632,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Tripod",
         "Name": "Infantry Support Gun (ISG)",
         "Cost": "30",
         "Health": "750",
@@ -5655,7 +5654,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "King Gallant Mk. II (30mm ST)",
         "Cost": "-",
         "Health": "1350",
@@ -5670,14 +5669,14 @@
         "MainWeapon": "30mm(35m)",
         "Reloadtime": "7s(2+5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,4",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.4",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "King Spire Mk. I (MGST/Scout Tank)",
         "Cost": "70",
         "Health": "1350",
@@ -5692,14 +5691,14 @@
         "MainWeapon": "12.7mm(-36%)(35m,40m)",
         "Reloadtime": "3.5s (125r)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,2",
-        "EngineDisableChance": "0,4",
-        "MainGunDisableChance": "0,2",
+        "TracksDisableChance": "0.2",
+        "EngineDisableChance": "0.4",
+        "MainGunDisableChance": "0.2",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Kivela Power Wheel 80-1 (Motorcycle)",
         "Cost": "85",
         "Health": "300",
@@ -5721,7 +5720,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Tripod",
         "Name": "Lamentum (HMG)",
         "Cost": "30",
         "Health": "750",
@@ -5743,8 +5742,8 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Malone Ratchatcher (HMG)",
+        "ObjectType":"Tripod",
+        "Name": "Malone Ratcatcher (HMG)",
         "Cost": "30",
         "Health": "750",
         "ArmourHealth": "0",
@@ -5765,8 +5764,8 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Mounted Bonesaw (MBSAW)",
+        "ObjectType":"Tripod",
+        "Name": "Mounted Bonesaw (MB)",
         "Cost": "40",
         "Health": "750",
         "ArmourHealth": "0",
@@ -5787,7 +5786,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Mulloy LPC (APC)",
         "Cost": "20",
         "Health": "2000",
@@ -5802,14 +5801,14 @@
         "MainWeapon": "",
         "Reloadtime": "",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,15",
+        "TracksDisableChance": "0.15",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Niska Mk. I Gun Motor Carriage (HT/MGHT)",
         "Cost": "60",
         "Health": "1500",
@@ -5824,14 +5823,14 @@
         "MainWeapon": "",
         "Reloadtime": "",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Niska Mk. II Blinder (ATHT)",
         "Cost": "-",
         "Health": "1500",
@@ -5846,14 +5845,14 @@
         "MainWeapon": "68mm(45m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Noble Widow MK. XIV (HTD)",
         "Cost": "160",
         "Health": "2200",
@@ -5868,14 +5867,14 @@
         "MainWeapon": "68mm(+75%)(40m)",
         "Reloadtime": "6.5s(2+4.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,2",
-        "EngineDisableChance": "0,4",
-        "MainGunDisableChance": "0,2",
-        "SecondaryGunDisableChance": "0,2",
+        "TracksDisableChance": "0.2",
+        "EngineDisableChance": "0.4",
+        "MainGunDisableChance": "0.2",
+        "SecondaryGunDisableChance": "0.2",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "O'Brien V.113 Gravekeeper (Bonecar/BAC)",
         "Cost": "-",
         "Health": "900",
@@ -5897,7 +5896,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "O\u2019Brien V.101 Freeman (HAC)",
         "Cost": "-",
         "Health": "1000",
@@ -5919,7 +5918,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "O\u2019Brien v.110 (Warden AC)",
         "Cost": "35",
         "Health": "900",
@@ -5941,7 +5940,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "O\u2019Brien v.121 Highlander (TAC)",
         "Cost": "40",
         "Health": "900",
@@ -5963,7 +5962,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "R-1 Hauler (Truck)",
         "Cost": "100",
         "Health": "900",
@@ -5985,7 +5984,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "R-12 - \u201cSalus\u201d Ambulance",
         "Cost": "150",
         "Health": "750",
@@ -6007,7 +6006,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "R-15 - \u201cChariot\u201d (Bus)",
         "Cost": "100",
         "Health": "600",
@@ -6029,7 +6028,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "R-5 \u201cAtlas\u201d Hauler (Raw Materials Truck)",
         "Cost": "-",
         "Health": "1000",
@@ -6051,7 +6050,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "R-5b \u201cSisyphus\u201d Hauler (Fast)",
         "Cost": "-",
         "Health": "900",
@@ -6073,7 +6072,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "R-9 \u201cSpeartip\u201d Escort (MG Truck)",
         "Cost": "-",
         "Health": "900",
@@ -6095,7 +6094,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "RR-3 \u201cStolon\u201d Tanker (Fuel Tanker)",
         "Cost": "100",
         "Health": "1125",
@@ -6117,7 +6116,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Silverhand - Mk. IV (SvH)",
         "Cost": "155",
         "Health": "3100",
@@ -6132,14 +6131,14 @@
         "MainWeapon": "40mm (40m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "68mm(35m)(7.5s)",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,2",
-        "MainGunDisableChance": "0,2",
-        "SecondaryGunDisableChance": "0,15",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.2",
+        "MainGunDisableChance": "0.2",
+        "SecondaryGunDisableChance": "0.15",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Silverhand Chieftain - Mk. VI (SvB)",
         "Cost": "-",
         "Health": "3100",
@@ -6154,14 +6153,14 @@
         "MainWeapon": "250mm (6m-25m, 40m)",
         "Reloadtime": "7.5s(2+5.5)",
         "SecondaryWeapon": "12.7mm(+20%)(35m+5m) (4s)(200r)",
-        "TracksDisableChance": "0,3",
-        "EngineDisableChance": "0,15",
-        "MainGunDisableChance": "0,2",
-        "SecondaryGunDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
+        "EngineDisableChance": "0.15",
+        "MainGunDisableChance": "0.2",
+        "SecondaryGunDisableChance": "0.3",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Swallowtail 988/127-2 (FMG)",
         "Cost": "25",
         "Health": "1850",
@@ -6183,7 +6182,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "T12 \u201cActaeon\u201d Tankette (MG Tankette)",
         "Cost": "50",
         "Health": "1150",
@@ -6198,14 +6197,14 @@
         "MainWeapon": "12.7mm(40m)",
         "Reloadtime": "3.5 (75r)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "T20 \u201cIxion\u201d Tankette (Roofette)",
         "Cost": "-",
         "Health": "1350",
@@ -6220,14 +6219,14 @@
         "MainWeapon": "30mm(35m)",
         "Reloadtime": "6.5s(2+4.5)",
         "SecondaryWeapon": "",
-        "TracksDisableChance": "0,3",
+        "TracksDisableChance": "0.3",
         "EngineDisableChance": "0",
         "MainGunDisableChance": "0",
         "SecondaryGunDisableChance": "0",
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "T3 \u201cXiphos\u201d (Colonial AC)",
         "Cost": "40",
         "Health": "1000",
@@ -6249,7 +6248,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "T5 \u201cPercutio\u201d (ATAC)",
         "Cost": "-",
         "Health": "1000",
@@ -6271,7 +6270,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "T8 Gemini (RPGAC)",
         "Cost": "-",
         "Health": "1000",
@@ -6293,7 +6292,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Type C - \u201cCharon\u201d (GB)",
         "Cost": "160",
         "Health": "1320",
@@ -6315,7 +6314,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Tripod",
         "Name": "Typhon ra.VII (HVATR)",
         "Cost": "30",
         "Health": "750",
@@ -6337,7 +6336,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "UV-05a \u201cArgonaut\u201d (Jeep)",
         "Cost": "10",
         "Health": "900",
@@ -6359,7 +6358,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "UV-24 \u201cIcarus\u201d (RPG Jeep)",
         "Cost": "-",
         "Health": "1300",
@@ -6381,7 +6380,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "UV-5c \u201cOdyssey\u201d",
         "Cost": "-",
         "Health": "1150",
@@ -6403,7 +6402,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Noble Firebrand Flame HTD",
         "Cost": "-",
         "Health": "2200",
@@ -6425,7 +6424,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "T14 \u201cVesta\u201d Tankette",
         "Cost": "-",
         "Health": "1350",
@@ -6447,7 +6446,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "O\u2019Brien V.130 Wild Jack (Flame AC)",
         "Cost": "-",
         "Health": "900",
@@ -6469,7 +6468,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "H-19 \u201cVulcan\u201d (Flame LT)",
         "Cost": "-",
         "Health": "1950",
@@ -6491,7 +6490,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "DAE 3b-2 \u201cHades\u2019 Net\u201d",
         "Cost": "35",
         "Health": "750",
@@ -6513,7 +6512,29 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
+        "Name": "DAE 3b-2 Hades Net (Emplaced)",
+        "Cost": "35",
+        "Health": "3000",
+        "ArmourHealth": "0",
+        "MinBasePenetrationChance": "1",
+        "MaxBasePenetrationChance": "1",
+        "MitigationType": "Tier1Structure",
+        "DisableLevel": "0",
+        "RepairCost": "100",
+        "Speed": "",
+        "Slots": "1",
+        "MainWeapon": "HE Rocket (175m-275m)",
+        "Reloadtime": "3.9s (3.5s+0.4s) (8 rounds) (25m-35m)",
+        "SecondaryWeapon": "",
+        "TracksDisableChance": "",
+        "EngineDisableChance": "",
+        "MainGunDisableChance": "",
+        "SecondaryGunDisableChance": "",
+        "": ""
+            },
+            {
+        "ObjectType":"Vehicle",
         "Name": "85V-g \"Talos\"",
         "Cost": "-",
         "Health": "3250",
@@ -6535,7 +6556,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Cullen Predator (Warden SHT)",
         "Cost": "-",
         "Health": "12000",
@@ -6557,7 +6578,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "945g \u201cStygian Bolt\u201d",
         "Cost": "-",
         "Health": "5000",
@@ -6579,7 +6600,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Balfour Stockade 75mm",
         "Cost": "-",
         "Health": "5000",
@@ -6601,7 +6622,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Gallagher Thornfall Mk. VI (Bonelaw)",
         "Cost": "-",
         "Health": "2400",
@@ -6623,7 +6644,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Niska-Rycker Skycaller (Rocket HT)",
         "Cost": "60",
         "Health": "1500",
@@ -6645,7 +6666,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Retiarius (Rocket Truck)",
         "Cost": "-",
         "Health": "900",
@@ -6667,7 +6688,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Rycker 4/3-F Wasp Nest (Flame Rocket Launcher)",
         "Cost": "30",
         "Health": "2850",
@@ -6689,7 +6710,29 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
+        "Name": "DAE 1o-3 Polybolos (BEAT)",
+        "Cost": "125",
+        "Health": "1500",
+        "ArmourHealth": "0",
+        "MinBasePenetrationChance": "1",
+        "MaxBasePenetrationChance": "1",
+        "MitigationType": "Tier1Structure",
+        "DisableLevel": "0",
+        "RepairCost": "115",
+        "Speed": "",
+        "Slots": "1",
+        "MainWeapon": "ATIRPG (45m)",
+        "Reloadtime": "3s (2 rounds)",
+        "SecondaryWeapon": "",
+        "TracksDisableChance": "",
+        "EngineDisableChance": "",
+        "MainGunDisableChance": "",
+        "SecondaryGunDisableChance": "",
+        "": ""
+            },
+            {
+        "ObjectType":"Emplacement",
         "Name": "DAE 1o-3 Polybolos (BEAT) (Emplaced)",
         "Cost": "125",
         "Health": "6000",
@@ -6711,8 +6754,8 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "DAE 2a-1 \u201cRuptura\u201d ",
+        "ObjectType":"Emplacement",
+        "Name": "DAE 2a-1 Ruptura ",
         "Cost": "-",
         "Health": "2650",
         "ArmourHealth": "0",
@@ -6732,8 +6775,30 @@
         "SecondaryGunDisableChance": "",
         "": ""
             },
+        {
+        "ObjectType":"Emplacement",
+        "Name": "DAE 2a-1 Ruptura (Emplaced)",
+        "Cost": "-",
+        "Health": "10600",
+        "ArmourHealth": "0",
+        "MinBasePenetrationChance": "1",
+        "MaxBasePenetrationChance": "1",
+        "MitigationType": "Tier1Structure",
+        "DisableLevel": "0",
+        "RepairCost": "300",
+        "Speed": "",
+        "Slots": "1",
+        "MainWeapon": "75mm (+35%) (45m)",
+        "Reloadtime": "3s",
+        "SecondaryWeapon": "",
+        "TracksDisableChance": "",
+        "EngineDisableChance": "",
+        "MainGunDisableChance": "",
+        "SecondaryGunDisableChance": "",
+        "": ""
+            },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "Huber Starbreaker 94.5mm",
         "Cost": "-",
         "Health": "2650",
@@ -6755,7 +6820,29 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
+        "Name": "Huber Starbreaker 94.5mm (Emplaced)",
+        "Cost": "-",
+        "Health": "10600",
+        "ArmourHealth": "0",
+        "MinBasePenetrationChance": "1",
+        "MaxBasePenetrationChance": "1",
+        "MitigationType": "Tier1Structure",
+        "DisableLevel": "0",
+        "RepairCost": "300",
+        "Speed": "",
+        "Slots": "1",
+        "MainWeapon": "95mm (+50%) (45m)",
+        "Reloadtime": "3s",
+        "SecondaryWeapon": "",
+        "TracksDisableChance": "",
+        "EngineDisableChance": "",
+        "MainGunDisableChance": "",
+        "SecondaryGunDisableChance": "",
+        "": ""
+            },
+            {
+        "ObjectType":"Emplacement",
         "Name": "DAE 1b-2 Serra (EMG)",
         "Cost": "100",
         "Health": "1650",
@@ -6777,7 +6864,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Emplacement",
         "Name": "DAE 1b-2 Serra (EMG) (Emplaced)",
         "Cost": "100",
         "Health": "6600",
@@ -6799,7 +6886,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "O-75b \"Ares\" (Colonial SHT)",
         "Cost": "-",
         "Health": "9250",
@@ -6821,7 +6908,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Aegis Steelbreaker Combat Car",
         "Cost": "-",
         "Health": "4000",
@@ -6843,7 +6930,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Battle Tank Flood",
         "Cost": "-",
         "Health": "5100",
@@ -6865,7 +6952,7 @@
         "": "0"
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Battle Tank Lance",
         "Cost": "-",
         "Health": "6250",
@@ -6887,7 +6974,7 @@
         "": "0"
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Warsmith Combat Car",
         "Cost": "-",
         "Health": "3250",
@@ -6909,7 +6996,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "BMS Black Bolt (Locomotive)",
         "Cost": "-",
         "Health": "3250",
@@ -6931,7 +7018,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "BMS Holdout (Infantry Car)",
         "Cost": "-",
         "Health": "3250",
@@ -6953,7 +7040,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Tempest Cannon RA-2",
         "Cost": "-",
         "Health": "4000",
@@ -6975,7 +7062,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Train Container Car",
         "Cost": "-",
         "Health": "1500",
@@ -6997,7 +7084,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Train Flatbed",
         "Cost": "-",
         "Health": "1500",
@@ -7019,7 +7106,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "OilTanker",
         "Cost": "-",
         "Health": "1125",
@@ -7041,7 +7128,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "LightTankWaterC",
         "Cost": "-",
         "Health": "1950",
@@ -7063,7 +7150,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "SmallTrainEngine",
         "Cost": "-",
         "Health": "1650",
@@ -7085,7 +7172,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "TrainCaboose",
         "Cost": "-",
         "Health": "1500",
@@ -7107,7 +7194,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "SmallTrainDump",
         "Cost": "-",
         "Health": "900",
@@ -7129,7 +7216,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "SmallTrainResourcePlatform",
         "Cost": "-",
         "Health": "900",
@@ -7151,7 +7238,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "LargeCrane",
         "Cost": "-",
         "Health": "2600",
@@ -7173,7 +7260,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Battle Tank Destoyer Hasta",
         "Cost": "-",
         "Health": "6250",
@@ -7195,7 +7282,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Grenade Launcher Armored Car (GAC)",
         "Cost": "40",
         "Health": "1000",
@@ -7217,7 +7304,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Tripod",
         "Name": "Grenade Launcher Tripod",
         "Cost": "40",
         "Health": "750",
@@ -7239,7 +7326,7 @@
         "": ""
             },
             {
-        "ObjectType":"Vehicles_Tripods_Emplacements",
+        "ObjectType":"Vehicle",
         "Name": "Battle Tank Juggernaut",
         "Cost": "-",
         "Health": "5100",
@@ -7261,4 +7348,5 @@
         "": ""
             }
     
+        
 ]
