@@ -6,7 +6,7 @@ def debug(message):
 
 def debug_summary(weapon, target, damage, h2k):
     if debugging:
-        print(f"Weapon = {weapon}, Target = {target}, Damage = {damage}, HitsToKill={h2k} ")
+        print(f"Weapon = {weapon}, Target = {target}, Damage = {damage}, Hits Required={h2k} ")
 
 def debug_fuzzy(input , key_list, key):
     if debugging:

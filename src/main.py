@@ -11,6 +11,7 @@ import fuzzy as fuzz
 import bot
 import calculator
 utils.debugging = True
+move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched"]
 # text processing functions
 def clean_capitalize(str):
     result = ""
@@ -32,7 +33,7 @@ def move_string_to_rear(string, tier_string):
 def unslangify(name):
     name_parsed = name.split(' ')
     for word in name_parsed:
-        if word == "t1" or word == "t2" or word == "t3":
+        if word in move_to_rear_string_list:
             tier_string = word
             name = move_string_to_rear(name, tier_string)
             break
@@ -47,7 +48,7 @@ def unslangify(name):
 async def message_handler(message_, user_message):
     response = bot.handle_response(user_message)
     if response:
-        await message_.channel.send(response)
+        await message_.reply(response)
 
 def list_guilds(client):
     for guild in client.guilds:
