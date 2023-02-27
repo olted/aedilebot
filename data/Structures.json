@@ -4799,7 +4799,7 @@
             },
             {
         "ObjectType":"Vehicles_Tripods_Emplacements",
-        "Name": "Barge",
+        "Name": "BMS - Aquatipper Barge",
         "Cost": "150",
         "Health": "1440",
         "ArmourHealth": "0",

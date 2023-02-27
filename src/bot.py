@@ -16,12 +16,16 @@ DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
 
 class EntityNotFoundError(Exception):
-    def __init__(self, name, message="I could not process a request because the entity was not found. Please try again."):
-        self.name= name
+    def __init__(self,name, message="I could not process a request because the entity was not found. Please try again."):
+        self.name = name
         self.message = message
         super().__init__(self.message)
     def show_message(self):
         return self.message
+    
+class InvalidTypeError(EntityNotFoundError):
+    def __init__(self, name, message="I could not process a request because the entity was invalid for this operation."):
+        super().__init__(name,message)
 
 class TargetNotFoundError(EntityNotFoundError):
     def __init__(self, name, message="I could not process a request because the target was not found. Please try again."):
@@ -34,6 +38,8 @@ class WeaponNotFoundError(EntityNotFoundError):
 class LocationNotFoundError(EntityNotFoundError):
     def __init__(self,name,message="I could not process a request because the town/relic was not found. Please try again."):
         super().__init__(name,message)
+
+
 
 def run_discord_bot():
     intents = discord.Intents.default()
@@ -100,15 +106,20 @@ def run_discord_bot():
     client.run(DEV_SERVER_TOKEN)
 
 # bot logic
-def handle_response_inner(weapon,target):
+def handle_response_inner(weapon,target, operation="kill"):
     try:
-        try:
-            return calculator.relic_th_h2k_handler(weapon, target)
-        except LocationNotFoundError as e:
-            return calculator.general_h2k_handler(weapon,target)
+        if operation=="kill":
+            try:
+                return calculator.relic_th_kill_handler(weapon, target)
+            except LocationNotFoundError as e:
+                return calculator.general_kill_handler(weapon,target)
+        if operation=="disable":
+            return calculator.general_disable_handler(weapon,target)
     except ZeroDivisionError as e:
         return "I couldn't process your request because this weapon does no damage to this entity."
     except TargetNotFoundError as e:
+        return e.show_message()
+    except InvalidTypeError as e:
         return e.show_message()
     except WeaponNotFoundError as e:
         return e.show_message()
@@ -131,5 +142,10 @@ def handle_response(message_) -> str:
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
         return handle_response_inner(weapon,target)
+    
+    token_pair = re.findall('how (many|much)(.*) to disable (.*)', p_message)
+    if len(token_pair) >= 1:
+        weapon, target = token_pair[0][1], token_pair[0][2]
+        return handle_response_inner(weapon,target, operation="disable")
 
 
