@@ -49,13 +49,17 @@ def general_damage_calculator(weapon, target):
     final_damage = calculate_damage(weapon, target)
     hits_to_kill = calculate_hits_to_kill(target["Health"], final_damage)
     utils.debug_summary(weapon_name,target_name,final_damage, hits_to_kill)
-    data = {"htk": hits_to_kill, "final_damage": final_damage}
-    return f"It takes {data['htk']} {weapon_name} to kill a {target_name}"
+    return f"It takes {hits_to_kill} {weapon_name} to kill a {target_name}"
 
 def multitier_damage_calculator(weapon, target):
     weapon_name = weapon["Name"]
     target_name = target["Name"]
-    location_name = "placeholder"
+    #if target["Codename"] in ["TownBase1","TownBase2","TownBase3","RelicBase1","RelicBase2","RelicBase3"]:
+     #   print("placeholder")
+        #display actual name here
+    location_name = ""
+
+
     output_string = f"Hits to kill {main.clean_capitalize(location_name)} ({target_name}) with {weapon_name}: "
 
     if weapon["DamageType"] == "BPDemolitionDamageType":
@@ -70,17 +74,17 @@ def multitier_damage_calculator(weapon, target):
 
 
 def disable_calculator(weapon_name, target_name):
-    weapon = parse.weapons_dictionary[weapon_name]
-    structure = parse.targets_dictionary[target_name]
-    if structure["ObjectType"]=="Structures":
-        raise bot.InvalidTypeError(structure)
-    disable_percentage = float(structure["DisableLevel"])
+    weapon = parse.weapons[weapon_name]
+    target = parse.targets[target_name]
+    if target["ObjectType"]!="Vehicles":
+        raise bot.InvalidTypeError(target)
+    disable_percentage = float(target["Disable Level"])
     if disable_percentage=="0":
-        raise bot.InvalidTypeError(structure)
-    final_damage = calculate_damage(weapon, structure)
-    hits_to_kill = calculate_hits_to_disable(float(structure["Health"]) - (float(structure["Health"]) * disable_percentage), final_damage)
-    utils.debug_summary(weapon_name,target_name,final_damage, hits_to_kill)
-    return {"htd": hits_to_kill, "final_damage": final_damage}
+        raise bot.InvalidTypeError(target)
+    final_damage = calculate_damage(weapon, target)
+    hits_to_disable = calculate_hits_to_disable(float(target["Health"]) - (float(target["Health"]) * disable_percentage), final_damage)
+    utils.debug_summary(weapon_name,target_name,final_damage, hits_to_disable)
+    return f"It takes {hits_to_disable} {weapon_name} to disable a {target_name}"
 
 
 # general logic functions
@@ -108,11 +112,16 @@ def general_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
     return damage_calculator(weapon_name, target_name)
 
 def general_disable_handler(weapon_fuzzy_name, target_fuzzy_name):
-    weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
-    structure_name = fuzz.fuzzy_match_target_name(target_fuzzy_name)
-    data = disable_calculator(weapon_name, structure_name)
+    if weapon_fuzzy_name in parse.weapons_dictionary:
+        weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
+    else:
+        weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
+    if target_fuzzy_name in parse.targets_dictionary:
+        target_name = parse.targets_dictionary[target_fuzzy_name]
+    else:
+        target_name = fuzz.fuzzy_match_target_name(target_fuzzy_name)
 
-    return f"It takes {data['htd']} {weapon_name} to disable a {structure_name}"
+    return disable_calculator(weapon_name,target_name)
 
 
 def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
@@ -135,38 +144,40 @@ def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
         t.append(damage_calculator(weapon_name, f"{target_name} {tier}")['htk'])
     return output_string + f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
 
+
 def statsheet_handler(entity_name):
     try:
-        weapon = parse.weapons[fuzz.fuzzy_match_weapon_name(entity_name)]
-        weapon_name = weapon["Informalname"]
-        weapon_damage = weapon["Damage"]
-        weapon_damage_type = weapon["DamageType"]
-        print("im here")
-        return f"Weapon name: {weapon_name} \nWeapon raw damage: {weapon_damage} \nWeapon damage type: {weapon_damage_type}"
-    except bot.WeaponNotFoundError as e:
-        try:
+        entity = fuzz.fuzzy_match_any(entity_name)
+        if entity["type"] == "weapon":
+            entity = parse.weapons[fuzz.fuzzy_match_weapon_name(entity_name)]
+            name = entity["Name"]
+            damage = entity["Damage"]
+            damage_type = entity["DamageType"]
+            print("im here")
+            return f"Weapon name: {name} \nWeapon raw damage: {damage} \nWeapon damage type: {damage_type}"
+        elif entity["type"] == "target":
             entity=parse.targets[fuzz.fuzzy_match_target_name(entity_name)]
             if entity["ObjectType"]=="Structures":
-                structure_name = entity["Name"]
-                structure_raw_hp = entity["Health"]
-                structure_mitigation = entity["MitigationType"]
-                structure_repair_cost = entity["RepairCost"]
-                structure_decay_start = entity["DecayStartHours"]
-                structure_decay_duration = entity["DecayDurationHours"]
-                return f"Structure name: {structure_name}\Raw HP: {structure_raw_hp}\Mitigation Type: {structure_mitigation}\Repair Cost: {structure_repair_cost}\Decay Timer: {structure_decay_start}\Time to Decay: {structure_decay_duration}"
+                name = entity["Name"]
+                raw_hp = entity["Health"]
+                mitigation = entity["Mitigation Type"]
+                repair_cost = entity["RepairCost"]
+                decay_start = entity["DecayStartHours"]
+                decay_duration = entity["DecayDurationHours"]
+                return f"Structure name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nRepair Cost: {repair_cost}\nDecay Timer: {decay_start} hours\nTime to Decay: {decay_duration} hours"
             else:
-                if entity["ObjectType"]=="Vehicles_Tripods_Emplacements":
-                    vehicle_name = entity["Name"]
-                    vehicle_raw_hp = entity["Health"]
-                    vehicle_mitigation = entity["MitigationType"]
-                    vehicle_min_pen = int(float(entity["MinBasePenetrationChance"]) * 100)
-                    vehicle_max_pen = int(float(entity["MaxBasePenetrationChance"]) * 100)  #note to self: make decimals into fractions, make timer into hours
-                    vehicle_armour_hp = entity["ArmourHealth"]
-                    vehicle_reload = entity["Reloadtime"]
-                    vehicle_main = entity["MainWeapon"]
-                    vehicle_main_disable = int(float(entity["MainGunDisableChance"]) * 100)
-                    vehicle_track_disable = int(float(entity["TracksDisableChance"])* 100)
-                    return f"Name: {vehicle_name}\nRaw HP: {vehicle_raw_hp}\nMitigation Type: {vehicle_mitigation}\nMinimum Penetration Chance (Max Armour): {vehicle_min_pen}%\nMaximum Penetration Chance (Stripped Armour): {vehicle_max_pen}%\nArmour HP (Penetration damage to strip): {vehicle_armour_hp}\nReload Time: {vehicle_reload}\nTrack Chance: {vehicle_track_disable}%\nMain Gun Disable Chance: {vehicle_main_disable}%\nMain Weapon: {vehicle_main}"
-            return "Null"
-        except bot.EntityNotFoundError as e:
-            return e.show_message()
+                if entity["ObjectType"]=="Vehicles":
+                    name = entity["Name"]
+                    raw_hp = entity["Health"]
+                    mitigation = entity["Mitigation Type"]
+                    min_pen = int(float(entity["Min Base Penetration Chance"]) * 100)
+                    max_pen = int(float(entity["Max Base Penetration Chance"]) * 100)  #note to self: make decimals into fractions, make timer into hours
+                    armour_hp = entity["Armour Health"]
+                    reload = entity["Reload time (pre-reload+reload) (magazine size) (artillery spread?)"]
+                    main = entity["Main Weapon (damage bonus)(max range, reach)(artillery range)"]
+                    main_disable = int(float(entity["Main Gun Disable Chance"]) * 100)
+                    track_disable = int(float(entity["Tracks Disable Chance"])* 100)
+                    return f"Name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nMinimum Penetration Chance (Max Armour): {min_pen}%\nMaximum Penetration Chance (Stripped Armour): {max_pen}%\nArmour HP (Penetration damage to strip): {armour_hp}\nReload Time: {reload}\nTrack Chance: {track_disable}%\nMain Gun Disable Chance: {main_disable}%\nMain Weapon: {main}"
+        return "I could not process a request because the entity is not a valid weapon, structure or vehicle." 
+    except:
+        return bot.EntityNotFoundError(entity_name) 
