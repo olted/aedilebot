@@ -13,25 +13,27 @@ import bot
 
  #stygian slang <->
 def fuzzy_match_target_name(name):
-    #name = main.unslangify(name)
     max_score = 0
+    max_key = None
     max_value = None
+    tokens = {}
     perfect_score_list = []
-    for key,value in parse.targets_dictionary.items():
+    for key, value in parse.targets_dictionary.items():
         if fuzz.token_set_ratio(name, key) > max_score:
             max_score = fuzz.token_set_ratio(name, key)
-            max_value = value
+            max_key, max_value = key, value
         if fuzz.token_set_ratio(name, key) > 60:
             perfect_score_list.append(key)
     if max_score < 75:
         raise bot.TargetNotFoundError(name)
-    else:
-        utils.debug_fuzzy(name,perfect_score_list,max_value)
-        return max_value
+
+    utils.debug_fuzzy(name,perfect_score_list,max_value)
+    if parse.check_if_location_name(max_key):
+        tokens["location_name"] = max_key
+    return max_value, tokens
 
 
 def fuzzy_match_weapon_name(name):
-    #name = main.unslangify(name)
     max_score = 0
     max_value = None
     for key,value in parse.weapons_dictionary.items():
