@@ -9,8 +9,8 @@ import calculator
 import re
 import parse
 import typing
-
-
+import fuzzy as fuzz
+import traceback
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
@@ -65,7 +65,7 @@ def run_discord_bot():
         await interaction.response.send_message(calculator.statsheet_handler(entity))
 
     #Not in use yet, kill command
-    """
+    
     @client.tree.command(name="kill")
     async def kill(interaction: discord.Interaction,
                     target: str,
@@ -78,9 +78,9 @@ def run_discord_bot():
         current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
-        for target in parse.structures_dict.keys():
-                if current in target:
-                    data.append(app_commands.Choice(name=target, value=target))
+        guess = fuzz.fuzzy_match_target_name(current)
+        if guess in parse.targets_dictionary.keys():
+                    data.append(app_commands.Choice(name=guess, value=guess))
         return data
     
     @kill.autocomplete("weapon")
@@ -89,11 +89,11 @@ def run_discord_bot():
         current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
-        for weapon in (parse.weapons_dict.keys()):
-                if current in weapon.lower():
+        for weapon in (parse.weapons_dictionary.keys()):
+                if fuzz.fuzzy_match_weapon_name in weapon.lower():
                     data.append(app_commands.Choice(name=weapon, value=weapon))
         return data
-    """
+    
     
 
     @client.event
@@ -112,7 +112,7 @@ def handle_response_inner(weapon,target, operation="kill"):
     try:
         if operation=="kill":
             try:
-                return calculator.relic_th_kill_handler(weapon, target)
+                return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target) 
             except LocationNotFoundError as e:
                 return calculator.general_kill_handler(weapon,target)
         if operation=="disable":
@@ -129,6 +129,7 @@ def handle_response_inner(weapon,target, operation="kill"):
         return e.show_message()
     except Exception as e:
         print(e)
+        traceback.print_tb(e.__traceback__)
         return ("Inner error happened during processing of your request. "
                 "Please, contact bot's devs about this.")
 

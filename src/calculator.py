@@ -6,11 +6,14 @@ import main
 import bot
 
 def calculate_damage(weapon, target):
-    mitigation_type = target['MitigationType']
+    mitigation_type = target['Mitigation Type']
     damage_type = weapon['DamageType']
-    mitigation_type_damage = parse.damages_dict[damage_type]
+    return calculate_damage_inner(weapon["Damage"],damage_type, mitigation_type)
+
+def calculate_damage_inner(damage, damage_type, mitigation_type):
+    mitigation_type_damage = parse.damages[damage_type]
     mitigation_value = mitigation_type_damage[mitigation_type]
-    real_damage = float(weapon['Damage']) * float((1 - float(mitigation_value)))
+    real_damage = float(float(damage) * float((1 - float(mitigation_value))))
     return math.ceil(real_damage)
 
 #Arguments are health and damage, returns amount of hits to kill vehicle
@@ -23,16 +26,52 @@ def calculate_hits_to_disable(health_to_disable, damage):
 # Arguments are correct weapon and target names
 # Function currently returns dictionary with all the useful data possible. Good idea would be to make it a class
 def damage_calculator(weapon_name, target_name):
-    weapon = parse.weapons_dict[weapon_name]
-    structure = parse.structures_dict[target_name]
-    final_damage = calculate_damage(weapon, structure)
-    hits_to_kill = calculate_hits_to_kill(structure["Health"], final_damage)
+    weapon = parse.weapons[weapon_name]
+    target = parse.targets[target_name]
+    object_type = target["ObjectType"]
+    if object_type == "Vehicles":
+        return general_damage_calculator(weapon, target)  #vehicle_damage_calculator()
+    elif object_type == "Multitier_structures":
+        return multitier_damage_calculator(weapon, target)
+    elif object_type == "Emplacements":
+        return general_damage_calculator(weapon, target) #emplacement_damage_calculator()
+    elif object_type == "Tripods" or object_type == "Structures":
+        return general_damage_calculator(weapon, target)
+    else:
+        raise bot.InvalidTypeError(target_name, "There was an unexpected error trying to find the entity. Please contact the developers.")
+
+
+    
+
+def general_damage_calculator(weapon, target):
+    weapon_name = weapon["Name"]
+    target_name = target["Name"]
+    final_damage = calculate_damage(weapon, target)
+    hits_to_kill = calculate_hits_to_kill(target["Health"], final_damage)
     utils.debug_summary(weapon_name,target_name,final_damage, hits_to_kill)
-    return {"htk": hits_to_kill, "final_damage": final_damage}
+    data = {"htk": hits_to_kill, "final_damage": final_damage}
+    return f"It takes {data['htk']} {weapon_name} to kill a {target_name}"
+
+def multitier_damage_calculator(weapon, target):
+    weapon_name = weapon["Name"]
+    target_name = target["Name"]
+    location_name = "placeholder"
+    output_string = f"Hits to kill {main.clean_capitalize(location_name)} ({target_name}) with {weapon_name}: "
+
+    if weapon["DamageType"] == "BPDemolitionDamageType":
+        #print(weapon['DamageType'])
+        return output_string + f"{math.ceil(int(target['Health']) / calculate_damage_inner(weapon['Damage'],weapon['DamageType'],'Tier3GarrisonHouse'))}"
+
+    t = []
+    t.append(math.ceil(int(target['Health']) / calculate_damage_inner(weapon["Damage"],weapon["DamageType"],"Tier1GarrisonHouse")))
+    t.append( math.ceil(int(target['Health']) / calculate_damage_inner(weapon["Damage"],weapon["DamageType"],"Tier2GarrisonHouse")))
+    t.append( math.ceil(int(target['Health']) / calculate_damage_inner(weapon["Damage"],weapon["DamageType"],"Tier3GarrisonHouse")))
+    return output_string + f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
+
 
 def disable_calculator(weapon_name, target_name):
-    weapon = parse.weapons_dict[weapon_name]
-    structure = parse.structures_dict[target_name]
+    weapon = parse.weapons_dictionary[weapon_name]
+    structure = parse.targets_dictionary[target_name]
     if structure["ObjectType"]=="Structures":
         raise bot.InvalidTypeError(structure)
     disable_percentage = float(structure["DisableLevel"])
@@ -56,32 +95,25 @@ def get_th_relic_type(name):
 # If boolean is true, result was successful and str contains result.
 # If boolean is false, result was unsuccessful and str contains error message
 def general_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
-    weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
-    structure_name = fuzz.fuzzy_match_structure_name(target_fuzzy_name)
-    object_type = structure_name["ObjectType"]
-    if object_type=="Vehicle":
-        data = damage_calculator(weapon_name, structure_name, object_type)
-        return f"It takes {data['htk']} {weapon_name} to kill a {structure_name}"
-    if structure_name["ObjectType"]=="Multitier_Structures":
-        if structure_name["AdditionalNames"]!="":
-            th_kill_handler(weapon_name,structure_name)
+
+    if weapon_fuzzy_name in parse.weapons_dictionary:
+        weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
+    else:
+        weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
+
+    if target_fuzzy_name in parse.targets_dictionary:
+        target_name = parse.targets_dictionary[target_fuzzy_name]
+    else:
+        target_name = fuzz.fuzzy_match_target_name(target_fuzzy_name)
+    return damage_calculator(weapon_name, target_name)
 
 def general_disable_handler(weapon_fuzzy_name, target_fuzzy_name):
     weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
-    structure_name = fuzz.fuzzy_match_structure_name(target_fuzzy_name)
+    structure_name = fuzz.fuzzy_match_target_name(target_fuzzy_name)
     data = disable_calculator(weapon_name, structure_name)
 
     return f"It takes {data['htd']} {weapon_name} to disable a {structure_name}"
 
-def th_kill_handler(weapon,entity):
-    location_name = "placeholder"
-    location_type = entity['Name']
-    output_string = f"Hits to kill {main.clean_capitalize(location_name)} ({location_type}) with {weapon}: "
-    if "relic" in location_type:
-        return output_string + f""
-
-def multitier_kill_handler(weapon,entity):
-    output_string = f"Hits to kill {main.clean_capitalize(location_name)} ({target_name}) with {weapon_name}: "
 
 def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
     location_name = fuzz.fuzzy_match_th_relic_name(location_fuzzy_name)
@@ -94,7 +126,7 @@ def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
         return output_string + f"{damage_calculator(weapon_name, target_name)['htk']}"
 
     # check if damage type is demolition
-    if parse.weapons_dict[weapon_name]["DamageType"] == "BPDemolitionDamageType":
+    if parse.weapons_dictionary[weapon_name]["DamageType"] == "BPDemolitionDamageType":
         target_name_tiered = f"{target_name} T3"
         return output_string + f"{damage_calculator(weapon_name, target_name_tiered)['htk']}"
 
@@ -105,7 +137,7 @@ def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
 
 def statsheet_handler(entity_name):
     try:
-        weapon = parse.weapons_dict[fuzz.fuzzy_match_weapon_name(entity_name)]
+        weapon = parse.weapons[fuzz.fuzzy_match_weapon_name(entity_name)]
         weapon_name = weapon["Informalname"]
         weapon_damage = weapon["Damage"]
         weapon_damage_type = weapon["DamageType"]
@@ -113,7 +145,7 @@ def statsheet_handler(entity_name):
         return f"Weapon name: {weapon_name} \nWeapon raw damage: {weapon_damage} \nWeapon damage type: {weapon_damage_type}"
     except bot.WeaponNotFoundError as e:
         try:
-            entity=parse.structures_dict[fuzz.fuzzy_match_structure_name(entity_name)]
+            entity=parse.targets[fuzz.fuzzy_match_target_name(entity_name)]
             if entity["ObjectType"]=="Structures":
                 structure_name = entity["Name"]
                 structure_raw_hp = entity["Health"]

@@ -10,6 +10,7 @@ import parse
 import fuzzy as fuzz
 import bot
 import calculator
+
 utils.debugging = True
 move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched"]
 # text processing functions
