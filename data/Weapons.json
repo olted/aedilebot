@@ -1,161 +1,161 @@
 {
     "Anti-Tank Mine": {
         "Name": "Anti-Tank Mine",
-        "Additional Names": "Mine",
+        "Additional Names": "at mine;mine",
         "Damage": "850",
         "DamageType": "BPAntiTankExplosiveMineDamageType",
         "ObjectType": "Weapons"
     },
     "Sticky Grenade": {
         "Name": "Sticky Grenade",
-        "Additional Names": "Sticky",
+        "Additional Names": "sticky",
         "Damage": "450",
         "DamageType": "BPAntiTankExplosiveStickyBombDamageType",
         "ObjectType": "Weapons"
     },
     "White Ash": {
         "Name": "White Ash",
-        "Additional Names": "",
+        "Additional Names": "flask",
         "Damage": "350",
         "DamageType": "BPAntiTankExplosiveStickyBombDamageType",
         "ObjectType": "Weapons"
     },
     "20mm": {
         "Name": "20mm",
-        "Additional Names": "",
+        "Additional Names": "atr",
         "Damage": "187.5",
         "DamageType": "BPAntiTankKineticDamageType",
         "ObjectType": "Weapons"
     },
     "Howitzer Garrison Shell": {
         "Name": "Howitzer Garrison Shell",
-        "Additional Names": "",
+        "Additional Names": "howi garrison",
         "Damage": "500",
         "DamageType":"BPHighExplosiveDamageType",
         "ObjectType":"Weapons"
     },
     "AT Garrison": {
     "Name": "AT Garrison",
-    "Additional Names": "",
+    "Additional Names": "atg",
     "Damage": "600",
     "DamageType":"BPArmourPiercingDamageType",
     "ObjectType":"Weapons"
     },
     "Highwayman20mm": {
         "Name": "Highwayman20mm",
-        "Additional Names": "",
+        "Additional Names": "hwm20mm",
         "Damage": "123.75",
         "DamageType": "BPAntiTankKineticDamageType",
         "ObjectType": "Weapons"
     },
     "68mm": {
         "Name": "68mm",
-        "Additional Names": "",
+        "Additional Names": "68",
         "Damage": "600",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
     },
     "Coastal Gun Shell": {
         "Name": "Coastal Gun Shell",
-        "Additional Names": "",
+        "Additional Names": "coastal gun",
         "Damage": "1000",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
     },
     "ATRPG Shell": {
         "Name": "ATRPG Shell",
-        "Additional Names": "",
+        "Additional Names": "venom;bane",
         "Damage": "550",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
     },
     "Ignifist": {
         "Name": "Ignifist",
-        "Additional Names": "",
+        "Additional Names": "igni",
         "Damage": "325",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
     },
     "ATRPG Indirect Shell": {
         "Name": "ATRPG Indirect Shell",
-        "Additional Names": "",
+        "Additional Names": "arcrpg;bonesaw;arc/rpg",
         "Damage": "600",
         "DamageType": "BPArmourPiercingNoBonusesDamageType",
         "ObjectType": "Weapons"
     },
     "300mm": {
         "Name": "300mm",
-        "Additional Names": "",
+        "Additional Names": "sc;storm cannon;300",
         "Damage": "1500",
         "DamageType": "BPHighExplosiveRuinDamageType",
         "ObjectType": "Weapons"
     },
     "250mm": {
         "Name": "250mm",
-        "Additional Names": "",
+        "Additional Names": "ballista;chieftain;250",
         "Damage": "1000",
         "DamageType": "BPDemolitionDamageType",
         "ObjectType": "Weapons"
     },
     "Satchel Charge": {
         "Name": "Satchel Charge",
-        "Additional Names": "",
+        "Additional Names": "alligator charge;satchel",
         "Damage": "1500",
         "DamageType": "BPDemolitionDamageType",
         "ObjectType": "Weapons"
     },
     "Hydra's Whisper": {
         "Name": "Hydra's Whisper",
-        "Additional Names": "",
+        "Additional Names": "hydra",
         "Damage": "350",
         "DamageType": "BPDemolitionDamageType",
         "ObjectType": "Weapons"
     },
     "HE Grenade (Mammon)": {
         "Name": "HE Grenade (Mammon)",
-        "Additional Names": "",
+        "Additional Names": "mammon;he",
         "Damage": "240",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
     },
     "Tremola Grenade": {
         "Name": "Tremola Grenade",
-        "Additional Names": "",
+        "Additional Names": "tremola",
         "Damage": "200",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
     },
     "40mm": {
         "Name": "40mm",
-        "Additional Names": "",
+        "Additional Names": "40",
         "Damage": "600",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "R.P.G. Shell": {
         "Name": "RPG Shell",
-        "Additional Names": "",
+        "Additional Names": "cutler;rpg",
         "Damage": "550",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "30mm": {
         "Name": "30mm",
-        "Additional Names": "",
+        "Additional Names": "isg;30",
         "Damage": "400",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "12.7mm": {
         "Name": "12.7mm",
-        "Additional Names": "",
+        "Additional Names": "hmg;127;12.7",
         "Damage": "68.75",
         "DamageType": "BPHeavyKineticDamageType",
         "ObjectType": "Weapons"
     },
     "Mortar Shell": {
         "Name": "Mortar Shell",
-        "Additional Names": "",
+        "Additional Names": "mortar",
         "Damage": "300",
         "DamageType": "BPHighExplosiveDamageType",
         "ObjectType": "Weapons"
@@ -176,7 +176,7 @@
     },
     "Smelter40mm": {
         "Name": "Smelter40mm",
-        "Additional Names": "",
+        "Additional Names": "hv40",
         "Damage": "810",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
@@ -197,21 +197,21 @@
     },
     "150mm": {
         "Name": "150mm",
-        "Additional Names": "",
+        "Additional Names": "150",
         "Damage": "900",
         "DamageType": "BPHighExplosiveRuinDamageType",
         "ObjectType": "Weapons"
     },
     "HV20mm": {
         "Name": "HV20mm",
-        "Additional Names": "",
+        "Additional Names": "typhon;hv20",
         "Damage": "234.375",
         "DamageType": "BPAntiTankKineticDamageType",
         "ObjectType": "Weapons"
     },
     "HV12.7mm": {
         "Name": "HV12.7mm",
-        "Additional Names": "",
+        "Additional Names": "lamentum;ratcatcher;hv127;hv12.7",
         "Damage": "82.5",
         "DamageType": "BPHeavyKineticDamageType",
         "ObjectType": "Weapons"
@@ -239,21 +239,21 @@
     },
     "8mm": {
         "Name": "8mm",
-        "Additional Names": "",
+        "Additional Names": "pistol",
         "Damage": "37.5",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
     ".44 (ammo)": {
         "Name": ".44 (ammo)",
-        "Additional Names": "",
+        "Additional Names": "revolver",
         "Damage": "75",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
     "Buckshot": {
         "Name": "Buckshot",
-        "Additional Names": "",
+        "Additional Names": "shotgun",
         "Damage": "225",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -274,7 +274,7 @@
     },
     "9mm SMG": {
         "Name": "9mm SMG",
-        "Additional Names": "",
+        "Additional Names": "smg",
         "Damage": "33.75",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -309,7 +309,7 @@
     },
     "HE Rocket": {
         "Name": "HE Rocket",
-        "Additional Names": "",
+        "Additional Names": "katyusha rocket",
         "Damage": "300",
         "DamageType": "BPIncendiaryHighExplosiveDamageType",
         "ObjectType": "Weapons"
@@ -323,14 +323,14 @@
     },
     "94.5mm": {
         "Name": "94.5mm",
-        "Additional Names": "",
+        "Additional Names": "stygian;styg;945",
         "Damage": "1750",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
     "SuperTank94.5mm": {
         "Name": "Predator94.5mm",
-        "Additional Names": "",
+        "Additional Names": "predator",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"

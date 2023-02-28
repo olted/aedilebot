@@ -300,7 +300,7 @@
     },
     "Balfour Falconer 250mm": {
         "Name": "Balfour Falconer 250mm",
-        "Additional Names": "baby ballista;fm250;fm",
+        "Additional Names": "fm250;fm",
         "Cost": "35",
         "Health": "2850",
         "Armour Health": "0",
@@ -2070,7 +2070,7 @@
     },
     "Rycker 4/3-F Wasp Nest": {
         "Name": "Rycker 4/3-F Wasp Nest",
-        "Additional Names": "",
+        "Additional Names": "field rocket artillery",
         "Cost": "30",
         "Health": "2850",
         "Armour Health": "0",
@@ -2093,7 +2093,7 @@
     },
     "O-75b \"Ares\"": {
         "Name": "O-75b \"Ares\"",
-        "Additional Names": "",
+        "Additional Names": "colonial sht;collie sht",
         "Cost": "-",
         "Health": "9250",
         "Armour Health": "15650",
@@ -2116,7 +2116,7 @@
     },
     "Aegis Steelbreaker K5a": {
         "Name": "Aegis Steelbreaker K5a",
-        "Additional Names": "",
+        "Additional Names": "colonial infantry car",
         "Cost": "-",
         "Health": "4000",
         "Armour Health": "100000",
@@ -2139,7 +2139,7 @@
     },
     "Battle Tank Flood": {
         "Name": "Battle Tank Flood",
-        "Additional Names": "",
+        "Additional Names": "warden bt",
         "Cost": "-",
         "Health": "5100",
         "Armour Health": "15650",
@@ -2162,7 +2162,7 @@
     },
     "Battle Tank Lance": {
         "Name": "Battle Tank Lance",
-        "Additional Names": "",
+        "Additional Names": "collie bt;colonial bt",
         "Cost": "-",
         "Health": "6250",
         "Armour Health": "15650",
@@ -2185,7 +2185,7 @@
     },
     "O\u2019Brien Warsmith v.215": {
         "Name": "O\u2019Brien Warsmith v.215",
-        "Additional Names": "",
+        "Additional Names": "warden infantry car",
         "Cost": "-",
         "Health": "3250",
         "Armour Health": "100000",
@@ -5826,7 +5826,7 @@
     },
     "Landing Ship (Deployed)": {
         "Name": "Landing Ship (Deployed)",
-        "Additional Names": "",
+        "Additional Names": "ls deployed;ww deployed",
         "Code name": "TroopShipBase",
         "Health": "5000",
         "Mitigation Type": "Tier2Structure",
@@ -5970,7 +5970,7 @@
     },
     "Watchtower": {
         "Name": "Watchtower",
-        "Additional Names": "",
+        "Additional Names": "wt",
         "Code name": "WatchTower",
         "Health": "350",
         "Mitigation Type": "Tier1Structure",

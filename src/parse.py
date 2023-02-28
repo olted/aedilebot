@@ -27,8 +27,6 @@ weapons = load_json_to_dict("data\Weapons.json")
 
 targets_dictionary = get_all_names(targets)
 weapons_dictionary = get_all_names(weapons)
-for target in targets_dictionary.items():
-    print(target)
 
 print("Cool")
 #slang

@@ -23,7 +23,7 @@ def fuzzy_match_target_name(name):
             max_value = value
         if fuzz.token_set_ratio(name, key) > 60:
             perfect_score_list.append(key)
-    if max_score < 50:
+    if max_score < 75:
         raise bot.TargetNotFoundError(name)
     else:
         utils.debug_fuzzy(name,perfect_score_list,max_value)
@@ -39,7 +39,7 @@ def fuzzy_match_weapon_name(name):
             max_score = fuzz.token_set_ratio(name, key)
             max_value = value
             
-    if max_score < 45:
+    if max_score < 75:
         raise bot.WeaponNotFoundError(name)
     utils.debug_fuzzy(name,'Null for weapons',max_value)
     return max_value
@@ -58,7 +58,7 @@ def fuzzy_match_any(name):
             max_score = fuzz.token_set_ratio(name, key)
             max_value = value
             type = "target"
-    if max_score < 60:
+    if max_score < 75:
         raise bot.EntityNotFoundError(name)
     output = {"max_value":max_value,"type":type}
     return output

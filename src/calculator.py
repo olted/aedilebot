@@ -124,27 +124,6 @@ def general_disable_handler(weapon_fuzzy_name, target_fuzzy_name):
     return disable_calculator(weapon_name,target_name)
 
 
-def relic_th_kill_handler(weapon_fuzzy_name, location_fuzzy_name):
-    location_name = fuzz.fuzzy_match_th_relic_name(location_fuzzy_name)
-    weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
-    target_name = get_th_relic_type(location_name)
-    output_string = f"Hits to kill {main.clean_capitalize(location_name)} ({target_name}) with {weapon_name}: "
-
-    # check if target_name is relic base, should be done better somehow
-    if "relic" in target_name:
-        return output_string + f"{damage_calculator(weapon_name, target_name)['htk']}"
-
-    # check if damage type is demolition
-    if parse.weapons_dictionary[weapon_name]["DamageType"] == "BPDemolitionDamageType":
-        target_name_tiered = f"{target_name} T3"
-        return output_string + f"{damage_calculator(weapon_name, target_name_tiered)['htk']}"
-
-    t = []
-    for tier in ["T1", "T2", "T3"]:
-        t.append(damage_calculator(weapon_name, f"{target_name} {tier}")['htk'])
-    return output_string + f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
-
-
 def statsheet_handler(entity_name):
     try:
         entity = fuzz.fuzzy_match_any(entity_name)
@@ -166,7 +145,7 @@ def statsheet_handler(entity_name):
                 decay_duration = entity["DecayDurationHours"]
                 return f"Structure name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nRepair Cost: {repair_cost}\nDecay Timer: {decay_start} hours\nTime to Decay: {decay_duration} hours"
             else:
-                if entity["ObjectType"]=="Vehicles":
+                if entity["ObjectType"]=="Vehicles" or entity["ObjectType"]=="Emplacements" or entity["ObjectType"]=="Tripods":
                     name = entity["Name"]
                     raw_hp = entity["Health"]
                     mitigation = entity["Mitigation Type"]
@@ -174,9 +153,18 @@ def statsheet_handler(entity_name):
                     max_pen = int(float(entity["Max Base Penetration Chance"]) * 100)  #note to self: make decimals into fractions, make timer into hours
                     armour_hp = entity["Armour Health"]
                     reload = entity["Reload time (pre-reload+reload) (magazine size) (artillery spread?)"]
-                    main = entity["Main Weapon (damage bonus)(max range, reach)(artillery range)"]
-                    main_disable = int(float(entity["Main Gun Disable Chance"]) * 100)
-                    track_disable = int(float(entity["Tracks Disable Chance"])* 100)
+                    try:
+                        main = entity["Main Weapon (damage bonus)(max range, reach)(artillery range)"]
+                    except:
+                        main = ""
+                    try:
+                        main_disable = int(float(entity["Main Gun Disable Chance"]) * 100)
+                    except:
+                        main_disable = ""
+                    try:
+                        track_disable = int(float(entity["Tracks Disable Chance"])* 100)
+                    except:
+                        track_disable = ""
                     return f"Name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nMinimum Penetration Chance (Max Armour): {min_pen}%\nMaximum Penetration Chance (Stripped Armour): {max_pen}%\nArmour HP (Penetration damage to strip): {armour_hp}\nReload Time: {reload}\nTrack Chance: {track_disable}%\nMain Gun Disable Chance: {main_disable}%\nMain Weapon: {main}"
         return "I could not process a request because the entity is not a valid weapon, structure or vehicle." 
     except:

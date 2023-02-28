@@ -59,10 +59,13 @@ def run_discord_bot():
     @client.tree.command(name="help")
     async def help(interaction: discord.Interaction):
         await interaction.response.send_message(
-            "I'm currently configured to answer any prompts containing 'How many/much x to kill/destroy y'. This can be vehicles *and* structures, including specific town hall/relics by name. Any values given for vehicles assumes shell penetration. \n \n Try asking me these questions:\n How many 150 to destroy Abandoned Ward \n How much Predator94.5mm to kill Ares \n How much 40mm to kill bt pad \n How many stickies to kill hatchet \n How many satchels to kill Feirmor\n How many satchels to kill t3 bb husk")
+            "Aedile is a discord bot which provides damage calculation and foxhole stats with nothing more than a single prompt or command. To use it try a prompt with the following format\n``How many|much (weapon) to kill|disable (target)``\n\nExample prompts to try:\nHow many 40mm to kill SvH?\nHow many 94.5mm to disable Ares?\nHow much 40mm to kill BT Pad?\nHow many satchels to kill Patridia?\nHow many ATG to kill Chieftain?\nHow many 150 to kill Feirmor?\n\nTo get stats about a specific weapon, vehicle, or structure, do ``/statsheet (entity)``")
     @client.tree.command(name="statsheet")
-    async def statsheet(interaction: discord.Interaction, entity: str):
-        await interaction.response.send_message(calculator.statsheet_handler(entity))
+    async def statsheet(interaction: discord.Interaction, entity: str, hide_output: bool=False):
+        if hide_output==True:
+            await interaction.response.send_message(calculator.statsheet_handler(entity),ephemeral=True)
+        elif hide_output==False:
+            await interaction.response.send_message(calculator.statsheet_handler(entity),ephemeral=False)
 
     #Not in use yet, kill command
     
