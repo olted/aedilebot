@@ -59,8 +59,8 @@ def list_guilds(client):
 
 if __name__ == '__main__':
     # run
-    message = "how much 40mm to kill Patridia"
+    message = "how much 40mm to kill svhh"
     #print(parse.slang_dict)
 
-    #print(handle_response(message))
-    bot.run_discord_bot()
+    print(bot.handle_response(message))
+    #bot.run_discord_bot()

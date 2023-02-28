@@ -114,10 +114,7 @@ def run_discord_bot():
 def handle_response_inner(weapon,target, operation="kill"):
     try:
         if operation=="kill":
-            try:
-                return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target) 
-            except LocationNotFoundError as e:
-                return calculator.general_kill_handler(weapon,target)
+            return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target)
         if operation=="disable":
             return calculator.general_disable_handler(weapon,target)
     except ZeroDivisionError as e:
@@ -147,11 +144,11 @@ def handle_response(message_) -> str:
     token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', p_message)
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
-        return handle_response_inner(weapon,target)
+        return handle_response_inner(weapon, target)
     
     token_pair = re.findall('how (many|much)(.*) to disable (.*)', p_message)
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]
-        return handle_response_inner(weapon,target, operation="disable")
+        return handle_response_inner(weapon, target, operation="disable")
 
 
