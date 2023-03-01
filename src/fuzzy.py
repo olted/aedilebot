@@ -10,59 +10,57 @@ import bot
 # fuzzy stuff
 # If they return true, they need to return proper location/vehicle/structure name.
 
-def fuzzy_match_th_relic_name(name):
+
+ #stygian slang <->
+def fuzzy_match_target_name(name):
     max_score = 0
     max_key = None
-    good_score_list = {}
-    for key in parse.th_relics_dict.keys():
-        if fuzz.token_set_ratio(name, key) > max_score:
-            max_score = fuzz.token_set_ratio(name, key)
-            max_key = key
-
-    if max_score < 90:
-        raise bot.LocationNotFoundError(name)
-        
-    utils.debug_fuzzy(name,'Null for THs/Relics',max_key)
-    return max_key
-
-
-def fuzzy_match_structure_name(name):
-    name = main.unslangify(name)
-    max_score = 0
-    max_key = None
+    max_value = None
+    tokens = {}
     perfect_score_list = []
-    for key in parse.structures_dict.keys():
+    for key, value in parse.targets_dictionary.items():
         if fuzz.token_set_ratio(name, key) > max_score:
             max_score = fuzz.token_set_ratio(name, key)
-            max_key = key
+            max_key, max_value = key, value
         if fuzz.token_set_ratio(name, key) > 60:
             perfect_score_list.append(key)
-    if max_score < 50:
+    if max_score < 75:
         raise bot.TargetNotFoundError(name)
-    if len(perfect_score_list) >= 1:
-        harsh_max_score = 0
-        harsh_max_key = None
-        for key in perfect_score_list:
-            if fuzz.ratio(name, key) > harsh_max_score:
-                harsh_max_score = fuzz.ratio(name, key)
-                harsh_max_key = key
-                utils.debug_fuzzy(name,perfect_score_list,key)
-        return harsh_max_key
-    else:
-        utils.debug_fuzzy(name,perfect_score_list,max_key)
-        return max_key
+
+    utils.debug_fuzzy(name,perfect_score_list,max_value)
+    if parse.check_if_location_name(max_key):
+        tokens["location_name"] = max_key
+    return max_value, tokens
 
 
 def fuzzy_match_weapon_name(name):
-    name = main.unslangify(name)
     max_score = 0
-    max_key = None
-    for key in parse.weapons_dict.keys():
+    max_value = None
+    for key,value in parse.weapons_dictionary.items():
         if fuzz.token_set_ratio(name, key) > max_score:
             max_score = fuzz.token_set_ratio(name, key)
-            max_key = key
+            max_value = value
             
-    if max_score < 45:
+    if max_score < 75:
         raise bot.WeaponNotFoundError(name)
-    utils.debug_fuzzy(name,'Null for weapons',max_key)
-    return max_key
+    utils.debug_fuzzy(name,'Null for weapons',max_value)
+    return max_value
+
+def fuzzy_match_any(name):
+    max_score = 0
+    max_value = None
+    type = "weapon"
+    for key,value in parse.weapons_dictionary.items():
+        if fuzz.token_set_ratio(name, key) > max_score:
+            max_score = fuzz.token_set_ratio(name, key)
+            max_value = value
+    
+    for key,value in parse.targets_dictionary.items():
+        if fuzz.token_set_ratio(name, key) > max_score:
+            max_score = fuzz.token_set_ratio(name, key)
+            max_value = value
+            type = "target"
+    if max_score < 75:
+        raise bot.EntityNotFoundError(name)
+    output = {"max_value":max_value,"type":type}
+    return output

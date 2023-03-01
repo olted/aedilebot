@@ -1,27 +1,41 @@
 import json
-
-def load_array_to_dict(filename, key):
-    with open(filename) as f:
-        dataArray = json.load(f)
-        data_dict = {}
-    for entity in dataArray:
-        data_dict[entity[key]]=entity
-    return data_dict
-
 def load_json_to_dict(filename):
     with open(filename) as f:
         dict = json.load(f)
         return dict
+def load_location_names(filename):
+    with open(filename) as f:
+        return f.read().split(";")
+def get_all_names(dictionary, field_name="Additional Names"):
+    names_dictionary = {}
+    for key,value in dictionary.items():
+        additional_names = [value["Name"]]
+
+        if field_name in value:
+            additional_names.extend(value[field_name].split(";"))
+
+        for name in additional_names:
+            if name == "":
+                continue
+            if name in names_dictionary:
+                raise RuntimeError(f"Name {name} repeats itself in {names_dictionary[name]} and {key}")
+            names_dictionary[name] = key
+    return names_dictionary
+
+
 
 # Structure Json parser
-structures_dict=load_array_to_dict('data\Structures.json','Name')
-weapons_dict=load_array_to_dict('data\Weapons.json','Informalname')
-damages_dict=load_array_to_dict('data\Damage.json','Damagetypes')
-th_relics_dict=load_json_to_dict('data\\th_relic_types.json')
+location_names = load_location_names("data\Location_names.json")
 
+def check_if_location_name(name):
+    return name in location_names
+
+targets = load_json_to_dict("data\Targets.json")
+damages = load_json_to_dict("data\Damage.json")
+weapons = load_json_to_dict("data\Weapons.json")
+
+targets_dictionary = get_all_names(targets)
+weapons_dictionary = get_all_names(weapons)
+
+print("Cool")
 #slang
-with open('data\Dictionary.json') as f:
-    DictionaryArray = json.load(f)
-    slang_dict = {}
-for slang in DictionaryArray:
-    slang_dict.update(slang)

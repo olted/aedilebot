@@ -9,8 +9,9 @@ import calculator
 import re
 import parse
 import typing
-
-
+import fuzzy as fuzz
+import traceback
+import datetime
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
@@ -58,13 +59,51 @@ def run_discord_bot():
 
     @client.tree.command(name="help")
     async def help(interaction: discord.Interaction):
-        await interaction.response.send_message(
-            "I'm currently configured to answer any prompts containing 'How many/much x to kill/destroy y'. This can be vehicles *and* structures, including specific town hall/relics by name. Any values given for vehicles assumes shell penetration. \n \n Try asking me these questions:\n How many 150 to destroy Abandoned Ward \n How much Predator94.5mm to kill Ares \n How much 40mm to kill bt pad \n How many stickies to kill hatchet \n How many satchels to kill Feirmor\n How many satchels to kill t3 bb husk")
-    
+        embed = discord.Embed(title= "__**Help and Commands**__",description="Welcome to the help section. Here you will be provided with a description of how the bot works and its commands.\n",color=0x992d22, timestamp=datetime.datetime.utcnow())
+        embed.set_thumbnail(url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
+        embed.add_field(name="/help", value="Provides you with this message! How neat is that?", inline=False)
+        embed.add_field(name="/statsheet [entity]", value="Provides you with a statistics sheet of any entity in the calculator", inline=False)
+        embed.add_field(name="**Damage Calculator Prompt**", value='``How much|many [weapon] to destroy|kill|disable [target]``\nHere are some examples to try:\n\nHow much 150mm to kill Patridia?\nHow many satchels to kill t3 bunker core husk?\nHow many 68mm to disable HTD?\nHow many satchels to kill Victa?\nHow much 40mm to destroy bt pad?', inline=False)
+        embed.set_footer(text="Good luck on the front!", icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
+        await interaction.response.send_message(embed=embed)
+       
+    @client.tree.command(name="statsheet")
+    async def statsheet(interaction: discord.Interaction, entity: str):
+        data = calculator.statsheet_handler(entity)
+        embed=discord.Embed(title=data[1], color=0x992d22)
+        embed.set_thumbnail(url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
+        embed.description=f"Statistics sheet for {data[1]}"
+        embed.add_field(name="Name", value=data[1], inline=False)
+        if data[0]== "Weapons":
+            embed.add_field(name="Raw Damage", value=data[2], inline=True)
+            embed.add_field(name="Damage Type", value=data[3], inline=True)
+        elif data[0]=="Structures":
+            embed.add_field(name="Raw Health", value=data[2], inline=True)
+            embed.add_field(name="Mitigation Type", value=data[3], inline=True)
+            embed.add_field(name="Repair Cost", value=data[5], inline=True)
+            embed.add_field(name="Decay Start", value=data[4], inline=True)
+            embed.add_field(name="Time to Decay", value=data[6], inline=True)
+        elif data[0] in ["Vehicles","Tripods","Emplacements"]:
+            embed.add_field(name="Raw Health", value=data[2], inline=True)
+            embed.add_field(name="Mitigation Type", value=data[3], inline=True)
+            embed.add_field(name="Max Pen Chance", value=str(data[5])+"%", inline=True)
+            embed.add_field(name="Min Pen Chance", value=str(data[4])+"%", inline=True)
+            embed.add_field(name="Armour Health", value=data[6], inline=True)
+            embed.add_field(name="Reload", value=data[7], inline=True)
+            embed.add_field(name="Main Weapon", value=data[8], inline=True)
+            embed.add_field(name="Turret Disable Chance", value=str(data[9])+"%", inline=True)
+            embed.add_field(name="Tracks Disable Chance", value=str(data[10])+"%", inline=True)
+        else:
+            raise EntityNotFoundError(data[0])
+        embed.set_footer(text="Good luck on the front!", icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
+        await interaction.response.send_message(embed=embed)
 
+
+
+    #Name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nMinimum Penetration Chance (Max Armour): {min_pen}%\nMaximum Penetration Chance (Stripped Armour): {max_pen}%\nArmour HP (Penetration damage to strip): {armour_hp}\nReload Time: {reload}\nTrack Chance: {track_disable}%\nMain Gun Disable Chance: {main_disable}%\nMain Weapon: {main}"
     #Not in use yet, kill command
-    """
-    @client.tree.command(name="kill")
+    
+    """@client.tree.command(name="kill")
     async def kill(interaction: discord.Interaction,
                     target: str,
                     weapon: str):
@@ -76,9 +115,9 @@ def run_discord_bot():
         current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
-        for target in parse.structures_dict.keys():
-                if current in target:
-                    data.append(app_commands.Choice(name=target, value=target))
+        guess = fuzz.fuzzy_match_target_name(current)[0]
+        if guess in parse.targets_dictionary.keys():
+                    data.append(app_commands.Choice(name=guess, value=guess))
         return data
     
     @kill.autocomplete("weapon")
@@ -87,8 +126,8 @@ def run_discord_bot():
         current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
-        for weapon in (parse.weapons_dict.keys()):
-                if current in weapon.lower():
+        for weapon in (parse.weapons_dictionary.keys()):
+                if fuzz.fuzzy_match_weapon_name in weapon.lower():
                     data.append(app_commands.Choice(name=weapon, value=weapon))
         return data
     """
@@ -109,10 +148,7 @@ def run_discord_bot():
 def handle_response_inner(weapon,target, operation="kill"):
     try:
         if operation=="kill":
-            try:
-                return calculator.relic_th_kill_handler(weapon, target)
-            except LocationNotFoundError as e:
-                return calculator.general_kill_handler(weapon,target)
+            return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target)
         if operation=="disable":
             return calculator.general_disable_handler(weapon,target)
     except ZeroDivisionError as e:
@@ -127,6 +163,7 @@ def handle_response_inner(weapon,target, operation="kill"):
         return e.show_message()
     except Exception as e:
         print(e)
+        traceback.print_tb(e.__traceback__)
         return ("Inner error happened during processing of your request. "
                 "Please, contact bot's devs about this.")
 
@@ -141,11 +178,11 @@ def handle_response(message_) -> str:
     token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', p_message)
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
-        return handle_response_inner(weapon,target)
+        return handle_response_inner(weapon, target)
     
     token_pair = re.findall('how (many|much)(.*) to disable (.*)', p_message)
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]
-        return handle_response_inner(weapon,target, operation="disable")
+        return handle_response_inner(weapon, target, operation="disable")
 
 

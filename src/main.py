@@ -10,6 +10,7 @@ import parse
 import fuzzy as fuzz
 import bot
 import calculator
+
 utils.debugging = True
 move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched"]
 # text processing functions
@@ -48,9 +49,9 @@ def unslangify(name):
 async def message_handler(message_, user_message):
     response = bot.handle_response(user_message)
     if response:
-        await message_.reply(response)
+        await message_.reply(response, mention_author = False)
 
-def list_guilds(client):
+def list_guilds(client): 
     for guild in client.guilds:
         print("Current discords: ",guild, end=" ")
 
@@ -58,8 +59,8 @@ def list_guilds(client):
 
 if __name__ == '__main__':
     # run
-    message = "how much 40mm to kill Patridia"
+    message = "how much 40mm to kill svhh"
     #print(parse.slang_dict)
 
-    #print(handle_response(message))
+    print(bot.handle_response(message))
     bot.run_discord_bot()
