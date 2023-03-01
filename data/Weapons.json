@@ -288,7 +288,7 @@
     },
     "75mm": {
         "Name": "75mm",
-        "Additional Names": "",
+        "Additional Names": "75",
         "Damage": "1750",
         "DamageType": "BPExplosivePenetratingLargeDamageType",
         "ObjectType": "Weapons"

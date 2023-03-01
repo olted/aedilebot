@@ -4528,7 +4528,7 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Storm Cannon": {
+    "Storm Cannon 3x3": {
         "Name": "Storm Cannon 3x3",
         "Additional Names": "sc;sc 3x3",
         "Code name": "LRArtillery",
@@ -5514,7 +5514,7 @@
     },
     "Trench Emplacement (Husk) (T1)": {
         "Name": "Trench Emplacement (Husk) (T1)",
-        "Additional Names": "trench octagon husk t1;trench hexagon husk t1;trench hex husk t1",
+        "Additional Names": "trench octagon husk;trench hexagon husk;trench hex husk",
         "Code name": "TrenchEmpDestroyedT1",
         "Health": "1500",
         "Mitigation Type": "Trench",
@@ -5586,7 +5586,7 @@
     },
     "Trench Emplacement (T1)": {
         "Name": "Trench Emplacement (T1)",
-        "Additional Names": "trench octagon t1; trench hexagon t1;trench hex t1",
+        "Additional Names": "trench octagon;trench hexagon;trench hex",
         "Code name": "TrenchEmpT1",
         "Health": "1500",
         "Mitigation Type": "Trench",
