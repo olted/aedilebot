@@ -29,7 +29,7 @@
     },
     "Howitzer Garrison Shell": {
         "Name": "Howitzer Garrison Shell",
-        "Additional Names": "howi garrison",
+        "Additional Names": "howi garrison shell",
         "Damage": "500",
         "DamageType":"BPHighExplosiveDamageType",
         "ObjectType":"Weapons"
@@ -57,7 +57,7 @@
     },
     "Coastal Gun Shell": {
         "Name": "Coastal Gun Shell",
-        "Additional Names": "coastal gun",
+        "Additional Names": "",
         "Damage": "1000",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
@@ -197,7 +197,7 @@
     },
     "150mm": {
         "Name": "150mm",
-        "Additional Names": "150",
+        "Additional Names": "",
         "Damage": "900",
         "DamageType": "BPHighExplosiveRuinDamageType",
         "ObjectType": "Weapons"
@@ -218,14 +218,14 @@
     },
     "7.62mm": {
         "Name": "7.62mm",
-        "Additional Names": "",
+        "Additional Names": "762",
         "Damage": "56.25",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
     "7.92mm (auto mode)": {
         "Name": "7.92mm (auto mode)",
-        "Additional Names": "",
+        "Additional Names": "792",
         "Damage": "43.75",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -274,7 +274,7 @@
     },
     "9mm SMG": {
         "Name": "9mm SMG",
-        "Additional Names": "smg",
+        "Additional Names": "smg;9mm",
         "Damage": "33.75",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -328,21 +328,21 @@
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "SuperTank94.5mm": {
+    "Predator94.5mm": {
         "Name": "Predator94.5mm",
-        "Additional Names": "predator",
+        "Additional Names": "",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "Emplacement75mm": {
+    "Ruptura75mm": {
         "Name": "Ruptura75mm",
         "Additional Names": "",
         "Damage": "2362.5",
         "DamageType": "BPExplosivePenetratingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "Emplacement94.5mm": {
+    "Starbreaker94.5mm": {
         "Name": "Starbreaker94.5mm",
         "Additional Names": "",
         "Damage": "2625",

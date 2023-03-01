@@ -25,14 +25,14 @@ def get_all_names(dictionary, field_name="Additional Names"):
 
 
 # Structure Json parser
-location_names = load_location_names("..\data\Location_names.json")
+location_names = load_location_names("data\Location_names.json")
 
 def check_if_location_name(name):
     return name in location_names
 
-targets = load_json_to_dict("..\data\Targets.json")
-damages = load_json_to_dict("..\data\Damage.json")
-weapons = load_json_to_dict("..\data\Weapons.json")
+targets = load_json_to_dict("data\Targets.json")
+damages = load_json_to_dict("data\Damage.json")
+weapons = load_json_to_dict("data\Weapons.json")
 
 targets_dictionary = get_all_names(targets)
 weapons_dictionary = get_all_names(weapons)

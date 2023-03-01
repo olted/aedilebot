@@ -18,7 +18,6 @@ class DamageCalculator:
         self.target = parse.targets[target_name]
 
         self.target_type = self.target["ObjectType"]
-
         self.health = float(self.target["Health"])
         self.damage_value = float(self.weapon["Damage"])
         self.damage_type = parse.damages[self.weapon['DamageType']]
@@ -48,7 +47,7 @@ class DamageCalculator:
 
     def get_disable_health(self):
         if "Disable Level" in self.target:
-            return self.health * (1.005 - self.target["Disable Level"])
+            return self.health * (1.005 - float(self.target["Disable Level"]))
         raise bot.InvalidTypeError
 
     def general_damage_calculator(self):
@@ -142,15 +141,16 @@ def general_disable_handler(weapon_fuzzy_name, target_fuzzy_name):
 def statsheet_handler(entity_name):
     try:
         entity = fuzz.fuzzy_match_any(entity_name)
+    
         if entity["type"] == "weapon":
             entity = parse.weapons[fuzz.fuzzy_match_weapon_name(entity_name)]
             name = entity["Name"]
             damage = entity["Damage"]
             damage_type = entity["DamageType"]
-            print("im here")
-            return f"Weapon name: {name} \nWeapon raw damage: {damage} \nWeapon damage type: {damage_type}"
+            entity_type = entity["ObjectType"]
+            return entity_type,name,damage,damage_type
         elif entity["type"] == "target":
-            entity = parse.targets[fuzz.fuzzy_match_target_name(entity_name)]
+            entity = parse.targets[fuzz.fuzzy_match_target_name(entity_name)[0]]
             if entity["ObjectType"] == "Structures":
                 name = entity["Name"]
                 raw_hp = entity["Health"]
@@ -158,10 +158,12 @@ def statsheet_handler(entity_name):
                 repair_cost = entity["RepairCost"]
                 decay_start = entity["DecayStartHours"]
                 decay_duration = entity["DecayDurationHours"]
-                return f"Structure name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nRepair Cost: {repair_cost}\nDecay Timer: {decay_start} hours\nTime to Decay: {decay_duration} hours"
+                entity_type = entity["ObjectType"]
+                return entity_type,name,raw_hp,mitigation,repair_cost,decay_start,decay_duration
             else:
                 if entity["ObjectType"] == "Vehicles" or entity["ObjectType"] == "Emplacements" or entity[
                     "ObjectType"] == "Tripods":
+                    entity_type = entity["ObjectType"]
                     name = entity["Name"]
                     raw_hp = entity["Health"]
                     mitigation = entity["Mitigation Type"]
@@ -182,7 +184,8 @@ def statsheet_handler(entity_name):
                         track_disable = int(float(entity["Tracks Disable Chance"]) * 100)
                     except:
                         track_disable = ""
-                    return f"Name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nMinimum Penetration Chance (Max Armour): {min_pen}%\nMaximum Penetration Chance (Stripped Armour): {max_pen}%\nArmour HP (Penetration damage to strip): {armour_hp}\nReload Time: {reload}\nTrack Chance: {track_disable}%\nMain Gun Disable Chance: {main_disable}%\nMain Weapon: {main}"
+                    return entity_type,name,raw_hp,mitigation,min_pen,max_pen,armour_hp,reload,main,main_disable,track_disable
+                    
         return "I could not process a request because the entity is not a valid weapon, structure or vehicle."
     except:
         return bot.EntityNotFoundError(entity_name)

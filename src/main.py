@@ -63,4 +63,4 @@ if __name__ == '__main__':
     #print(parse.slang_dict)
 
     print(bot.handle_response(message))
-    #bot.run_discord_bot()
+    bot.run_discord_bot()
