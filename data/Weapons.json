@@ -92,7 +92,7 @@
     },
     "250mm": {
         "Name": "250mm",
-        "Additional Names": "ballista;chieftain;250",
+        "Additional Names": "250",
         "Damage": "1000",
         "DamageType": "BPDemolitionDamageType",
         "ObjectType": "Weapons"
@@ -114,7 +114,7 @@
     "HE Grenade (Mammon)": {
         "Name": "HE Grenade (Mammon)",
         "Additional Names": "mammon;he",
-        "Damage": "240",
+        "Damage": "228",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
     },
@@ -169,7 +169,7 @@
     },
     "HTD68mm": {
         "Name": "HTD68mm",
-        "Additional Names": "",
+        "Additional Names": "hv68",
         "Damage": "1050",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
