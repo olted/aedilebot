@@ -1864,7 +1864,7 @@
     },
     "O\u2019Brien V.130 Wild Jack (Flame AC)": {
         "Name": "O\u2019Brien V.130 Wild Jack (Flame AC)",
-        "Additional Names": "flame ac",
+        "Additional Names": "flame ac;flame armoured car",
         "Cost": "-",
         "Health": "900",
         "Armour Health": "2700",
@@ -1932,7 +1932,7 @@
     },
     "85V-g \"Talos\"": {
         "Name": "85V-g \"Talos\"",
-        "Additional Names": "kv-2",
+        "Additional Names": "kv2",
         "Cost": "-",
         "Health": "3250",
         "Armour Health": "12000",
@@ -2139,7 +2139,7 @@
     },
     "Aegis Steelbreaker K5a": {
         "Name": "Aegis Steelbreaker K5a",
-        "Additional Names": "colonial infantry car",
+        "Additional Names": "",
         "Cost": "-",
         "Health": "4000",
         "Armour Health": "100000",
@@ -2208,7 +2208,7 @@
     },
     "O\u2019Brien Warsmith v.215": {
         "Name": "O\u2019Brien Warsmith v.215",
-        "Additional Names": "warden infantry car",
+        "Additional Names": "",
         "Cost": "-",
         "Health": "3250",
         "Armour Health": "100000",
@@ -2482,9 +2482,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "LargeCrane": {
-        "Name": "LargeCrane",
-        "Additional Names": "",
+    "BMS - Overseer Sky-Hauler (Large Crane)": {
+        "Name": "BMS - Overseer Sky-Hauler (Large Crane)",
+        "Additional Names": "large crane;skyhauler;big facility crane",
         "Code name": "LargeCrane",
         "Health": "1000",
         "Mitigation Type": "Tier3Structure",
@@ -2508,7 +2508,7 @@
     },
     "Battle Tank Destoyer Hasta": {
         "Name": "Battle Tank Destoyer Hasta",
-        "Additional Names": "",
+        "Additional Names":"btd",
         "Cost": "-",
         "Health": "6250",
         "Armour Health": "15650",
@@ -2531,7 +2531,7 @@
     },
     "Grenade Launcher Armored Car": {
         "Name": "Grenade Launcher Armored Car",
-        "Additional Names": "",
+        "Additional Names": "gac",
         "Cost": "40",
         "Health": "1000",
         "Armour Health": "2100",
@@ -2620,6 +2620,7 @@
     },
     "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)": {
         "Name": "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)",
+        "Additional Names":"warden emg emplaced",
         "Cost": "75",
         "Health": "6000",
         "Armour Health": "0",
@@ -2729,6 +2730,7 @@
     },
     "Huber Exalt 150mm": {
         "Name": "Huber Exalt 150mm",
+        "Additional Names":"warden 150",
         "Cost": "175",
         "Health": "1250",
         "Armour Health": "0",
@@ -2750,7 +2752,7 @@
     },
     "Huber Exalt 150mm (Emplaced)": {
         "Name": "Huber Exalt 150mm (Emplaced)",
-        "Additional Names":"exalt emplaced",
+        "Additional Names":"exalt emplaced;warden 150 emplaced",
         "Cost": "175",
         "Health": "5000",
         "Armour Health": "0",
@@ -2772,6 +2774,7 @@
     },
     "Huber Lariat 120mm": {
         "Name": "Huber Lariat 120mm",
+        "Additional Names":"warden 120",
         "Cost": "35",
         "Health": "750",
         "Armour Health": "0",
@@ -2793,6 +2796,7 @@
     },
     "Huber Lariat 120mm (Emplaced)": {
         "Name": "Huber Lariat 120mm (Emplaced)",
+        "Additional Names":"warden 120 emplaced",
         "Cost": "35",
         "Health": "3000",
         "Armour Health": "0",
