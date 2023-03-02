@@ -1793,6 +1793,29 @@
         "": "",
         "ObjectType": "Vehicles"
     },
+    "Drummond 100a (Warden LUV)": {
+        "Name": "Drummond 100a (Warden LUV)",
+        "Additional Names": "drummond;warden luv",
+        "Cost": "-",
+        "Health": "1150",
+        "Armour Health": "0",
+        "Min Base Penetration Chance": "1",
+        "Max Base Penetration Chance": "1",
+        "Mitigation Type": "LightVehicle",
+        "Disable Level": "0.55",
+        "Repair Cost": "120",
+        "Speed": "",
+        "Slots": "9",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "",
+        "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "",
+        "Secondary Weapon": "",
+        "Tracks Disable Chance": "0",
+        "Engine Disable Chance": "0",
+        "Main Gun Disable Chance": "0",
+        "Secondary Gun Disable Chance": "0",
+        "": "",
+        "ObjectType": "Vehicles"
+    },
     "Noble Firebrand Mk. XVII": {
         "Name": "Noble Firebrand Mk. XVII",
         "Additional Names": "flame htd",
@@ -1841,7 +1864,7 @@
     },
     "O\u2019Brien V.130 Wild Jack (Flame AC)": {
         "Name": "O\u2019Brien V.130 Wild Jack (Flame AC)",
-        "Additional Names": "flame ac",
+        "Additional Names": "flame ac;flame armoured car",
         "Cost": "-",
         "Health": "900",
         "Armour Health": "2700",
@@ -1909,7 +1932,7 @@
     },
     "85V-g \"Talos\"": {
         "Name": "85V-g \"Talos\"",
-        "Additional Names": "kv-2",
+        "Additional Names": "kv2",
         "Cost": "-",
         "Health": "3250",
         "Armour Health": "12000",
@@ -2116,7 +2139,7 @@
     },
     "Aegis Steelbreaker K5a": {
         "Name": "Aegis Steelbreaker K5a",
-        "Additional Names": "colonial infantry car",
+        "Additional Names": "",
         "Cost": "-",
         "Health": "4000",
         "Armour Health": "100000",
@@ -2185,7 +2208,7 @@
     },
     "O\u2019Brien Warsmith v.215": {
         "Name": "O\u2019Brien Warsmith v.215",
-        "Additional Names": "warden infantry car",
+        "Additional Names": "",
         "Cost": "-",
         "Health": "3250",
         "Armour Health": "100000",
@@ -2459,9 +2482,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "LargeCrane": {
-        "Name": "LargeCrane",
-        "Additional Names": "",
+    "BMS - Overseer Sky-Hauler (Large Crane)": {
+        "Name": "BMS - Overseer Sky-Hauler (Large Crane)",
+        "Additional Names": "large crane;skyhauler;big facility crane",
         "Code name": "LargeCrane",
         "Health": "1000",
         "Mitigation Type": "Tier3Structure",
@@ -2485,7 +2508,7 @@
     },
     "Battle Tank Destoyer Hasta": {
         "Name": "Battle Tank Destoyer Hasta",
-        "Additional Names": "",
+        "Additional Names":"btd",
         "Cost": "-",
         "Health": "6250",
         "Armour Health": "15650",
@@ -2508,7 +2531,7 @@
     },
     "Grenade Launcher Armored Car": {
         "Name": "Grenade Launcher Armored Car",
-        "Additional Names": "",
+        "Additional Names": "gac",
         "Cost": "40",
         "Health": "1000",
         "Armour Health": "2100",
@@ -2597,6 +2620,7 @@
     },
     "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)": {
         "Name": "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)",
+        "Additional Names":"warden emg emplaced",
         "Cost": "75",
         "Health": "6000",
         "Armour Health": "0",
@@ -2706,6 +2730,7 @@
     },
     "Huber Exalt 150mm": {
         "Name": "Huber Exalt 150mm",
+        "Additional Names":"warden 150",
         "Cost": "175",
         "Health": "1250",
         "Armour Health": "0",
@@ -2727,7 +2752,7 @@
     },
     "Huber Exalt 150mm (Emplaced)": {
         "Name": "Huber Exalt 150mm (Emplaced)",
-        "Additional Names":"exalt emplaced",
+        "Additional Names":"exalt emplaced;warden 150 emplaced",
         "Cost": "175",
         "Health": "5000",
         "Armour Health": "0",
@@ -2749,6 +2774,7 @@
     },
     "Huber Lariat 120mm": {
         "Name": "Huber Lariat 120mm",
+        "Additional Names":"warden 120",
         "Cost": "35",
         "Health": "750",
         "Armour Health": "0",
@@ -2770,6 +2796,7 @@
     },
     "Huber Lariat 120mm (Emplaced)": {
         "Name": "Huber Lariat 120mm (Emplaced)",
+        "Additional Names":"warden 120 emplaced",
         "Cost": "35",
         "Health": "3000",
         "Armour Health": "0",
@@ -3762,7 +3789,7 @@
     },
     "Bunker Base (T1) 3x2": {
         "Name": "Bunker Base (T1) 3x2",
-        "Additional Names": "bob t1 3x2;bob core t1 3x2",
+        "Additional Names": "3x2 t1;bunker base 3x2 t1;bob 3x2 t1",
         "Code name": "FortBaseT1",
         "Health": "5533",
         "Mitigation Type": "Tier1Structure",
@@ -3834,7 +3861,7 @@
     },
     "Bunker Base (T2)": {
         "Name": "Bunker Base (T2)",
-        "Additional Names": "bob t2;bob core t2",
+        "Additional Names": "bob t2;bob core t2;",
         "Code name": "FortBaseT2",
         "Health": "2000",
         "Mitigation Type": "Tier2Structure",
@@ -3858,7 +3885,7 @@
     },
     "Bunker Base (T2) 3x2": {
         "Name": "Bunker Base (T2) 3x2",
-        "Additional Names": "bob t2 3x2;bob core t2 3x2",
+        "Additional Names": "bunker base 3x2 t2;bob 3x2 t2;3x2 t2",
         "Code name": "FortBaseT1",
         "Health": "6094",
         "Mitigation Type": "Tier1Structure",
@@ -3906,7 +3933,7 @@
     },
     "Bunker Base (T3) 3x2": {
         "Name": "Bunker Base (T3) 3x2",
-        "Additional Names": "bob t3 3x2;bob core t3 3x2",
+        "Additional Names": "3x2 t3;bob core 3x2 t3;bb t3 3x2",
         "Code name": "FortBaseT3",
         "Health": "9629",
         "Mitigation Type": "Tier3Structure",
@@ -5010,7 +5037,7 @@
     },
     "Rifle Garrison (T2) 3x1": {
         "Name": "Rifle Garrison (T2) 3x1",
-        "Additional Names": "",
+        "Additional Names": "rifle 3x1 t2;3x1 t2;rg 3x1 t2;rifle garrison 3x1 t2",
         "Code name": "RifleAIT2",
         "Health": "3809",
         "Mitigation Type": "Tier2Structure",
@@ -5970,7 +5997,7 @@
     },
     "Watchtower": {
         "Name": "Watchtower",
-        "Additional Names": "wt",
+        "Additional Names": "wt;watch tower",
         "Code name": "WatchTower",
         "Health": "350",
         "Mitigation Type": "Tier1Structure",
@@ -6018,7 +6045,7 @@
     },
     "TrainBridge": {
         "Name": "Train Bridge",
-        "Additional Names": "rail bridge",
+        "Additional Names": "rail bridge;trainbridge",
         "Code name": "TrainBridgeA",
         "Health": "3250",
         "Mitigation Type": "Tier2BStructure",
@@ -6138,7 +6165,7 @@
     },
     "Railway Track": {
         "Name": "Railway Track",
-        "Additional Names": "",
+        "Additional Names": "rail;train track",
         "Code name": "RailTrackSpline",
         "Health": "750",
         "Mitigation Type": "Trench",
@@ -7362,7 +7389,7 @@
     },
     "Safe House": {
         "Name": "Safe House",
-        "Additional Names": "sh",
+        "Additional Names": "sh;safehouse",
         "Code name": "GarrisonStation",
         "Health": "2000",
         "Bmat cost": "250",
