@@ -24,7 +24,7 @@ def fuzzy_match_target_name(name):
             max_key, max_value = key, value
         if fuzz.token_set_ratio(name, key) > 60:
             perfect_score_list.append(key)
-    if max_score < 75:
+    if max_score < 65:
         raise bot.TargetNotFoundError(name)
 
     utils.debug_fuzzy(name,perfect_score_list,max_value)
@@ -41,7 +41,7 @@ def fuzzy_match_weapon_name(name):
             max_score = fuzz.token_set_ratio(name, key)
             max_value = value
             
-    if max_score < 75:
+    if max_score < 65:
         raise bot.WeaponNotFoundError(name)
     utils.debug_fuzzy(name,'Null for weapons',max_value)
     return max_value

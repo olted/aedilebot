@@ -78,7 +78,7 @@
     },
     "ATRPG Indirect Shell": {
         "Name": "ATRPG Indirect Shell",
-        "Additional Names": "arcrpg;bonesaw;arc/rpg",
+        "Additional Names": "arcrpg;bonesaw",
         "Damage": "600",
         "DamageType": "BPArmourPiercingNoBonusesDamageType",
         "ObjectType": "Weapons"
@@ -132,7 +132,7 @@
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
-    "R.P.G. Shell": {
+    "RPG Shell": {
         "Name": "RPG Shell",
         "Additional Names": "cutler;rpg",
         "Damage": "550",

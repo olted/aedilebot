@@ -12,7 +12,7 @@ import bot
 import calculator
 
 utils.debugging = True
-move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched"]
+move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched","tier 1", "tier 2","tier 3"]
 # text processing functions
 def clean_capitalize(str):
     result = ""
@@ -30,21 +30,6 @@ def clean_capitalize(str):
 def move_string_to_rear(string, tier_string):
     res = string.replace(tier_string, "") + " " + str(tier_string)
     return res
-
-def unslangify(name):
-    name_parsed = name.split(' ')
-    for word in name_parsed:
-        if word in move_to_rear_string_list:
-            tier_string = word
-            name = move_string_to_rear(name, tier_string)
-            break
-    if name in parse.slang_dict:
-        return parse.slang_dict[name]
-        # if entire input detects as a specific slang piece, itll return it and wont continue past here in the method
-    for word in name_parsed:
-        if word in parse.slang_dict:
-            name = name.replace(word, parse.slang_dict[word])
-    return name
 
 async def message_handler(message_, user_message):
     response = bot.handle_response(user_message)
