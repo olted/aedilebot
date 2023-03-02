@@ -37,8 +37,9 @@ async def message_handler(message_, user_message):
         await message_.reply(response, mention_author = False)
 
 def list_guilds(client): 
+    print("Current discords: ")
     for guild in client.guilds:
-        print("Current discords: ",guild, end=" ")
+        print(guild, end=" ")
 
 # main bot funcion
 
