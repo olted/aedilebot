@@ -27,9 +27,19 @@ def clean_capitalize(str):
     else:
         return result
     
-def move_string_to_rear(string, tier_string):
-    res = string.replace(tier_string, "") + " " + str(tier_string)
-    return res
+def move_string_to_rear(string):
+    tier_dictionary = { "tier 1":"t1","tier 2":"t2","tier 3":"t3"}
+    for replacement_string in move_to_rear_string_list:
+        if replacement_string in string:
+            if replacement_string in ["tier 1","tier 2","tier 3"]:
+                replacement_string = tier_dictionary[replacement_string]
+                return string.replace(replacement_string, "") + " " + str(replacement_string)
+            if replacement_string in ["emplaced","entrenched"]:
+                return string.replace(replacement_string, "") + " " + str("emplaced")
+            if replacement_string in ["t1","t2","t3"]:
+                return string.replace(replacement_string, "") + " " + str(replacement_string)
+    return string
+
 
 async def message_handler(message_, user_message):
     response = bot.handle_response(user_message)
@@ -45,8 +55,9 @@ def list_guilds(client):
 
 if __name__ == '__main__':
     # run
-    message = "how much 40mm to kill svhh"
+    message = "how much 40mm to kill trench"
     #print(parse.slang_dict)
-
+    #implement move string to rear
+    print(move_string_to_rear("how many 40 to kill entrenched bb 3x2"))
     print(bot.handle_response(message))
     bot.run_discord_bot()

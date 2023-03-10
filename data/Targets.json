@@ -829,7 +829,7 @@
     },
     "Dunne Transport (Truck)": {
         "Name": "Dunne Transport (Truck)",
-        "Additional Names": "warden truck",
+        "Additional Names": "warden truck;dunne;truck",
         "Cost": "100",
         "Health": "900",
         "Armour Health": "0",
@@ -852,7 +852,7 @@
     },
     "G40 \u201cSagittarii\u201d (FMG)": {
         "Name": "G40 \u201cSagittarii\u201d (FMG)",
-        "Additional Names": "collie fmg;fmg",
+        "Additional Names": "collie fmg;fmg;field machine gun",
         "Cost": "25",
         "Health": "1850",
         "Armour Health": "0",
@@ -1634,7 +1634,7 @@
     },
     "T3 \u201cXiphos\u201d (AC)": {
         "Name": "T3 \u201cXiphos\u201d (AC)",
-        "Additional Names": "collie ac;colonial ac;ac;",
+        "Additional Names": "collie ac;colonial ac;ac;armoured car",
         "Cost": "40",
         "Health": "1000",
         "Armour Health": "2100",
@@ -1864,7 +1864,7 @@
     },
     "O\u2019Brien V.130 Wild Jack (Flame AC)": {
         "Name": "O\u2019Brien V.130 Wild Jack (Flame AC)",
-        "Additional Names": "flame ac;flame armoured car",
+        "Additional Names": "flame ac;flame armoured car;wild jack;wildjack",
         "Cost": "-",
         "Health": "900",
         "Armour Health": "2700",
@@ -2185,7 +2185,7 @@
     },
     "Battle Tank Lance": {
         "Name": "Battle Tank Lance",
-        "Additional Names": "collie bt;colonial bt",
+        "Additional Names": "collie bt;colonial bt;lance",
         "Cost": "-",
         "Health": "6250",
         "Armour Health": "15650",
@@ -2323,7 +2323,7 @@
     },
     "TrainFlatbed": {
         "Name": "TrainFlatbed",
-        "Additional Names": "",
+        "Additional Names": "train flatbed;train cart",
         "Cost": "-",
         "Health": "1500",
         "Armour Health": "0",
@@ -2392,7 +2392,7 @@
     },
     "SmallTrainEngine": {
         "Name": "SmallTrainEngine",
-        "Additional Names": "",
+        "Additional Names": "small gauge train;small train",
         "Cost": "-",
         "Health": "1650",
         "Armour Health": "0",
@@ -2508,7 +2508,7 @@
     },
     "Battle Tank Destoyer Hasta": {
         "Name": "Battle Tank Destoyer Hasta",
-        "Additional Names":"btd",
+        "Additional Names":"btd;hasta",
         "Cost": "-",
         "Health": "6250",
         "Armour Health": "15650",
@@ -2529,9 +2529,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "Grenade Launcher Armored Car": {
-        "Name": "Grenade Launcher Armored Car",
-        "Additional Names": "gac",
+    "O'Brien V.190 Knave (GAC)": {
+        "Name": "O'Brien V.190 Knave (GAC)",
+        "Additional Names": "gac;grenade launcher armoured car;knave",
         "Cost": "40",
         "Health": "1000",
         "Armour Health": "2100",
@@ -3309,7 +3309,7 @@
     },
     "Component Mine": {
         "Name": "Component Mine",
-        "Additional Names": "",
+        "Additional Names": "component harvester;",
         "Code name": "ComponentMine",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",
@@ -3691,6 +3691,30 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
+    "Large Bridge":{
+    "ObjectType":"Structures",
+    "Name": "Large Bridge",
+    "Additional Names":"large bridge;big bridge;concrete bridge",
+    "Codename": "DrawbridgeC",
+    "Health": "7000",
+    "MitigationType": "Tier2BStructure",
+    "Rmatcost": "0",
+    "Bmatcost": "350",
+    "Concretecost": "0",
+    "Shoveldigs": "0",
+    "Sandbagcost": "0",
+    "Barbedwirecost": "0",
+    "Metalbeamcost": "0",
+    "DecayStartHours": "0",
+    "DecayDurationHours": "0",
+    "RepairCost": "350",
+    "StructuralIntegrity": "1",
+    "StoredItemCapacity": "0",
+    "RamDamageReceivedFlags": "0",
+    "bCanBeHarvested": "FALSE",
+    "IsVaultable": "TRUE",
+    "bIsDamagedWhileDrivingOver": "FALSE"
+    },
     "Field Bridge": {
         "Name": "Field Bridge",
         "Additional Names": "",
@@ -3763,9 +3787,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker Base (T1)": {
+    "Bunker Base 1x1 (T1)": {
         "Name": "Bunker Base (T1)",
-        "Additional Names": "bob t1;bob core t1",
+        "Additional Names": "bob 1x1 t1;bob core 1x1 t1;bb 1x1 t1;bunker base 1x1 t1",
         "Code name": "FortBaseT1",
         "Health": "1750",
         "Mitigation Type": "Tier1Structure",
@@ -3787,9 +3811,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker Base (T1) 3x2": {
+    "Bunker Base 3x2 (T1)": {
         "Name": "Bunker Base (T1) 3x2",
-        "Additional Names": "3x2 t1;bunker base 3x2 t1;bob 3x2 t1",
+        "Additional Names": "3x2 t1;bunker base 3x2 t1;bob 3x2 t1;bunker base t1;bob t1;bb t1",
         "Code name": "FortBaseT1",
         "Health": "5533",
         "Mitigation Type": "Tier1Structure",
@@ -3859,9 +3883,9 @@
         "bIsDamagedWhileDrivingOver": "TRUE",
         "ObjectType": "Structures"
     },
-    "Bunker Base (T2)": {
-        "Name": "Bunker Base (T2)",
-        "Additional Names": "bob t2;bob core t2;",
+    "Bunker Base (T2) 1x1": {
+        "Name": "Bunker Base (T2) 1x1",
+        "Additional Names": "bob 1x1 t2;bob core 1x1 t2",
         "Code name": "FortBaseT2",
         "Health": "2000",
         "Mitigation Type": "Tier2Structure",
@@ -3883,9 +3907,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker Base (T2) 3x2": {
+    "Bunker Base 3x2 (T2)": {
         "Name": "Bunker Base (T2) 3x2",
-        "Additional Names": "bunker base 3x2 t2;bob 3x2 t2;3x2 t2",
+        "Additional Names": "bunker base 3x2 t2;bob 3x2 t2;3x2 t2;bunker base t2;bob t2;bunker base",
         "Code name": "FortBaseT1",
         "Health": "6094",
         "Mitigation Type": "Tier1Structure",
@@ -3907,9 +3931,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker Base (T3)": {
-        "Name": "Bunker Base (T3)",
-        "Additional Names": "bob t3;bob core t3",
+    "Bunker Base 1x1 (T3)": {
+        "Name": "Bunker Base 1x1 (T3)",
+        "Additional Names": "bob 1x1 t3;bob core 1x1 t3;bunker base 1x1 t3",
         "Code name": "FortBaseT3",
         "Health": "3500",
         "Mitigation Type": "Tier3Structure",
@@ -3931,9 +3955,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker Base (T3) 3x2": {
+    "Bunker Base 3x2 (T3)": {
         "Name": "Bunker Base (T3) 3x2",
-        "Additional Names": "3x2 t3;bob core 3x2 t3;bb t3 3x2",
+        "Additional Names": "3x2 t3;bob core 3x2 t3;bb t3 3x2;bob t3;bunker base t3",
         "Code name": "FortBaseT3",
         "Health": "9629",
         "Mitigation Type": "Tier3Structure",
@@ -3981,7 +4005,7 @@
     },
     "Bunker Corner (Husk) (T2)": {
         "Name": "Bunker Corner (Husk) (T2)",
-        "Additional Names": "",
+        "Additional Names": "bunker corner husk t2",
         "Code name": "FortCornerDestroyedT2",
         "Health": "1850",
         "Mitigation Type": "Tier2Structure",
@@ -4005,7 +4029,7 @@
     },
     "Bunker Corner (Husk) (T3)": {
         "Name": "Bunker Corner (Husk) (T3)",
-        "Additional Names": "",
+        "Additional Names": "bunker corner husk t3",
         "Code name": "FortCornerDestroyedT3",
         "Health": "2000",
         "Mitigation Type": "Tier3Structure",
@@ -4029,7 +4053,7 @@
     },
     "Bunker Corner (T1)": {
         "Name": "Bunker Corner (T1)",
-        "Additional Names": "",
+        "Additional Names": "bunker corner t1",
         "Code name": "FortCornerT1",
         "Health": "1500",
         "Mitigation Type": "Tier1Structure",
@@ -4053,7 +4077,7 @@
     },
     "Bunker Corner (T2)": {
         "Name": "Bunker Corner (T2)",
-        "Additional Names": "",
+        "Additional Names": "bunker corner t2",
         "Code name": "FortCornerT2",
         "Health": "1850",
         "Mitigation Type": "Tier2Structure",
@@ -4077,7 +4101,7 @@
     },
     "Bunker Corner (T3)": {
         "Name": "Bunker Corner (T3)",
-        "Additional Names": "",
+        "Additional Names": "bunker corner t3",
         "Code name": "FortCornerT3",
         "Health": "2000",
         "Mitigation Type": "Tier3Structure",
@@ -4101,7 +4125,7 @@
     },
     "Bunker (Husk) (T1)": {
         "Name": "Bunker (Husk) (T1)",
-        "Additional Names": "",
+        "Additional Names": "bunker husk t1",
         "Code name": "FortDestroyedT1",
         "Health": "1500",
         "Mitigation Type": "Tier1Structure",
@@ -4125,7 +4149,7 @@
     },
     "Bunker (Husk) (T2)": {
         "Name": "Bunker (Husk) (T2)",
-        "Additional Names": "",
+        "Additional Names": "bunker husk t2",
         "Code name": "FortDestroyedT2",
         "Health": "1850",
         "Mitigation Type": "Tier2Structure",
@@ -4149,7 +4173,7 @@
     },
     "Bunker (Husk) (T3)": {
         "Name": "Bunker (Husk) (T3)",
-        "Additional Names": "",
+        "Additional Names": "bunker husk t3",
         "Code name": "FortDestroyedT3",
         "Health": "2000",
         "Mitigation Type": "Tier3Structure",
@@ -5205,7 +5229,7 @@
     },
     "Salvage Mine": {
         "Name": "Salvage Mine",
-        "Additional Names": "",
+        "Additional Names": "scrap mine;scrap harvester;salvage harvester",
         "Code name": "ScrapMine",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",
@@ -5397,7 +5421,7 @@
     },
     "Sulfur Mine": {
         "Name": "Sulfur Mine",
-        "Additional Names": "",
+        "Additional Names": "sulfur harvester",
         "Code name": "SulfurMine",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",
@@ -5416,150 +5440,6 @@
         "RamDamageReceivedFlags": "0",
         "bCanBeHarvested": "FALSE",
         "IsVaultable": "FALSE",
-        "bIsDamagedWhileDrivingOver": "FALSE",
-        "ObjectType": "Structures"
-    },
-    "Trench Connector (Husk) (T1)": {
-        "Name": "Trench Connector (Husk) (T1)",
-        "Additional Names": "",
-        "Code name": "TrenchConnectorDestroyedT1",
-        "Health": "1500",
-        "Mitigation Type": "Trench",
-        "Rmat cost": "0",
-        "Bmat cost": "0",
-        "Concrete cost": "0",
-        "Shovel digs": "115",
-        "Sandbag cost": "0",
-        "Barbed wire cost": "0",
-        "Metal beam cost": "0",
-        "DecayStartHours": "1",
-        "DecayDurationHours": "0.75",
-        "RepairCost": "115",
-        "StructuralIntegrity": "1",
-        "StoredItemCapacity": "0",
-        "RamDamageReceivedFlags": "0",
-        "bCanBeHarvested": "FALSE",
-        "IsVaultable": "TRUE",
-        "bIsDamagedWhileDrivingOver": "FALSE",
-        "ObjectType": "Structures"
-    },
-    "Trench Connector (Husk) (T2)": {
-        "Name": "Trench Connector (Husk) (T2)",
-        "Additional Names": "",
-        "Code name": "TrenchConnectorDestroyedT2",
-        "Health": "1750",
-        "Mitigation Type": "Trench",
-        "Rmat cost": "0",
-        "Bmat cost": "75",
-        "Concrete cost": "0",
-        "Shovel digs": "0",
-        "Sandbag cost": "0",
-        "Barbed wire cost": "0",
-        "Metal beam cost": "0",
-        "DecayStartHours": "0.239167",
-        "DecayDurationHours": "4.43038",
-        "RepairCost": "75",
-        "StructuralIntegrity": "1",
-        "StoredItemCapacity": "0",
-        "RamDamageReceivedFlags": "0",
-        "bCanBeHarvested": "FALSE",
-        "IsVaultable": "TRUE",
-        "bIsDamagedWhileDrivingOver": "FALSE",
-        "ObjectType": "Structures"
-    },
-    "Trench Connector (Husk) (T3)": {
-        "Name": "Trench Connector (Husk) (T3)",
-        "Additional Names": "",
-        "Code name": "TrenchConnectorDestroyedT3",
-        "Health": "3500",
-        "Mitigation Type": "Trench",
-        "Rmat cost": "0",
-        "Bmat cost": "0",
-        "Concrete cost": "30",
-        "Shovel digs": "0",
-        "Sandbag cost": "0",
-        "Barbed wire cost": "0",
-        "Metal beam cost": "0",
-        "DecayStartHours": "43.750004",
-        "DecayDurationHours": "29.166666",
-        "RepairCost": "120",
-        "StructuralIntegrity": "1",
-        "StoredItemCapacity": "0",
-        "RamDamageReceivedFlags": "0",
-        "bCanBeHarvested": "FALSE",
-        "IsVaultable": "TRUE",
-        "bIsDamagedWhileDrivingOver": "FALSE",
-        "ObjectType": "Structures"
-    },
-    "Trench Connector (T1)": {
-        "Name": "Trench Connector (T1)",
-        "Additional Names": "",
-        "Code name": "TrenchConnectorT1",
-        "Health": "1500",
-        "Mitigation Type": "Trench",
-        "Rmat cost": "0",
-        "Bmat cost": "0",
-        "Concrete cost": "0",
-        "Shovel digs": "115",
-        "Sandbag cost": "0",
-        "Barbed wire cost": "0",
-        "Metal beam cost": "0",
-        "DecayStartHours": "12.500001",
-        "DecayDurationHours": "6.25",
-        "RepairCost": "115",
-        "StructuralIntegrity": "1",
-        "StoredItemCapacity": "0",
-        "RamDamageReceivedFlags": "0",
-        "bCanBeHarvested": "FALSE",
-        "IsVaultable": "TRUE",
-        "bIsDamagedWhileDrivingOver": "FALSE",
-        "ObjectType": "Structures"
-    },
-    "Trench Connector (T2)": {
-        "Name": "Trench Connector (T2)",
-        "Additional Names": "",
-        "Code name": "TrenchConnectorT2",
-        "Health": "1850",
-        "Mitigation Type": "Trench",
-        "Rmat cost": "0",
-        "Bmat cost": "75",
-        "Concrete cost": "0",
-        "Shovel digs": "0",
-        "Sandbag cost": "0",
-        "Barbed wire cost": "0",
-        "Metal beam cost": "0",
-        "DecayStartHours": "24.666668",
-        "DecayDurationHours": "30.833334",
-        "RepairCost": "75",
-        "StructuralIntegrity": "1",
-        "StoredItemCapacity": "0",
-        "RamDamageReceivedFlags": "0",
-        "bCanBeHarvested": "FALSE",
-        "IsVaultable": "TRUE",
-        "bIsDamagedWhileDrivingOver": "FALSE",
-        "ObjectType": "Structures"
-    },
-    "Trench Connector (T3)": {
-        "Name": "Trench Connector (T3)",
-        "Additional Names": "",
-        "Code name": "TrenchConnectorT3",
-        "Health": "3500",
-        "Mitigation Type": "Trench",
-        "Rmat cost": "0",
-        "Bmat cost": "0",
-        "Concrete cost": "30",
-        "Shovel digs": "0",
-        "Sandbag cost": "0",
-        "Barbed wire cost": "0",
-        "Metal beam cost": "0",
-        "DecayStartHours": "43.750004",
-        "DecayDurationHours": "29.166666",
-        "RepairCost": "120",
-        "StructuralIntegrity": "1",
-        "StoredItemCapacity": "0",
-        "RamDamageReceivedFlags": "0",
-        "bCanBeHarvested": "FALSE",
-        "IsVaultable": "TRUE",
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
@@ -5709,7 +5589,7 @@
     },
     "Trench Emplacement (T1)": {
         "Name": "Trench Emplacement (T1)",
-        "Additional Names": "trench octagon;trench hexagon;trench hex",
+        "Additional Names": "trench emplacement t1;trench octagon t1;trench hexagon t1;trench hex t1",
         "Code name": "TrenchEmpT1",
         "Health": "1500",
         "Mitigation Type": "Trench",
@@ -5733,7 +5613,7 @@
     },
     "Trench Emplacement (T2)": {
         "Name": "Trench Emplacement (T2)",
-        "Additional Names": "trench octagon t2;trench hexagon t2;trench hex t2",
+        "Additional Names": "trench emplacement t2;trench octagon t2;trench hexagon t2;trench hex t2",
         "Code name": "TrenchEmpT2",
         "Health": "1850",
         "Mitigation Type": "Trench",
@@ -5757,7 +5637,7 @@
     },
     "Trench Emplacement (T3)": {
         "Name": "Trench Emplacement (T3)",
-        "Additional Names": "trench octagon t3;hexagon t3;trench hex t3",
+        "Additional Names": "trench emplacement t3;trench octagon t3;hexagon t3;trench hex t3",
         "Code name": "TrenchEmpT3",
         "Health": "3500",
         "Mitigation Type": "Trench",
@@ -5781,7 +5661,7 @@
     },
     "Trench (T1)": {
         "Name": "Trench (T1)",
-        "Additional Names": "trench",
+        "Additional Names": "trench;trench t1",
         "Code name": "TrenchT1",
         "Health": "1500",
         "Mitigation Type": "Trench",
@@ -5925,7 +5805,7 @@
     },
     "Wall (T1)": {
         "Name": "Wall (T1)",
-        "Additional Names": "",
+        "Additional Names": "wall t1",
         "Code name": "WallSplineT1",
         "Health": "500",
         "Mitigation Type": "Tier1Structure",
@@ -5949,7 +5829,7 @@
     },
     "Wall (T2)": {
         "Name": "Wall (T2)",
-        "Additional Names": "",
+        "Additional Names": "wall t2",
         "Code name": "WallSplineT2",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",
@@ -5973,7 +5853,7 @@
     },
     "Wall (T3)": {
         "Name": "Wall (T3)",
-        "Additional Names": "",
+        "Additional Names": "wall t3",
         "Code name": "WallSplineT3",
         "Health": "3000",
         "Mitigation Type": "Tier3Structure",
@@ -6045,7 +5925,7 @@
     },
     "TrainBridge": {
         "Name": "Train Bridge",
-        "Additional Names": "rail bridge;trainbridge",
+        "Additional Names": "rail bridge;trainbridge;train bridge",
         "Code name": "TrainBridgeA",
         "Health": "3250",
         "Mitigation Type": "Tier2BStructure",
@@ -6117,7 +5997,7 @@
     },
     "FacilitySiloOil": {
         "Name": "FacilitySiloOil",
-        "Additional Names": "",
+        "Additional Names": "oil silo",
         "Code name": "FacilitySiloOil",
         "Health": "900",
         "Mitigation Type": "Tier2Structure",
@@ -6141,7 +6021,7 @@
     },
     "FacilityPipeUnderground": {
         "Name": "FacilityPipeUnderground",
-        "Additional Names": "",
+        "Additional Names": "underground pipe",
         "Code name": "FacilityPipeUnderground",
         "Health": "350",
         "Mitigation Type": "Tier1Structure",
@@ -6285,7 +6165,7 @@
     },
     "PowerPole": {
         "Name": "PowerPole",
-        "Additional Names": "",
+        "Additional Names": "power pole",
         "Code name": "PowerPole",
         "Health": "250",
         "Mitigation Type": "Tier1Structure",
@@ -6501,7 +6381,7 @@
     },
     "Metalworks Factory": {
         "Name": "Metalworks Factory",
-        "Additional Names": "",
+        "Additional Names": "metalworks factory;",
         "Code name": "FacilityRefinery2",
         "Health": "3000",
         "Mitigation Type": "Tier2Structure",
@@ -7399,7 +7279,7 @@
     },
     "Town Base (Post Office)": {
         "Name": "Town Base (Post Office)",
-        "Additional Names": "town hall post office;th post office;posterus;integrum;conclave;the three sisters;black well;partisan island;hangmen's court;finis;judicium;minos;sweetheart;legion ranch;headsman's villa;the routed;isle of psyche;the rush;alchimio estate;lividius;the axehead;blackwatch;isawa;skodio;the pike;teller farm;little lamb;kingstone;lord's mouth;sanctuary;greenfield orchard;oleander homestead;deeplaw post;the swan;remnant villa;violethome;myrmidon's stay;grave of rastus;vanguard;savages;tuatha watchpost;wellchurch;iron junction;vulpine watch;brackish point;foxcatcher;crow's nest;wightwalk;weathering halls;blackthroat;moltworth;earl crowley;elksford;brodytown;reprieve;nightchurch;mousetrap;ice ranch;dwyerstown;cut;mcconmara barrows;luchs workshop;headstone;sotto bank;victa;iuxta homestead;huskhollow;macha's keening;mercy's wish;thunderfoot;sentry;amethyst;stray;saltcaps;bootnap;vessel;coaldrifter stead;lockheed;lochan berth;the latch;solas gorge;white chapel;cragstown;crimson garden;long whine;rotdust;outwich ranch;prairie bazaar;salt farms;brine glen;callahan's boot;the spine;",
+        "Additional Names": "town hall;th;town hall post office;th post office;posterus;integrum;conclave;the three sisters;black well;partisan island;hangmen's court;finis;judicium;minos;sweetheart;legion ranch;headsman's villa;the routed;isle of psyche;the rush;alchimio estate;lividius;the axehead;blackwatch;isawa;skodio;the pike;teller farm;little lamb;kingstone;lord's mouth;sanctuary;greenfield orchard;oleander homestead;deeplaw post;the swan;remnant villa;violethome;myrmidon's stay;grave of rastus;vanguard;savages;tuatha watchpost;wellchurch;iron junction;vulpine watch;brackish point;foxcatcher;crow's nest;wightwalk;weathering halls;blackthroat;moltworth;earl crowley;elksford;brodytown;reprieve;nightchurch;mousetrap;ice ranch;dwyerstown;cut;mcconmara barrows;luchs workshop;headstone;sotto bank;victa;iuxta homestead;huskhollow;macha's keening;mercy's wish;thunderfoot;sentry;amethyst;stray;saltcaps;bootnap;vessel;coaldrifter stead;lockheed;lochan berth;the latch;solas gorge;white chapel;cragstown;crimson garden;long whine;rotdust;outwich ranch;prairie bazaar;salt farms;brine glen;callahan's boot;the spine;",
         "Code name": "TownBase1",
         "Health": "7000",
         "Bmat cost": "200",
@@ -7429,7 +7309,7 @@
     },
     "Garrison House (Medium)": {
         "Name": "Medium Garrison House",
-        "Additional Names": "medium ghouse",
+        "Additional Names": "medium ghouse;ghouse",
         "Code name": "TownCMedGarrisonG1",
         "Health": "1000",
         "Bmat cost": "150",

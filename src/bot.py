@@ -12,6 +12,7 @@ import typing
 import fuzzy as fuzz
 import traceback
 import datetime
+import string
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
@@ -29,11 +30,11 @@ class InvalidTypeError(EntityNotFoundError):
         super().__init__(name,message)
 
 class TargetNotFoundError(EntityNotFoundError):
-    def __init__(self, name, message="I could not process a request because the target was not found. Please try again."):
+    def __init__(self, name, message=f"I could not process a request because the target is not in my dataset or was not found."):
         super().__init__(name,message)
 
 class WeaponNotFoundError(EntityNotFoundError):
-    def __init__(self,name, message=f"I could not process a request because the weapon was not found. Please try again."):
+    def __init__(self,name, message=f"I could not process a request because the weapon is not in my dataset or was not found."):
         super().__init__(name,message)
 
 class LocationNotFoundError(EntityNotFoundError):
@@ -73,7 +74,7 @@ def run_discord_bot():
         embed=discord.Embed(title=data[1], color=0x992d22)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
         embed.description=f"Statistics sheet for {data[1]}"
-        embed.add_field(name="Name", value=data[1], inline=False)
+        #embed.add_field(name="Name", value=data[1], inline=False)
         if data[0]== "Weapons":
             embed.add_field(name="Raw Damage", value=data[2], inline=True)
             embed.add_field(name="Damage Type", value=data[3], inline=True)
@@ -93,6 +94,12 @@ def run_discord_bot():
             embed.add_field(name="Main Weapon", value=data[8], inline=True)
             embed.add_field(name="Turret Disable Chance", value=str(data[9])+"%", inline=True)
             embed.add_field(name="Tracks Disable Chance", value=str(data[10])+"%", inline=True)
+        elif data[0] in ["Multitier_structures"]:
+            embed.add_field(name="Raw Health", value=data[2], inline=True)
+            embed.add_field(name="Bmat Cost", value=data[3], inline=True)
+            embed.add_field(name="Repair Cost", value=data[4], inline=True)
+            embed.add_field(name="Mitigation Type", value="Tier[x]GarrisonHouse", inline=True)
+
         else:
             raise EntityNotFoundError(data[0])
         embed.set_footer(text="Good luck on the front!", icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
@@ -175,7 +182,7 @@ def handle_response(message_) -> str:
     #if re.search("bunker tool", p_message):
     #    return f'A user has requested the bunker tool. https://404th.ru/bob/'
     
-    token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', p_message)
+    token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', main.move_string_to_rear(p_message) )
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
         return handle_response_inner(weapon, target)
