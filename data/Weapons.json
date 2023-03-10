@@ -43,7 +43,7 @@
     },
     "Highwayman20mm": {
         "Name": "Highwayman20mm",
-        "Additional Names": "hwm20mm",
+        "Additional Names": "hwm20mm;highwayman 20mm",
         "Damage": "123.75",
         "DamageType": "BPAntiTankKineticDamageType",
         "ObjectType": "Weapons"
@@ -64,7 +64,7 @@
     },
     "ATRPG Shell": {
         "Name": "ATRPG Shell",
-        "Additional Names": "venom;bane",
+        "Additional Names": "venom;bane;at rpg;at rocket",
         "Damage": "550",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
@@ -78,7 +78,7 @@
     },
     "ATRPG Indirect Shell": {
         "Name": "ATRPG Indirect Shell",
-        "Additional Names": "arcrpg;bonesaw",
+        "Additional Names": "arcrpg;bonesaw;arc rpg;arc/rpg",
         "Damage": "600",
         "DamageType": "BPArmourPiercingNoBonusesDamageType",
         "ObjectType": "Weapons"
@@ -148,14 +148,14 @@
     },
     "12.7mm": {
         "Name": "12.7mm",
-        "Additional Names": "hmg;127;12.7",
+        "Additional Names": "hmg;127;12.7;ratcatcher;gast",
         "Damage": "68.75",
         "DamageType": "BPHeavyKineticDamageType",
         "ObjectType": "Weapons"
     },
     "Mortar Shell": {
         "Name": "Mortar Shell",
-        "Additional Names": "mortar",
+        "Additional Names": "mortar;he mortar",
         "Damage": "300",
         "DamageType": "BPHighExplosiveDamageType",
         "ObjectType": "Weapons"
@@ -169,7 +169,7 @@
     },
     "HTD68mm": {
         "Name": "HTD68mm",
-        "Additional Names": "hv68",
+        "Additional Names": "hv68;htd",
         "Damage": "1050",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
@@ -211,7 +211,14 @@
     },
     "HV12.7mm": {
         "Name": "HV12.7mm",
-        "Additional Names": "lamentum;ratcatcher;hv127;hv12.7",
+        "Additional Names": "hv127;hv12.7",
+        "Damage": "103",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Lamentum12.7mm": {
+        "Name": "Lamentum12.7mm",
+        "Additional Names": "lamentum",
         "Damage": "82.5",
         "DamageType": "BPHeavyKineticDamageType",
         "ObjectType": "Weapons"
@@ -330,7 +337,7 @@
     },
     "Predator94.5mm": {
         "Name": "Predator94.5mm",
-        "Additional Names": "",
+        "Additional Names": "hv94.5mm;hv945",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"

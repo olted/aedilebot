@@ -160,8 +160,7 @@ def statsheet_handler(entity_name):
                 decay_duration = entity["DecayDurationHours"]
                 entity_type = entity["ObjectType"]
                 return entity_type,name,raw_hp,mitigation,repair_cost,decay_start,decay_duration
-            else:
-                if entity["ObjectType"] == "Vehicles" or entity["ObjectType"] == "Emplacements" or entity[
+            elif entity["ObjectType"] == "Vehicles" or entity["ObjectType"] == "Emplacements" or entity[
                     "ObjectType"] == "Tripods":
                     entity_type = entity["ObjectType"]
                     name = entity["Name"]
@@ -185,6 +184,14 @@ def statsheet_handler(entity_name):
                     except:
                         track_disable = ""
                     return entity_type,name,raw_hp,mitigation,min_pen,max_pen,armour_hp,reload,main,main_disable,track_disable
+            elif entity["ObjectType"] == "Multitier_structures":
+                entity_type = entity["ObjectType"]
+                name = entity["Name"]
+                raw_hp = entity["Health"]
+                bmat_cost = entity["Bmat cost"]
+                repair_cost = entity["RepairCost"]
+                return entity_type,name,raw_hp,bmat_cost,repair_cost
+                
                     
         return "I could not process a request because the entity is not a valid weapon, structure or vehicle."
     except:
