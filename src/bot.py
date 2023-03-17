@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
+import discord.utils
+from interactions import Option
 import main
 import dotenv
 import os
@@ -64,10 +66,19 @@ def run_discord_bot():
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
         embed.add_field(name="/help", value="Provides you with this message! How neat is that?", inline=False)
         embed.add_field(name="/statsheet [entity]", value="Provides you with a statistics sheet of any entity in the calculator", inline=False)
+        embed.add_field(name="/kill [target] [weapon]", value="Fulfills the same purpose as the prompt below with the help of autocomplete.", inline=False)
         embed.add_field(name="**Damage Calculator Prompt**", value='``How much|many [weapon] to destroy|kill|disable [target]``\nHere are some examples to try:\n\nHow much 150mm to kill Patridia?\nHow many satchels to kill t3 bunker core husk?\nHow many 68mm to disable HTD?\nHow many satchels to kill Victa?\nHow much 40mm to destroy bt pad?', inline=False)
         embed.set_footer(text="Good luck on the front!", icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
         await interaction.response.send_message(embed=embed)
        
+    '''@client.tree.command(name="rawstats")
+    async def rawstats(interaction: discord.Interaction, entity:str):
+        data = parse.everything
+        embed=discord.Embed(title=data[1], color=0x992d22)
+        embed.set_thumbnail(url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
+        embed.description=f"Statistics sheet for {data[entity][1]}"
+        embed.add_field(name=data[entity][0])'''
+
     @client.tree.command(name="statsheet")
     async def statsheet(interaction: discord.Interaction, entity: str):
         data = calculator.statsheet_handler(entity)
@@ -105,12 +116,35 @@ def run_discord_bot():
         embed.set_footer(text="Good luck on the front!", icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
         await interaction.response.send_message(embed=embed)
 
+    @statsheet.autocomplete("entity")
+    async def statsheet_autocompletion(
+        interaction:discord.Interaction,
+        current:str
+    ) -> typing.List[app_commands.Choice[str]]:
+        data = []
+        usedlist = []
+        if len(current)>1:
+            guess = fuzz.fuzzy_match_any_command(current)
+            print(guess)
+            for possible_value in guess:
+                if possible_value.lower() != possible_value and len(data)<20:
+                    if possible_value not in usedlist:
+                        data.append(app_commands.Choice(name=possible_value,value=possible_value))
+                        usedlist.append(possible_value)
+                elif possible_value.lower() == possible_value and len(data)<20:
+                    value = fuzz.fuzzy_match_any(possible_value)["max_value"]
+                    print(value)
+                    if value not in usedlist:
+                        data.append(app_commands.Choice(name=value,value=value))
+                        usedlist.append(value)
+        return data
 
 
     #Name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nMinimum Penetration Chance (Max Armour): {min_pen}%\nMaximum Penetration Chance (Stripped Armour): {max_pen}%\nArmour HP (Penetration damage to strip): {armour_hp}\nReload Time: {reload}\nTrack Chance: {track_disable}%\nMain Gun Disable Chance: {main_disable}%\nMain Weapon: {main}"
     #Not in use yet, kill command
     
-    """@client.tree.command(name="kill")
+    #"""
+    @client.tree.command(name="kill")
     async def kill(interaction: discord.Interaction,
                     target: str,
                     weapon: str):
@@ -122,10 +156,41 @@ def run_discord_bot():
         current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
-        guess = fuzz.fuzzy_match_target_name(current)[0]
-        if guess in parse.targets_dictionary.keys():
-                    data.append(app_commands.Choice(name=guess, value=guess))
+        usedlist = {}
+        guess = fuzz.fuzzy_match_target_name_command(current)
+        value = [fuzz.fuzzy_match_target_name(v) for v in guess if v.lower() == v]
+        combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
+        for possible_value in combined:
+            if len(data) == 20:
+                break
+            if possible_value.lower() != possible_value:
+                if possible_value not in usedlist:
+                    data.append(app_commands.Choice(name=possible_value, value=possible_value))
+                    usedlist[possible_value] = True
+            else:
+                for v in value:
+                    if possible_value in v:
+                        if v[0] not in usedlist:
+                            data.append(app_commands.Choice(name=v[0], value=v[0]))
+                            usedlist[v[0]] = True
+                        break
+
         return data
+
+        '''data = []
+        usedlist = []
+        guess = fuzz.fuzzy_match_target_name_command(current)
+        for possible_value in guess:
+            if possible_value.lower() != possible_value and len(data)<20:
+                if possible_value not in usedlist:
+                    data.append(app_commands.Choice(name=possible_value,value=possible_value))
+                    usedlist.append(value)
+            if possible_value.lower() == possible_value and len(data)<20:
+                value = fuzz.fuzzy_match_target_name(possible_value)
+                if value not in usedlist:
+                    data.append(app_commands.Choice(name=value[0],value=value[0]))
+                    usedlist.append(value)
+        return data'''
     
     @kill.autocomplete("weapon")
     async def kill_autocompletion(
@@ -133,11 +198,27 @@ def run_discord_bot():
         current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
-        for weapon in (parse.weapons_dictionary.keys()):
-                if fuzz.fuzzy_match_weapon_name in weapon.lower():
-                    data.append(app_commands.Choice(name=weapon, value=weapon))
+        usedlist = []
+        if len(current)>1:
+            guess = fuzz.fuzzy_match_weapon_name_command(current)
+            print(guess)
+            for possible_value in guess:
+                if possible_value.lower() != possible_value and len(data)<20:
+                    if possible_value not in usedlist:
+                        data.append(app_commands.Choice(name=possible_value,value=possible_value))
+                        usedlist.append(possible_value)
+                elif possible_value.lower() == possible_value and len(data)<20:
+                    value = fuzz.fuzzy_match_weapon_name(possible_value)
+                    if value not in usedlist:
+                        data.append(app_commands.Choice(name=value,value=value))
+                        usedlist.append(value)
         return data
-    """
+
+       
+
+
+        
+
     
 
     @client.event
@@ -177,10 +258,8 @@ def handle_response_inner(weapon,target, operation="kill"):
 
 
 def handle_response(message_) -> str:
-     # first we are deleting all capitalization
     p_message = message_.lower()
-    #if re.search("bunker tool", p_message):
-    #    return f'A user has requested the bunker tool. https://404th.ru/bob/'
+
     
     token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', main.move_string_to_rear(p_message) )
     if len(token_pair) >= 1:
@@ -193,3 +272,15 @@ def handle_response(message_) -> str:
         return handle_response_inner(weapon, target, operation="disable")
 
 
+'''data = []
+        if len(current)>1:
+            guess = fuzz.fuzzy_match_weapon_name_command(current)
+            print(guess)
+            for possible_value in guess:
+                if possible_value.lower() != possible_value and len(data)<20:
+                    data.append(app_commands.Choice(name=possible_value,value=possible_value))
+                if possible_value.lower() == possible_value and len(data)<20:
+                    value = fuzz.fuzzy_match_weapon_name(possible_value)
+                    if value not in data:
+                        data.append(app_commands.Choice(name=value,value=value))
+return data''' 

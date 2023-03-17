@@ -64,7 +64,7 @@
     },
     "ATRPG Shell": {
         "Name": "ATRPG Shell",
-        "Additional Names": "venom;bane;at rpg;at rocket",
+        "Additional Names": "venom;bane;atrpg;at rocket",
         "Damage": "550",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
@@ -78,14 +78,14 @@
     },
     "ATRPG Indirect Shell": {
         "Name": "ATRPG Indirect Shell",
-        "Additional Names": "arcrpg;bonesaw;arc rpg;arc/rpg",
+        "Additional Names": "arcrpg;bonesaw;iatrpg",
         "Damage": "600",
         "DamageType": "BPArmourPiercingNoBonusesDamageType",
         "ObjectType": "Weapons"
     },
     "300mm": {
         "Name": "300mm",
-        "Additional Names": "sc;storm cannon;300",
+        "Additional Names": "300",
         "Damage": "1500",
         "DamageType": "BPHighExplosiveRuinDamageType",
         "ObjectType": "Weapons"
@@ -100,8 +100,22 @@
     "Satchel Charge": {
         "Name": "Satchel Charge",
         "Additional Names": "alligator charge;satchel",
-        "Damage": "1500",
+        "Damage": "300",
         "DamageType": "BPDemolitionDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Harpa Grenade": {
+        "Name": "Harpa Grenade",
+        "Additional Names": "harpa;frag",
+        "Damage": "200",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "Bomastone Grenade": {
+        "Name": "Bomastone Grenade",
+        "Additional Names": "boma",
+        "Damage": "150",
+        "DamageType": "Shrapnel",
         "ObjectType": "Weapons"
     },
     "Hydra's Whisper": {
@@ -121,7 +135,14 @@
     "Tremola Grenade": {
         "Name": "Tremola Grenade",
         "Additional Names": "tremola",
-        "Damage": "200",
+        "Damage": "400",
+        "DamageType": "BPExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Havoc Charge": {
+        "Name": "Havoc Charge",
+        "Additional Names": "havoc",
+        "Damage": "1500",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
     },
