@@ -190,7 +190,7 @@
     },
     "HTD68mm": {
         "Name": "HTD68mm",
-        "Additional Names": "hv68;htd",
+        "Additional Names": "hv68",
         "Damage": "1050",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"

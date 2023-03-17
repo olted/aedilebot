@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import discord.utils
-from interactions import Option
 import main
 import dotenv
 import os
@@ -174,8 +173,9 @@ def run_discord_bot():
                             data.append(app_commands.Choice(name=v[0], value=v[0]))
                             usedlist[v[0]] = True
                         break
-
         return data
+    
+
 
         '''data = []
         usedlist = []
