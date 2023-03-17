@@ -129,11 +129,9 @@ def fuzzy_match_target_name_command(name):
                  num_perfect+=1
                  if num_perfect>5:
                       return fuzzy_perfect_match_target_name_command(name)
-        print(good_score_list)
         return good_score_list
 
 def fuzzy_perfect_match_target_name_command(name):
-    print("perfect match active")
     good_score_list = []
     for key, value in parse.targets_dictionary.items():
         score = fuzz.token_sort_ratio(name,key)

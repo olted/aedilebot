@@ -6544,9 +6544,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Diesel Power Plant": {
-        "Name": "Diesel Power Plant",
-        "Additional Names": "",
+    "Power Plant": {
+        "Name": "Power Plant",
+        "Additional Names": "diesel power plant;oil power plant;coal power plant",
         "Code name": "FacilityPowerDiesel",
         "Health": "1500",
         "Mitigation Type": "Tier2Structure",

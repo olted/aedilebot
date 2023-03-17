@@ -58,6 +58,6 @@ if __name__ == '__main__':
     message = "how much 40mm to kill trench"
     #print(parse.slang_dict)
     #implement move string to rear
-    print(move_string_to_rear("how many 40 to kill entrenched bb 3x2"))
-    print(bot.handle_response(message))
+    #print(move_string_to_rear("how many 40 to kill entrenched bb 3x2"))
+    #print(bot.handle_response(message))
     bot.run_discord_bot()
