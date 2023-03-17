@@ -33,6 +33,8 @@ def check_if_location_name(name):
 targets = load_json_to_dict("data\Targets.json")
 damages = load_json_to_dict("data\Damage.json")
 weapons = load_json_to_dict("data\Weapons.json")
+everything = load_json_to_dict("data\dump.json")
+
 
 targets_dictionary = get_all_names(targets)
 weapons_dictionary = get_all_names(weapons)
