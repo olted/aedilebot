@@ -139,10 +139,6 @@ def run_discord_bot():
         return data
 
 
-    #Name: {name}\nRaw HP: {raw_hp}\nMitigation Type: {mitigation}\nMinimum Penetration Chance (Max Armour): {min_pen}%\nMaximum Penetration Chance (Stripped Armour): {max_pen}%\nArmour HP (Penetration damage to strip): {armour_hp}\nReload Time: {reload}\nTrack Chance: {track_disable}%\nMain Gun Disable Chance: {main_disable}%\nMain Weapon: {main}"
-    #Not in use yet, kill command
-    
-    #"""
     @client.tree.command(name="kill")
     async def kill(interaction: discord.Interaction,
                     target: str,
