@@ -46,7 +46,7 @@
         "ObjectType": "Vehicles"
     },
     "120-68 \u201cKoronides\u201d Field Gun (FA)": {
-        "Name": "120-68 \u201cKoronides\u201d Field Gun (FA)",
+        "Name": "\u201cKoronides\u201d Field Gun (FA)",
         "Additional Names": "collie 120;fa;colonial 120;push 120",
         "Cost": "25",
         "Health": "1000",
@@ -438,7 +438,7 @@
     },
     "BMS - Class 2 Mobile Auto-Crane": {
         "Name": "BMS - Class 2 Mobile Auto-Crane",
-        "Additional Names": "Crane; Mobile Crane",
+        "Additional Names": "crane;mobile crane",
         "Cost": "125",
         "Health": "1500",
         "Armour Health": "0",
@@ -576,7 +576,7 @@
     },
     "White Whale (Undeployed)": {
         "Name": "White Whale (Undeployed)",
-        "Additional Names": "ww undeployed;ls undeployed;Landing Ship Undeployed",
+        "Additional Names": "ww undeployed;ls undeployed;landing ship undeployed",
         "Cost": "100",
         "Health": "4000",
         "Armour Health": "0",
@@ -1404,7 +1404,7 @@
     },
     "R-1 Hauler (Truck)": {
         "Name": "R-1 Hauler (Truck)",
-        "Additional Names": "collie truck;colonial truck",
+        "Additional Names": "collie truck;colonial truck;hauler;r1",
         "Cost": "100",
         "Health": "900",
         "Armour Health": "0",
@@ -2530,7 +2530,7 @@
     },
     "BMS - Overseer Sky-Hauler (Large Crane)": {
         "Name": "BMS - Overseer Sky-Hauler (Large Crane)",
-        "Additional Names": "large crane;skyhauler;big facility crane",
+        "Additional Names": "large crane;sky hauler;big facility crane",
         "Code name": "LargeCrane",
         "Health": "1000",
         "Mitigation Type": "Tier3Structure",
@@ -2667,7 +2667,7 @@
     },
     "12.7mm Anti Infantry Flak Gun (EMG)": {
         "Name": "12.7mm Anti Infantry Flak Gun (EMG)",
-        "Additional Names":"warden emg",
+        "Additional Names":"warden emg;emg;leary snare trap",
         "Cost": "75",
         "Health": "1500",
         "Armour Health": "0",
@@ -2689,7 +2689,7 @@
     },
     "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)": {
         "Name": "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)",
-        "Additional Names":"warden emg emplaced",
+        "Additional Names":"warden emg emplaced;emg emplaced",
         "Cost": "75",
         "Health": "6000",
         "Armour Health": "0",
@@ -3474,7 +3474,7 @@
     },
     "Deployed Tripod": {
         "Name": "Deployed Tripod",
-        "Additional Names": "",
+        "Additional Names": "tripod",
         "Code name": "DeployedTripod",
         "Health": "750",
         "Mitigation Type": "Tier1Tank",
@@ -3640,8 +3640,8 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bridge ": {
-        "Name": "Bridge ",
+    "Bridge": {
+        "Name": "Bridge",
         "Additional Names": "",
         "Code name": "Drawbridge",
         "Health": "3250",
@@ -3761,28 +3761,28 @@
         "ObjectType": "Structures"
     },
     "Large Bridge":{
-    "ObjectType":"Structures",
-    "Name": "Large Bridge",
-    "Additional Names":"large bridge;big bridge;concrete bridge",
-    "Codename": "DrawbridgeC",
-    "Health": "7000",
-    "MitigationType": "Tier2BStructure",
-    "Rmatcost": "0",
-    "Bmatcost": "350",
-    "Concretecost": "0",
-    "Shoveldigs": "0",
-    "Sandbagcost": "0",
-    "Barbedwirecost": "0",
-    "Metalbeamcost": "0",
-    "DecayStartHours": "0",
-    "DecayDurationHours": "0",
-    "RepairCost": "350",
-    "StructuralIntegrity": "1",
-    "StoredItemCapacity": "0",
-    "RamDamageReceivedFlags": "0",
-    "bCanBeHarvested": "FALSE",
-    "IsVaultable": "TRUE",
-    "bIsDamagedWhileDrivingOver": "FALSE"
+        "Name": "Large Bridge",
+        "Additional Names":"large bridge;big bridge;concrete bridge",
+        "Code name": "DrawbridgeC",
+        "Health": "7000",
+        "Mitigation Type": "Tier2BStructure",
+        "Rmat cost": "0",
+        "Bmat cost": "350",
+        "Concrete cost": "0",
+        "Shovel digs": "0",
+        "Sandbag cost": "0",
+        "Barbed wire cost": "0",
+        "Metal beam cost": "0",
+        "DecayStartHours": "0",
+        "DecayDurationHours": "0",
+        "RepairCost": "350",
+        "StructuralIntegrity": "1",
+        "StoredItemCapacity": "0",
+        "RamDamageReceivedFlags": "0",
+        "bCanBeHarvested": "FALSE",
+        "IsVaultable": "TRUE",
+        "bIsDamagedWhileDrivingOver": "FALSE",
+        "ObjectType":"Structures"
     },
     "Field Bridge": {
         "Name": "Field Bridge",
@@ -3906,7 +3906,7 @@
     },
     "Warden": {
         "Name": "Warden",
-        "Additional Names": "blueberry;warden",
+        "Additional Names": "blueberry;warden;player",
         "Code name": "Player",
         "Health": "100",
         "Mitigation Type": "Nomitigation",
@@ -5680,9 +5680,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Landing Ship (Deployed)": {
-        "Name": "Landing Ship (Deployed)",
-        "Additional Names": "ls deployed;ww deployed",
+    "White Whale (Deployed)": {
+        "Name": "White Whale (Deployed)",
+        "Additional Names": "ls deployed;ww deployed;landing ship deployed",
         "Code name": "TroopShipBase",
         "Health": "5000",
         "Mitigation Type": "Tier2Structure",
@@ -6952,9 +6952,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "FacilityCrane": {
+    "Facility Crane": {
         "Name": "Facility Crane",
-        "Additional Names": "",
+        "Additional Names": "facility crane",
         "Code name": "FacilityCrane",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",
@@ -7228,7 +7228,7 @@
     },
     "Town Base (Post Office)": {
         "Name": "Town Base (Post Office)",
-        "Additional Names": "town hall;th;town hall post office;th post office;posterus;integrum;conclave;the three sisters;black well;partisan island;hangmen's court;finis;judicium;minos;sweetheart;legion ranch;headsman's villa;the routed;isle of psyche;the rush;alchimio estate;lividius;the axehead;blackwatch;isawa;skodio;the pike;teller farm;little lamb;kingstone;lord's mouth;sanctuary;greenfield orchard;oleander homestead;deeplaw post;the swan;remnant villa;violethome;myrmidon's stay;grave of rastus;vanguard;savages;tuatha watchpost;wellchurch;iron junction;vulpine watch;brackish point;foxcatcher;crow's nest;wightwalk;weathering halls;blackthroat;moltworth;earl crowley;elksford;brodytown;reprieve;nightchurch;mousetrap;ice ranch;dwyerstown;cut;mcconmara barrows;luchs workshop;headstone;sotto bank;victa;iuxta homestead;huskhollow;macha's keening;mercy's wish;thunderfoot;sentry;amethyst;stray;saltcaps;bootnap;vessel;coaldrifter stead;lockheed;lochan berth;the latch;solas gorge;white chapel;cragstown;crimson garden;long whine;rotdust;outwich ranch;prairie bazaar;salt farms;brine glen;callahan's boot;the spine;",
+        "Additional Names": "town hall;th;town hall post office;townhall;th post office;posterus;integrum;conclave;the three sisters;black well;partisan island;hangmen's court;finis;judicium;minos;sweetheart;legion ranch;headsman's villa;the routed;isle of psyche;the rush;alchimio estate;lividius;the axehead;blackwatch;isawa;skodio;the pike;teller farm;little lamb;kingstone;lord's mouth;sanctuary;greenfield orchard;oleander homestead;deeplaw post;the swan;remnant villa;violethome;myrmidon's stay;grave of rastus;vanguard;savages;tuatha watchpost;wellchurch;iron junction;vulpine watch;brackish point;foxcatcher;crow's nest;wightwalk;weathering halls;blackthroat;moltworth;earl crowley;elksford;brodytown;reprieve;nightchurch;mousetrap;ice ranch;dwyerstown;cut;mcconmara barrows;luchs workshop;headstone;sotto bank;victa;iuxta homestead;huskhollow;macha's keening;mercy's wish;thunderfoot;sentry;amethyst;stray;saltcaps;bootnap;vessel;coaldrifter stead;lockheed;lochan berth;the latch;solas gorge;white chapel;cragstown;crimson garden;long whine;rotdust;outwich ranch;prairie bazaar;salt farms;brine glen;callahan's boot;the spine;",
         "Code name": "TownBase1",
         "Health": "7000",
         "Bmat cost": "200",

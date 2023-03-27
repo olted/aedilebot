@@ -16,7 +16,7 @@ move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched","tier 1", 
 # text processing functions
 def clean_capitalize(str):
     result = ""
-    list_of_words = str.split()
+    list_of_words = str.split() 
     for elem in list_of_words:
         if len(result) > 0:
             result = result + " " + elem.strip().capitalize()
@@ -26,6 +26,8 @@ def clean_capitalize(str):
         return str
     else:
         return result
+    
+
     
 def move_string_to_rear(string):
     tier_dictionary = { "tier 1":"t1","tier 2":"t2","tier 3":"t3"}
