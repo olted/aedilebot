@@ -36,7 +36,6 @@ def fuzzy_match_target_name(name):
                 max_key = None
                 max_value = None
                 tokens = {}
-                good_score_list = {}
                 for key, value in parse.targets_dictionary.items():
                     if fuzz.token_sort_ratio(name, key) > max_score:
                         max_score = fuzz.token_sort_ratio(name, key)
@@ -54,7 +53,6 @@ def fuzzy_match_weapon_name(name):
         if score > max_score:
             max_score = score
             max_value = value
-            
     if max_score < 65:
         raise bot.WeaponNotFoundError(name)
     utils.debug_fuzzy(name,'Null for weapons',max_value)

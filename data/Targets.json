@@ -369,7 +369,7 @@
     },
     "Balfour Rampart 68mm (HVFC)": {
         "Name": "Balfour Rampart 68mm (HV68)",
-        "Additional Names": "hvfc;hv68;hv68mm",
+        "Additional Names": "hvfat",
         "Cost": "-",
         "Health": "4000",
         "Armour Health": "0",
@@ -576,7 +576,7 @@
     },
     "White Whale (Undeployed)": {
         "Name": "White Whale (Undeployed)",
-        "Additional Names": "ww undeployed;ls undeployed;landing ship undeployed",
+        "Additional Names": "ww undeployed;ls undeployed;landing ship undeployed;white whale;ww;landing ship;ls;whitewhale",
         "Cost": "100",
         "Health": "4000",
         "Armour Health": "0",
@@ -1358,7 +1358,7 @@
     },
     "O\u2019Brien v.110 (AC)": {
         "Name": "O\u2019Brien v.110 (AC)",
-        "Additional Names": "warden ac",
+        "Additional Names": "warden armoured car",
         "Cost": "35",
         "Health": "900",
         "Armour Health": "2700",
@@ -1680,7 +1680,7 @@
     },
     "T3 \u201cXiphos\u201d (AC)": {
         "Name": "T3 \u201cXiphos\u201d (AC)",
-        "Additional Names": "collie ac;colonial ac;ac;armoured car",
+        "Additional Names": "colonial ac;ac;armoured car",
         "Cost": "40",
         "Health": "1000",
         "Armour Health": "2100",
@@ -1954,11 +1954,33 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "DAE 3b-2 \u201cHades\u2019 Net\u201d": {
-        "Name": "DAE 3b-2 \u201cHades\u2019 Net\u201d",
-        "Additional Names": "rocket emplacement",
+    "DAE 3b-2 \u201cHades Net\u201d (Unemplaced)": {
+        "Name": "DAE 3b-2 \u201cHades\u2019 Net\u201d (Unemplaced)",
+        "Additional Names": "rocket emplacement;hades net;hades net unemplaced;emplaced rocket artillery",
         "Cost": "35",
         "Health": "750",
+        "Armour Health": "0",
+        "Min Base Penetration Chance": "1",
+        "Max Base Penetration Chance": "1",
+        "Mitigation Type": "Tier1Structure",
+        "Disable Level": "0",
+        "Repair Cost": "100",
+        "Speed": "",
+        "Slots": "1",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "HE Rocket (175m-275m)",
+        "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "3.9s (3.5s+0.4s) (8 rounds) (25m-35m)",
+        "Secondary Weapon": "",
+        "Tracks Disable Chance": "",
+        "Engine Disable Chance": "",
+        "Main Gun Disable Chance": "",
+        "Secondary Gun Disable Chance": "",
+        "ObjectType": "Emplacements"
+    },
+    "DAE 3b-2 Hades Net (Emplaced)": {
+        "Name": "DAE 3b-2 \u201cHades\u2019 Net\u201d (Emplaced)",
+        "Additional Names": "hades net (emplaced)",
+        "Cost": "35",
+        "Health": "3000",
         "Armour Health": "0",
         "Min Base Penetration Chance": "1",
         "Max Base Penetration Chance": "1",
@@ -2369,7 +2391,7 @@
     },
     "TrainFlatbed": {
         "Name": "TrainFlatbed",
-        "Additional Names": "train flatbed;train cart",
+        "Additional Names": "train flatbed;train cart;flatbed car",
         "Cost": "-",
         "Health": "1500",
         "Armour Health": "0",
@@ -2665,9 +2687,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "12.7mm Anti Infantry Flak Gun (EMG)": {
-        "Name": "12.7mm Anti Infantry Flak Gun (EMG)",
-        "Additional Names":"warden emg;emg;leary snare trap",
+    "12.7mm Anti Infantry Flak Gun (EMG) (Unemplaced)": {
+        "Name": "12.7mm Anti Infantry Flak Gun (EMG) (Unemplaced)",
+        "Additional Names":"warden emg;emg;leary snare trap;warden emg unemplaced;emg unemplaced;leary snare trap unemplaced",
         "Cost": "75",
         "Health": "1500",
         "Armour Health": "0",
@@ -2709,9 +2731,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "50-500 \"Thunderbolt\" Cannon": {
-        "Name": "50-500 \"Thunderbolt\" Cannon",
-        "Additional Names":"collie 150;tb;thunderbolt 150mm",
+    "50-500 \"Thunderbolt\" Cannon (Unemplaced)": {
+        "Name": "50-500 \"Thunderbolt\" Cannon (Unemplaced)",
+        "Additional Names":"collie 150;thunderbolt 150mm",
         "Cost": "195",
         "Health": "1000",
         "Armour Health": "0",
@@ -2733,7 +2755,7 @@
     },
     "50-500 \"Thunderbolt\" Cannon (Emplaced)": {
         "Name": "50-500 \"Thunderbolt\" Cannon (Emplaced)",
-        "Additional Names":"collie 150 emplaced;tb emplaced",
+        "Additional Names":"collie 150 emplaced;thunderbolt 150mm emplaced",
         "Cost": "195",
         "Health": "4000",
         "Armour Health": "0",
@@ -2753,9 +2775,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "68mm Anti-Tank Cannon (EAT)": {
-        "Name": "68mm Anti-Tank Cannon (EAT)",
-        "Additional Names":"eat",
+    "68mm Anti-Tank Cannon (EAT) (Unemplaced)": {
+        "Name": "68mm Anti-Tank Cannon (EAT) (Unemplaced)",
+        "Additional Names":"eat;",
         "Cost": "150",
         "Health": "1500",
         "Armour Health": "0",
@@ -2797,9 +2819,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "Huber Exalt 150mm": {
-        "Name": "Huber Exalt 150mm",
-        "Additional Names":"warden 150",
+    "Huber Exalt 150mm (Unemplaced)": {
+        "Name": "Huber Exalt 150mm (Unemplaced)",
+        "Additional Names":"warden 150;exalt;",
         "Cost": "175",
         "Health": "1250",
         "Armour Health": "0",
@@ -2821,7 +2843,7 @@
     },
     "Huber Exalt 150mm (Emplaced)": {
         "Name": "Huber Exalt 150mm (Emplaced)",
-        "Additional Names":"exalt emplaced;warden 150 emplaced",
+        "Additional Names":"warden 150 emplaced;exalt emplaced",
         "Cost": "175",
         "Health": "5000",
         "Armour Health": "0",
@@ -2841,9 +2863,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "Huber Lariat 120mm": {
-        "Name": "Huber Lariat 120mm",
-        "Additional Names":"warden 120",
+    "Huber Lariat 120mm (Unemplaced)": {
+        "Name": "Huber Lariat 120mm (Unemplaced)",
+        "Additional Names":"warden 120;lariat",
         "Cost": "35",
         "Health": "750",
         "Armour Health": "0",
@@ -2865,7 +2887,7 @@
     },
     "Huber Lariat 120mm (Emplaced)": {
         "Name": "Huber Lariat 120mm (Emplaced)",
-        "Additional Names":"warden 120 emplaced",
+        "Additional Names":"warden 120 emplaced;",
         "Cost": "35",
         "Health": "3000",
         "Armour Health": "0",
@@ -2885,9 +2907,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "DAE 1o-3 \u201cPolybolos\u201d": {
-        "Name": "DAE 1o-3 \u201cPolybolos\u201d",
-        "Additional Names":"beat",
+    "DAE 1o-3 \u201cPolybolos\u201d (Unemplaced)": {
+        "Name": "DAE 1o-3 \u201cPolybolos\u201d (Unemplaced)",
+        "Additional Names":"beat;polybolos;beat unemplaced;polybolos unemplaced",
         "Cost": "125",
         "Health": "1500",
         "Armour Health": "0",
@@ -2909,7 +2931,7 @@
     },
     "DAE 1o-3 \u201cPolybolos\u201d (Emplaced)": {
         "Name": "DAE 1o-3 \u201cPolybolos\u201d (Emplaced)",
-        "Additional Names":"beat emplaced",
+        "Additional Names":"beat emplaced;polybolos emplaced",
         "Cost": "125",
         "Health": "6000",
         "Armour Health": "0",
@@ -2929,8 +2951,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "DAE 2a-1 \u201cRuptura\u201d": {
-        "Name": "DAE 2a-1 \u201cRuptura\u201d",
+    "DAE 2a-1 \u201cRuptura\u201d (Unemplaced)": {
+        "Name": "DAE 2a-1 \u201cRuptura\u201d (Unemplaced)",
+        "Additional Names":"ruptura",
         "Cost": "-",
         "Health": "2650",
         "Armour Health": "0",
@@ -2952,6 +2975,7 @@
     },
     "DAE 2a-1 \u201cRuptura\u201d (Emplaced)": {
         "Name": "DAE 2a-1 \u201cRuptura\u201d (Emplaced)",
+        "Additional Names":"ruptura emplaced",
         "Cost": "-",
         "Health": "10600",
         "Armour Health": "0",
@@ -2971,8 +2995,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "Huber Starbreaker 94.5mm": {
-        "Name": "Huber Starbreaker 94.5mm",
+    "Huber Starbreaker 94.5mm (Unemplaced)": {
+        "Name": "Huber Starbreaker 94.5mm (Unemplaced)",
+        "Additional Names":"starbreaker",
         "Cost": "-",
         "Health": "2650",
         "Armour Health": "0",
@@ -2994,6 +3019,7 @@
     },
     "Huber Starbreaker 94.5mm (Emplaced)": {
         "Name": "Huber Starbreaker 94.5mm (Emplaced)",
+        "Additional Names":"",
         "Cost": "-",
         "Health": "10600",
         "Armour Health": "0",
@@ -3013,9 +3039,9 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "DAE 1b-2 \u201cSerra\u201d": {
-        "Name": "DAE 1b-2 \u201cSerra\u201d",
-        "Additional Names":"collie emg;triple emg",
+    "DAE 1b-2 \u201cSerra\u201d (Unemplaced)": {
+        "Name": "DAE 1b-2 \u201cSerra\u201d (Unemplaced)",
+        "Additional Names":"collie emg;triple emg;collie emg unemplaced;triple emg unemplaced;serra unemplaced;serra",
         "Cost": "100",
         "Health": "1650",
         "Armour Health": "0",
@@ -3037,7 +3063,7 @@
     },
     "DAE 1b-2 \u201cSerra\u201d (Emplaced)": {
         "Name": "DAE 1b-2 \u201cSerra\u201d (Emplaced)",
-        "Additional Names": "collie emg emplaced;triple emg emplaced",
+        "Additional Names": "collie emg emplaced;triple emg emplaced;serra emplaced",
         "Cost": "100",
         "Health": "6600",
         "Armour Health": "0",
@@ -3306,7 +3332,7 @@
     },
     "Barbed Wire Wall": {
         "Name": "Barbed Wire Wall",
-        "Additional Names": "",
+        "Additional Names": "wire fence",
         "Code name": "BarbedWireWallSpline",
         "Health": "10000",
         "Mitigation Type": "Tier2BStructure",
@@ -3330,7 +3356,7 @@
     },
     "Border base": {
         "Name": "Border base",
-        "Additional Names": "",
+        "Additional Names": "borderbase",
         "Code name": "BorderBase",
         "Health": "2500",
         "Mitigation Type": "Tier3Structure",
@@ -3644,7 +3670,7 @@
         "Name": "Bridge",
         "Additional Names": "",
         "Code name": "Drawbridge",
-        "Health": "3250",
+        "Health": "4200",
         "Mitigation Type": "Tier2BStructure",
         "Rmat cost": "0",
         "Bmat cost": "250",
@@ -5440,10 +5466,10 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Static Crane": {
-        "Name": "Static Crane",
+    "Depot Crane": {
+        "Name": "Depot Crane",
         "Additional Names": "",
-        "Code name": "StaticCrane",
+        "Code name": "DepotCrane",
         "Health": "1000",
         "Mitigation Type": "Tier3Structure",
         "Rmat cost": "0",
@@ -5682,7 +5708,7 @@
     },
     "White Whale (Deployed)": {
         "Name": "White Whale (Deployed)",
-        "Additional Names": "ls deployed;ww deployed;landing ship deployed",
+        "Additional Names": "ls deployed;ww deployed;landing ship deployed;whitewhale deployed",
         "Code name": "TroopShipBase",
         "Health": "5000",
         "Mitigation Type": "Tier2Structure",
@@ -6234,7 +6260,7 @@
     },
     "Material Pallet": {
         "Name": "Material Pallet",
-        "Additional Names": "",
+        "Additional Names": "pallet",
         "Code name": "MaterialPlatform",
         "Health": "1000",
         "Mitigation Type": "Tier1Structure",
@@ -6954,7 +6980,7 @@
     },
     "Facility Crane": {
         "Name": "Facility Crane",
-        "Additional Names": "facility crane",
+        "Additional Names": "facility crane;static crane",
         "Code name": "FacilityCrane",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",

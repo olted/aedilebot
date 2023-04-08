@@ -12,7 +12,7 @@ import bot
 import calculator
 
 utils.debugging = True
-move_to_rear_string_list = [ "t1","t2","t3", "emplaced", "entrenched","tier 1", "tier 2","tier 3"]
+move_to_rear_string_list = [ "t1","t2","t3","unemplaced","unentrenched","emplaced", "entrenched","tier 1", "tier 2","tier 3"]
 # text processing functions
 def clean_capitalize(str):
     result = ""
@@ -36,6 +36,9 @@ def move_string_to_rear(string):
             if replacement_string in ["tier 1","tier 2","tier 3"]:
                 replacement_string = tier_dictionary[replacement_string]
                 return string.replace(replacement_string, "") + " " + str(replacement_string)
+            if replacement_string in ["unemplaced","unentrenched"]:
+                print("here")
+                return string.replace(replacement_string, "")
             if replacement_string in ["emplaced","entrenched"]:
                 return string.replace(replacement_string, "") + " " + str("emplaced")
             if replacement_string in ["t1","t2","t3"]:

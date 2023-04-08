@@ -19,7 +19,7 @@ DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
 
 class EntityNotFoundError(Exception):
-    def __init__(self,name, message="I could not process a request because the entity was not found. Please try again."):
+    def __init__(self,name, message="The requested entity was not found. Please try again."):
         self.name = name
         self.message = message
         super().__init__(self.message)
@@ -27,15 +27,15 @@ class EntityNotFoundError(Exception):
         return self.message
     
 class InvalidTypeError(EntityNotFoundError):
-    def __init__(self, name, message="I could not process a request because the entity was invalid for this operation."):
+    def __init__(self, name, message="The entity was invalid for this operation. Please try again."):
         super().__init__(name,message)
 
 class TargetNotFoundError(EntityNotFoundError):
-    def __init__(self, name, message=f"I could not process a request because the target is not in my dataset or was not found."):
+    def __init__(self, name, message=f"The detected target is not in my dataset or was not found. Please try again."):
         super().__init__(name,message)
 
 class WeaponNotFoundError(EntityNotFoundError):
-    def __init__(self,name, message=f"I could not process a request because the weapon is not in my dataset or was not found."):
+    def __init__(self,name, message=f"The detected weapon is not in my dataset or was not found. Please try again."):
         super().__init__(name,message)
 
 class LocationNotFoundError(EntityNotFoundError):
@@ -236,7 +236,7 @@ def handle_response_inner(weapon,target, operation="kill"):
         if operation=="disable":
             return calculator.general_disable_handler(weapon,target)
     except ZeroDivisionError as e:
-        return "I couldn't process your request because this weapon does no damage to this entity."
+        return f"This weapon ({weapon}) does no damage to this entity {target}"
     except TargetNotFoundError as e:
         return e.show_message()
     except InvalidTypeError as e:
