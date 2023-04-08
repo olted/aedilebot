@@ -78,7 +78,7 @@
     },
     "ATRPG Indirect Shell": {
         "Name": "ATRPG Indirect Shell",
-        "Additional Names": "arcrpg;bonesaw;iatrpg",
+        "Additional Names": "arcrpg;bonesaw;iatrpg;arc",
         "Damage": "600",
         "DamageType": "BPArmourPiercingNoBonusesDamageType",
         "ObjectType": "Weapons"
@@ -127,7 +127,7 @@
     },
     "HE Grenade (Mammon)": {
         "Name": "HE Grenade (Mammon)",
-        "Additional Names": "mammon;he",
+        "Additional Names": "mammon;he grenade",
         "Damage": "228",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"
@@ -218,7 +218,7 @@
     },
     "Spatha40mm": {
         "Name": "Spatha40mm",
-        "Additional Names": "",
+        "Additional Names": "spatha 40mm",
         "Damage": "720",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
@@ -265,6 +265,27 @@
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
+    "7.62mm (Volta)": {
+        "Name": "7.62mm (Volta)",
+        "Additional Names": "volta",
+        "Damage": "87.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Fuscina)": {
+        "Name": "7.62mm (Fuscina)",
+        "Additional Names": "fuscina",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Blakerow)": {
+        "Name": "7.62mm (Blakerow)",
+        "Additional Names": "Blakerow",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
     "7.92mm (auto mode)": {
         "Name": "7.92mm (auto mode)",
         "Additional Names": "792",
@@ -286,11 +307,18 @@
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
-    ".44 (ammo)": {
-        "Name": ".44 (ammo)",
+    ".44": {
+        "Name": ".44",
         "Additional Names": "revolver",
         "Damage": "75",
         "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    ".44 (Hangman)": {
+        "Name": ".44 (Hangman)",
+        "Additional Names": "hangman",
+        "Damage": "97.5",
+        "DamageType": "BPHighExplosiveDamageType",
         "ObjectType": "Weapons"
     },
     "Buckshot": {
@@ -321,9 +349,16 @@
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
+    "9mm (Pitch Gun)": {
+        "Name": "9mm Pitch Gun",
+        "Additional Names": "pitch gun",
+        "Damage": "25.31",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
     "7.62mm (Sampo semi-auto mode)": {
         "Name": "7.62mm (Sampo semi-auto mode)",
-        "Additional Names": "",
+        "Additional Names": "sampo",
         "Damage": "56.25",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -351,14 +386,14 @@
     },
     "HE Rocket": {
         "Name": "HE Rocket",
-        "Additional Names": "katyusha rocket",
+        "Additional Names": "katyusha rocket;he rocket;3c high explosive rocket",
         "Damage": "300",
         "DamageType": "BPIncendiaryHighExplosiveDamageType",
         "ObjectType": "Weapons"
     },
     "FireRocketAmmo": {
         "Name": "Fire Rocket",
-        "Additional Names": "",
+        "Additional Names": "4c fire rocket",
         "Damage": "145",
         "DamageType": "BPIncendiaryHighExplosiveDamageType",
         "ObjectType": "Weapons"
