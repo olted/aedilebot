@@ -92,18 +92,23 @@ def run_discord_bot():
             embed.add_field(name="Raw Health", value=data[2], inline=True)
             embed.add_field(name="Mitigation Type", value=data[3], inline=True)
             embed.add_field(name="Repair Cost", value=data[5], inline=True)
-            embed.add_field(name="Decay Start", value=data[4], inline=True)
-            embed.add_field(name="Time to Decay", value=data[6], inline=True)
+            #embed.add_field(name="Decay Start", value=data[4], inline=True)
+            #embed.add_field(name="Time to Decay", value=data[6], inline=True)
         elif data[0] in ["Vehicles","Tripods","Emplacements"]:
             embed.add_field(name="Raw Health", value=data[2], inline=True)
             embed.add_field(name="Mitigation Type", value=data[3], inline=True)
-            embed.add_field(name="Max Pen Chance", value=str(data[5])+"%", inline=True)
-            embed.add_field(name="Min Pen Chance", value=str(data[4])+"%", inline=True)
-            embed.add_field(name="Armour Health", value=data[6], inline=True)
-            embed.add_field(name="Reload", value=data[7], inline=True)
-            embed.add_field(name="Main Weapon", value=data[8], inline=True)
-            embed.add_field(name="Turret Disable Chance", value=str(data[9])+"%", inline=True)
-            embed.add_field(name="Tracks Disable Chance", value=str(data[10])+"%", inline=True)
+            if data[6]!="0":
+                embed.add_field(name="Max Pen Chance", value=str(data[5])+"%", inline=True)
+                embed.add_field(name="Min Pen Chance", value=str(data[4])+"%", inline=True)
+                embed.add_field(name="Armour Health", value=data[6], inline=True)
+            if data[7]!="":
+                embed.add_field(name="Reload", value=data[7], inline=True)
+            if data[8]!="":
+                embed.add_field(name="Main Weapon", value=data[8], inline=True)
+            if data[9]!="":
+                embed.add_field(name="Turret Disable Chance", value=str(data[9])+"%", inline=True)
+            if data[10]!="":
+                embed.add_field(name="Tracks Disable Chance", value=str(data[10])+"%", inline=True)
         elif data[0] in ["Multitier_structures"]:
             embed.add_field(name="Raw Health", value=data[2], inline=True)
             embed.add_field(name="Bmat Cost", value=data[3], inline=True)
@@ -124,7 +129,6 @@ def run_discord_bot():
         usedlist = []
         if len(current)>1:
             guess = fuzz.fuzzy_match_any_command(current)
-            print(guess)
             for possible_value in guess:
                 if possible_value.lower() != possible_value and len(data)<20:
                     if possible_value not in usedlist:
@@ -132,7 +136,6 @@ def run_discord_bot():
                         usedlist.append(possible_value)
                 elif possible_value.lower() == possible_value and len(data)<20:
                     value = fuzz.fuzzy_match_any(possible_value)["max_value"]
-                    print(value)
                     if value not in usedlist:
                         data.append(app_commands.Choice(name=value,value=value))
                         usedlist.append(value)
@@ -236,7 +239,7 @@ def handle_response_inner(weapon,target, operation="kill"):
         if operation=="disable":
             return calculator.general_disable_handler(weapon,target)
     except ZeroDivisionError as e:
-        return f"This weapon ({weapon}) does no damage to this entity {target}"
+        return f"This weapon does no damage to this entity"
     except TargetNotFoundError as e:
         return e.show_message()
     except InvalidTypeError as e:

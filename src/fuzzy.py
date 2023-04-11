@@ -61,59 +61,57 @@ def fuzzy_match_weapon_name(name):
 def fuzzy_match_any(name):
     max_score = 0
     max_value = None
-    type = "weapon"
-    for key,value in parse.weapons_dictionary.items():
+    num_perfect = 0
+    good_score_list = []
+    for key,value in parse.all_dictionary.items():
         score = fuzz.token_set_ratio(name, key)
         if score > max_score:
             max_score = score
             max_value = value
-    
-    for key,value in parse.targets_dictionary.items():
-        score = fuzz.token_set_ratio(name, key)
-        if score > max_score:
-            max_score = score
-            max_value = value
-            type = "target"
+            type= parse.all[max_value]["ObjectType"]
+        if score==100:
+            num_perfect+=1
+            good_score_list.append(key)
+        if num_perfect>1:
+            return fuzzy_perfect_match_any(name)
     if max_score < 75:
         raise bot.EntityNotFoundError(name)
     output = {"max_value":max_value,"type":type}
     return output
 
+def fuzzy_perfect_match_any(name):
+    max_score = 0
+    max_value = None
+    for key,value in parse.all_dictionary.items():
+        score = fuzz.token_sort_ratio(name, key)
+        if score > max_score:
+            max_score = score
+            max_value = value
+            type = parse.all[max_value]["ObjectType"]
+    if max_score < 50:
+        raise bot.EntityNotFoundError(name)
+    output = {"max_value":max_value,"type":type}
+    return output
+
 def fuzzy_match_any_command(name):
-    type = "weapon"
     good_score_list = []
     num_perfect = 0
-    for key,value in parse.weapons_dictionary.items():
-        score = fuzz.token_set_ratio(name, key)
+    for key,value in parse.all_dictionary.items():
+        score = fuzz.token_set_ratio(name,key)
         if score > 60:
             good_score_list.append(key)
-            if score ==100:
+            if score == 100:
                 num_perfect+=1
-                if num_perfect>5:
-                    return fuzzy_perfect_match_any_command(name)
-        
-    for key,value in parse.targets_dictionary.items():
-        score = fuzz.token_set_ratio(name, key)
-        if score > 60:
-            good_score_list.append(key)
-            if score ==100:
-                num_perfect+=1
-                if num_perfect>5:
+                if num_perfect>1:
                     return fuzzy_perfect_match_any_command(name)
     return good_score_list
 
 def fuzzy_perfect_match_any_command(name):
     good_score_list = []
-    for key,value in parse.weapons_dictionary.items():
-        score = fuzz.token_sort_ratio(name, key)
+    for key,value in parse.all_dictionary.items():
+        score = fuzz.token_sort_ratio(name,key)
         if score > 60:
             good_score_list.append(key)
-        
-    for key,value in parse.targets_dictionary.items():
-        score = fuzz.token_sort_ratio(name, key)
-        if score > 60:
-            good_score_list.append(key)
-
     return good_score_list
 
 def fuzzy_match_target_name_command(name):
