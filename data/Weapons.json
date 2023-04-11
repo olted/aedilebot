@@ -142,8 +142,8 @@
     "Havoc Charge": {
         "Name": "Havoc Charge",
         "Additional Names": "havoc",
-        "Damage": "1500",
-        "DamageType": "BPExplosiveDamageType",
+        "Damage": "1850",
+        "DamageType": "BPDemolitionDamageType",
         "ObjectType": "Weapons"
     },
     "40mm": {
@@ -211,21 +211,21 @@
     },
     "Smelter40mm": {
         "Name": "Smelter40mm",
-        "Additional Names": "hv40",
+        "Additional Names": "",
         "Damage": "810",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "Spatha40mm": {
         "Name": "Spatha40mm",
-        "Additional Names": "spatha 40mm",
+        "Additional Names": "",
         "Damage": "720",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "Rampart68mm": {
         "Name": "Rampart68mm",
-        "Additional Names": "",
+        "Additional Names": "rampar",
         "Damage": "750",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"

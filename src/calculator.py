@@ -142,14 +142,14 @@ def statsheet_handler(entity_name):
     try:
         entity = fuzz.fuzzy_match_any(entity_name)
     
-        if entity["type"] == "weapon":
+        if entity["type"] == "Weapons":
             entity = parse.weapons[fuzz.fuzzy_match_weapon_name(entity_name)]
             name = entity["Name"]
             damage = entity["Damage"]
             damage_type = entity["DamageType"]
             entity_type = entity["ObjectType"]
             return entity_type,name,damage,damage_type
-        elif entity["type"] == "target":
+        else:
             entity = parse.targets[fuzz.fuzzy_match_target_name(entity_name)[0]]
             if entity["ObjectType"] == "Structures":
                 name = entity["Name"]

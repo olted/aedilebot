@@ -37,7 +37,6 @@ def move_string_to_rear(string):
                 replacement_string = tier_dictionary[replacement_string]
                 return string.replace(replacement_string, "") + " " + str(replacement_string)
             if replacement_string in ["unemplaced","unentrenched"]:
-                print("here")
                 return string.replace(replacement_string, "")
             if replacement_string in ["emplaced","entrenched"]:
                 return string.replace(replacement_string, "") + " " + str("emplaced")
