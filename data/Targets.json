@@ -2583,7 +2583,7 @@
         "Min Base Penetration Chance": "0.22",
         "Max Base Penetration Chance": "0.5",
         "Mitigation Type": "Tier2Tank",
-        "Disable Level": "0.5",
+        "Disable Level": "0.3",
         "Repair Cost": "230",
         "Speed": "",
         "Slots": "8",
@@ -2733,7 +2733,7 @@
     },
     "50-500 \"Thunderbolt\" Cannon (Unemplaced)": {
         "Name": "50-500 \"Thunderbolt\" Cannon (Unemplaced)",
-        "Additional Names":"collie 150;thunderbolt 150mm",
+        "Additional Names":"collie 150;thunderbolt 150mm;thunderbolt",
         "Cost": "195",
         "Health": "1000",
         "Armour Health": "0",
@@ -5012,7 +5012,7 @@
     },
     "Small Relic Base": {
         "Name": "Small Relic Base",
-        "Additional Names": "grief mother;lion's head;peripti landing;oceanwatch;fort ember;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;protos;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;bone haft;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;",
+        "Additional Names": "grief mother;old jack tar;lion's head;peripti landing;oceanwatch;fort ember;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;protos;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;bone haft;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;",
         "Code name": "RelicBase1",
         "Health": "4450",
         "Mitigation Type": "Tier3Structure",
@@ -5036,7 +5036,7 @@
     },
     "Medium Relic Base": {
         "Name": "Medium Relic Base",
-        "Additional Names": "tomb father;reliqua;base akri;arise;the calamity;camp upsilon;climb;sourtooth;lost greensward;swordfort;nereid keep;thunderbolt;fort barley;second man;titancall;surge gate;reef;bastard's block;the fleece road;fort windham;fort esterwild;fort rider;stoic;inari base;stem;fort blather;camp hollow;wyattwick;lost partition;rancher's fast;the plough;barronswall;dendro field;overland;belaying trace;frostmarch;necropolis;fort mac connail;wiccwalk;spade;trammel pool;the dais;the long fast;terra;scythe;tomb of the first;westmarch;vagrant bastion;the wash;eastmarch;wisps warning;sanctum;scath passing;fort duncan;the pits;sun's hollow;the salt march;",
+        "Additional Names": "tomb father;reliqua;base akri;arise;the calamity;camp upsilon;climb;sourtooth;lost greensward;swordfort;nereid keep;thunderbolt relic;fort barley;second man;titancall;surge gate;reef;bastard's block;the fleece road;fort windham;fort esterwild;fort rider;stoic;inari base;stem;fort blather;camp hollow;wyattwick;lost partition;rancher's fast;the plough;barronswall;dendro field;overland;belaying trace;frostmarch;necropolis;fort mac connail;wiccwalk;spade;trammel pool;the dais;the long fast;terra;scythe;tomb of the first;westmarch;vagrant bastion;the wash;eastmarch;wisps warning;sanctum;scath passing;fort duncan;the pits;sun's hollow;the salt march;",
         "Code name": "RelicBase2",
         "Health": "5150",
         "Mitigation Type": "Tier3Structure",
@@ -5948,7 +5948,7 @@
     },
     "FacilityPipe": {
         "Name": "Facility Pipe",
-        "Additional Names": "",
+        "Additional Names": "pipe",
         "Code name": "FacilityPipe",
         "Health": "350",
         "Mitigation Type": "Tier1Structure",
@@ -6404,7 +6404,7 @@
     },
     "Heavy Assembly Station": {
         "Name": "Heavy Assembly Station",
-        "Additional Names": "bt pad;sht pad",
+        "Additional Names": "bt pad;sht pad;large assembly station;large pad",
         "Code name": "FacilityVehicleFactory2",
         "Health": "2700",
         "Mitigation Type": "Tier3Structure",

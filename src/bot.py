@@ -270,16 +270,3 @@ def handle_response(message_) -> str:
         weapon, target = token_pair[0][1], token_pair[0][2]
         return handle_response_inner(weapon, target, operation="disable")
 
-
-'''data = []
-        if len(current)>1:
-            guess = fuzz.fuzzy_match_weapon_name_command(current)
-            print(guess)
-            for possible_value in guess:
-                if possible_value.lower() != possible_value and len(data)<20:
-                    data.append(app_commands.Choice(name=possible_value,value=possible_value))
-                if possible_value.lower() == possible_value and len(data)<20:
-                    value = fuzz.fuzzy_match_weapon_name(possible_value)
-                    if value not in data:
-                        data.append(app_commands.Choice(name=value,value=value))
-return data''' 
