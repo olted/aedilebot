@@ -204,28 +204,28 @@
     },
     "HTD68mm": {
         "Name": "HTD68mm",
-        "Additional Names": "hv68",
+        "Additional Names": "hv68;htd 68mm;htd 68",
         "Damage": "1050",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
     },
     "Smelter40mm": {
         "Name": "Smelter40mm",
-        "Additional Names": "",
+        "Additional Names": "smelter 40mm;smelter 40",
         "Damage": "810",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "Spatha40mm": {
         "Name": "Spatha40mm",
-        "Additional Names": "",
+        "Additional Names": "spatha 40mm;spatha 40",
         "Damage": "720",
         "DamageType": "BPExplosivePenetratingDamageType",
         "ObjectType": "Weapons"
     },
     "Rampart68mm": {
         "Name": "Rampart68mm",
-        "Additional Names": "rampar",
+        "Additional Names": "rampart 68mm;rampart 68",
         "Damage": "750",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
@@ -371,8 +371,8 @@
         "ObjectType": "Weapons"
     },
     "FlameBackpackAmmo": {
-        "Name": "FlameBackpackAmmo",
-        "Additional Names": "",
+        "Name": "Flame Backpack Ammo",
+        "Additional Names": "flamethrower",
         "Damage": "15",
         "DamageType": "BPIncendiaryDamageType",
         "ObjectType": "Weapons"
@@ -393,7 +393,7 @@
     },
     "FireRocketAmmo": {
         "Name": "Fire Rocket",
-        "Additional Names": "4c fire rocket",
+        "Additional Names": "4c fire rocket;flame rocket",
         "Damage": "145",
         "DamageType": "BPIncendiaryHighExplosiveDamageType",
         "ObjectType": "Weapons"
@@ -407,21 +407,21 @@
     },
     "Predator94.5mm": {
         "Name": "Predator94.5mm",
-        "Additional Names": "hv94.5mm;hv945",
+        "Additional Names": "hv94.5mm;hv945;predator 94.5;predator 94.5mm;predator 945",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
     "Ruptura75mm": {
         "Name": "Ruptura75mm",
-        "Additional Names": "",
+        "Additional Names": "ruptura 75mm;ruptura 75",
         "Damage": "2362.5",
         "DamageType": "BPExplosivePenetratingLargeDamageType",
         "ObjectType": "Weapons"
     },
     "Starbreaker94.5mm": {
         "Name": "Starbreaker94.5mm",
-        "Additional Names": "",
+        "Additional Names": "starbreaker;starbreaker 945;starbreaker 94.5mm",
         "Damage": "2625",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
