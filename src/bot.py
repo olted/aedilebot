@@ -174,22 +174,6 @@ def run_discord_bot():
                         break
         return data
     
-
-
-        '''data = []
-        usedlist = []
-        guess = fuzz.fuzzy_match_target_name_command(current)
-        for possible_value in guess:
-            if possible_value.lower() != possible_value and len(data)<20:
-                if possible_value not in usedlist:
-                    data.append(app_commands.Choice(name=possible_value,value=possible_value))
-                    usedlist.append(value)
-            if possible_value.lower() == possible_value and len(data)<20:
-                value = fuzz.fuzzy_match_target_name(possible_value)
-                if value not in usedlist:
-                    data.append(app_commands.Choice(name=value[0],value=value[0]))
-                    usedlist.append(value)
-        return data'''
     
     @kill.autocomplete("weapon")
     async def kill_autocompletion(
