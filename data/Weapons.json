@@ -32,14 +32,14 @@
         "Additional Names": "howi garrison shell",
         "Damage": "500",
         "DamageType":"BPHighExplosiveDamageType",
-        "ObjectType":"Weapons"
+        "ObjectType": "Weapons"
     },
-    "AT Garrison": {
-    "Name": "AT Garrison",
-    "Additional Names": "atg",
-    "Damage": "600",
-    "DamageType":"BPArmourPiercingDamageType",
-    "ObjectType":"Weapons"
+    "AT Garrison Shell": {
+        "Name": "AT Garrison Shell",
+        "Additional Names": "atg, at garrison",
+        "Damage": "600",
+        "DamageType":"BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
     },
     "Highwayman20mm": {
         "Name": "Highwayman20mm",
@@ -449,7 +449,7 @@
     },
     "Lordscar94.5mm": {
         "Name": "Lordscar94.5mm",
-        "Additional Names": "STD; STD 94.5mm, lordscar;lordscar 945;lordscar 94.5mm; lv94.5",
+        "Additional Names": "std;std 94.5mm;lordscar;lordscar 945;lordscar 94.5mm;lv94.5",
         "Damage": "1200.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"

@@ -15,10 +15,14 @@ def get_all_names(dictionary, field_name="Additional Names"):
             additional_names.extend(value[field_name].split(";"))
 
         for name in additional_names:
+            name = name.lower()
             if name == "":
                 continue
             if name in names_dictionary:
-                raise RuntimeError(f"Name {name} repeats itself in {names_dictionary[name]} and {key}")
+                # raise RuntimeError(f"Name {name} repeats itself in {names_dictionary[name]} and {key}")
+                # prioritize targets over weapon
+                if value["ObjectType"] == "Weapons":
+                    continue
             names_dictionary[name] = key
     return names_dictionary
 

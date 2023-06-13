@@ -2679,7 +2679,7 @@
         "Repair Cost": "200",
         "Speed": "",
         "Slots": "6",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "94.5mm(40m)",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "94.5mm(-31%)(40m)",
         "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "8.5s(2+6.5s)",
         "Secondary Weapon": "",
         "Tracks Disable Chance": "0.3",
