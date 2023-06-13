@@ -16,7 +16,7 @@ import datetime
 import string
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
-DEV_SERVER_TOKEN = "MTA3NTQzODMxMDkxMjE2MzkyMQ.Gtn-YW.mwK0n0tzfv6YU4717vzvatzDvATCY5YjbJNG_I"
+DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
 
 class EntityNotFoundError(Exception):
     def __init__(self,name, message="The requested entity was not found. Please try again."):
@@ -213,7 +213,7 @@ def run_discord_bot():
     
 
     
-    client.run(DEV_SERVER_TOKEN)
+    client.run(DEPLOYMENT_TOKEN)
 
 # bot logic
 def handle_response_inner(weapon,target, operation="kill"):
