@@ -58,7 +58,7 @@ def fuzzy_match_weapon_name(name):
             good_score_list.append(key)
     if max_score < 65:
         raise bot.WeaponNotFoundError(name)
-    utils.debug_fuzzy(name,'Null for weapons',max_value)
+    utils.debug_fuzzy(name,good_score_list,max_value)
     if len(good_score_list)>1:  #this is INSANELY inefficient and yet I can't find a proper solution to the bug this fixes
                 max_score = 0          #in the amount of time I currently have to work on this so it'll have to do. We're not low on processing time anyway.
                 max_key = None

@@ -32,14 +32,14 @@
         "Additional Names": "howi garrison shell",
         "Damage": "500",
         "DamageType":"BPHighExplosiveDamageType",
-        "ObjectType":"Weapons"
+        "ObjectType": "Weapons"
     },
-    "AT Garrison": {
-    "Name": "AT Garrison",
-    "Additional Names": "atg",
-    "Damage": "600",
-    "DamageType":"BPArmourPiercingDamageType",
-    "ObjectType":"Weapons"
+    "AT Garrison Shell": {
+        "Name": "AT Garrison Shell",
+        "Additional Names": "atg, at garrison",
+        "Damage": "600",
+        "DamageType":"BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
     },
     "Highwayman20mm": {
         "Name": "Highwayman20mm",
@@ -258,6 +258,13 @@
         "DamageType": "BPHeavyKineticDamageType",
         "ObjectType": "Weapons"
     },
+    "Catara12.7mm": {
+        "Name": "Catara12.7mm",
+        "Additional Names": "catara",
+        "Damage": "44",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
     "7.62mm": {
         "Name": "7.62mm",
         "Additional Names": "762",
@@ -282,6 +289,20 @@
     "7.62mm (Blakerow)": {
         "Name": "7.62mm (Blakerow)",
         "Additional Names": "Blakerow",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Catena)": {
+        "Name": "7.62mm (Catena)",
+        "Additional Names": "Catena",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Howthorne)": {
+        "Name": "7.62mm (Howthorne)",
+        "Additional Names": "Howthorne",
         "Damage": "44.4",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -387,7 +408,7 @@
     "HE Rocket": {
         "Name": "HE Rocket",
         "Additional Names": "katyusha rocket;he rocket;3c high explosive rocket",
-        "Damage": "300",
+        "Damage": "350",
         "DamageType": "BPIncendiaryHighExplosiveDamageType",
         "ObjectType": "Weapons"
     },
@@ -423,6 +444,13 @@
         "Name": "Starbreaker94.5mm",
         "Additional Names": "starbreaker;starbreaker 945;starbreaker 94.5mm",
         "Damage": "2625",
+        "DamageType": "BPArmourPiercingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Lordscar94.5mm": {
+        "Name": "Lordscar94.5mm",
+        "Additional Names": "std;std 94.5mm;lordscar;lordscar 945;lordscar 94.5mm;lv94.5",
+        "Damage": "1200.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     }

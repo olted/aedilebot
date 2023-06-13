@@ -15,10 +15,14 @@ def get_all_names(dictionary, field_name="Additional Names"):
             additional_names.extend(value[field_name].split(";"))
 
         for name in additional_names:
+            name = name.lower()
             if name == "":
                 continue
             if name in names_dictionary:
-                raise RuntimeError(f"Name {name} repeats itself in {names_dictionary[name]} and {key}")
+                # raise RuntimeError(f"Name {name} repeats itself in {names_dictionary[name]} and {key}")
+                # prioritize targets over weapon
+                if value["ObjectType"] == "Weapons":
+                    continue
             names_dictionary[name] = key
     return names_dictionary
 
@@ -33,7 +37,7 @@ def check_if_location_name(name):
 targets = load_json_to_dict("data\Targets.json")
 damages = load_json_to_dict("data\Damage.json")
 weapons = load_json_to_dict("data\Weapons.json")
-all = load_json_to_dict("data\Weapons_Targets.json")
+all = weapons | targets
 dump = load_json_to_dict("data\dump.json")
 
 

@@ -213,7 +213,7 @@ def run_discord_bot():
     
 
     
-    client.run(DEV_SERVER_TOKEN)
+    client.run(DEPLOYMENT_TOKEN)
 
 # bot logic
 def handle_response_inner(weapon,target, operation="kill"):
