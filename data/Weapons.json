@@ -127,7 +127,7 @@
     },
     "HE Grenade (Mammon)": {
         "Name": "HE Grenade (Mammon)",
-        "Additional Names": "mammon;he grenade",
+        "Additional Names": "mammon;he grenade;he",
         "Damage": "228",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"

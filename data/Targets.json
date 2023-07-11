@@ -3930,7 +3930,7 @@
     },
     "Bunker Base 1x1 (T1)": {
         "Name": "Bunker Base (T1)",
-        "Additional Names": "bob 1x1 t1;bob core 1x1 t1;bb 1x1 t1;bunker base 1x1 t1",
+        "Additional Names": "bob 1x1 t1;bob core 1x1 t1;bb 1x1 t1;bunker base 1x1 t1;bunker core 1x1 t1;bunker core t1",
         "Code name": "FortBaseT1",
         "Health": "1750",
         "Mitigation Type": "Tier1Structure",
@@ -4074,7 +4074,7 @@
     },
     "Bunker Base 1x1 (T3)": {
         "Name": "Bunker Base 1x1 (T3)",
-        "Additional Names": "bob 1x1 t3;bob core 1x1 t3;bunker base 1x1 t3",
+        "Additional Names": "bob 1x1 t3;bob core 1x1 t3;bunker base 1x1 t3;bunker core 1x1 t3;bunker core t3",
         "Code name": "FortBaseT3",
         "Health": "3500",
         "Mitigation Type": "Tier3Structure",
