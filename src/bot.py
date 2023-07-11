@@ -213,7 +213,7 @@ def run_discord_bot():
     
 
     
-    client.run(DEPLOYMENT_TOKEN)
+    client.run(DEV_SERVER_TOKEN)
 
 # bot logic
 def handle_response_inner(weapon,target, operation="kill"):
@@ -243,7 +243,7 @@ def handle_response_inner(weapon,target, operation="kill"):
 def handle_response(message_) -> str:
     p_message = message_.lower()
 
-    
+
     token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', main.move_string_to_rear(p_message) )
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
