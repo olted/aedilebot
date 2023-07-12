@@ -31,11 +31,15 @@ class InvalidTypeError(EntityNotFoundError):
         super().__init__(name,message)
 
 class TargetNotFoundError(EntityNotFoundError):
-    def __init__(self, name, message=f"The detected target is not in my dataset or was not found. Please try again."):
+    def __init__(self, name, message=f"The detected target is not found in my data set. Please try again."):
+        super().__init__(name,message)
+
+class TargetOfTypeNotFoundError(EntityNotFoundError):
+    def __init__(self, name, message=f"The detected target for this operation is not found in my data set. Please try again."):
         super().__init__(name,message)
 
 class WeaponNotFoundError(EntityNotFoundError):
-    def __init__(self,name, message=f"The detected weapon is not in my dataset or was not found. Please try again."):
+    def __init__(self,name, message=f"The detected weapon is not found in my data set. Please try again."):
         super().__init__(name,message)
 
 class LocationNotFoundError(EntityNotFoundError):
@@ -213,7 +217,7 @@ def run_discord_bot():
     
 
     
-    client.run(DEPLOYMENT_TOKEN)
+    client.run(DEV_SERVER_TOKEN)
 
 # bot logic
 def handle_response_inner(weapon,target, operation="kill"):
@@ -222,6 +226,8 @@ def handle_response_inner(weapon,target, operation="kill"):
             return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target)
         if operation=="disable":
             return calculator.general_disable_handler(weapon,target)
+        if operation =="dehusk":
+            return calculator.general_dehusk_handler(weapon, target)
     except ZeroDivisionError as e:
         return f"This weapon does no damage to this entity"
     except TargetNotFoundError as e:
@@ -253,4 +259,9 @@ def handle_response(message_) -> str:
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]
         return handle_response_inner(weapon, target, operation="disable")
+    
+    token_pair = re.findall('how (many|much)(.*) to dehusk (.*)', p_message)
+    if len(token_pair) >= 1:
+        weapon, target = token_pair[0][1], token_pair[0][2]
+        return handle_response_inner(weapon, target, operation="dehusk")
 

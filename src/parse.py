@@ -26,6 +26,13 @@ def get_all_names(dictionary, field_name="Additional Names"):
             names_dictionary[name] = key
     return names_dictionary
 
+def get_husk_names(names_dictionary):
+    husk_names_dict = {}
+    for key, value in names_dictionary.items():
+        if "husk" in key.lower():
+            husk_names_dict[key] = value
+            husk_names_dict[key.replace('husk', '')] = value
+    return husk_names_dict
 
 
 # Structure Json parser
@@ -42,6 +49,7 @@ dump = load_json_to_dict("data\dump.json")
 
 
 targets_dictionary = get_all_names(targets)
+husk_dictionary = get_husk_names(targets_dictionary)
 weapons_dictionary = get_all_names(weapons)
 all_dictionary = get_all_names(all)
 

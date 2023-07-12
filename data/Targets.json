@@ -3570,7 +3570,7 @@
     },
     "Bunker Base (Husk) (T1)": {
         "Name": "Bunker Base (Husk) (T1)",
-        "Additional Names": "bob husk t1;bunker core husk t1",
+        "Additional Names": "bob husk t1;bunker core husk t1;bob core husk t1",
         "Code name": "DestroyedFortForwardBaseT1",
         "Health": "4000",
         "Mitigation Type": "Tier1Structure",
@@ -4264,8 +4264,8 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker (Husk) (T1)": {
-        "Name": "Bunker (Husk) (T1)",
+    "Bunker Piece (Husk) (T1)": {
+        "Name": "Bunker Piece (Husk) (T1)",
         "Additional Names": "bunker husk t1",
         "Code name": "FortDestroyedT1",
         "Health": "1500",
@@ -4288,8 +4288,8 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker (Husk) (T2)": {
-        "Name": "Bunker (Husk) (T2)",
+    "Bunker Piece (Husk) (T2)": {
+        "Name": "Bunker Piece (Husk) (T2)",
         "Additional Names": "bunker husk t2",
         "Code name": "FortDestroyedT2",
         "Health": "1850",
@@ -4312,8 +4312,8 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Bunker (Husk) (T3)": {
-        "Name": "Bunker (Husk) (T3)",
+    "Bunker Piece (Husk) (T3)": {
+        "Name": "Bunker Piece (Husk) (T3)",
         "Additional Names": "bunker husk t3",
         "Code name": "FortDestroyedT3",
         "Health": "2000",
