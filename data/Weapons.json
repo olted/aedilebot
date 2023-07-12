@@ -29,14 +29,14 @@
     },
     "Howitzer Garrison Shell": {
         "Name": "Howitzer Garrison Shell",
-        "Additional Names": "howi garrison shell",
+        "Additional Names": "howi garrison shell;howie",
         "Damage": "500",
         "DamageType":"BPHighExplosiveDamageType",
         "ObjectType": "Weapons"
     },
     "AT Garrison Shell": {
         "Name": "AT Garrison Shell",
-        "Additional Names": "atg, at garrison",
+        "Additional Names": "atg;at garrison",
         "Damage": "600",
         "DamageType":"BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
@@ -127,7 +127,7 @@
     },
     "HE Grenade (Mammon)": {
         "Name": "HE Grenade (Mammon)",
-        "Additional Names": "mammon;he grenade",
+        "Additional Names": "mammon;he grenade;he",
         "Damage": "228",
         "DamageType": "BPExplosiveDamageType",
         "ObjectType": "Weapons"

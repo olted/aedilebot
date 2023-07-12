@@ -139,7 +139,7 @@
     },
     "74b-1 Ronan Gunship (GB)": {
         "Name": "74b-1 Ronan Gunboat (GB)",
-        "Additional Names": "gb;warden gb",
+        "Additional Names": "gb;warden gb;gunboat;ronan",
         "Cost": "160",
         "Health": "1320",
         "Armour Health": "0",
@@ -162,7 +162,7 @@
     },
     "74c-2 Ronan Meteora Gunboat (DGB)": {
         "Name": "74c-2 Ronan Meteora Gunboat (DGB)",
-        "Additional Names": "dgb;",
+        "Additional Names": "dgb;meteora",
         "Cost": "160",
         "Health": "1320",
         "Armour Health": "0",
@@ -2159,9 +2159,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "T14 \u201cDeioneus\u201d Rocket Battery": {
-        "Name": "T14 \u201cDeioneus\u201d Rocket Battery (Rocket Tankette)",
-        "Additional Names": "rocket tankette; fire rocket tankette; rockette",
+    "T13 \u201cDeioneus\u201d Rocket Battery": {
+        "Name": "T13 \u201cDeioneus\u201d Rocket Battery (Rocket Tankette)",
+        "Additional Names": "rocket tankette;fire rocket tankette;rockette",
         "Cost": "-",
         "Health": "1350",
         "Armour Health": "7200",
@@ -2345,7 +2345,7 @@
     },
     "BMS Black Bolt": {
         "Name": "BMS Black Bolt",
-        "Additional Names": "train;locomotive",
+        "Additional Names": "train;locomotive;train head",
         "Cost": "-",
         "Health": "3250",
         "Armour Health": "0",
@@ -2435,8 +2435,8 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "TrainFlatbed": {
-        "Name": "TrainFlatbed",
+    "BMS Longrider": {
+        "Name": "BMS Longrider",
         "Additional Names": "train flatbed;train cart;flatbed car",
         "Cost": "-",
         "Health": "1500",
@@ -3618,7 +3618,7 @@
     },
     "Bunker Base (Husk) (T3)": {
         "Name": "Bunker Base (Husk) (T3)",
-        "Additional Names": "bob husk t3;bunker core husk t3; bob core husk t3",
+        "Additional Names": "bob husk t3;bunker core husk t3;bob core husk t3",
         "Code name": "DestroyedFortForwardBaseT3",
         "Health": "40000",
         "Mitigation Type": "Tier3Structure",
@@ -3930,7 +3930,7 @@
     },
     "Bunker Base 1x1 (T1)": {
         "Name": "Bunker Base (T1)",
-        "Additional Names": "bob 1x1 t1;bob core 1x1 t1;bb 1x1 t1;bunker base 1x1 t1",
+        "Additional Names": "bob 1x1 t1;bob core 1x1 t1;bb 1x1 t1;bunker base 1x1 t1;bunker core 1x1 t1;bunker core t1",
         "Code name": "FortBaseT1",
         "Health": "1750",
         "Mitigation Type": "Tier1Structure",
@@ -4074,7 +4074,7 @@
     },
     "Bunker Base 1x1 (T3)": {
         "Name": "Bunker Base 1x1 (T3)",
-        "Additional Names": "bob 1x1 t3;bob core 1x1 t3;bunker base 1x1 t3",
+        "Additional Names": "bob 1x1 t3;bob core 1x1 t3;bunker base 1x1 t3;bunker core 1x1 t3;bunker core t3",
         "Code name": "FortBaseT3",
         "Health": "3500",
         "Mitigation Type": "Tier3Structure",
@@ -4626,7 +4626,7 @@
     },
     "Gate (T1)": {
         "Name": "Gate (T1)",
-        "Additional Names": "",
+        "Additional Names": "gate t1",
         "Code name": "GateT1",
         "Health": "500",
         "Mitigation Type": "Tier1Structure",
@@ -4650,7 +4650,7 @@
     },
     "Gate (T2)": {
         "Name": "Gate (T2)",
-        "Additional Names": "",
+        "Additional Names": "gate t2",
         "Code name": "GateT2",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",
@@ -4674,7 +4674,7 @@
     },
     "Gate (T3)": {
         "Name": "Gate (T3)",
-        "Additional Names": "",
+        "Additional Names": "gate t3",
         "Code name": "GateT3",
         "Health": "3000",
         "Mitigation Type": "Tier3Structure",
@@ -5610,7 +5610,7 @@
     },
     "Trench Emplacement (T1)": {
         "Name": "Trench Emplacement (T1)",
-        "Additional Names": "trench emplacement t1;trench octagon t1;trench hexagon t1;trench hex t1",
+        "Additional Names": "trench emplacement t1;trench octagon t1;trench hexagon t1;trench hex t1;octagon",
         "Code name": "TrenchEmpT1",
         "Health": "1500",
         "Mitigation Type": "Trench",
@@ -5634,7 +5634,7 @@
     },
     "Trench Emplacement (T2)": {
         "Name": "Trench Emplacement (T2)",
-        "Additional Names": "trench emplacement t2;trench octagon t2;trench hexagon t2;trench hex t2",
+        "Additional Names": "trench emplacement t2;trench octagon t2;trench hexagon t2;trench hex t2;octagon t2",
         "Code name": "TrenchEmpT2",
         "Health": "1850",
         "Mitigation Type": "Trench",
@@ -5658,7 +5658,7 @@
     },
     "Trench Emplacement (T3)": {
         "Name": "Trench Emplacement (T3)",
-        "Additional Names": "trench emplacement t3;trench octagon t3;hexagon t3;trench hex t3",
+        "Additional Names": "trench emplacement t3;trench octagon t3;hexagon t3;trench hex t3;octagon t3",
         "Code name": "TrenchEmpT3",
         "Health": "3500",
         "Mitigation Type": "Trench",
