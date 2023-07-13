@@ -260,7 +260,7 @@ def handle_response(message_) -> str:
         weapon, target = token_pair[0][1], token_pair[0][2]
         return handle_response_inner(weapon, target, operation="disable")
     
-    token_pair = re.findall('how (many|much)(.*) to dehusk (.*)', p_message)
+    token_pair = re.findall('how (many|much)(.*) to dehusk (.*)', main.move_string_to_rear(p_message))
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]
         return handle_response_inner(weapon, target, operation="dehusk")
