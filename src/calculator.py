@@ -130,10 +130,10 @@ def general_disable_handler(weapon_fuzzy_name, target_fuzzy_name):
     else:
         weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
 
-    if target_fuzzy_name in parse.targets_dictionary:
-        target_name = parse.targets_dictionary[target_fuzzy_name]
+    if target_fuzzy_name in parse.vehicle_dictionary:
+        target_name = parse.vehicle_dictionary[target_fuzzy_name]
     else:
-        target_name, args = fuzz.fuzzy_match_target_name(target_fuzzy_name)
+        target_name, args = fuzz.fuzzy_match_target_name(target_fuzzy_name, parse.vehicle_dictionary)
 
     return DamageCalculator(weapon_name, target_name, args).get_disable_calculation()
 
