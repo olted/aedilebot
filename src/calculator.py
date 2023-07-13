@@ -15,10 +15,15 @@ class DamageCalculator:
         self.weapon_name = weapon_name
         self.target_name = target_name
         self.weapon = parse.weapons[weapon_name]
-        self.target = parse.targets[target_name]
+        if target_name == "meta":
+            self.target = "meta"
+            self.target_type = "Structures"
+            self.health = None
+        else:
+            self.target = parse.targets[target_name]
 
-        self.target_type = self.target["ObjectType"]
-        self.health = float(self.target["Health"])
+            self.target_type = self.target["ObjectType"]
+            self.health = float(self.target["Health"])
         self.damage_value = float(self.weapon["Damage"])
         self.damage_type = parse.damages[self.weapon['DamageType']]
 
@@ -36,6 +41,13 @@ class DamageCalculator:
                 self.veterancy = args["veterancy"]
             if "devastation" in args:
                 self.devastation = args["devastation"]
+            if "bunker_spec" in args:
+                self.health = self.calculate_bunker_health(args["bunker_spec"])
+
+    
+    def calculate_bunker_health(self, bunker_spec):
+        # TODO
+        pass
 
     def calculate_damage(self, mitigation_type=None):
         if mitigation_type is None:
@@ -148,6 +160,20 @@ def general_dehusk_handler(weapon_fuzzy_name, target_fuzzy_name):
         target_name = parse.husk_dictionary[target_fuzzy_name]
     else:
         target_name, args = fuzz.fuzzy_match_target_name(target_fuzzy_name, parse.husk_dictionary)
+
+    return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
+
+def general_bunker_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
+    args = None
+    if weapon_fuzzy_name in parse.weapons_dictionary:
+        weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
+    else:
+        weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
+    
+    target_name = "meta"
+    args["bunker_spec"] = parse.get_bunker_spec(target_fuzzy_name)
+    if args["bunker_spec"] == None:
+        raise bot.BunkerSpecParseError()
 
     return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
 
