@@ -52,6 +52,51 @@ def get_vehicle_names(dictionary, field_name="Additional Names"):
             names_dictionary[name] = key
     return names_dictionary
 
+def get_bunker_spec(string):
+    # size <number> tier <1/2/3> bunker with <numer> <modification>, <numer> <modification>, ...
+    args = {}
+    tier_words = {"t1":1,"t2":2,"t3":3,"tier 1":1, "tier 2":2,"tier 3":3,"concrete":3}
+    mod_words = {"atg": "atg", "at": "atg", "rg": "rg", "rifle": "rg", "hg": "hg", "howi":"hg", "howie":"hg",
+                 "mg":"mg", "machinegun":"mg", "machine":"mg", "mgg":"mg", "ammunition":"ammo", "ramp":"ramp",
+                  "howitzer":"hg", "engine":"eng", "sc":"sc", "storm cannon":"sc", "ic":"ic", "intel":"ic",
+                  "intelligence":"ic", "bunker":"core", "base":"core", "core":"core", "storage":"ammo", "ammo":"ammo",
+                  "obs":"obs", "observation":"obs"}
+    words = string.lower().replace(",", " ").split()
+    if "size" in words:
+        if words[words.index("size")+1].isdigit():
+            args["size"] = int(words[words.index("size")+1])
+        elif words.index("size")-1 > 0 and words[words.index("size")-1].isdigit():
+            args["size"] = int(words[words.index("size")-1])
+        else:
+            return None
+    else:
+        return None
+
+
+    for keyword in tier_words:
+        if keyword in words:
+            args["tier"] = tier_words[keyword]
+            break
+    else:
+        return None
+    
+    # slice so only <number> <modification> pairs remain
+    words = words[words.index("with"):]
+
+    mod_count = 0
+    
+    for i, word in enumerate(words):
+        if word in mod_words:
+            if word == "bunker" and i+1 < len(word) and words[i+1] in mod_words:
+                # catch phrases like "bunker ramp"
+                word = words[i+1]
+            if i-1 >= 0 and words[i-1].isdigit():
+                args[mod_words[word]] = int(words[i-1])
+                mod_count += int(words[i-1])
+    if mod_count > args["size"]:
+        return None
+    return args
+
 
 # Structure Json parser
 location_names = load_location_names("data\Location_names.json")
@@ -64,6 +109,7 @@ damages = load_json_to_dict("data\Damage.json")
 weapons = load_json_to_dict("data\Weapons.json")
 all = weapons | targets
 dump = load_json_to_dict("data\dump.json")
+bunker_stats = load_json_to_dict("data\Bunker_piece.json")
 
 
 targets_dictionary = get_all_names(targets)

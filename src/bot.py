@@ -46,6 +46,9 @@ class LocationNotFoundError(EntityNotFoundError):
     def __init__(self,name,message="I could not process a request because the town/relic was not found. Please try again."):
         super().__init__(name,message)
 
+class BunkerSpecParseError(TargetNotFoundError):
+    def __init__(self,name,message="Invalid bunker specification, please try again with this format: `how many <weapon> to kill size <number>, tier <1/2/3> bunker with <numer> <modification>, <numer> <modification>, ...`"):
+        super().__init__(name,message)
 
 
 def run_discord_bot():
@@ -228,6 +231,8 @@ def handle_response_inner(weapon,target, operation="kill"):
             return calculator.general_disable_handler(weapon,target)
         if operation =="dehusk":
             return calculator.general_dehusk_handler(weapon, target)
+        if operation =="bunker":
+            return calculator.general_bunker_kill_handler(weapon, target)
     except ZeroDivisionError as e:
         return f"This weapon does no damage to this entity"
     except TargetNotFoundError as e:
@@ -253,6 +258,8 @@ def handle_response(message_) -> str:
     token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', main.move_string_to_rear(p_message) )
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
+        if "size" in target:
+            return handle_response_inner(weapon, target, operation="bunker")
         return handle_response_inner(weapon, target)
     
     token_pair = re.findall('how (many|much)(.*) to disable (.*)', p_message)
