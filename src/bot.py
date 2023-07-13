@@ -47,7 +47,7 @@ class LocationNotFoundError(EntityNotFoundError):
         super().__init__(name,message)
 
 class BunkerSpecParseError(TargetNotFoundError):
-    def __init__(self,name,message="Invalid bunker specification, please try again with this format: `how many <weapon> to kill size <number> tier <1/2/3> bunker with <numer> <modification>, <numer> <modification>, ...`"):
+    def __init__(self,name,message="Invalid bunker specification, please try again with this format: `how many <weapon> to kill size <number>, tier <1/2/3> bunker with <numer> <modification>, <numer> <modification>, ...`"):
         super().__init__(name,message)
 
 

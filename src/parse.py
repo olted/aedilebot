@@ -82,6 +82,8 @@ def get_bunker_spec(string):
     
     # slice so only <number> <modification> pairs remain
     words = words[words.index("with"):]
+
+    mod_count = 0
     
     for i, word in enumerate(words):
         if word in mod_words:
@@ -90,7 +92,9 @@ def get_bunker_spec(string):
                 word = words[i+1]
             if i-1 >= 0 and words[i-1].isdigit():
                 args[mod_words[word]] = int(words[i-1])
-
+                mod_count += int(words[i-1])
+    if mod_count > args["size"]:
+        return None
     return args
 
 
@@ -105,6 +109,7 @@ damages = load_json_to_dict("data\Damage.json")
 weapons = load_json_to_dict("data\Weapons.json")
 all = weapons | targets
 dump = load_json_to_dict("data\dump.json")
+bunker_stats = load_json_to_dict("data\Bunker_piece.json")
 
 
 targets_dictionary = get_all_names(targets)

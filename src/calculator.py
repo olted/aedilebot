@@ -27,6 +27,8 @@ class DamageCalculator:
         self.damage_value = float(self.weapon["Damage"])
         self.damage_type = parse.damages[self.weapon['DamageType']]
 
+        self.mitigation_type = None
+
         self.location_name = None
         self.emplaced = None
         self.veterancy = None
@@ -42,16 +44,39 @@ class DamageCalculator:
             if "devastation" in args:
                 self.devastation = args["devastation"]
             if "bunker_spec" in args:
+                # set health and mitigation
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
+                self.bunker_string = self.get_bunker_string(args["bunker_spec"])
+
+    def get_bunker_string(self, bunker_spec):
+        # TODO descriptor for bunker piece for printing
+        return str(math.ceil(self.health)) + " health"
 
     
     def calculate_bunker_health(self, bunker_spec):
-        # TODO
-        pass
+        tier_to_mitigation = {0:"Tier1Structure", 1:"Tier2Structure", 2:"Tier3Structure"}
+        empty = bunker_spec["size"] # number of empty bunker pieces
+        tier = bunker_spec["tier"] - 1 # zero indexing
+        raw_health = 0
+        si = 1
+        for mod in bunker_spec:
+            if mod != "size" and mod != "tier":
+                raw_health += float(parse.bunker_stats[mod]["health"][tier]) * bunker_spec[mod]
+                empty -= bunker_spec[mod]
+                si *= float(parse.bunker_stats[mod]["si"][tier]) ** bunker_spec[mod]
+        raw_health += float(parse.bunker_stats["piece"]["health"][tier]) * empty
+        si *= float(parse.bunker_stats["piece"]["si"][tier]) ** empty
+        if bunker_spec["size"] == 1:
+            si = 1
+        self.mitigation_type = tier_to_mitigation[tier]
+        return raw_health*si
 
     def calculate_damage(self, mitigation_type=None):
         if mitigation_type is None:
-            mitigation_type = self.target["Mitigation Type"]
+            if self.mitigation_type:
+                mitigation_type = self.mitigation_type
+            else:
+                mitigation_type = self.target["Mitigation Type"]
         mitigation_value = self.damage_type[mitigation_type]
         # Here later we can do entrenchment bonus or etc
         real_damage = float(self.damage_value * float((1 - float(mitigation_value))))
@@ -97,6 +122,8 @@ class DamageCalculator:
         elif self.target_type == "Emplacements":
             return self.general_damage_calculator()  # emplacement_damage_calculator()
         elif self.target_type == "Tripods" or self.target_type == "Structures":
+            if self.target == "meta":
+                return self.general_damage_calculator() + " with " + self.bunker_string
             return self.general_damage_calculator()
         else:
             raise bot.InvalidTypeError(self.target_name,
@@ -164,7 +191,7 @@ def general_dehusk_handler(weapon_fuzzy_name, target_fuzzy_name):
     return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
 
 def general_bunker_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
-    args = None
+    args = {}
     if weapon_fuzzy_name in parse.weapons_dictionary:
         weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
     else:
