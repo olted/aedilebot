@@ -50,7 +50,12 @@ class DamageCalculator:
 
     def get_bunker_string(self, bunker_spec):
         # TODO descriptor for bunker piece for printing
-        return str(math.ceil(self.health)) + " health"
+        mod_str = ""
+        for mod in bunker_spec:
+            if mod != "size" and mod != "tier":
+                mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
+        mod_str = "(" + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
+        return str(math.ceil(self.health)) + " health, " + self.mitigation_type + " mitigation type. " + mod_str
 
     
     def calculate_bunker_health(self, bunker_spec):
@@ -200,7 +205,7 @@ def general_bunker_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
     target_name = "meta"
     args["bunker_spec"] = parse.get_bunker_spec(target_fuzzy_name)
     if args["bunker_spec"] == None:
-        raise bot.BunkerSpecParseError()
+        raise bot.BunkerSpecParseError(target_fuzzy_name)
 
     return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
 
