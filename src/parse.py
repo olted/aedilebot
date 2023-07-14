@@ -1,4 +1,6 @@
 import json
+import os 
+
 def load_json_to_dict(filename):
     with open(filename) as f:
         dict = json.load(f)
@@ -99,17 +101,17 @@ def get_bunker_spec(string):
 
 
 # Structure Json parser
-location_names = load_location_names("data\Location_names.json")
+location_names = load_location_names(os.path.join("data", "Location_names.json"))
 
 def check_if_location_name(name):
     return name in location_names
 
-targets = load_json_to_dict("data\Targets.json")
-damages = load_json_to_dict("data\Damage.json")
-weapons = load_json_to_dict("data\Weapons.json")
+targets = load_json_to_dict(os.path.join("data", "Targets.json"))
+damages = load_json_to_dict(os.path.join("data", "Damage.json"))
+weapons = load_json_to_dict(os.path.join("data", "Weapons.json"))
 all = weapons | targets
-dump = load_json_to_dict("data\dump.json")
-bunker_stats = load_json_to_dict("data\Bunker_piece.json")
+dump = load_json_to_dict(os.path.join("data", "dump.json"))
+bunker_stats = load_json_to_dict(os.path.join("data", "Bunker_piece.json"))
 
 
 targets_dictionary = get_all_names(targets)
