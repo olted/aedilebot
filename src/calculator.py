@@ -28,6 +28,7 @@ class DamageCalculator:
         self.damage_type = parse.damages[self.weapon['DamageType']]
 
         self.mitigation_type = None
+        self.dmg_multiplier = None
 
         self.location_name = None
         self.emplaced = None
@@ -46,17 +47,24 @@ class DamageCalculator:
             if "bunker_spec" in args:
                 # set health and mitigation
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
+                self.dmg_multiplier = self.get_bunker_wet_multipler(args["bunker_spec"]["wet"])
                 self.bunker_string = self.get_bunker_string(args["bunker_spec"])
 
     def get_bunker_string(self, bunker_spec):
         # TODO descriptor for bunker piece for printing
+        ret = None
         mod_str = ""
         for mod in bunker_spec:
             if mod != "size" and mod != "tier":
                 mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
         mod_str = "(" + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
-        return str(math.ceil(self.health)) + " health, " + self.mitigation_type + " mitigation type. " + mod_str
+        ret = " with " + str(math.ceil(self.health)) + " health, " + self.mitigation_type + " mitigation type. " + mod_str
+        if 0 <= bunker_spec["wet"] < 24:
+            ret = " that is " + str(bunker_spec["wet"]) + " hour wet" + ret
+        return ret
 
+    def get_bunker_wet_multipler(self, hours):
+        return max(min(24/hours, 10), 1)
     
     def calculate_bunker_health(self, bunker_spec):
         tier_to_mitigation = {0:"Tier1Structure", 1:"Tier2Structure", 2:"Tier3Structure"}
@@ -65,7 +73,7 @@ class DamageCalculator:
         raw_health = 0
         si = 1
         for mod in bunker_spec:
-            if mod != "size" and mod != "tier":
+            if mod in parse.bunker_stats:
                 raw_health += float(parse.bunker_stats[mod]["health"][tier]) * bunker_spec[mod]
                 empty -= bunker_spec[mod]
                 si *= float(parse.bunker_stats[mod]["si"][tier]) ** bunker_spec[mod]
@@ -85,6 +93,8 @@ class DamageCalculator:
         mitigation_value = self.damage_type[mitigation_type]
         # Here later we can do entrenchment bonus or etc
         real_damage = float(self.damage_value * float((1 - float(mitigation_value))))
+        if self.dmg_multiplier is not None:
+            real_damage *= self.dmg_multiplier
         return math.ceil(real_damage)
 
     def get_disable_health(self):
@@ -128,7 +138,7 @@ class DamageCalculator:
             return self.general_damage_calculator()  # emplacement_damage_calculator()
         elif self.target_type == "Tripods" or self.target_type == "Structures":
             if self.target == "meta":
-                return self.general_damage_calculator() + " with " + self.bunker_string
+                return self.general_damage_calculator() + self.bunker_string
             return self.general_damage_calculator()
         else:
             raise bot.InvalidTypeError(self.target_name,

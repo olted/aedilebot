@@ -63,7 +63,7 @@ def get_bunker_spec(string):
                   "howitzer":"hg", "engine":"eng", "sc":"sc", "storm cannon":"sc", "ic":"ic", "intel":"ic",
                   "intelligence":"ic", "base":"core", "core":"core", "storage":"ammo", "ammo":"ammo",
                   "obs":"obs", "observation":"obs", "gen":"eng", "generator":"eng", "generater":"eng"}
-    words = string.lower().replace(",", " ").split()
+    words = string.lower().replace(",", " ").replace(";", " ").replace("hr", "hour").replace("hours", "hour").split()
     if "size" in words:
         if words[words.index("size")+1].isdigit():
             args["size"] = int(words[words.index("size")+1])
@@ -73,7 +73,12 @@ def get_bunker_spec(string):
             return None
     else:
         return None
-
+    
+    if "hour" in words:
+        if words.index("hour")-1 > 0 and words[words.index("hour")-1].isdigit():
+            args["wet"] = int(words[words.index("hour")-1])
+    else:
+        args["wet"] = 24
 
     for keyword in tier_words:
         if keyword in words:
@@ -123,5 +128,5 @@ vehicle_dictionary = get_vehicle_names(targets)
 weapons_dictionary = get_all_names(weapons)
 all_dictionary = get_all_names(all)
 
-print("Cool")
+print("All Data loaded into memory")
 #slang
