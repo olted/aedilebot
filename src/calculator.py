@@ -55,7 +55,7 @@ class DamageCalculator:
         ret = None
         mod_str = ""
         for mod in bunker_spec:
-            if mod != "size" and mod != "tier":
+            if mod in parse.bunker_stats:
                 mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
         mod_str = "(" + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
         ret = " with " + str(math.ceil(self.health)) + " health, " + self.mitigation_type + " mitigation type. " + mod_str
