@@ -2414,7 +2414,7 @@
     },
     "TrainCoal": {
         "Name": "TrainCoal",
-        "Additional Names": "",
+        "Additional Names": "coal cart",
         "Cost": "-",
         "Health": "1500",
         "Armour Health": "0",

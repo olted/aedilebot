@@ -61,8 +61,8 @@ def get_bunker_spec(string):
     mod_words = {"atg": "atg", "at": "atg", "rg": "rg", "rifle": "rg", "hg": "hg", "howi":"hg", "howie":"hg",
                  "mg":"mg", "machinegun":"mg", "machine":"mg", "mgg":"mg", "ammunition":"ammo", "ramp":"ramp",
                   "howitzer":"hg", "engine":"eng", "sc":"sc", "storm cannon":"sc", "ic":"ic", "intel":"ic",
-                  "intelligence":"ic", "bunker":"core", "base":"core", "core":"core", "storage":"ammo", "ammo":"ammo",
-                  "obs":"obs", "observation":"obs"}
+                  "intelligence":"ic", "base":"core", "core":"core", "storage":"ammo", "ammo":"ammo",
+                  "obs":"obs", "observation":"obs", "gen":"eng", "generator":"eng", "generater":"eng"}
     words = string.lower().replace(",", " ").split()
     if "size" in words:
         if words[words.index("size")+1].isdigit():
@@ -83,7 +83,10 @@ def get_bunker_spec(string):
         return None
     
     # slice so only <number> <modification> pairs remain
-    words = words[words.index("with"):]
+    if "with" in words:
+        words = words[words.index("with"):]
+    else:
+        words = words[words.index("size"):]
 
     mod_count = 0
     
