@@ -64,6 +64,8 @@ class DamageCalculator:
         return ret
 
     def get_bunker_wet_multipler(self, hours):
+        if hours == 0:
+            return 10
         return max(min(24/hours, 10), 1)
     
     def calculate_bunker_health(self, bunker_spec):
