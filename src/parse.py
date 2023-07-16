@@ -75,7 +75,7 @@ def get_bunker_spec(string):
         return None
     
     if "hour" in words:
-        if words.index("hour")-1 > 0 and words[words.index("hour")-1].isdigit():
+        if words.index("hour")-1 >= 0 and words[words.index("hour")-1].isdigit():
             args["wet"] = int(words[words.index("hour")-1])
     else:
         args["wet"] = 24
