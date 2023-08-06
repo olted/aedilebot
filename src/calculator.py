@@ -48,17 +48,19 @@ class DamageCalculator:
                 # set health and mitigation
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
                 self.dmg_multiplier = self.get_bunker_wet_multipler(args["bunker_spec"]["wet"])
+                self.repair_cost = self.calculate_bunker_repair(args["bunker_spec"])
                 self.bunker_string = self.get_bunker_string(args["bunker_spec"])
 
     def get_bunker_string(self, bunker_spec):
         # TODO descriptor for bunker piece for printing
+        tier_words = {1: "tier 1", 2: "tier 2", 3: "tier 3"}
         ret = None
         mod_str = ""
         for mod in bunker_spec:
             if mod in parse.bunker_stats:
                 mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
-        mod_str = "(" + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
-        ret = " with " + str(math.ceil(self.health)) + " health, " + self.mitigation_type + " mitigation type. " + mod_str
+        mod_str = "(" + tier_words[bunker_spec["tier"]] + ", " + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
+        ret = " with **" + str(math.ceil(self.health)) + " health** and **" +  str(math.ceil(self.repair_cost)) + " repair cost** " + mod_str
         if 0 <= bunker_spec["wet"] < 24:
             ret = " that is " + str(bunker_spec["wet"]) + " hour wet" + ret
         return ret
@@ -85,6 +87,18 @@ class DamageCalculator:
             si = 1
         self.mitigation_type = tier_to_mitigation[tier]
         return raw_health*si
+
+    def calculate_bunker_repair(self, bunker_spec):
+        repair = 0
+        empty = bunker_spec["size"] # number of empty bunker pieces
+        tier = bunker_spec["tier"] - 1 # zero indexing
+        for mod in bunker_spec:
+            if mod in parse.bunker_stats:
+                repair += float(parse.bunker_stats[mod]["repair"][tier]) * bunker_spec[mod]
+                empty -= bunker_spec[mod]
+        repair += float(parse.bunker_stats["piece"]["repair"][tier]) * empty
+        return repair
+        
 
     def calculate_damage(self, mitigation_type=None):
         if mitigation_type is None:

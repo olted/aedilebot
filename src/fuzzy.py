@@ -31,7 +31,6 @@ def fuzzy_match_target_name(name, targets_dictionary = parse.targets_dictionary)
                 raise bot.TargetOfTypeNotFoundError(name)
             else:
                 raise bot.TargetNotFoundError(name)
-        utils.debug_fuzzy(name,good_score_list,max_value)
         if parse.check_if_location_name(max_key):
             tokens["location_name"] = max_key
         if len(good_score_list)>1:  #this is INSANELY inefficient and yet I can't find a proper solution to the bug this fixes
@@ -44,7 +43,7 @@ def fuzzy_match_target_name(name, targets_dictionary = parse.targets_dictionary)
                         max_score = fuzz.token_sort_ratio(name, key)
                         max_key, max_value = key, value
 
-
+        utils.debug_fuzzy(name,good_score_list,max_value)
         return max_value, tokens
 
         
@@ -61,7 +60,6 @@ def fuzzy_match_weapon_name(name):
             good_score_list.append(key)
     if max_score < 65:
         raise bot.WeaponNotFoundError(name)
-    utils.debug_fuzzy(name,good_score_list,max_value)
     if len(good_score_list)>1:  #this is INSANELY inefficient and yet I can't find a proper solution to the bug this fixes
                 max_score = 0          #in the amount of time I currently have to work on this so it'll have to do. We're not low on processing time anyway.
                 max_key = None
@@ -71,6 +69,7 @@ def fuzzy_match_weapon_name(name):
                     if fuzz.token_sort_ratio(name, key) > max_score:
                         max_score = fuzz.token_sort_ratio(name, key)
                         max_key, max_value = key, value
+    utils.debug_fuzzy(name,good_score_list,max_value)
     return max_value
 
 def fuzzy_match_any(name):
