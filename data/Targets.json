@@ -392,7 +392,7 @@
     },
     "Balfour Wolfhound 40mm (FC)": {
         "Name": "Balfour Wolfhound 40mm (FC)",
-        "Additional Names": "40fc;40mmfc;",
+        "Additional Names": "40fc;40mmfc;push40;40mm pushgun",
         "Cost": "30",
         "Health": "2850",
         "Armour Health": "0",
@@ -629,7 +629,7 @@
         "Min Base Penetration Chance": "0.3",
         "Max Base Penetration Chance": "0.67",
         "Mitigation Type": "Tier2Tank",
-        "Disable Level": "0.3",
+        "Disable Level": "0.2",
         "Repair Cost": "135",
         "Speed": "",
         "Slots": "1",
@@ -1381,7 +1381,7 @@
     },
     "O\u2019Brien v.110 (AC)": {
         "Name": "O\u2019Brien v.110 (AC)",
-        "Additional Names": "warden armoured car",
+        "Additional Names": "warden armoured car;warden ac",
         "Cost": "35",
         "Health": "900",
         "Armour Health": "2700",
@@ -7026,7 +7026,7 @@
     },
     "Facility Crane": {
         "Name": "Facility Crane",
-        "Additional Names": "facility crane;static crane",
+        "Additional Names": "facility crane;static crane;stationary crane",
         "Code name": "FacilityCrane",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",

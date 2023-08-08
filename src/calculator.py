@@ -60,7 +60,9 @@ class DamageCalculator:
             if mod in parse.bunker_stats:
                 mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
         mod_str = "(" + tier_words[bunker_spec["tier"]] + ", " + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
-        ret = " with **" + str(math.ceil(self.health)) + " health** and **" +  str(math.ceil(self.repair_cost)) + " repair cost** " + mod_str
+        ratio = f"{self.health/self.repair_cost:.2f}" 
+        health_and_repair = "**" + str(math.ceil(self.health)) + " health** and **" +  str(math.ceil(self.repair_cost)) + " bmat repair cost** (" + ratio + " health/bmat)"
+        ret = " with " + health_and_repair + " " + mod_str
         if 0 <= bunker_spec["wet"] < 24:
             ret = " that is " + str(bunker_spec["wet"]) + " hour wet" + ret
         return ret

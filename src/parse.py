@@ -1,5 +1,6 @@
 import json
 import os 
+from collections import defaultdict
 
 def load_json_to_dict(filename):
     with open(filename) as f:
@@ -56,7 +57,7 @@ def get_vehicle_names(dictionary, field_name="Additional Names"):
 
 def get_bunker_spec(string):
     # size <number> tier <1/2/3> bunker with <numer> <modification>, <numer> <modification>, ...
-    args = {}
+    args = defaultdict(int)
     tier_words = {"t1":1,"t2":2,"t3":3,"tier 1":1, "tier 2":2,"tier 3":3,"concrete":3}
     mod_words = {"atg": "atg", "at": "atg", "rg": "rg", "rifle": "rg", "hg": "hg", "howi":"hg", "howie":"hg",
                  "mg":"mg", "machinegun":"mg", "machine":"mg", "mgg":"mg", "ammunition":"ammo", "ramp":"ramp",
@@ -100,9 +101,13 @@ def get_bunker_spec(string):
             if word == "bunker" and i+1 < len(word) and words[i+1] in mod_words:
                 # catch phrases like "bunker ramp"
                 word = words[i+1]
-            if i-1 >= 0 and words[i-1].isdigit():
-                args[mod_words[word]] = int(words[i-1])
-                mod_count += int(words[i-1])
+            if i-1 >= 0:
+                if words[i-1].isdigit():
+                    args[mod_words[word]] += int(words[i-1])
+                    mod_count += int(words[i-1])
+                else:
+                    args[mod_words[word]] += 1
+                    mod_count += 1
     if mod_count > args["size"]:
         return None
     return args

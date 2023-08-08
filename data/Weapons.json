@@ -421,14 +421,14 @@
     },
     "94.5mm": {
         "Name": "94.5mm",
-        "Additional Names": "stygian;styg;945",
+        "Additional Names": "stygian;styg;945;94.5",
         "Damage": "1750",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
     "Predator94.5mm": {
         "Name": "Predator94.5mm",
-        "Additional Names": "hv94.5mm;hv945;predator 94.5;predator 94.5mm;predator 945",
+        "Additional Names": "hv94.5mm;hv945;predator",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
