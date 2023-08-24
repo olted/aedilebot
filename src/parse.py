@@ -61,7 +61,7 @@ def get_bunker_spec(string):
     tier_words = {"t1":1,"t2":2,"t3":3,"tier 1":1, "tier 2":2,"tier 3":3,"concrete":3}
     mod_words = {"atg": "atg", "at": "atg", "rg": "rg", "rifle": "rg", "hg": "hg", "howi":"hg", "howie":"hg",
                  "mg":"mg", "machinegun":"mg", "machine":"mg", "mgg":"mg", "ammunition":"ammo", "ramp":"ramp",
-                  "howitzer":"hg", "engine":"eng", "sc":"sc", "storm cannon":"sc", "ic":"ic", "intel":"ic",
+                  "howitzer":"hg", "engine":"eng", "sc":"sc", "storm":"sc", "ic":"ic", "intel":"ic",
                   "intelligence":"ic", "base":"core", "core":"core", "storage":"ammo", "ammo":"ammo",
                   "obs":"obs", "observation":"obs", "gen":"eng", "generator":"eng", "generater":"eng"}
     words = string.lower().replace(",", " ").replace(";", " ").replace("hr", "hour").replace("hours", "hour").split()
