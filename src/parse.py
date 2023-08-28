@@ -63,7 +63,8 @@ def get_bunker_spec(string):
                  "mg":"mg", "machinegun":"mg", "machine":"mg", "mgg":"mg", "ammunition":"ammo", "ramp":"ramp",
                   "howitzer":"hg", "engine":"eng", "sc":"sc", "storm":"sc", "ic":"ic", "intel":"ic",
                   "intelligence":"ic", "base":"core", "core":"core", "storage":"ammo", "ammo":"ammo",
-                  "obs":"obs", "observation":"obs", "gen":"eng", "generator":"eng", "generater":"eng"}
+                  "obs":"obs", "observation":"obs", "gen":"eng", "generator":"eng", "generater":"eng",
+                  "howitzer":"hg"}
     words = string.lower().replace(",", " ").replace(";", " ").replace("hr", "hour").replace("hours", "hour").split()
     if "size" in words:
         if words[words.index("size")+1].isdigit():
@@ -97,6 +98,10 @@ def get_bunker_spec(string):
     mod_count = 0
     
     for i, word in enumerate(words):
+        if word not in mod_words:
+            # catch mod word in multiple form (howis, ATGs)
+            if word[-1] == "s" and word[:-1] in mod_words:
+                word = word[:-1]
         if word in mod_words:
             if word == "bunker" and i+1 < len(word) and words[i+1] in mod_words:
                 # catch phrases like "bunker ramp"
