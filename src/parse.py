@@ -128,7 +128,6 @@ targets = load_json_to_dict(os.path.join("data", "Targets.json"))
 damages = load_json_to_dict(os.path.join("data", "Damage.json"))
 weapons = load_json_to_dict(os.path.join("data", "Weapons.json"))
 all = weapons | targets
-dump = load_json_to_dict(os.path.join("data", "dump.json"))
 bunker_stats = load_json_to_dict(os.path.join("data", "Bunker_piece.json"))
 
 
