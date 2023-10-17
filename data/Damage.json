@@ -16,6 +16,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"0.0",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -37,6 +38,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"0.0",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -58,6 +60,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"0.0",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -79,6 +82,7 @@
         "Tier1GarrisonHouse": "0.75",
         "Tier2GarrisonHouse": "0.85",
         "Tier3GarrisonHouse": "0.93",
+        "Tier1LargeShip":"0.93",
         "Trench": "0.93",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -100,6 +104,7 @@
         "Tier1GarrisonHouse": "0.75",
         "Tier2GarrisonHouse": "0.85",
         "Tier3GarrisonHouse": "0.93",
+        "Tier1LargeShip":"0.93",
         "Trench": "0.93",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -121,6 +126,7 @@
         "Tier1GarrisonHouse": "0.75",
         "Tier2GarrisonHouse": "0.85",
         "Tier3GarrisonHouse": "0.93",
+        "Tier1LargeShip":"0.93",
         "Trench": "0.93",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -142,6 +148,7 @@
         "Tier1GarrisonHouse": "0",
         "Tier2GarrisonHouse": "0",
         "Tier3GarrisonHouse": "0",
+        "Tier1LargeShip":"0.7",
         "Trench": "0",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -163,6 +170,7 @@
         "Tier1GarrisonHouse": "0.6",
         "Tier2GarrisonHouse": "0.8",
         "Tier3GarrisonHouse": "0.9",
+        "Tier1LargeShip":"0.75",
         "Trench": "0.75",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -184,6 +192,7 @@
         "Tier1GarrisonHouse": "0.6",
         "Tier2GarrisonHouse": "0.8",
         "Tier3GarrisonHouse": "0.9",
+        "Tier1LargeShip":"0.75",
         "Trench": "0.75",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -205,6 +214,7 @@
         "Tier1GarrisonHouse": "0.6",
         "Tier2GarrisonHouse": "0.8",
         "Tier3GarrisonHouse": "0.9",
+        "Tier1LargeShip":"0.75",
         "Trench": "0.75",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -226,6 +236,7 @@
         "Tier1GarrisonHouse": "0.2",
         "Tier2GarrisonHouse": "0.4",
         "Tier3GarrisonHouse": "0.6",
+        "Tier1LargeShip":"0.99",
         "Trench": "0.95",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -247,6 +258,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"1",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -268,6 +280,7 @@
         "Tier1GarrisonHouse": "0.2",
         "Tier2GarrisonHouse": "0.6",
         "Tier3GarrisonHouse": "0.9",
+        "Tier1LargeShip":"0.7",
         "Trench": "0.95",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -289,6 +302,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"0.99",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -310,6 +324,7 @@
         "Tier1GarrisonHouse": "0.2",
         "Tier2GarrisonHouse": "0.6",
         "Tier3GarrisonHouse": "0.9",
+        "Tier1LargeShip":"0.15",
         "Trench": "0.95",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -331,6 +346,7 @@
         "Tier1GarrisonHouse": "0.2",
         "Tier2GarrisonHouse": "0.6",
         "Tier3GarrisonHouse": "0.9",
+        "Tier1LargeShip":"0.15",
         "Trench": "0.95",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -352,6 +368,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"0.99",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
@@ -373,6 +390,7 @@
         "Tier1GarrisonHouse": "1",
         "Tier2GarrisonHouse": "1",
         "Tier3GarrisonHouse": "1",
+        "Tier1LargeShip":"0.99",
         "Trench": "1",
         "Nomitigation": "0",
         "ObjectType": "Damage"
