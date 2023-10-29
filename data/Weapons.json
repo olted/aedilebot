@@ -188,11 +188,18 @@
         "DamageType": "BPDemolitionDamageType",
         "ObjectType": "Weapons"
     },
-    "Mortar Shell": {
-        "Name": "Mortar Shell",
+    "HE Mortar Shell": {
+        "Name": "HE Mortar Shell",
         "Additional Names": "mortar;he mortar",
         "Damage": "300",
         "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Shrapnel Mortar Shell": {
+        "Name": "Shrapnel Mortar Shell",
+        "Additional Names": "frag mortar;shrapnel mortar",
+        "Damage": "125",
+        "DamageType": "Shrapnel",
         "ObjectType": "Weapons"
     },
     "120mm": {
@@ -452,6 +459,27 @@
         "Additional Names": "std;std 94.5mm;lordscar;lordscar 945;lordscar 94.5mm;lv94.5",
         "Damage": "1200.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Torpedo": {
+        "Name": "Torpedo",
+        "Additional Names": "",
+        "Damage": "2350",
+        "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "E680-S Rudder Lock (Sea Mine)": {
+        "Name": "E680-S Rudder Lock (Sea Mine)",
+        "Additional Names": "sea mine;naval mine",
+        "Damage": "1350",
+        "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Model-7 Evie Depth Charge": {
+        "Name": "Model-7 Evie Depth Charge",
+        "Additional Names": "depth charge;evie",
+        "Damage": "900",
+        "DamageType": "BPHighExplosiveDamageType",
         "ObjectType": "Weapons"
     }
 }

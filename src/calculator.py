@@ -266,9 +266,14 @@ def statsheet_handler(entity_name):
                     name = entity["Name"]
                     raw_hp = entity["Health"]
                     mitigation = entity["Mitigation Type"]
-                    min_pen = int(float(entity["Min Base Penetration Chance"]) * 100)
-                    max_pen = int(float(entity[
-                                            "Max Base Penetration Chance"]) * 100)  # note to self: make decimals into fractions, make timer into hours
+                    try:
+                        min_pen = int(float(entity["Min Base Penetration Chance"]) * 100)
+                    except:
+                        min_pen = ""
+                    try:
+                        max_pen = int(float(entity["Max Base Penetration Chance"]) * 100)  # note to self: make decimals into fractions, make timer into hours
+                    except:
+                        max_pen = ""
                     armour_hp = entity["Armour Health"]
                     reload = entity["Reload time (pre-reload+reload) (magazine size) (artillery spread?)"]
                     try:
