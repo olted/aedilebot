@@ -398,13 +398,13 @@
         
     },    "Conqueror Class Destroyer":{
         "Name": "Conqueror Class Destroyer",
-        "Additional Names": "conqeuror;destroyer",
+        "Additional Names": "conqeuror;destroyer;dd",
         "Cost":"150",
         "Health":"38500",
         "Armour Health":"38500",
         "Min Base Penetration Chance":"0.1",
         "Max Base Penetration Chance":"0.2",
-        "Mitigation Type":"Tier2Tank",
+        "Mitigation Type":"Tier1LargeShip",
         "Disable Level":"0.5",
         "Repair Cost":"",
         "Speed":"",
