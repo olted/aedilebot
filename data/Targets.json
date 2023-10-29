@@ -5058,7 +5058,7 @@
     },
     "Small Relic Base": {
         "Name": "Small Relic Base",
-        "Additional Names": "grief mother;old jack tar;lion's head;peripti landing;oceanwatch;fort ember;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;protos;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;bone haft;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;the robin's nest;the bailie;slipchain",
+        "Additional Names": "grief mother;old jack tar;lion's head;peripti landing;oceanwatch;fort ember;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;protos;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;bone haft;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;the robin's nest;the bailie;slipchain;transient valley",
         "Code name": "RelicBase1",
         "Health": "4450",
         "Mitigation Type": "Tier3Structure",
