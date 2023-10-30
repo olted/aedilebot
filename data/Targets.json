@@ -5529,7 +5529,7 @@
     },
     "Large Relic Base": {
         "Name": "Large Relic Base",
-        "Additional Names": "ursa base;weephome;south wind;the procession;sidhe fall;the bell toll;the dirk;protos;princefal;oceanwatch;partisan island;ustio;blackwatch;gold;the satyr stone;camp omega;sootflow ;victoria hill;night's regret;camp omicron;cerberus wake;bloody palm fort;the tusk;warmonger bay;fort ealar;slipgate outpost;sickleshire;basinhome;wound;scouts jest;zeus' demise;fort providence;camp senti;lionsfort;simo's run;turncoat;shattered advance;friars;the ark;limestone holdfast;wind hills;reaching river;gravekeeper holdfast;the reach;pleading wharf;market road;goldenroot ranch;lachesis' tally;splinter pens;osterwall;procession;hardline;iron's end;the whetstone;eastknife",
+        "Additional Names": "fort hoarfrost;ursa base;weephome;south wind;the procession;sidhe fall;the bell toll;the dirk;protos;princefal;oceanwatch;partisan island;ustio;blackwatch;gold;the satyr stone;camp omega;sootflow ;victoria hill;night's regret;camp omicron;cerberus wake;bloody palm fort;the tusk;warmonger bay;fort ealar;slipgate outpost;sickleshire;basinhome;wound;scouts jest;zeus' demise;fort providence;camp senti;lionsfort;simo's run;turncoat;shattered advance;friars;the ark;limestone holdfast;wind hills;reaching river;gravekeeper holdfast;the reach;pleading wharf;market road;goldenroot ranch;lachesis' tally;splinter pens;osterwall;procession;hardline;iron's end;the whetstone;eastknife",
         "Code name": "RelicBase3",
         "Health": "5850",
         "Mitigation Type": "Tier3Structure",
