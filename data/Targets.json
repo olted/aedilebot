@@ -5481,7 +5481,7 @@
     },
     "Small Relic Base": {
         "Name": "Small Relic Base",
-        "Additional Names": "thimble;clay coffer;the bilge;transept;grief mother;old jack tar;lion's head;peripti landing;oceanwatch;fort ember;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;protos;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;bone haft;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;the robin's nest;the bailie;slipchain;transient valley",
+        "Additional Names": "isle of psyche;thornhold;verge wing;the wane;the flair;base ferveret;acies overlook;blinding stones;southblade;fleecewatch;argosa;hangman's court;thimble base;clay coffer;the bilge;transept;grief mother;old jack tar;lion's head;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;the robin's nest;the bailie;slipchain;transient valley",
         "Code name": "RelicBase1",
         "Health": "4450",
         "Mitigation Type": "Tier3Structure",
@@ -5505,7 +5505,7 @@
     },
     "Medium Relic Base": {
         "Name": "Medium Relic Base",
-        "Additional Names": "base sagita;steel road;tomb father;reliqua;base akri;arise;the calamity;camp upsilon;climb;sourtooth;lost greensward;swordfort;nereid keep;thunderbolt relic;fort barley;second man;titancall;surge gate;reef;bastard's block;the fleece road;fort windham;fort esterwild;fort rider;stoic;inari base;stem;fort blather;camp hollow;wyattwick;lost partition;rancher's fast;the plough;barronswall;dendro field;overland;belaying trace;frostmarch;necropolis;fort mac connail;wiccwalk;spade;trammel pool;the dais;the long fast;terra;scythe;tomb of the first;westmarch;vagrant bastion;the wash;eastmarch;wisps warning;sanctum;scath passing;fort duncan;the pits;sun's hollow;the salt march;talonsfort;the pendant;den of knaves;scarlethold",
+        "Additional Names": "tethys base;captain's dread;the old mourn;briar;base sagitta;fort mac conaill;silver;fort fogwood;unruly;saegio;exile;peripti landing;fort ember;dankana post;the overland;the vault;watchful nave;bewailing fort;base sagita;the steel road;tomb father;reliqua;base akri;arise;the calamity;camp upsilon;climb;sourtooth;lost greensward;swordfort;nereid keep;thunderbolt relic;fort barley;second man;titancall;reef;bastard's block;the fleece road;fort windham;fort esterwild;fort rider;stoic;inari base;stem;fort blather;camp hollow;wyattwick;lost partition;rancher's fast;the plough;barronswall;dendro field;overland;belaying trace;frostmarch;necropolis;fort mac connail;wiccwalk;the spade;trammel pool;the dais;the long fast;terra;scythe;tomb of the first;westmarch;vagrant bastion;the wash;eastmarch;wisps warning;sanctum;scath passing;fort duncan;the pits;sun's hollow;the salt march;talonsfort;the pendant;den of knaves;scarlethold",
         "Code name": "RelicBase2",
         "Health": "5150",
         "Mitigation Type": "Tier3Structure",
@@ -5529,7 +5529,7 @@
     },
     "Large Relic Base": {
         "Name": "Large Relic Base",
-        "Additional Names": "ustio;gold;the satyr stone;camp omega;sootflow ;victoria hill;night's regret;camp omicron;cerberus wake;bloody palm fort;the tusk;warmonger bay;anchor beach;fort ealar;slipgate outpost;sickleshire;basinhome;wound;scouts jest;zeus' demise;fort providence;camp senti;lionsfort;the bell toll;simo's run;evil eye;turncoat;shattered advance;friars;the ark;limestone holdfast;wind hills;reaching river;gravekeeper holdfast;the reach;pleading wharf;market road;goldenroot ranch;lachesis' tally;splinter pens;osterwall;procession;hardline;iron's end;the whetstone;eastknife",
+        "Additional Names": "ursa base;weephome;south wind;the procession;sidhe fall;the bell toll;the dirk;protos;princefal;oceanwatch;partisan island;ustio;blackwatch;gold;the satyr stone;camp omega;sootflow ;victoria hill;night's regret;camp omicron;cerberus wake;bloody palm fort;the tusk;warmonger bay;fort ealar;slipgate outpost;sickleshire;basinhome;wound;scouts jest;zeus' demise;fort providence;camp senti;lionsfort;simo's run;turncoat;shattered advance;friars;the ark;limestone holdfast;wind hills;reaching river;gravekeeper holdfast;the reach;pleading wharf;market road;goldenroot ranch;lachesis' tally;splinter pens;osterwall;procession;hardline;iron's end;the whetstone;eastknife",
         "Code name": "RelicBase3",
         "Health": "5850",
         "Mitigation Type": "Tier3Structure",
@@ -7772,7 +7772,7 @@
     },
     "Town Base (Post Office)": {
         "Name": "Town Base (Post Office)",
-        "Additional Names": "town hall;th;town hall post office;townhall;th post office;scuttletown;posterus;integrum;conclave;the three sisters;black well;partisan island;hangmen's court;finis;judicium;minos;sweetheart;legion ranch;headsman's villa;the routed;isle of psyche;the rush;alchimio estate;lividius;the axehead;blackwatch;isawa;skodio;the pike;teller farm;little lamb;kingstone;lord's mouth;sanctuary;greenfield orchard;oleander homestead;deeplaw post;the swan;remnant villa;violethome;myrmidon's stay;grave of rastus;vanguard;savages;tuatha watchpost;wellchurch;iron junction;vulpine watch;brackish point;foxcatcher;crow's nest;wightwalk;weathering halls;blackthroat;moltworth;earl crowley;elksford;brodytown;reprieve;nightchurch;mousetrap;ice ranch;dwyerstown;cut;mcconmara barrows;luchs workshop;headstone;sotto bank;victa;iuxta homestead;huskhollow;macha's keening;mercy's wish;thunderfoot;sentry;amethyst;stray;saltcaps;bootnap;vessel;coaldrifter stead;lockheed;lochan berth;the latch;solas gorge;white chapel;cragstown;crimson garden;long whine;rotdust;outwich ranch;prairie bazaar;salt farms;brine glen;callahan's boot;the spine;light's end;gibbet fields",
+        "Additional Names": "town hall;th;town hall post office;townhall;th post office;cavilltown;blackcoat way;east narthex;the bone haft;the treasury;scuttletown;integrum;conclave;the three sisters;black well;hangmen's court;finis;judicium;minos;sweethearth;legion ranch;headsman's villa;the routed;the rush;lividus;the axehead;skodio;the pike;teller farm;little lamb;kingstone;lord's mouth;the spearhead;sanctuary;greenfield orchard;oleander homestead;deeplaw post;the swan;remnant villa;violethome;myrmidon's stay;grave of rastus;vanguard;savages;tuatha watchpost;wellchurch;iron junction;brackish point;foxcatcher;crow's nest;wightwalk;weathering halls;blackthroat;moltworth;earl crowley;elksford;brodytown;reprieve;nightchurch;mousetrap;ice ranch;dwyerstown;the cut;macconmara barrows;luchs workshop;headstone;sotto bank;victa;iuxta homestead;huskhollow;macha's keening;mercy's wish;thunderfoot;sentry;amethyst;stray;saltcaps;bootnap;vessel;coaldrifter stead;lockheed;lochan berth;the latch;solas gorge;white chapel;cragstown;crimson garden;long whine;rotdust;outwich ranch;prairie bazaar;salt farms;brine glen;callahan's boot;the spine;light's end;gibbet fields",
         "Code name": "TownBase1",
         "Health": "7000",
         "Bmat cost": "200",
@@ -7782,7 +7782,7 @@
     },
     "Town Base (School)": {
         "Name": "Town Base (School)",
-        "Additional Names": "town hall school;th school;keelhaul;breakwater;third chapter;vulpine watch;skelter course;eidolo;arcadia;initium;ashtown;electi;penance;hallow;tethus ring;warlord stead;the old captain;liar's haven;the iris;quietus;promithiens;the king;hungry wolf;sess;the den;filament;holdout;gallows;proexi;the breach;sitaria;leto;reflection;woodbind;enduring wake;scurvyshire;serenity blight;morrighan's grave;fading light;mara;spearhead;feirmor;hermit's rest;foundry;the baths;loggerhead;maiden's veil;crumbling post;overlook hill;ulster falls;first coin;liberation point;callahan's gate;cinderwick",
+        "Additional Names": "town hall school;th school;keelhaul;plana fada;surge gate;mistle shrine;breakwater;third chapter;vulpine watch;skelter course;eidolo;arcadia;initium;ashtown;electi;penance;hallow;thetus ring;warlord stead;the old captain;liar's haven;the iris;quietus;promithiens;the king;hungry wolf;sess;isawa;the den;filament;holdout;the gallows;proexi;the breach;sitaria;leto;reflection;woodbind;enduring wake;scurvyshire;serenity blight;morrighan's grave;fading lights;mara;feirmor;hermit's rest;foundry;the baths;loggerhead;maiden's veil;crumbling post;overlook hill;ulster falls;first coin;liberation point;callahan's gate;cinderwick",
         "Code name": "TownBase2",
         "Health": "5000",
         "Bmat cost": "200",
@@ -7792,7 +7792,7 @@
     },
     "Town Base (Town Centre)": {
         "Name": "Town Base (Town Centre)",
-        "Additional Names": "town hall town centre;th town centre;aw;gwd;teichotima;dormio;cannonsmoke;baccae ridge;patridia;therizo;allsight;great warden dam;cuttail station;tine;callum's keep;longstone;blemish;silk farm;saltbrook channel;mercy's wail;port of rime;kirknell;ogmaran;buckler sound;jade cove;abandonned ward;barronhome;the manacle",
+        "Additional Names": "town hall town centre;th town centre;aw;gwd;the scrying belt;teichotima;dormio;cannonsmoke;baccae ridge;patridia;therizo;allsight;great warden dam;cuttail station;tine;callum's keep;longstone;blemish;silk farms;saltbrook channel;mercy's wail;port of rime;alchimio estate;kirknell;ogmaran;buckler sound;jade cove;abandonned ward;barronhome;the manacle",
         "Code name": "TownBase3",
         "Health": "4000",
         "Bmat cost": "200",
