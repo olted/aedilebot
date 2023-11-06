@@ -5938,7 +5938,7 @@
     },
     "Dry Dock": {
         "Name": "Dry Dock",
-        "Additional Names": "",
+        "Additional Names": "drydock",
         "Code name": "Shipyard",
         "Health": "3600",
         "Mitigation Type": "Tier3Structure",
@@ -5965,7 +5965,7 @@
         "Additional Names": "",
         "Code name": "Shipyard",
         "Health": "1850",
-        "Mitigation Type": "Tier2Structure",
+        "Mitigation Type": "Tier3Structure",
         "Rmat cost": "0",
         "Bmat cost": "400",
         "Concrete cost": "0",
@@ -7354,7 +7354,7 @@
     },
     "Foundation (2x2)": {
         "Name": "Foundation (2x2)",
-        "Additional Names": "",
+        "Additional Names": "foundation",
         "Code name": "Foundation012x2T1",
         "Health": "2000",
         "Mitigation Type": "Trench",
