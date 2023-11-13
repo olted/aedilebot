@@ -5940,7 +5940,7 @@
         "Name": "Dry Dock",
         "Additional Names": "drydock",
         "Code name": "Shipyard",
-        "Health": "3600",
+        "Health": "4250",
         "Mitigation Type": "Tier3Structure",
         "Rmat cost": "0",
         "Bmat cost": "400",
