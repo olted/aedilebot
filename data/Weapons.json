@@ -72,7 +72,7 @@
     "Ignifist": {
         "Name": "Ignifist",
         "Additional Names": "igni",
-        "Damage": "325",
+        "Damage": "375",
         "DamageType": "BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
     },
@@ -114,7 +114,7 @@
     "Bomastone Grenade": {
         "Name": "Bomastone Grenade",
         "Additional Names": "boma",
-        "Damage": "150",
+        "Damage": "125",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons"
     },
