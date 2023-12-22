@@ -428,21 +428,21 @@
     },
     "94.5mm": {
         "Name": "94.5mm",
-        "Additional Names": "stygian;styg;945;94.5",
+        "Additional Names": "945;94.5",
         "Damage": "1750",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "Predator94.5mm": {
-        "Name": "Predator94.5mm",
-        "Additional Names": "hv94.5mm;hv945;predator",
+    "HV94.5mm": {
+        "Name": "HV94.5mm",
+        "Additional Names": "hv94.5mm;hv945;predator;stygian;styg",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "Ruptura75mm": {
-        "Name": "Ruptura75mm",
-        "Additional Names": "ruptura 75mm;ruptura 75",
+    "HV75mm": {
+        "Name": "HV75mm",
+        "Additional Names": "ruptura 75mm;ruptura 75;stockade;stockade 75",
         "Damage": "2362.5",
         "DamageType": "BPExplosivePenetratingLargeDamageType",
         "ObjectType": "Weapons"
