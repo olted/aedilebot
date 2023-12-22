@@ -433,9 +433,9 @@
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "HV94.5mm": {
+    "HV25 94.5mm": {
         "Name": "HV94.5mm",
-        "Additional Names": "hv94.5mm;hv945;predator;stygian;styg",
+        "Additional Names": "hv94.5mm;hv945;predator",
         "Damage": "2187.5",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
@@ -447,9 +447,9 @@
         "DamageType": "BPExplosivePenetratingLargeDamageType",
         "ObjectType": "Weapons"
     },
-    "Starbreaker94.5mm": {
-        "Name": "Starbreaker94.5mm",
-        "Additional Names": "starbreaker;starbreaker 945;starbreaker 94.5mm",
+    "HV50 94.5mm": {
+        "Name": "HV50 94.5mm",
+        "Additional Names": "HHV94.5mm;starbreaker;starbreaker 945;starbreaker 94.5mm;stygian;styg",
         "Damage": "2625",
         "DamageType": "BPArmourPiercingLargeDamageType",
         "ObjectType": "Weapons"
