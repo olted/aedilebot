@@ -1965,7 +1965,7 @@
     },
     "Silverhand - Mk. IV (SvH)": {
         "Name": "Silverhand - Mk. IV (SvH)",
-        "Additional Names": "svh",
+        "Additional Names": "svh, silverhand",
         "Cost": "155",
         "Health": "3100",
         "Armour Health": "13300",
