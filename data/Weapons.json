@@ -44,7 +44,7 @@
     "Highwayman20mm": {
         "Name": "Highwayman20mm",
         "Additional Names": "hwm20mm;highwayman 20mm",
-        "Damage": "123.75",
+        "Damage": "94",
         "DamageType": "BPAntiTankKineticDamageType",
         "ObjectType": "Weapons"
     },
