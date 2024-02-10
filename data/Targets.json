@@ -5700,7 +5700,7 @@
         "Additional Names": "nuke site;nuke platform;nuke;rocket",
         "Code name": "RocketSite",
         "Health": "3600",
-        "Mitigation Type": "Nomitigation",
+        "Mitigation Type": "Tier3Structure",
         "Rmat cost": "200",
         "Bmat cost": "0",
         "Concrete cost": "0",
