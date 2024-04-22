@@ -41,9 +41,9 @@
         "DamageType":"BPArmourPiercingDamageType",
         "ObjectType": "Weapons"
     },
-    "Highwayman20mm": {
-        "Name": "Highwayman20mm",
-        "Additional Names": "hwm20mm;highwayman 20mm",
+    "Lv20mm": {
+        "Name": "Lv20mm",
+        "Additional Names": "hwm20mm;highwayman 20mm;cestus;cestus20mm;cestus 20mm",
         "Damage": "94",
         "DamageType": "BPAntiTankKineticDamageType",
         "ObjectType": "Weapons"
