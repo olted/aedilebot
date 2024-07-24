@@ -96,6 +96,8 @@ def get_bunker_spec(string):
         "ic": "ic",
         "intel": "ic",
         "intelligence": "ic",
+        "weather":"ws",
+        "weathers":"ws",
         "base": "core",
         "core": "core",
         "storage": "ammo",

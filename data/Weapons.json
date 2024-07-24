@@ -281,7 +281,7 @@
     },
     "7.62mm": {
         "Name": "7.62mm",
-        "Additional Names": "762",
+        "Additional Names": "762; argenti;loughcaster",
         "Damage": "56.25",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -310,7 +310,7 @@
     "7.62mm (Catena)": {
         "Name": "7.62mm (Catena)",
         "Additional Names": "Catena",
-        "Damage": "44.4",
+        "Damage": "56.25",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
@@ -323,7 +323,7 @@
     },
     "7.92mm (auto mode)": {
         "Name": "7.92mm (auto mode)",
-        "Additional Names": "792",
+        "Additional Names": "792; dusk",
         "Damage": "43.75",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
@@ -332,6 +332,13 @@
         "Name": "7.92mm (semi-auto mode)",
         "Additional Names": "",
         "Damage": "52.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.92mm (booker)": {
+        "Name": "7.92mm (booker)",
+        "Additional Names": "Hv792; booker",
+        "Damage": "63",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
@@ -366,14 +373,14 @@
     "Clancy-Raca": {
         "Name": "Clancy-Raca",
         "Additional Names": "",
-        "Damage": "75.9375",
+        "Damage": "126.5625",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
     "Auger": {
         "Name": "Auger",
         "Additional Names": "",
-        "Damage": "70.3125",
+        "Damage": "87.1875",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
