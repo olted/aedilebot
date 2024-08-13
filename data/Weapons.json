@@ -360,7 +360,7 @@
         "Name": ".44 (Hangman)",
         "Additional Names": "hangman",
         "Damage": "97.5",
-        "DamageType": "BPHighExplosiveDamageType",
+        "DamageType": "LightKinetic",
         "ObjectType": "Weapons"
     },
     "Buckshot": {

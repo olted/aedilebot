@@ -5644,7 +5644,7 @@
     },
     "Small Relic Base": {
         "Name": "Small Relic Base",
-        "Additional Names": "isle of psyche;thornhold;verge wing;the wane;the flair;base ferveret;acies overlook;blinding stones;southblade;fleecewatch;argosa;hangman's court;thimble base;clay coffer;the bilge;transept;grief mother;old jack tar;lion's head;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;the robin's nest;the bailie;slipchain;transient valley",
+        "Additional Names": "isle of psyche;thornhold;verge wing;the wane;the flair;base ferveret;acies overlook;blinding stones;southblade;fleecewatch;argosa;hangman's court;thimble base;clay coffer;the bilge;transept;grief mother;old jack tar;lion's head;world star;cometa;the ashfort;fort matchwood;camp tau;the brinehold;heir apparent;winding bolas ;plankhouse;the gale;lost airchal;eversus;sweetholt;fallen crown;fort red;lamplight;hush;naofa;lookout;ire;westgate keep;holdfast;barrony ranch;limewood holdfast;gorgon grove;firstmarch;dannan ridge;homesick;rumhold;stone plank;huntsfort;spirit watch;fort viper;fleck crossing;harpy;borderlane;heir' knife;the cord;world's end;scarp of ambrose;roilfort;moon's copse;atropos fate;clothos refuge;singing serpents;spitrocks;checkpoint bua;mox;crumbling passage;last grove;lathair;the robin's nest;slipchain;transient valley",
         "Code name": "RelicBase1",
         "Health": "4450",
         "Mitigation Type": "Tier3Structure",
@@ -6701,7 +6701,7 @@
     },
     "Railway Track": {
         "Name": "Railway Track",
-        "Additional Names": "rail;train track",
+        "Additional Names": "rail;train track;large rail",
         "Code name": "RailTrackSpline",
         "Health": "750",
         "Mitigation Type": "Trench",
@@ -7277,7 +7277,7 @@
     },
     "Small Gauge Railway Track": {
         "Name": "Small Gauge Railway Track",
-        "Additional Names": "",
+        "Additional Names": "small rail;small train track",
         "Code name": "SmallRailTrackSpline",
         "Health": "750",
         "Mitigation Type": "Trench",
@@ -7609,7 +7609,7 @@
     },
     "Town Base (School)": {
         "Name": "Town Base (School)",
-        "Additional Names": "town hall school;th school;keelhaul;plana fada;surge gate;mistle shrine;breakwater;third chapter;vulpine watch;skelter course;eidolo;arcadia;initium;ashtown;electi;penance;hallow;thetus ring;warlord stead;the old captain;liar's haven;the iris;quietus;promithiens;the king;hungry wolf;sess;isawa;the den;filament;holdout;the gallows;proexi;the breach;sitaria;leto;reflection;woodbind;enduring wake;scurvyshire;serenity blight;morrighan's grave;fading lights;mara;feirmor;hermit's rest;foundry;the baths;loggerhead;maiden's veil;crumbling post;overlook hill;ulster falls;first coin;liberation point;callahan's gate;cinderwick",
+        "Additional Names": "town hall school;th school;keelhaul;plana fada;surge gate;mistle shrine;breakwater;third chapter;vulpine watch;skelter course;eidolo;arcadia;initium;ashtown;electi;penance;hallow;thetus ring;warlord stead;the old captain;liar's haven;the iris;quietus;promithiens;the king;hungry wolf;sess;isawa;the den;filament;holdout;the gallows;proexi;the breach;sitaria;leto;reflection;woodbind;enduring wake;scurvyshire;serenity blight;morrighan's grave;fading lights;mara;feirmor;hermit's rest;foundry;the baths;loggerhead;maiden's veil;crumbling post;overlook hill;ulster falls;first coin;liberation point;callahan's gate;cinderwick;the bailie",
         "Code name": "TownBase2",
         "Health": "5000",
         "Bmat cost": "200",
