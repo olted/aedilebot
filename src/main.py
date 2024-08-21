@@ -53,7 +53,7 @@ async def message_handler(message_, user_message):
 def list_guilds(client): 
     print("Current discords: ")
     for guild in client.guilds:
-        print(guild, end=" ")
+        print(guild, end=" \n")
 
 # main bot funcion
 

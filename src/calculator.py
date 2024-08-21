@@ -11,9 +11,11 @@ def calculate_hits_to_reach_health(health, damage):
 
 
 class DamageCalculator:
-    def __init__(self, weapon_name, target_name, args=None):
+    def __init__(self, weapon_name, target_name, args=None, weapon_name2=None, weapon1_hits=None):
         self.weapon_name = weapon_name
         self.target_name = target_name
+        self.weapon_name2 = weapon_name2
+        self.weapon1_hits = weapon1_hits
         self.weapon = parse.weapons[weapon_name]
         if target_name == "meta":
             self.target = "meta"
@@ -124,13 +126,8 @@ class DamageCalculator:
         final_damage = self.calculate_damage()
         hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
 
-        if self.location_name:
-            name = f"{main.clean_capitalize(self.location_name)} ({self.target_name})"
-        else:
-            name = self.target_name
-
         utils.debug_summary(self.weapon_name, self.target_name, final_damage, hits_to_kill)
-        return f"It takes {hits_to_kill} {self.weapon_name} to kill a {name}"
+        return hits_to_kill
 
     def multitier_damage_calculator(self):
         if self.location_name:
@@ -149,19 +146,61 @@ class DamageCalculator:
 
     def get_kill_calculation(self):
         if self.target_type == "Vehicles":
-            return self.general_damage_calculator()  # vehicle_damage_calculator()
+            hits_to_kill = self.general_damage_calculator()  # vehicle_damage_calculator()
         elif self.target_type == "Multitier_structures":
-            return self.multitier_damage_calculator()
+            hits_to_kill = self.multitier_damage_calculator()
         elif self.target_type == "Emplacements":
-            return self.general_damage_calculator()  # emplacement_damage_calculator()
+            hits_to_kill = self.general_damage_calculator()  # emplacement_damage_calculator()
         elif self.target_type == "Tripods" or self.target_type == "Structures":
-            if self.target == "meta":
-                return self.general_damage_calculator() + self.bunker_string
-            return self.general_damage_calculator()
+            hits_to_kill = self.general_damage_calculator()
         else:
             raise bot.InvalidTypeError(self.target_name,
                                        "There was an unexpected error trying to find the entity. Please contact the "
                                        "developers.")
+        
+        if self.location_name:
+            name = f"{main.clean_capitalize(self.location_name)} ({self.target_name})"
+        else:
+            name = self.target_name
+
+        ret_str = f"It takes {hits_to_kill} {self.weapon_name} to kill a {name}"
+        if self.target == "meta":
+            ret_str += self.bunker_string
+        return ret_str
+    
+    def get_custom_kill_calculation(self):
+        remaining_health = self.health - self.weapon1_hits * self.calculate_damage()
+        if remaining_health <= 0:
+            return self.get_kill_calculation(self)
+        
+        # set weapon2 for remaining health
+        self.health = remaining_health
+        self.weapon = parse.weapons[self.weapon_name2]
+        self.damage_value = float(self.weapon["Damage"])
+        self.damage_type = parse.damages[self.weapon['DamageType']]
+        
+        if self.target_type == "Vehicles":
+            hits_to_kill = self.general_damage_calculator()  # vehicle_damage_calculator()
+        elif self.target_type == "Multitier_structures":
+            hits_to_kill = self.multitier_damage_calculator()
+        elif self.target_type == "Emplacements":
+            hits_to_kill = self.general_damage_calculator()  # emplacement_damage_calculator()
+        elif self.target_type == "Tripods" or self.target_type == "Structures":
+            hits_to_kill = self.general_damage_calculator()
+        else:
+            raise bot.InvalidTypeError(self.target_name,
+                                       "There was an unexpected error trying to find the entity. Please contact the "
+                                       "developers.")
+
+        if self.location_name:
+            name = f"{main.clean_capitalize(self.location_name)} ({self.target_name})"
+        else:
+            name = self.target_name
+
+        ret_str = f"It takes {hits_to_kill} {self.weapon_name2} to kill a {name} after {self.weapon1_hits} {self.weapon_name} hits."
+        if self.target == "meta":
+            ret_str += self.bunker_string
+        return ret_str
 
     def get_disable_calculation(self):
         if self.target_type != "Vehicles":
@@ -194,6 +233,27 @@ def general_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
 
     return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
 
+def custom_kill_handler(weapon_fuzzy_name1, weapon1_hits, weapon_fuzzy_name2, target_fuzzy_name):
+    args = None
+    if weapon_fuzzy_name1 in parse.weapons_dictionary:
+        weapon_name1 = parse.weapons_dictionary[weapon_fuzzy_name1]
+    else:
+        weapon_name1 = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name1)
+
+    if weapon_fuzzy_name2 in parse.weapons_dictionary:
+        weapon_name2 = parse.weapons_dictionary[weapon_fuzzy_name2]
+    else:
+        weapon_name2 = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name2)
+
+    if target_fuzzy_name in parse.targets_dictionary:
+        target_name = parse.targets_dictionary[target_fuzzy_name]
+        #if we did direct hit, we dont have to search for other tokens
+        if parse.check_if_location_name(target_fuzzy_name):
+            args = {"location_name": target_fuzzy_name}
+    else:
+        target_name, args = fuzz.fuzzy_match_target_name(target_fuzzy_name)
+
+    return DamageCalculator(weapon_name1, target_name, args, weapon_name2, weapon1_hits).get_custom_kill_calculation()
 
 def general_disable_handler(weapon_fuzzy_name, target_fuzzy_name):
     args = None

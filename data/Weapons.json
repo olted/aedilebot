@@ -77,7 +77,7 @@
         "ObjectType": "Weapons"
     },
     "ATRPG Indirect Shell": {
-        "Name": "ATRPG Indirect Shell",
+        "Name": "ARCRPG Shell",
         "Additional Names": "arcrpg;bonesaw;iatrpg;arc",
         "Damage": "600",
         "DamageType": "BPArmourPiercingNoBonusesDamageType",

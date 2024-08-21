@@ -84,6 +84,14 @@ def run_discord_bot():
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
         embed.description=f"Statistics sheet for {data[entity][1]}"
         embed.add_field(name=data[entity][0])'''
+    
+    @client.tree.command(name="custom_kill")
+    async def custom_kill(interaction: discord.Interaction,
+                    target: str,
+                    weapon1: str,
+                    num1: int,
+                    weapon2: str):
+        await interaction.response.send_message(handle_response_inner(weapon1,target, "custom_kill", num1, weapon2))
 
     @client.tree.command(name="statsheet")
     async def statsheet(interaction: discord.Interaction, entity: str):
@@ -156,6 +164,7 @@ def run_discord_bot():
         await interaction.response.send_message(handle_response_inner(weapon,target))
     
     @kill.autocomplete("target")
+    @custom_kill.autocomplete("target")
     async def kill_autocompletion(
         interaction:discord.Interaction,
         current: str
@@ -181,7 +190,8 @@ def run_discord_bot():
                         break
         return data
     
-    
+    @custom_kill.autocomplete("weapon1")
+    @custom_kill.autocomplete("weapon2")
     @kill.autocomplete("weapon")
     async def kill_autocompletion(
         interaction:discord.Interaction,
@@ -204,11 +214,6 @@ def run_discord_bot():
                         usedlist.append(value)
         return data
 
-       
-
-
-        
-
     
 
     @client.event
@@ -223,7 +228,7 @@ def run_discord_bot():
     client.run(DEV_SERVER_TOKEN)
 
 # bot logic
-def handle_response_inner(weapon,target, operation="kill"):
+def handle_response_inner(weapon,target, operation="kill", num1=0, weapon2=None):
     try:
         if operation=="kill":
             return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target)
@@ -233,6 +238,8 @@ def handle_response_inner(weapon,target, operation="kill"):
             return calculator.general_dehusk_handler(weapon, target)
         if operation =="bunker":
             return calculator.general_bunker_kill_handler(weapon, target)
+        if operation =="custom_kill":
+            return calculator.custom_kill_handler(weapon, num1, weapon2, target)
     except ZeroDivisionError as e:
         return f"This weapon does no damage to this entity"
     except TargetNotFoundError as e:
