@@ -1,0 +1,13 @@
+{
+    "Light Kinetic" : "LightKinetic",
+    "Heavy Kinetic" : "HeavyKinetic",
+    "Anti-Tank Kinetic" : "AntiTankKinetic",
+    "Anti-Tank Explosive" : "AntiTankExplosive",
+    "Explosive" : "Explosive",
+    "High Explosive" : "HighExplosive",
+    "Armour Piercing" : "ArmourPiercing",
+    "Demolition" : "Demolition",
+    "Shrapnel" : "Shrapnel",
+    "Incendiary" : "IncendiaryHighExplosive",
+    "Poisonous Gas" : "PoisonGas"
+}

@@ -30,7 +30,7 @@ def fuzzy_match_target_name(name, targets_dictionary = parse.targets_dictionary)
             if targets_dictionary != parse.targets_dictionary:
                 raise bot.TargetOfTypeNotFoundError(name)
             else:
-                raise bot.TargetNotFoundError(name)
+                raise bot.TargetNotFoundError(name, f"The target {name} is not found in my data set. Please try again.")
         if parse.check_if_location_name(max_key):
             tokens["location_name"] = max_key
         if len(good_score_list)>1:  #this is INSANELY inefficient and yet I can't find a proper solution to the bug this fixes

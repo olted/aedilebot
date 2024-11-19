@@ -1,0 +1,3426 @@
+{
+    "Weather Pattern 00 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::KingsCageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.06,
+            "Y": -0.07
+        },
+        "Inner Radius": 70598.88,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 84000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 00 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ReachingTrailHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.02,
+            "Y": -0.14
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 00 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TempestIslandHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 270000,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 00 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::MooringCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 450000,
+        "Duration (in seconds)": 123000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 01 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 90000,
+        "Duration (in seconds)": 252000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 01 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::CallumsCapeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 206701.88,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 01 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::AllodsBightHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.27,
+            "Y": -0.07
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 387000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 02 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 90000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 02 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::CallumsCapeHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 348000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 02 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 390000,
+        "Duration (in seconds)": 141000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 02 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::MorgensCrossingHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 206701.88,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 480000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 02 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::RedRiverHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 510000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 03 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.06,
+            "Y": -0.24
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 93000,
+        "Duration (in seconds)": 240000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 03 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 206701.88,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 207000,
+        "Duration (in seconds)": 210000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 03 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::UmbralWildwoodHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": -0.02
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 420000,
+        "Duration (in seconds)": 99000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 04 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::KalokaiHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.6
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 421409.8,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 04 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 141925.58,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 210000,
+        "Duration (in seconds)": 160800,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 04 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::ViperPitHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 510000,
+        "Duration (in seconds)": 159000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 05 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::KingsCageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 156482.05,
+        "Outer Radius": 335526.62,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 300000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 05 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.65,
+            "Y": 0.05
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 235086.98,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 90000,
+        "Duration (in seconds)": 198000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 05 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::HowlCountyHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.08,
+            "Y": -0.29
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 213252.3,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 05 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 330000,
+        "Duration (in seconds)": 144000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 06 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 291000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 06 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::AllodsBightHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 54000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 06 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::MarbanHollow",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 177000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 06 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 411000,
+        "Duration (in seconds)": 198000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 07 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::CallahansPassageHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 328248.4,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 135000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 07 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::UmbralWildwoodHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": -0.12
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 138000,
+        "Duration (in seconds)": 201000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 07 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::AcrithiaHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.37,
+            "Y": 0.45
+        },
+        "Inner Radius": 120090.88,
+        "Outer Radius": 385018.62,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 354000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 07 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::MorgensCrossingHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.37,
+            "Y": -0.55
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 248915.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 07 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::FarranacCoastHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.82,
+            "Y": -0.07
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 256193.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 372000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 08 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::LochMorHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 08 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.82,
+            "Y": 0.02
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 256193.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 144000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 08 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 270000,
+        "Duration (in seconds)": 147000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 08 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::OriginHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.59,
+            "Y": 0.57
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 421409.8,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 486000,
+        "Duration (in seconds)": 173400,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 09 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.49,
+            "Y": 0.83
+        },
+        "Inner Radius": 127369.11,
+        "Outer Radius": 270750.34,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 93000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 09 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::GreatMarchHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.02,
+            "Y": 0.0
+        },
+        "Inner Radius": 170310.7,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 276000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 09 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 457800,
+        "Duration (in seconds)": 99000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 10 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": -0.06,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 48000,
+        "Duration (in seconds)": 171000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 10 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 219600,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 10 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::OriginHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 412800,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 10 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::AcrithiaHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.33,
+            "Y": 0.86
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 256193.88,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 450000,
+        "Duration (in seconds)": 129000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 11 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::OriginHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 66000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 11 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.41,
+            "Y": 0.4
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 256193.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 81000,
+        "Duration (in seconds)": 246000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 11 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::MarbanHollow",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 210000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 11 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::HowlCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.35,
+            "Y": -0.79
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 248915.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 93000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 11 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.04,
+            "Y": 0.0
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 405000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 12 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::BasinSionnachHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 12 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::AcrithiaHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 210000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 12 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 192145.4,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 231000,
+        "Duration (in seconds)": 165000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 12 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 12 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.14
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 456000,
+        "Duration (in seconds)": 198000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 13 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::HeartlandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 9000,
+        "Duration (in seconds)": 195000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 13 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ClansheadValleyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.43,
+            "Y": -0.29
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 13 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TerminusHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 210000,
+        "Duration (in seconds)": 165000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 13 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::NevishLineHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": -0.04,
+            "Y": 0.05
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 339000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 13 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::AllodsBightHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 376200,
+        "Duration (in seconds)": 255000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 14 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.1,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 13200,
+        "Duration (in seconds)": 288000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 14 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::TerminusHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 199423.64,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 195000,
+        "Duration (in seconds)": 210000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 14 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 450000,
+        "Duration (in seconds)": 226800,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 15 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 184867.17,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 27000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 15 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::DrownedValeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 159000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 15 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::NevishLineHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": -0.27,
+            "Y": -0.36
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 235086.98,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 15 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::UmbralWildwoodHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 330000,
+        "Duration (in seconds)": 195000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 16 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 60000,
+        "Duration (in seconds)": 216000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 16 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.05
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 16 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": -0.57,
+            "Y": 0.02
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 235086.98,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 408000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 16 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::TerminusHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.29,
+            "Y": 0.62
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 421409.8,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 495000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 17 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::HowlCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 36000,
+        "Duration (in seconds)": 165000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 17 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::KalokaiHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 170310.7,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 54000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 17 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 270000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 18 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::LochMorHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 51000,
+        "Duration (in seconds)": 117000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 18 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::MarbanHollow",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 174000,
+        "Duration (in seconds)": 153000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 18 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 18 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::FarranacCoastHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 543000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 19 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::ViperPitHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 19 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 156482.05,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 135000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 19 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::KingsCageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 20 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 120090.88,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 20 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 120090.88,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 20 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::RedRiverHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 149203.81,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 20 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::NevishLineHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": -0.37,
+            "Y": -0.64
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 242365.23,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 228000,
+        "Duration (in seconds)": 72000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 20 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::BasinSionnachHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 307200,
+        "Duration (in seconds)": 114000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 21 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DrownedValeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 156482.05,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 66000,
+        "Duration (in seconds)": 159000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 21 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::CallahansPassageHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": -0.05
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 405000,
+        "Duration (in seconds)": 147000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 22 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::GreatMarchHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.52
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 9000,
+        "Duration (in seconds)": 240000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 22 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 168000,
+        "Duration (in seconds)": 168000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 22 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::KingsCageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.05
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 228000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 23 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::FarranacCoastHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 12000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 23 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ReachingTrailHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": -0.02,
+            "Y": -0.17
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 150000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 23 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::DrownedValeHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.05
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 219000,
+        "Duration (in seconds)": 160800,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 24 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 24 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 330000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 25 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::TerminusHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 18000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 25 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ClansheadValleyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 25 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 435000,
+        "Duration (in seconds)": 129000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 26 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::CallahansPassageHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 26 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::HeartlandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 354000,
+        "Duration (in seconds)": 135000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 26 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TempestIslandHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 141925.58,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 435000,
+        "Duration (in seconds)": 114000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 27 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 150000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 27 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 171000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 28 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::TerminusHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 371189.97,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 28 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::SpeakingWoodsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 57000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 28 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::ShackledChasmHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 199423.64,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 111300,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 28 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 105000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 29 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DrownedValeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 213252.3,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 51000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 29 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::KingsCageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 149203.81,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 390000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 30 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::LochMorHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 45000,
+        "Duration (in seconds)": 129000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 30 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 108000,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 30 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 186000,
+        "Duration (in seconds)": 171000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 31 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::GreatMarchHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 57000,
+        "Duration (in seconds)": 102000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 31 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 31 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::ViperPitHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 336000,
+        "Duration (in seconds)": 84000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 32 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.47,
+            "Y": 0.38
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 248915.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 117000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 32 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::CallumsCapeHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 184867.17,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 172800,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 32 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TempestIslandHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 170310.7,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 411000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 32 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 534000,
+        "Duration (in seconds)": 93000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 33 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::CallahansPassageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 70598.88,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 15000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 33 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ReachingTrailHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 168000,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 33 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::OriginHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 270000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 33 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::RedRiverHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.33,
+            "Y": 0.74
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 242365.23,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 528000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 34 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::TempestIslandHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 156482.05,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 60000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 34 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 219000,
+        "Duration (in seconds)": 210000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 34 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 356633.53,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 540000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 35 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 163760.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 35 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::MooringCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 150000,
+        "Duration (in seconds)": 84000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 35 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::BasinSionnachHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.02,
+            "Y": -0.93
+        },
+        "Inner Radius": 120090.88,
+        "Outer Radius": 278028.6,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 240000,
+        "Duration (in seconds)": 99000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 35 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::AcrithiaHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.06,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 390000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 36 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 227808.77,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 179400,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 36 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ClansheadValleyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 90000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 36 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::KingsCageHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 165000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 36 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::BasinSionnachHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 390000,
+        "Duration (in seconds)": 152400,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 36 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 540000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 37 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 81000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 37 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::LochMorHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.05
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 84000,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 37 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::MorgensCrossingHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.45,
+            "Y": -0.67
+        },
+        "Inner Radius": 177588.94,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 84000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 37 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::KalokaiHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 199423.64,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 38 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 21000,
+        "Duration (in seconds)": 96000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 38 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 129000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 38 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::CallumsCapeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 337200,
+        "Duration (in seconds)": 144000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 39 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::CallumsCapeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 77877.11,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 192000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 39 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::AcrithiaHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.08,
+            "Y": 0.29
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 371189.97,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 90000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 39 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::NevishLineHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 198000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 39 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::DrownedValeHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 330000,
+        "Duration (in seconds)": 141000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 40 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::KalokaiHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 40 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 39000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 40 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 91800,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 40 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 198000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 41 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 166671.58,
+        "Outer Radius": 208157.52,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 6000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 41 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 200879.3,
+        "Outer Radius": 266383.4,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 168000,
+        "Duration (in seconds)": 300000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 41 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::FishermansRowHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 139014.3,
+        "Outer Radius": 208157.52,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 114000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 41 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::HowlCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 128824.76,
+        "Outer Radius": 163032.45,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 348000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 42 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 184867.17,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 15000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 42 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ReachingTrailHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 192145.4,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 150000,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 42 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::AcrithiaHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.33,
+            "Y": 0.79
+        },
+        "Inner Radius": 127369.11,
+        "Outer Radius": 242365.23,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 240000,
+        "Duration (in seconds)": 117000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 42 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::RedRiverHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": -0.45,
+            "Y": 0.83
+        },
+        "Inner Radius": 113540.47,
+        "Outer Radius": 256193.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 510000,
+        "Duration (in seconds)": 159000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 43 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::FarranacCoastHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 54000,
+        "Duration (in seconds)": 147000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 43 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 255000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 43 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 270000,
+        "Duration (in seconds)": 78000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 43 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 184867.17,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 111000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 43 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::MorgensCrossingHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 70598.88,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 510000,
+        "Duration (in seconds)": 102000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 44 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 98984.0,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 27000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 44 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::OriginHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 206701.88,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 39000,
+        "Duration (in seconds)": 168000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 44 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::HowlCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 288000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 45 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 72000,
+        "Duration (in seconds)": 198000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 45 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::HowlCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 240000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 45 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::LochMorHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 206701.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 279000,
+        "Duration (in seconds)": 96000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 45 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::ShackledChasmHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 192145.4,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 456000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 46 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::TempestIslandHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 184867.17,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 66000,
+        "Duration (in seconds)": 54000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 46 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::WestgateHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 349355.28,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 46 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 360000,
+        "Duration (in seconds)": 198000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 47 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::UmbralWildwoodHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 170310.7,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 87000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 47 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::KalokaiHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 90000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 47 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 106262.23,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 210000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 47 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::BasinSionnachHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 240000,
+        "Duration (in seconds)": 156000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 47 (Event 04)": {
+        "Map ID": "EWorldConquestMapId::ClansheadValleyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.57,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 510000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 48 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::DeadLandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 213252.3,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.9,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMajor.1",
+        "Delay (in seconds)": 15000,
+        "Duration (in seconds)": 162000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 48 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::NevishLineHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 91705.76,
+        "Outer Radius": 192145.4,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 300000,
+        "Duration (in seconds)": 99000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 48 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 408000,
+        "Duration (in seconds)": 156000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 48 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::AshFieldsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 127369.11,
+        "Outer Radius": 199423.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 534000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 49 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::ReaversPassHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 187050.64,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 49 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::TempestIslandHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 111357.0,
+        "Outer Radius": 176861.11,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 132000,
+        "Duration (in seconds)": 144000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 49 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 156482.05,
+        "Intensity": 1.0,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMajor.1",
+        "Delay (in seconds)": 120000,
+        "Duration (in seconds)": 168000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 49 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 118635.23,
+        "Outer Radius": 173221.98,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 372000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 50 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::StemaLandingHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 242607.83,
+        "Outer Radius": 363911.75,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 12000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 50 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::BasinSionnachHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 142653.4,
+        "Outer Radius": 204518.4,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 72000,
+        "Duration (in seconds)": 72000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 50 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::LochMorHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 122274.35,
+        "Outer Radius": 194328.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 150000,
+        "Duration (in seconds)": 240000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 50 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 94617.05,
+        "Outer Radius": 187050.64,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 408000,
+        "Duration (in seconds)": 96000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 51 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::MooringCountyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 152842.94,
+        "Outer Radius": 200879.3,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 9000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 51 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::FarranacCoastHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 139014.3,
+        "Outer Radius": 208157.52,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 132000,
+        "Duration (in seconds)": 144000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 51 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 135375.17,
+        "Outer Radius": 190689.77,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 180000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 51 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::ReaversPassHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 149203.81,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 336000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 52 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::FishermansRowHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 146292.52,
+        "Outer Radius": 200879.3,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 0,
+        "Duration (in seconds)": 72000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 52 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ClansheadValleyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 125185.64,
+        "Outer Radius": 184139.34,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 6000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 52 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::HeartlandsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 135375.17,
+        "Outer Radius": 194328.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 204000,
+        "Duration (in seconds)": 150000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 52 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::SpeakingWoodsHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 159393.34,
+        "Outer Radius": 194328.88,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 240000,
+        "Duration (in seconds)": 114000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 53 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::UmbralWildwoodHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 118635.23,
+        "Outer Radius": 156482.05,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormMinor.1",
+        "Delay (in seconds)": 2700,
+        "Duration (in seconds)": 90000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 53 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::OarbreakerHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 135375.17,
+        "Outer Radius": 200879.3,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 108000,
+        "Duration (in seconds)": 228000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 53 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::EndlessShoreHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 135375.17,
+        "Outer Radius": 176861.11,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 156000,
+        "Duration (in seconds)": 120000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 53 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::GodcroftsHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 139014.3,
+        "Outer Radius": 180500.23,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 390000,
+        "Duration (in seconds)": 84000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 54 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::LinnMercyHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 166671.58,
+        "Outer Radius": 204518.4,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 84000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 54 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::GreatMarchHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 128824.76,
+        "Outer Radius": 190689.77,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 240000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 54 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::WeatheredExpanseHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 132463.88,
+        "Outer Radius": 187050.64,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 3300,
+        "Duration (in seconds)": 180000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 54 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::StemaLandingHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 132463.88,
+        "Outer Radius": 166671.58,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 384000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 55 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::StemaLandingHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 135375.17,
+        "Outer Radius": 211068.81,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 24000,
+        "Duration (in seconds)": 288000,
+        "Intensity Curve Index": 4,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLongMixed.0"
+    },
+    "Weather Pattern 55 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::MorgensCrossingHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 166671.58,
+        "Outer Radius": 208157.52,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 132000,
+        "Duration (in seconds)": 132000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 55 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::UmbralWildwoodHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 139014.3,
+        "Outer Radius": 200879.3,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 372000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 56 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::OarbreakerHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 170310.7,
+        "Outer Radius": 208157.52,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 600,
+        "Duration (in seconds)": 168000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 56 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::ReaversPassHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 159393.34,
+        "Outer Radius": 208157.52,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 60000,
+        "Duration (in seconds)": 114000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    },
+    "Weather Pattern 56 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::KalokaiHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 84427.53,
+        "Outer Radius": 194328.88,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 132000,
+        "Duration (in seconds)": 144000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 56 (Event 03)": {
+        "Map ID": "EWorldConquestMapId::CallahansPassageHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 270022.53,
+        "Outer Radius": 338437.94,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 204000,
+        "Duration (in seconds)": 126000,
+        "Intensity Curve Index": 3,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongLong.0"
+    },
+    "Weather Pattern 57 (Event 00)": {
+        "Map ID": "EWorldConquestMapId::StonecradleHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 146292.52,
+        "Outer Radius": 184139.34,
+        "Intensity": 0.32,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormMinor.1",
+        "Delay (in seconds)": 6000,
+        "Duration (in seconds)": 108000,
+        "Intensity Curve Index": 0,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildShort.0"
+    },
+    "Weather Pattern 57 (Event 01)": {
+        "Map ID": "EWorldConquestMapId::DrownedValeHex",
+        "Weather Event Type": "EWeatherType::RainStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 142653.4,
+        "Outer Radius": 170310.7,
+        "Intensity": 0.4,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPRainStormModerate.1",
+        "Delay (in seconds)": 144000,
+        "Duration (in seconds)": 144000,
+        "Intensity Curve Index": 1,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveMildLong.0"
+    },
+    "Weather Pattern 57 (Event 02)": {
+        "Map ID": "EWorldConquestMapId::TheFingersHex",
+        "Weather Event Type": "EWeatherType::SnowStorm",
+        "Normalised Location": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Inner Radius": 159393.34,
+        "Outer Radius": 214707.94,
+        "Intensity": 0.6,
+        "Intensity Effect File": "War/Content/Blueprints/Weather/Effects/BPSnowStormModerate.1",
+        "Delay (in seconds)": 372000,
+        "Duration (in seconds)": 114000,
+        "Intensity Curve Index": 2,
+        "Intensity Curve Data File": "War/Content/Blueprints/Weather/WeatherIntensityCurveStrongShort.0"
+    }
+}

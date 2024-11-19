@@ -882,9 +882,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    "Construction Vehicle (CV)": {
-        "Name": "Construction Vehicle (CV)",
-        "Additional Names": "cv",
+    "BMS - Universal Assembly Rig (CV)": {
+        "Name": "BMS - Universal Assembly Rig (CV)",
+        "Additional Names": "cv; construction vehicle",
         "Cost": "100",
         "Health": "1000",
         "Armour Health": "0",

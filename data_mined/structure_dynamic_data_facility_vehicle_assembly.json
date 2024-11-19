@@ -1,0 +1,590 @@
+{
+    "FacilityVehicleFactory1 (MaterialPlatform)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "MaterialPlatform",
+        "Required Vehicle Codename": "None",
+        "Production Time": 15
+    },
+    "FacilityVehicleFactory1 (MotorcycleOffensiveC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "MotorcycleOffensiveC",
+        "Required Vehicle Codename": "MotorcycleC",
+        "Production Time": 180
+    },
+    "FacilityVehicleFactory1 (TruckMobilityC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TruckMobilityC",
+        "Required Vehicle Codename": "TruckC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (TruckOffensiveC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TruckOffensiveC",
+        "Required Vehicle Codename": "TruckC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (TruckDefensiveW)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TruckDefensiveW",
+        "Required Vehicle Codename": "TruckW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (TruckMobilityW)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TruckMobilityW",
+        "Required Vehicle Codename": "TruckW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (SmallTrainEngine)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "SmallTrainEngine",
+        "Required Vehicle Codename": "None",
+        "Production Time": 900
+    },
+    "FacilityVehicleFactory1 (SmallTrainResource)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "SmallTrainResource",
+        "Required Vehicle Codename": "None",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (SmallTrainMaterial)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "SmallTrainMaterial",
+        "Required Vehicle Codename": "None",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (AmbulanceFlameC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "AmbulanceFlameC",
+        "Required Vehicle Codename": "AmbulanceC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (AmbulanceFlameW)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "AmbulanceFlameW",
+        "Required Vehicle Codename": "AmbulanceW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (SmallTrainLiquid)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "SmallTrainLiquid",
+        "Required Vehicle Codename": "None",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (SmallTrainShipping)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "SmallTrainShipping",
+        "Required Vehicle Codename": "None",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ArmoredCarOffensiveC)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ArmoredCarOffensiveC",
+        "Required Vehicle Codename": "ArmoredCarC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ArmoredCarTwinC)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ArmoredCarTwinC",
+        "Required Vehicle Codename": "ArmoredCarC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (TanketteOffensiveC)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "TanketteOffensiveC",
+        "Required Vehicle Codename": "TanketteC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (TanketteFlameC)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "TanketteFlameC",
+        "Required Vehicle Codename": "TanketteC",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (ScoutVehicleUtilityC)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ScoutVehicleUtilityC",
+        "Required Vehicle Codename": "ScoutVehicleMobilityC",
+        "Production Time": 180
+    },
+    "FacilityVehicleFactory1 (ScoutVehicleOffensiveC)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ScoutVehicleOffensiveC",
+        "Required Vehicle Codename": "ScoutVehicleMobilityC",
+        "Production Time": 180
+    },
+    "FacilityVehicleFactory1 (ArmoredCarATW)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ArmoredCarATW",
+        "Required Vehicle Codename": "ArmoredCarW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ArmoredCarMobilityW)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ArmoredCarMobilityW",
+        "Required Vehicle Codename": "ArmoredCarW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ArmoredCarFlameW)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ArmoredCarFlameW",
+        "Required Vehicle Codename": "ArmoredCarW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ArmoredCar2LargeW)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ArmoredCar2LargeW",
+        "Required Vehicle Codename": "ArmoredCar2TwinW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ScoutVehicleOffensiveW)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ScoutVehicleOffensiveW",
+        "Required Vehicle Codename": "ScoutVehicleW",
+        "Production Time": 180
+    },
+    "FacilityVehicleFactory1 (ScoutVehicleUtilityW)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "ScoutVehicleUtilityW",
+        "Required Vehicle Codename": "ScoutVehicleW",
+        "Production Time": 180
+    },
+    "FacilityVehicleFactory1 (FieldAT2C)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "FieldAT2C",
+        "Required Vehicle Codename": "FieldMGC",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (FieldAT2W)": {
+        "Modification Needed": "EFortModificationType::MotorPool",
+        "Vehicle Codename": "FieldAT2W",
+        "Required Vehicle Codename": "FieldMGW",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (TruckMultiC)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "TruckMultiC",
+        "Required Vehicle Codename": "TruckC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (EmplacedMultiC)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "EmplacedMultiC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (HalftrackMultiW)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "HalftrackMultiW",
+        "Required Vehicle Codename": "HalftrackW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (HalftrackDefensiveC)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "HalftrackDefensiveC",
+        "Required Vehicle Codename": "HalftrackC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (HalftrackArtilleryC)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "HalftrackArtilleryC",
+        "Required Vehicle Codename": "HalftrackC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (HalftrackOffensiveW)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "HalftrackOffensiveW",
+        "Required Vehicle Codename": "HalftrackW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ScoutTankMultiW)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "ScoutTankMultiW",
+        "Required Vehicle Codename": "ScoutTankW",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (TanketteMultiC)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "TanketteMultiC",
+        "Required Vehicle Codename": "TanketteC",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (HalftrackTwinW)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "HalftrackTwinW",
+        "Required Vehicle Codename": "HalftrackW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (LargeFieldMultiW)": {
+        "Modification Needed": "EFortModificationType::ArtilleryFactory",
+        "Vehicle Codename": "LargeFieldMultiW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (Harvester)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "Harvester",
+        "Required Vehicle Codename": "None",
+        "Production Time": 900
+    },
+    "FacilityVehicleFactory1 (ConstructionUtility)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "ConstructionUtility",
+        "Required Vehicle Codename": "Construction",
+        "Production Time": 900
+    },
+    "FacilityVehicleFactory1 (LandingCraftOffensiveC)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "LandingCraftOffensiveC",
+        "Required Vehicle Codename": "LandingCraftC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (FieldCannonDamageC)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "FieldCannonDamageC",
+        "Required Vehicle Codename": "FieldATC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ScoutTankOffensiveW)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "ScoutTankOffensiveW",
+        "Required Vehicle Codename": "ScoutTankW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (FieldATDamageW)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "FieldATDamageW",
+        "Required Vehicle Codename": "FieldATW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (MaterialTrailer)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "MaterialTrailer",
+        "Required Vehicle Codename": "ResourceTrailer",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (FuelTrailer)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "FuelTrailer",
+        "Required Vehicle Codename": "ResourceTrailer",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (HeavyTruckC)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "HeavyTruckC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (HeavyTruckW)": {
+        "Modification Needed": "EFortModificationType::LightVehicleAssembly",
+        "Vehicle Codename": "HeavyTruckW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (DestroyerTankFlameW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "DestroyerTankFlameW",
+        "Required Vehicle Codename": "DestroyerTankW",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (LightTankFlameC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "LightTankFlameC",
+        "Required Vehicle Codename": "LightTankC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (LightTankOffensiveC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "LightTankOffensiveC",
+        "Required Vehicle Codename": "LightTankC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (LightTankMobilityC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "LightTankMobilityC",
+        "Required Vehicle Codename": "LightTankC",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (MediumTankOffensiveC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "MediumTankOffensiveC",
+        "Required Vehicle Codename": "MediumTankC",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (MediumTank2TwinC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "MediumTank2TwinC",
+        "Required Vehicle Codename": "MediumTank2C",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (EmplacedCannonLargeC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "EmplacedCannonLargeC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (LightTankDefensiveW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "LightTankDefensiveW",
+        "Required Vehicle Codename": "LightTankW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (LightTankArtilleryW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "LightTankArtilleryW",
+        "Required Vehicle Codename": "LightTankW",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (MediumTankSiegeW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "MediumTankSiegeW",
+        "Required Vehicle Codename": "MediumTankW",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (MediumTank2MultiW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "MediumTank2MultiW",
+        "Required Vehicle Codename": "MediumTank2W",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (EmplacedATLargeW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "EmplacedATLargeW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (MediumTank2RangeW)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "MediumTank2RangeW",
+        "Required Vehicle Codename": "MediumTank2W",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (MortarTankC)": {
+        "Modification Needed": "EFortModificationType::TankAssembly",
+        "Vehicle Codename": "MortarTankC",
+        "Required Vehicle Codename": "LightTank2InfantryC",
+        "Production Time": 180
+    },
+    "FacilityVehicleFactory1 (MediumTankLargeC)": {
+        "Modification Needed": "EFortModificationType::WeaponsPlatformAssembly",
+        "Vehicle Codename": "MediumTankLargeC",
+        "Required Vehicle Codename": "MediumTankC",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (MediumTank2IndirectW)": {
+        "Modification Needed": "EFortModificationType::WeaponsPlatformAssembly",
+        "Vehicle Codename": "MediumTank2IndirectW",
+        "Required Vehicle Codename": "MediumTank2W",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (MediumTankATW)": {
+        "Modification Needed": "EFortModificationType::WeaponsPlatformAssembly",
+        "Vehicle Codename": "MediumTankATW",
+        "Required Vehicle Codename": "MediumTankW",
+        "Production Time": 600
+    },
+    "FacilityVehicleFactory1 (LargeFieldATC)": {
+        "Modification Needed": "EFortModificationType::WeaponsPlatformAssembly",
+        "Vehicle Codename": "LargeFieldATC",
+        "Required Vehicle Codename": "FieldATC",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (LargeFieldCannonW)": {
+        "Modification Needed": "EFortModificationType::WeaponsPlatformAssembly",
+        "Vehicle Codename": "LargeFieldCannonW",
+        "Required Vehicle Codename": "FieldCannonW",
+        "Production Time": 420
+    },
+    "FacilityVehicleFactory1 (RocketPartBottom)": {
+        "Modification Needed": "EFortModificationType::RocketAssembly",
+        "Vehicle Codename": "RocketPartBottom",
+        "Required Vehicle Codename": "None",
+        "Production Time": 86400
+    },
+    "FacilityVehicleFactory1 (RocketPartCenter)": {
+        "Modification Needed": "EFortModificationType::RocketAssembly",
+        "Vehicle Codename": "RocketPartCenter",
+        "Required Vehicle Codename": "None",
+        "Production Time": 86400
+    },
+    "FacilityVehicleFactory1 (RocketPartTop)": {
+        "Modification Needed": "EFortModificationType::RocketAssembly",
+        "Vehicle Codename": "RocketPartTop",
+        "Required Vehicle Codename": "None",
+        "Production Time": 86400
+    },
+    "FacilityVehicleFactory1 (ShipPart1)": {
+        "Modification Needed": "EFortModificationType::ShipAssembly",
+        "Vehicle Codename": "ShipPart1",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1500
+    },
+    "FacilityVehicleFactory1 (ShipPart2)": {
+        "Modification Needed": "EFortModificationType::ShipAssembly",
+        "Vehicle Codename": "ShipPart2",
+        "Required Vehicle Codename": "None",
+        "Production Time": 300
+    },
+    "FacilityVehicleFactory1 (ShipPart3)": {
+        "Modification Needed": "EFortModificationType::ShipAssembly",
+        "Vehicle Codename": "ShipPart3",
+        "Required Vehicle Codename": "None",
+        "Production Time": 43200
+    },
+    "FacilityVehicleFactory2 (TrainEngine)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TrainEngine",
+        "Required Vehicle Codename": "None",
+        "Production Time": 21600
+    },
+    "FacilityVehicleFactory2 (TrainCoal)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TrainCoal",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1800
+    },
+    "FacilityVehicleFactory2 (TrainInfantry)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TrainInfantry",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1800
+    },
+    "FacilityVehicleFactory2 (TrainFlatbed)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TrainFlatbed",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1800
+    },
+    "FacilityVehicleFactory2 (TrainCaboose)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "TrainCaboose",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1800
+    },
+    "FacilityVehicleFactory2 (TrainCombatCarC)": {
+        "Modification Needed": "EFortModificationType::TrainAssembly",
+        "Vehicle Codename": "TrainCombatCarC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1800
+    },
+    "FacilityVehicleFactory2 (TrainCombatCarW)": {
+        "Modification Needed": "EFortModificationType::TrainAssembly",
+        "Vehicle Codename": "TrainCombatCarW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 1800
+    },
+    "FacilityVehicleFactory2 (TrainLRArtillery)": {
+        "Modification Needed": "EFortModificationType::TrainAssembly",
+        "Vehicle Codename": "TrainLRArtillery",
+        "Required Vehicle Codename": "None",
+        "Production Time": 259200
+    },
+    "FacilityVehicleFactory2 (TrainHospital)": {
+        "Modification Needed": "EFortModificationType::TrainAssembly",
+        "Vehicle Codename": "TrainHospital",
+        "Required Vehicle Codename": "None",
+        "Production Time": 129600
+    },
+    "FacilityVehicleFactory2 (SuperTankC)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "SuperTankC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 172800
+    },
+    "FacilityVehicleFactory2 (SuperTankW)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "SuperTankW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 172800
+    },
+    "FacilityVehicleFactory2 (BattleTankC)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "BattleTankC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 64800
+    },
+    "FacilityVehicleFactory2 (BattleTankW)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "BattleTankW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 64800
+    },
+    "FacilityVehicleFactory2 (BattleTankATC)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "BattleTankATC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 86400
+    },
+    "FacilityVehicleFactory2 (BattleTankDefensiveW)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "BattleTankDefensiveW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 79200
+    },
+    "FacilityVehicleFactory2 (BattleTankHeavyArtilleryC)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "BattleTankHeavyArtilleryC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 86400
+    },
+    "FacilityVehicleFactory2 (BattleTankHeavyArtilleryW)": {
+        "Modification Needed": "EFortModificationType::HeavyTankAssembly",
+        "Vehicle Codename": "BattleTankHeavyArtilleryW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 86400
+    },
+    "FacilityVehicleFactory3 (LargeShipBaseShip)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipBaseShip",
+        "Required Vehicle Codename": "None",
+        "Production Time": 14400
+    },
+    "FacilityVehicleFactory3 (LargeShipResourceShip)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipResourceShip",
+        "Required Vehicle Codename": "None",
+        "Production Time": 14400
+    },
+    "FacilityVehicleFactory3 (LargeShipStorageShip)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipStorageShip",
+        "Required Vehicle Codename": "None",
+        "Production Time": 28800
+    },
+    "FacilityVehicleFactory3 (LargeShipDestroyerC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipDestroyerC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 21600
+    },
+    "FacilityVehicleFactory3 (LargeShipSubmarineW)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipSubmarineW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 21600
+    },
+    "FacilityVehicleFactory3 (LargeShipBattleShipC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipBattleShipC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 36000
+    },
+    "FacilityVehicleFactory3 (LargeShipBattleShipW)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipBattleShipW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 36000
+    },
+    "FacilityVehicleFactory3 (LargeShipDestroyerW)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipDestroyerW",
+        "Required Vehicle Codename": "None",
+        "Production Time": 21600
+    },
+    "FacilityVehicleFactory3 (LargeShipSubmarineC)": {
+        "Modification Needed": "EFortModificationType::Default",
+        "Vehicle Codename": "LargeShipSubmarineC",
+        "Required Vehicle Codename": "None",
+        "Production Time": 21600
+    }
+}

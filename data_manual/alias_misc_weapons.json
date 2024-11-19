@@ -1,0 +1,14 @@
+{
+    "TankMine": "at mine",
+    "SatchelChargeW": "satchel",
+    "StickyBomb": "sticky",
+    "GrenadeW" : "harpa",
+    "HEGrenade" : "mammon",
+    "ExplosiveLightC" : "hydra",
+    "ATGrenadeW" : "flask",
+    "SatchelChargeT" : "havoc;havoc charge",
+    "DepthChargeAmmo" : "depth charge",
+    "WaterMine" : "sea mine;water mine",
+    "MortarAmmoFlame" : "fire mortar;flame mortar",
+    "InfantryMine" : "ap mine;infantry mine"
+}

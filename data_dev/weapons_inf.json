@@ -1,0 +1,650 @@
+{
+    "75mm": {
+        "Name": "75mm",
+        "Dev Name": "BattleTankAmmo",
+        "Damage": "1750.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";collie bt;colonial bt;lance;bt;warden bt;flood bt;flood;jugg;flame bt;juggernaut;colonial sht;collie sht;kv2"
+    },
+    "40mm": {
+        "Name": "40mm",
+        "Dev Name": "LightTankAmmo",
+        "Damage": "600.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";lt;collie lt;colonial lt;colonial light tank;ironhide;kran;kranesca;kranny;svh; silverhand;hac;phalanx;toaster;mpt;falch;falchion;"
+    },
+    "300mm": {
+        "Name": "300mm",
+        "Dev Name": "LRArtilleryAmmo",
+        "Damage": "1500.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";rsc;rail cannon;rail sc"
+    },
+    "Mortar Shell": {
+        "Name": "Mortar Shell",
+        "Dev Name": "MortarAmmo",
+        "Damage": "300.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Flare Mortar Shell": {
+        "Name": "Flare Mortar Shell",
+        "Dev Name": "MortarAmmoFL",
+        "Damage": "0.0",
+        "DamageType": "Flare",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Shrapnel Mortar Shell": {
+        "Name": "Shrapnel Mortar Shell",
+        "Dev Name": "MortarAmmoSH",
+        "Damage": "125.0",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "250mm": {
+        "Name": "250mm",
+        "Dev Name": "MortarTankAmmo",
+        "Damage": "1000.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ";fm250;fm;chieftain;svb;chief;"
+    },
+    "Abisme AT-99 Mine": {
+        "Name": "Abisme AT-99 Mine",
+        "Dev Name": "TankMine",
+        "Damage": "850.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Alligator Charge": {
+        "Name": "Alligator Charge",
+        "Dev Name": "SatchelChargeW",
+        "Damage": "400.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Anti-Tank Sticky Bomb": {
+        "Name": "Anti-Tank Sticky Bomb",
+        "Dev Name": "StickyBomb",
+        "Damage": "450.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "A3 Harpa Fragmentation Grenade": {
+        "Name": "A3 Harpa Fragmentation Grenade",
+        "Dev Name": "GrenadeW",
+        "Damage": "250.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Mammon 91-b": {
+        "Name": "Mammon 91-b",
+        "Dev Name": "HEGrenade",
+        "Damage": "240.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Green Ash Grenade": {
+        "Name": "Green Ash Grenade",
+        "Dev Name": "GreenAsh",
+        "Damage": "0.0",
+        "DamageType": "PoisonGas",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "PT-815 Smoke Grenade": {
+        "Name": "PT-815 Smoke Grenade",
+        "Dev Name": "SmokeGrenade",
+        "Damage": "0.0",
+        "DamageType": "Smoke",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "RPG": {
+        "Name": "RPG",
+        "Dev Name": "RpgAmmo",
+        "Damage": "550.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";icarus;rpjeep;quadiche;rpg bard;ranseur;Cutler Launcher 4"
+    },
+    "120mm": {
+        "Name": "120mm",
+        "Dev Name": "LightArtilleryAmmo",
+        "Damage": "400.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";collie 120;fa;colonial 120;push 120"
+    },
+    "30mm": {
+        "Name": "30mm",
+        "Dev Name": "MiniTankAmmo",
+        "Damage": "400.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";30mm tankette;roofette;30mmST;30mm scout tank;brig"
+    },
+    "68mm": {
+        "Name": "68mm",
+        "Dev Name": "ATAmmo",
+        "Damage": "600.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ";atht;warden fat;collins;fat;collie fat;ltd;nemesis;bard;"
+    },
+    "7.62mm": {
+        "Name": "7.62mm",
+        "Dev Name": "RifleAmmo",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";No.2 Loughcaster;Argenti r.II Rifle;Clancy Cinder M3;KRR2-790 Omen;Catena rt.IV Auto-Rifle"
+    },
+    "12.7mm": {
+        "Name": "12.7mm",
+        "Dev Name": "MGAmmo",
+        "Damage": "68.75",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";titan;colonial battleship;collie battleship;KRN886-127 Gast Machine Gun"
+    },
+    "7.92mm": {
+        "Name": "7.92mm",
+        "Dev Name": "AssaultRifleAmmo",
+        "Damage": "43.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";colonial ac;ac;armoured car;warden armoured car;warden ac;tac;aft;armored ac;bonelaw;scar twin;warden heavy ht;warden heavy halftrack;Aalto Storm Rifle 24;\u201cDusk\u201d ce.III"
+    },
+    "AssaultRifleSingleShotAmmo": {
+        "Name": "7.92mm",
+        "Dev Name": "AssaultRifleSingleShotAmmo",
+        "Damage": "52.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";Aalto Storm Rifle 24"
+    },
+    "20mm": {
+        "Name": "20mm",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "187.5",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";atac;20 Neville Anti-Tank Rifle;\u201cQuickhatch\u201d Rt.I"
+    },
+    "8mm": {
+        "Name": "8mm",
+        "Dev Name": "PistolAmmo",
+        "Damage": "37.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";Ferro 879;Ahti Model 2"
+    },
+    ".44": {
+        "Name": ".44",
+        "Dev Name": "RevolverAmmo",
+        "Damage": "75.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";Cometa T2-9"
+    },
+    "Buckshot": {
+        "Name": "Buckshot",
+        "Dev Name": "ShotgunAmmo",
+        "Damage": "93.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";KRF1-750 Dragonfly"
+    },
+    "8.5mm": {
+        "Name": "8.5mm",
+        "Dev Name": "SniperRifleAmmo",
+        "Damage": "125.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "9mm": {
+        "Name": "9mm",
+        "Dev Name": "SMGAmmo",
+        "Damage": "33.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";Fiddler Submachine Gun Model 868;No.1 \u201cThe Liar\u201d Submachinegun;\u201cLionclaw\u201d mc.VIII"
+    },
+    "14.5mm": {
+        "Name": "14.5mm",
+        "Dev Name": "FieldMGAmmo",
+        "Damage": "81.25",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Bomastone Grenade": {
+        "Name": "Bomastone Grenade",
+        "Dev Name": "GrenadeC",
+        "Damage": "125.0",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "AP/RPG": {
+        "Name": "AP/RPG",
+        "Dev Name": "ATRPGAmmo",
+        "Damage": "550.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ";Venom c.II 35;Bane 45"
+    },
+    "Ignifist 30": {
+        "Name": "Ignifist 30",
+        "Dev Name": "ATRPGLightCAmmo",
+        "Damage": "375.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "150mm": {
+        "Name": "150mm",
+        "Dev Name": "HeavyArtilleryAmmo",
+        "Damage": "900.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";warden spg;stain;collie spg;colonial spg;sarissa"
+    },
+    "ARC/RPG": {
+        "Name": "ARC/RPG",
+        "Dev Name": "ATRPGIndirectAmmo",
+        "Damage": "675.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ";bonecar;bac;bonewagon;Bonesaw MK.3"
+    },
+    "Hydra\u2019s Whisper": {
+        "Name": "Hydra\u2019s Whisper",
+        "Dev Name": "ExplosiveLightC",
+        "Damage": "550.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "BF5 White Ash Flask Grenade": {
+        "Name": "BF5 White Ash Flask Grenade",
+        "Dev Name": "ATGrenadeW",
+        "Damage": "300.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "RifleAutomaticWSingleShotAmmo": {
+        "Name": "7.62mm",
+        "Dev Name": "RifleAutomaticWSingleShotAmmo",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ";Sampo Auto-Rifle 77"
+    },
+    "Tremola Grenade GPb-1": {
+        "Name": "Tremola Grenade GPb-1",
+        "Dev Name": "HELaunchedGrenade",
+        "Damage": "400.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "94.5mm": {
+        "Name": "94.5mm",
+        "Dev Name": "ATLargeAmmo",
+        "Damage": "1750.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ";btd;hasta"
+    },
+    "4C-Fire Rocket": {
+        "Name": "4C-Fire Rocket",
+        "Dev Name": "FireRocketAmmo",
+        "Damage": "145.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";rocket halftrack;rocket ht"
+    },
+    "3C-High Explosive Rocket": {
+        "Name": "3C-High Explosive Rocket",
+        "Dev Name": "HERocketAmmo",
+        "Damage": "350.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";rocket truck;katyusha;rocket st;rocket scout tank;"
+    },
+    "Flame Ammo": {
+        "Name": "Flame Ammo",
+        "Dev Name": "FlameAmmo",
+        "Damage": "25.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";flame lt;flame tankette"
+    },
+    "Water Bucket": {
+        "Name": "Water Bucket",
+        "Dev Name": "WaterBucketfull",
+        "Damage": "125.0",
+        "DamageType": "Extinguishing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Flame Backpack Ammo": {
+        "Name": null,
+        "Dev Name": "FlameBackpackAmmo",
+        "Damage": "15.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ";\u201cMolten Wind\u201d v.II Flame Torch;Willow\u2019s Bane Model 845"
+    },
+    "Havoc Charge Detonator": {
+        "Name": "Havoc Charge Detonator",
+        "Dev Name": "SatchelChargeT",
+        "Damage": "1950.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Model-7 \u201cEvie\u201d": {
+        "Name": "Model-7 \u201cEvie\u201d",
+        "Dev Name": "DepthChargeAmmo",
+        "Damage": "900.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "E680-S Rudder Lock": {
+        "Name": "E680-S Rudder Lock",
+        "Dev Name": "WaterMine",
+        "Damage": "1350.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Moray Torpedo": {
+        "Name": "Moray Torpedo",
+        "Dev Name": "TorpedoAmmo",
+        "Damage": "3550.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Incendiary Mortar Shell": {
+        "Name": "Incendiary Mortar Shell",
+        "Dev Name": "MortarAmmoFlame",
+        "Damage": "55.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "B2 Varsi Anti-Tank Grenade": {
+        "Name": "B2 Varsi Anti-Tank Grenade",
+        "Dev Name": "ATLaunchedGrenadeW",
+        "Damage": "425.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Crow\u2019s Foot Mine": {
+        "Name": "Crow\u2019s Foot Mine",
+        "Dev Name": "InfantryMine",
+        "Damage": "312.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "FieldMGC": {
+        "Name": "G40 \u201cSagittarii\u201d (FMG)",
+        "Dev Name": "MGAmmo",
+        "Damage": "82.5",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "collie fmg;fmg;field machine gun"
+    },
+    "FieldMGW": {
+        "Name": "Swallowtail 988/127-2 (FMG)",
+        "Dev Name": "MGAmmo",
+        "Damage": "82.5",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden fmg"
+    },
+    "MediumTankOffensiveC": {
+        "Name": "85K-a \u201cSpatha\u201d",
+        "Dev Name": "LightTankAmmo",
+        "Damage": "660.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "DestroyerTankW": {
+        "Name": "Noble Widow MK. XIV (HTD)",
+        "Dev Name": "ATAmmo",
+        "Damage": "1050.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "htd;widow"
+    },
+    "FieldCannonDamageC": {
+        "Name": "40-45 \u201cSmelter\u201d Heavy Field Gun (HVFAT)",
+        "Dev Name": "LightTankAmmo",
+        "Damage": "810.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "hv40;hv40mm"
+    },
+    "FieldATDamageW": {
+        "Name": "Balfour Rampart 68mm (HVFC)",
+        "Dev Name": "ATAmmo",
+        "Damage": "750.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "hvfat"
+    },
+    "MediumTank2RangeW": {
+        "Name": "Gallagher Outlaw Mk. II (Cruiser)",
+        "Dev Name": "LightTankAmmo",
+        "Damage": "720.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "outlaw"
+    },
+    "SuperTankW": {
+        "Name": "Cullen Predator Mk. III",
+        "Dev Name": "ATLargeAmmo",
+        "Damage": "2187.5",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden sht;sht;predator"
+    },
+    "MediumTankATW": {
+        "Name": "Silverhand Lordscar Mk. X",
+        "Dev Name": "ATLargeAmmo",
+        "Damage": "1200.5",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "lordscar;std"
+    },
+    "FieldAT2C": {
+        "Name": "GA-6 Cestus (Double ATR Field Gun)",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "93.75",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "collie anti tank field gun;colonial anti tank field gun;collie atr field gun;cestus"
+    },
+    "FieldAT2W": {
+        "Name": "Duncan's Coin (ATR Field Gun)",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "140.625",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden anti tank field gun;warden atr field gun"
+    },
+    "LargeFieldATC": {
+        "Name": "945g \u201cStygian Bolt\u201d",
+        "Dev Name": "ATLargeAmmo",
+        "Damage": "2625.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "styg;stygian"
+    },
+    "LargeFieldCannonW": {
+        "Name": "Balfour Stockade 75mm",
+        "Dev Name": "BattleTankAmmo",
+        "Damage": "2362.5",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "RifleLightW": {
+        "Name": "Blakerow 871",
+        "Dev Name": "RifleAmmo",
+        "Damage": "49.95",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Blakerow 871"
+    },
+    "AssaultRifleC": {
+        "Name": "Catara mo.II",
+        "Dev Name": "MGAmmo",
+        "Damage": "44.0",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Catara mo.II"
+    },
+    "SniperRifleW": {
+        "Name": "Clancy-Raca M4",
+        "Dev Name": "RifleAmmo",
+        "Damage": "126.5625",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Clancy-Raca M4"
+    },
+    "SniperRifleC": {
+        "Name": "KRR3-792 Auger",
+        "Dev Name": "RifleAmmo",
+        "Damage": "87.1875",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "KRR3-792 Auger"
+    },
+    "SMGC": {
+        "Name": "\u201cThe Pitch Gun\u201d mc.V",
+        "Dev Name": "SMGAmmo",
+        "Damage": "25.3125",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "\u201cThe Pitch Gun\u201d mc.V"
+    },
+    "RifleLightC": {
+        "Name": "Fuscina pi.I",
+        "Dev Name": "RifleAmmo",
+        "Damage": "49.95",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Fuscina pi.I"
+    },
+    "MGW": {
+        "Name": "Malone MK.2",
+        "Dev Name": "MGAmmo",
+        "Damage": "44.0",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Malone MK.2"
+    },
+    "PistolLightW": {
+        "Name": "Cascadier 873",
+        "Dev Name": "PistolAmmo",
+        "Damage": "33.3",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Cascadier 873"
+    },
+    "AssaultRifleHeavyW": {
+        "Name": "Booker Storm Rifle Model 838",
+        "Dev Name": "AssaultRifleAmmo",
+        "Damage": "52.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Booker Storm Rifle Model 838"
+    },
+    "RifleHeavyC": {
+        "Name": "Volta r.I Repeater",
+        "Dev Name": "RifleAmmo",
+        "Damage": "98.4375",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Volta r.I Repeater"
+    },
+    "RifleHeavyW": {
+        "Name": "The Hangman 757",
+        "Dev Name": "RevolverAmmo",
+        "Damage": "97.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "The Hangman 757"
+    },
+    "RifleAutomaticW": {
+        "Name": "Sampo Auto-Rifle 77",
+        "Dev Name": "RifleAmmo",
+        "Damage": "45.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Sampo Auto-Rifle 77"
+    },
+    "RifleShortW": {
+        "Name": "No.2B Hawthorne",
+        "Dev Name": "RifleAmmo",
+        "Damage": "49.95",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "No.2B Hawthorne"
+    },
+    "ATRifleAssaultW": {
+        "Name": "228 Satterley Heavy Storm Rifle",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "140.625",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "228 Satterley Heavy Storm Rifle"
+    },
+    "ATRifleAutomaticW": {
+        "Name": "Booker Greyhound Model 910",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "131.25",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "Booker Greyhound Model 910"
+    },
+    "ATRifleLightC": {
+        "Name": "\u201cDawn\u201d Ve.II",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "131.25",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "\u201cDawn\u201d Ve.II"
+    },
+    "ShotgunW": {
+        "Name": "No.4 The Pillory Scattergun",
+        "Dev Name": "ShotgunAmmo",
+        "Damage": "234.375",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "No.4 The Pillory Scattergun"
+    }
+}

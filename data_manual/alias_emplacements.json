@@ -1,0 +1,12 @@
+{
+    "EmplacedInfantryW": "warden emg;emg;leary snare trap;warden emg unemplaced;emg unemplaced;leary snare trap unemplaced",
+    "EmplacedATW": "Leary Shellbore 68mm",
+    "EmplacedLightArtilleryW": "warden 120 emplaced;lariat emplaced",
+    "EmplacedHeavyArtilleryW": "warden 150 emplaced;exalt emplaced;huber emplaced",
+    "EmplacedHeavyArtilleryC": "collie 150 emplaced;thunderbolt 150mm emplaced",
+    "EmplacedInfantryC": "collie emg emplaced;triple emg emplaced;serra emplaced",
+    "EmplacedATLargeW": "starbreaker emplaced",
+    "EmplacedCannonLargeC": "ruptura emplaced",
+    "EmplacedIndirectC": "beat emplaced;polybolos emplaced",
+    "EmplacedMultiC": "hades net (emplaced)"
+}

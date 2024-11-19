@@ -1,0 +1,413 @@
+{
+    "AmbulanceC": [],
+    "AmbulanceW": [],
+    "ArmoredCarC": [
+        "ArmoredCarGunner"
+    ],
+    "TanketteC": [
+        "TanketteCGunner"
+    ],
+    "ArmoredCarW": [
+        "ArmoredCarGunner"
+    ],
+    "ArmoredCarMobilityW": [
+        "ArmoredCarGunner"
+    ],
+    "Barge": [],
+    "BattleTankC": [
+        "BattleTankGunner",
+        "BattleTankCMachineGunner"
+    ],
+    "BattleTankW": [
+        "BattleTankGunner",
+        "BattleTankWMachineGunner"
+    ],
+    "BusC": [],
+    "BusW": [],
+    "Construction": [
+        "ConstructionDriver"
+    ],
+    "Crane": [],
+    "FieldMGC": [
+        "FieldMachineGunGunner"
+    ],
+    "FieldMGW": [
+        "FieldMachineGunGunner"
+    ],
+    "FlatbedTruck": [],
+    "Freighter": [
+        "FreighterSpotter"
+    ],
+    "HalfTrackC": [],
+    "HalfTrackDefensiveC": [],
+    "HalfTrackArtilleryC": [
+        "HalfTrackMortarGunner"
+    ],
+    "HalfTrackW": [],
+    "HalfTrackOffensiveW": [
+        "HalfTrackOffensiveGunner"
+    ],
+    "Harvester": [],
+    "LandingCraftC": [
+        "LandingCraftOffensiveCGunner"
+    ],
+    "LandingCraftOffensiveC": [
+        "LandingCraftOffensiveCGunner"
+    ],
+    "LandingCraftW": [],
+    "LightTankC": [
+        "LightTankGunnerC"
+    ],
+    "LightTankW": [
+        "LightTankGunnerW"
+    ],
+    "MortarTankC": [
+        "MortarTankGunner"
+    ],
+    "Motorboat": [
+        "MotorboatDriver"
+    ],
+    "MotorcycleC": [],
+    "MotorcycleW": [],
+    "MotorcycleOffensiveC": [
+        "MotorcycleOffensiveGunner"
+    ],
+    "TruckLiquidC": [],
+    "TruckLiquidW": [],
+    "RelicAPC": [],
+    "RelicArmouredCar": [
+        "RelicArmoredCarGunner"
+    ],
+    "RelicLightTank": [
+        "RelicLightTankGunner"
+    ],
+    "RelicScoutVehicle": [],
+    "RelicTruck": [],
+    "ScoutVehicleOffensiveC": [
+        "ScoutVehicleOffensiveCGunner"
+    ],
+    "ScoutVehicleMobilityC": [],
+    "ScoutVehicleW": [],
+    "ScoutVehicleOffensiveW": [
+        "ScoutVehicleOffensiveWGunner"
+    ],
+    "TroopShip": [],
+    "Bicycle": [
+        "BicycleDriver"
+    ],
+    "TruckC": [],
+    "TruckMobilityC": [],
+    "TruckOffensiveC": [
+        "TruckOffensiveGunner"
+    ],
+    "TruckResourceC": [],
+    "TruckW": [],
+    "TruckMobilityW": [],
+    "TruckDefensiveW": [],
+    "TruckResourceW": [],
+    "LightTankDefensiveW": [
+        "LightTankGunnerW"
+    ],
+    "LightTankMobilityC": [
+        "LightTankGunnerC"
+    ],
+    "FieldATW": [
+        "FieldATGunGunner",
+        "FieldATGunDriver"
+    ],
+    "FieldATC": [
+        "FieldATGunGunner",
+        "FieldATGunDriver"
+    ],
+    "BattleTankDefensiveW": [
+        "BattleTankGunner",
+        "BattleTankDefensiveWFlameGunner"
+    ],
+    "MediumTankW": [
+        "MediumTankWFrontGunner",
+        "MediumTankWGunner"
+    ],
+    "ArmoredCar2LargeW": [
+        "ArmoredCar2LargeGunnerW"
+    ],
+    "ArmoredCarOffensiveC": [
+        "ArmoredCarOffensiveGunnerC"
+    ],
+    "LightTankOffensiveC": [
+        "LightTankOffensiveGunnerC"
+    ],
+    "RelicMediumTank": [
+        "RelicMediumTankGunnerL",
+        "RelicMediumTankGunnerR"
+    ],
+    "FieldMortarW": [
+        "FieldMortarGunner"
+    ],
+    "FieldCannonW": [
+        "FieldCannonGunner"
+    ],
+    "ScoutVehicleUtilityC": [],
+    "ScoutVehicleUtilityW": [],
+    "MediumTankC": [
+        "MediumTankCGunner"
+    ],
+    "ScoutTankW": [
+        "ScoutTankWGunner"
+    ],
+    "LightTankArtilleryW": [
+        "LightTankArtilleryWGunner"
+    ],
+    "MediumTankOffensiveC": [
+        "MediumTankOffensiveCGunner"
+    ],
+    "DestroyerTankW": [
+        "DestroyerTankWGunner"
+    ],
+    "TanketteOffensiveC": [
+        "TanketteOffensiveCGunner"
+    ],
+    "ScoutTankOffensiveW": [
+        "ScoutTankOffensiveWGunner"
+    ],
+    "FieldCannonDamageC": [
+        "FieldCannonDamageCGunGunner"
+    ],
+    "FieldATDamageW": [
+        "FieldATDamageWGunner"
+    ],
+    "MediumTankSiegeW": [
+        "MediumTankSiegeWFrontGunner",
+        "MediumTankSiegeWMGGunner"
+    ],
+    "LightTank2InfantryC": [
+        "LightTank2InfantryCGunnerL",
+        "LightTank2InfantryCGunnerR"
+    ],
+    "MediumTank2C": [
+        "MediumTank2CMainGunner",
+        "MediumTank2CMGGunner"
+    ],
+    "MediumTank2RangeW": [
+        "MediumTank2RangeWGunner",
+        "MediumTank2RangeWAssaultRifle"
+    ],
+    "ArmoredCarTwinC": [
+        "ArmoredCarTwinGunnerC"
+    ],
+    "ArmoredCarATW": [
+        "ArmoredCarATGunnerW"
+    ],
+    "MediumTank2TwinC": [
+        "MediumTank2TwinCRPG",
+        "MediumTank2TwinCGunner"
+    ],
+    "MediumTank2MultiW": [
+        "MediumTank2MultiWGunner",
+        "MediumTank2MultiWCommanderGunner"
+    ],
+    "SuperTankC": [
+        "SuperTankCGunner"
+    ],
+    "MediumTankLargeC": [
+        "MediumTankLargeCGunner"
+    ],
+    "TruckMultiC": [
+        "TruckMultiCGunner"
+    ],
+    "HalfTrackMultiW": [
+        "HalfTrackMultiWGunner"
+    ],
+    "MediumTank2IndirectW": [
+        "MediumTank2IndirectWRackGunner",
+        "MediumTank2IndirectWGunner"
+    ],
+    "TrainEngine": [],
+    "TrainCoal": [],
+    "TrainFlatbed": [],
+    "TrainInfantry": [],
+    "SuperTankW": [
+        "SuperTankWGunner",
+        "SuperTankWGrenadeLauncherGunner"
+    ],
+    "DestroyerTankFlameW": [
+        "DestroyerTankWFlameGunner"
+    ],
+    "TrainLRArtillery": [
+        "LongRangeArtilleryTrainGunner"
+    ],
+    "TrainCombatCarC": [
+        "TrainCombatCarCMainGunner",
+        "TrainCombatCarCRightGunner",
+        "TrainCombatCarCLeftGunner"
+    ],
+    "TrainCombatCarW": [
+        "TrainCombatCarWFrontGunner",
+        "TrainCombatCarWRearGunner"
+    ],
+    "LightTankFlameC": [
+        "LightTankFlameCGunner"
+    ],
+    "ArmoredCarFlameW": [
+        "ArmoredCarFlameWGunner"
+    ],
+    "TanketteFlameC": [
+        "TanketteFlameCGunner"
+    ],
+    "SmallTrainEngine": [],
+    "SmallTrainResource": [],
+    "SmallTrainMaterial": [],
+    "LargeCrane": [],
+    "AmbulanceFlameC": [
+        "AmbulanceFlameCGunner"
+    ],
+    "AmbulanceFlameW": [
+        "AmbulanceFlameWGunner"
+    ],
+    "ArmoredCar2TwinW": [
+        "ArmoredCar2TwinGunnerW"
+    ],
+    "TrainCaboose": [],
+    "BattleTankATC": [
+        "BattleTankATCGunner"
+    ],
+    "ConstructionUtility": [
+        "ConstructionDriver"
+    ],
+    "SmallTrainLiquid": [],
+    "MediumTankATW": [
+        "MediumTankATWGunner",
+        "MediumTankATWEngineerComponent"
+    ],
+    "ScoutTankMultiW": [
+        "ScoutTankMultiWGunner"
+    ],
+    "TanketteMultiC": [
+        "TanketteMultiCGunner"
+    ],
+    "BattleTankHeavyArtilleryW": [
+        "BattleTankHeavyArtilleryWGunner",
+        "BattleTankHeavyArtilleryWEngineer"
+    ],
+    "BattleTankHeavyArtilleryC": [
+        "BattleTankHeavyArtilleryCGunner",
+        "BattleTankHeavyArtilleryCEngineer"
+    ],
+    "FieldAT2C": [
+        "FieldAT2CGunner"
+    ],
+    "FieldAT2W": [
+        "FieldAT2WGunner"
+    ],
+    "ResourceTrailer": [],
+    "MaterialTrailer": [],
+    "FuelTrailer": [],
+    "HalftrackTwinW": [
+        "HalftrackTwinWGunnerL",
+        "HalftrackTwinWGunnerR"
+    ],
+    "LargeShipDestroyerC": [
+        "LargeShipDestroyerCArtilleryGunnerFront",
+        "LargeShipDestroyerCSpotter",
+        "LargeShipDestroyerCDirectGunner",
+        "LargeShipDestroyerCArtilleryGunnerRear",
+        "LargeShipDestroyerCMachineGunner",
+        "LargeShipDestroyerCSensorOperator"
+    ],
+    "LargeShipStorageShip": [
+        "LargeShipStorageShipMGPortGunner",
+        "LargeShipStorageShipSpotter",
+        "LargeShipStorageShipMGStarGunner",
+        "LargeShipStorageShipArtilleryGunnerFront"
+    ],
+    "LargeShipBaseShip": [
+        "LargeShipBaseShipMachineGunner"
+    ],
+    "LandingShipC": [],
+    "LandingShipW": [],
+    "HeavyTruckC": [],
+    "LargeFieldATC": [
+        "LargeFieldATCGunner"
+    ],
+    "LargeFieldLightArtilleryC": [
+        "LargeFieldLightArtilleryCGunner"
+    ],
+    "LargeFieldCannonW": [
+        "LargeFieldCannonWGunner"
+    ],
+    "LargeFieldMultiW": [
+        "LargeFieldMultiWGunner"
+    ],
+    "GunboatW": [
+        "GunboatWMainGunner",
+        "GunboatWSpotter"
+    ],
+    "GunboatC": [
+        "GunboatCGunner",
+        "GunboatCSpotter"
+    ],
+    "PlayerImposter": [],
+    "LargeShipSubmarineW": [
+        "LargeShipSubmarineWTorpedoGunner",
+        "LargeShipSubmarineWDriver",
+        "LargeShipSubmarineWSensorOperator",
+        "LargeShipSubmarineWDivingOfficer",
+        "LargeShipSubmarineWMainBallast",
+        "LargeShipSubmarineWNegativeBallast",
+        "LargeShipSubmarineWSafetyBallast",
+        "LargeShipSubmarineWPeriscope",
+        "LargeShipSubmarineWDirectGunner"
+    ],
+    "LargeShipBattleshipC": [
+        "LargeShipBattleShipCHeavyArtilleryGunnerRear",
+        "LargeShipBattleshipCMachineGunnerPort",
+        "LargeShipBattleshipCMachineGunnerStar",
+        "LargeShipBattleShipCLightArtilleryGunnerMid",
+        "LargeShipBattleShipCDirectGunnerStar",
+        "LargeShipBattleShipCDirectGunnerPort",
+        "LargeShipBattleShipCHeavyArtilleryGunnerForward"
+    ],
+    "LargeShipBattleshipW": [
+        "LargeShipBattleShipWHeavyArtilleryGunnerRear",
+        "LargeShipBattleshipWMachineGunner",
+        "LargeShipBattleShipWISGGunnerStar",
+        "LargeShipBattleShipWISGGunnerPort",
+        "LargeShipBattleShipWArtilleryGunnerStar",
+        "LargeShipBattleShipWArtilleryGunnerPort",
+        "LargeShipBattleShipWHeavyArtilleryGunnerForward",
+        "LargeShipBattleshipWMachineGunner"
+    ],
+    "HeavyTruckW": [],
+    "LargeShipDestroyerW": [
+        "LargeShipDestroyerWArtilleryGunnerAft",
+        "LargeShipDestroyerWSensorOperator",
+        "LargeShipDestroyerWDepthChargeGunner",
+        "LargeShipDestroyerWMachineGunner",
+        "LargeShipDestroyerWDirectGunnerPort",
+        "LargeShipDestroyerWDirectGunnerStarboard",
+        "LargeShipDestroyerWArtilleryGunnerMid"
+    ],
+    "LargeShipSubmarineC": [
+        "LargeShipSubmarineWTorpedoGunner",
+        "LargeShipSubmarineWDriver",
+        "LargeShipSubmarineWSensorOperator",
+        "LargeShipSubmarineWDivingOfficer",
+        "LargeShipSubmarineWMainBallast",
+        "LargeShipSubmarineWNegativeBallast",
+        "LargeShipSubmarineWSafetyBallast",
+        "LargeShipSubmarineWPeriscope",
+        "LargeShipSubmarineCHeavyArtillery"
+    ],
+    "LargeShipResourceShip": [
+        "LargeShipResourceShipSpotter"
+    ],
+    "SmallTrainShipping": [],
+    "MediumTank2W": [
+        "MediumTank2WGunner",
+        "MediumTank2WMGGunner"
+    ],
+    "MediumTank3C": [
+        "MediumTank3CGunner",
+        "MediumTank3CFrontGunner"
+    ],
+    "TrainHospital": []
+}

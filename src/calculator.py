@@ -128,6 +128,13 @@ class DamageCalculator:
 
         utils.debug_summary(self.weapon_name, self.target_name, final_damage, hits_to_kill)
         return hits_to_kill
+    
+    def dev_damage_calculator(self):
+        final_damage = self.calculate_damage()
+        hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
+
+        utils.debug_summary(self.weapon_name, self.target_name, final_damage, hits_to_kill)
+        return hits_to_kill
 
     def multitier_damage_calculator(self):
         if self.location_name:
@@ -153,6 +160,30 @@ class DamageCalculator:
             hits_to_kill = self.general_damage_calculator()  # emplacement_damage_calculator()
         elif self.target_type == "Tripods" or self.target_type == "Structures":
             hits_to_kill = self.general_damage_calculator()
+        else:
+            raise bot.InvalidTypeError(self.target_name,
+                                       "There was an unexpected error trying to find the entity. Please contact the "
+                                       "developers.")
+        
+        if self.location_name:
+            name = f"{main.clean_capitalize(self.location_name)} ({self.target_name})"
+        else:
+            name = self.target_name
+
+        ret_str = f"It takes {hits_to_kill} {self.weapon_name} to kill a {name}"
+        if self.target == "meta":
+            ret_str += self.bunker_string
+        return ret_str
+
+    def get_dev_kill_calculation(self):
+        if self.target_type == "Vehicles":
+            hits_to_kill = self.dev_damage_calculator()  # vehicle_damage_calculator()
+        elif self.target_type == "Multitier_structures":
+            hits_to_kill = self.multitier_damage_calculator()
+        elif self.target_type == "Emplacements":
+            hits_to_kill = self.dev_damage_calculator()  # emplacement_damage_calculator()
+        elif self.target_type == "Tripods" or self.target_type == "Structures":
+            hits_to_kill = self.dev_damage_calculator()
         else:
             raise bot.InvalidTypeError(self.target_name,
                                        "There was an unexpected error trying to find the entity. Please contact the "
@@ -232,6 +263,23 @@ def general_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
         target_name, args = fuzz.fuzzy_match_target_name(target_fuzzy_name)
 
     return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
+
+def dev_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
+    args = None
+    if weapon_fuzzy_name in parse.weapons_dictionary:
+        weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
+    else:
+        weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
+
+    if target_fuzzy_name in parse.targets_dictionary:
+        target_name = parse.targets_dictionary[target_fuzzy_name]
+        #if we did direct hit, we dont have to search for other tokens
+        if parse.check_if_location_name(target_fuzzy_name):
+            args = {"location_name": target_fuzzy_name}
+    else:
+        target_name, args = fuzz.fuzzy_match_target_name(target_fuzzy_name)
+
+    return DamageCalculator(weapon_name, target_name, args).get_dev_kill_calculation()
 
 def custom_kill_handler(weapon_fuzzy_name1, weapon1_hits, weapon_fuzzy_name2, target_fuzzy_name):
     args = None

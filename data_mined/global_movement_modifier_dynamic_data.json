@@ -1,0 +1,62 @@
+{
+    "PhysicalMaterial'RoadPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/RoadPhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.0
+    },
+    "PhysicalMaterial'T1RoadPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/T1RoadPhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.0
+    },
+    "PhysicalMaterial'T2RoadPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/T2RoadPhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.025
+    },
+    "PhysicalMaterial'T3RoadPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/T3RoadPhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.05
+    },
+    "PhysicalMaterial'StonePhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/StonePhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.0
+    },
+    "PhysicalMaterial'TownStone'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/TownStone.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.0
+    },
+    "PhysicalMaterial'HighwayPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/HighwayPhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 1.0
+    },
+    "PhysicalMaterial'FoundationPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/FoundationPhys.0",
+        "Stamina Drain Modifier": 1.0,
+        "Movement Speed Modifier": 0.4
+    },
+    "PhysicalMaterial'FacilityRoadPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/FacilityRoadPhys.0",
+        "Stamina Drain Modifier": 1.0,
+        "Movement Speed Modifier": 0.45
+    },
+    "PhysicalMaterial'WetSandPhys'": {
+        "-": null,
+        "Physical Material Object Path": "War/Content/PhysicalMaterials/WetSandPhys.0",
+        "Stamina Drain Modifier": 0.0,
+        "Movement Speed Modifier": 0.1
+    }
+}

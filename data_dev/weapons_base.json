@@ -1,0 +1,410 @@
+{
+    "75mm": {
+        "Name": "75mm",
+        "Dev Name": "BattleTankAmmo",
+        "Damage": "1750.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "40mm": {
+        "Name": "40mm",
+        "Dev Name": "LightTankAmmo",
+        "Damage": "600.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "300mm": {
+        "Name": "300mm",
+        "Dev Name": "LRArtilleryAmmo",
+        "Damage": "1500.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Mortar Shell": {
+        "Name": "Mortar Shell",
+        "Dev Name": "MortarAmmo",
+        "Damage": "300.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Flare Mortar Shell": {
+        "Name": "Flare Mortar Shell",
+        "Dev Name": "MortarAmmoFL",
+        "Damage": "0.0",
+        "DamageType": "Flare",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Shrapnel Mortar Shell": {
+        "Name": "Shrapnel Mortar Shell",
+        "Dev Name": "MortarAmmoSH",
+        "Damage": "125.0",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "250mm": {
+        "Name": "250mm",
+        "Dev Name": "MortarTankAmmo",
+        "Damage": "1000.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Abisme AT-99 Mine": {
+        "Name": "Abisme AT-99 Mine",
+        "Dev Name": "TankMine",
+        "Damage": "850.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Alligator Charge": {
+        "Name": "Alligator Charge",
+        "Dev Name": "SatchelChargeW",
+        "Damage": "400.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Anti-Tank Sticky Bomb": {
+        "Name": "Anti-Tank Sticky Bomb",
+        "Dev Name": "StickyBomb",
+        "Damage": "450.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "A3 Harpa Fragmentation Grenade": {
+        "Name": "A3 Harpa Fragmentation Grenade",
+        "Dev Name": "GrenadeW",
+        "Damage": "250.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Mammon 91-b": {
+        "Name": "Mammon 91-b",
+        "Dev Name": "HEGrenade",
+        "Damage": "240.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Green Ash Grenade": {
+        "Name": "Green Ash Grenade",
+        "Dev Name": "GreenAsh",
+        "Damage": "0.0",
+        "DamageType": "PoisonGas",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "PT-815 Smoke Grenade": {
+        "Name": "PT-815 Smoke Grenade",
+        "Dev Name": "SmokeGrenade",
+        "Damage": "0.0",
+        "DamageType": "Smoke",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "RPG": {
+        "Name": "RPG",
+        "Dev Name": "RpgAmmo",
+        "Damage": "550.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "120mm": {
+        "Name": "120mm",
+        "Dev Name": "LightArtilleryAmmo",
+        "Damage": "400.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "30mm": {
+        "Name": "30mm",
+        "Dev Name": "MiniTankAmmo",
+        "Damage": "400.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "68mm": {
+        "Name": "68mm",
+        "Dev Name": "ATAmmo",
+        "Damage": "600.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "7.62mm": {
+        "Name": "7.62mm",
+        "Dev Name": "RifleAmmo",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "12.7mm": {
+        "Name": "12.7mm",
+        "Dev Name": "MGAmmo",
+        "Damage": "68.75",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "7.92mm": {
+        "Name": "7.92mm",
+        "Dev Name": "AssaultRifleAmmo",
+        "Damage": "43.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "AssaultRifleSingleShotAmmo": {
+        "Name": "7.92mm",
+        "Dev Name": "AssaultRifleSingleShotAmmo",
+        "Damage": "52.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "20mm": {
+        "Name": "20mm",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "187.5",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "8mm": {
+        "Name": "8mm",
+        "Dev Name": "PistolAmmo",
+        "Damage": "37.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    ".44": {
+        "Name": ".44",
+        "Dev Name": "RevolverAmmo",
+        "Damage": "75.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Buckshot": {
+        "Name": "Buckshot",
+        "Dev Name": "ShotgunAmmo",
+        "Damage": "93.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "8.5mm": {
+        "Name": "8.5mm",
+        "Dev Name": "SniperRifleAmmo",
+        "Damage": "125.0",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "9mm": {
+        "Name": "9mm",
+        "Dev Name": "SMGAmmo",
+        "Damage": "33.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "14.5mm": {
+        "Name": "14.5mm",
+        "Dev Name": "FieldMGAmmo",
+        "Damage": "81.25",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Bomastone Grenade": {
+        "Name": "Bomastone Grenade",
+        "Dev Name": "GrenadeC",
+        "Damage": "125.0",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "AP/RPG": {
+        "Name": "AP/RPG",
+        "Dev Name": "ATRPGAmmo",
+        "Damage": "550.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Ignifist 30": {
+        "Name": "Ignifist 30",
+        "Dev Name": "ATRPGLightCAmmo",
+        "Damage": "375.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "150mm": {
+        "Name": "150mm",
+        "Dev Name": "HeavyArtilleryAmmo",
+        "Damage": "900.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "ARC/RPG": {
+        "Name": "ARC/RPG",
+        "Dev Name": "ATRPGIndirectAmmo",
+        "Damage": "675.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Hydra\u2019s Whisper": {
+        "Name": "Hydra\u2019s Whisper",
+        "Dev Name": "ExplosiveLightC",
+        "Damage": "550.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "BF5 White Ash Flask Grenade": {
+        "Name": "BF5 White Ash Flask Grenade",
+        "Dev Name": "ATGrenadeW",
+        "Damage": "300.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "RifleAutomaticWSingleShotAmmo": {
+        "Name": "7.62mm",
+        "Dev Name": "RifleAutomaticWSingleShotAmmo",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Tremola Grenade GPb-1": {
+        "Name": "Tremola Grenade GPb-1",
+        "Dev Name": "HELaunchedGrenade",
+        "Damage": "400.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "94.5mm": {
+        "Name": "94.5mm",
+        "Dev Name": "ATLargeAmmo",
+        "Damage": "1750.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "4C-Fire Rocket": {
+        "Name": "4C-Fire Rocket",
+        "Dev Name": "FireRocketAmmo",
+        "Damage": "145.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "3C-High Explosive Rocket": {
+        "Name": "3C-High Explosive Rocket",
+        "Dev Name": "HERocketAmmo",
+        "Damage": "350.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Flame Ammo": {
+        "Name": "Flame Ammo",
+        "Dev Name": "FlameAmmo",
+        "Damage": "25.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Water Bucket": {
+        "Name": "Water Bucket",
+        "Dev Name": "WaterBucketfull",
+        "Damage": "125.0",
+        "DamageType": "Extinguishing",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "null": {
+        "Name": null,
+        "Dev Name": "FlameBackpackAmmo",
+        "Damage": "15.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Havoc Charge Detonator": {
+        "Name": "Havoc Charge Detonator",
+        "Dev Name": "SatchelChargeT",
+        "Damage": "1950.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Model-7 \u201cEvie\u201d": {
+        "Name": "Model-7 \u201cEvie\u201d",
+        "Dev Name": "DepthChargeAmmo",
+        "Damage": "900.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "E680-S Rudder Lock": {
+        "Name": "E680-S Rudder Lock",
+        "Dev Name": "WaterMine",
+        "Damage": "1350.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Moray Torpedo": {
+        "Name": "Moray Torpedo",
+        "Dev Name": "TorpedoAmmo",
+        "Damage": "3550.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Incendiary Mortar Shell": {
+        "Name": "Incendiary Mortar Shell",
+        "Dev Name": "MortarAmmoFlame",
+        "Damage": "55.0",
+        "DamageType": "IncendiaryHighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "B2 Varsi Anti-Tank Grenade": {
+        "Name": "B2 Varsi Anti-Tank Grenade",
+        "Dev Name": "ATLaunchedGrenadeW",
+        "Damage": "425.0",
+        "DamageType": "AntiTankExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    },
+    "Crow\u2019s Foot Mine": {
+        "Name": "Crow\u2019s Foot Mine",
+        "Dev Name": "InfantryMine",
+        "Damage": "312.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": ""
+    }
+}

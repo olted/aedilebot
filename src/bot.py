@@ -92,6 +92,12 @@ def run_discord_bot():
                     num1: int,
                     weapon2: str):
         await interaction.response.send_message(handle_response_inner(weapon1,target, "custom_kill", num1, weapon2))
+    
+    @client.tree.command(name="dev_kill")
+    async def dev_kill(interaction: discord.Interaction,
+                    target: str,
+                    weapon: str):
+        await interaction.response.send_message(handle_response_inner(weapon,target, "dev_kill"))
 
     @client.tree.command(name="statsheet")
     async def statsheet(interaction: discord.Interaction, entity: str):
@@ -240,6 +246,8 @@ def handle_response_inner(weapon,target, operation="kill", num1=0, weapon2=None)
             return calculator.general_bunker_kill_handler(weapon, target)
         if operation =="custom_kill":
             return calculator.custom_kill_handler(weapon, num1, weapon2, target)
+        if operation =="dev_kill":
+            return calculator.dev_kill_handler(weapon, target)
     except ZeroDivisionError as e:
         return f"This weapon does no damage to this entity"
     except TargetNotFoundError as e:

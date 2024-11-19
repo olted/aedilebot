@@ -1,0 +1,177 @@
+{
+    "GreenAsh": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1100.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "GrenadeW": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1100.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "HEGrenade": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 900.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "SmokeGrenade": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1300.0,
+        "Grenade Fuse Timer": 2.8,
+        "Grenade Range Limit": 0.0
+    },
+    "StickyBomb": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1100.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 720.0
+    },
+    "GrenadeC": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1200.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "ATGrenadeW": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1000.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "GrenadeLauncherC": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1650.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleC": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleW": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleHeavyC": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleHeavyW": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleLightC": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleLightW": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleLongC": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "RifleLongW": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "HELaunchedGrenade": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1450.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "SuperTankWGrenadeLauncherGunner": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1650.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "WaterBucket": {
+        "-": null,
+        "Min. Toss Speed": 1000.0,
+        "Max. Toss Speed": 1500.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 500.0
+    },
+    "WaterBucketfull": {
+        "-": null,
+        "Min. Toss Speed": 1000.0,
+        "Max. Toss Speed": 1500.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 500.0
+    },
+    "GrenadeLauncherTC": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1650.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "ArmoredCar2TwinGunnerW": {
+        "-": null,
+        "Min. Toss Speed": 390.0,
+        "Max. Toss Speed": 1550.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "HalftrackC": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1650.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "ATLaunchedGrenadeW": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1450.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    },
+    "MediumTank3CFrontGunner": {
+        "-": null,
+        "Min. Toss Speed": 400.0,
+        "Max. Toss Speed": 1650.0,
+        "Grenade Fuse Timer": 4.0,
+        "Grenade Range Limit": 0.0
+    }
+}
