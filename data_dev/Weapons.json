@@ -13,7 +13,7 @@
         "Damage": "600.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "collie lt;colonial light tank;colonial lt;falch;falchion;hac;ironhide;kran;kranesca;kranny;lt;mpt;phalanx;silverhand;svh;toaster"
+        "Additional Names": "collie lt;colonial light tank;colonial lt;devitt;falch;falchion;hac;ironhide;kran;kranesca;kranny;lt;mpt;phalanx;silverhand;svh;toaster;warden light tank;warden lt"
     },
     "300mm": {
         "Name": "300mm",
@@ -29,7 +29,7 @@
         "Damage": "300.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "collie gb;collie gunboat;colonial gb;colonial gunboat;devitt;gb;gunboat;he mortar;mht;mortar;mortar halftrack;ronan;warden gb;warden gunboat;warden light tank;warden lt"
+        "Additional Names": "collie gb;collie gunboat;colonial gb;colonial gunboat;gb;gunboat;he mortar;mht;mlt;mortar;mortar halftrack;ronan;warden gb;warden gunboat"
     },
     "Shrapnel Mortar Shell": {
         "Name": "Shrapnel Mortar Shell",
@@ -101,7 +101,7 @@
         "Damage": "400.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "collie 120;colonial 120;conqeuror;dd;destroyer;fa;frigate;lariat;push 120;warden 120;warden frigate"
+        "Additional Names": "collie 120;colonial 120;conqeuror;dd;destroyer;fa;frigate;lariat emplaced;push 120;warden 120 emplaced;warden frigate"
     },
     "30mm": {
         "Name": "30mm",
@@ -117,7 +117,7 @@
         "Damage": "600.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "EAT;atht;bard;collie fat;collins;fat;ltd;nemesis;warden EAT;warden fat"
+        "Additional Names": "Leary Shellbore 68mm;atht;bard;collie fat;collins;fat;ltd;nemesis;warden fat"
     },
     "7.62mm": {
         "Name": "7.62mm",
@@ -157,7 +157,7 @@
         "Damage": "187.5",
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
-        "Additional Names": "atac;atr;colonial sniper atr;highwayman;hwm;sniper atr;warden atr"
+        "Additional Names": "atac;atr;cestus;collie anti tank field gun;collie atr field gun;colonial anti tank field gun;colonial sniper atr;highwayman;hwm;sniper atr;warden atr"
     },
     "8mm": {
         "Name": "8mm",
@@ -221,7 +221,7 @@
         "Damage": "900.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "callahan;collie 150;collie battleship;collie spg;colonial battleship;colonial spg;exalt;huber;sarissa;stain;thunderbolt 150mm;titan;warden 150;warden battleship;warden spg"
+        "Additional Names": "callahan;collie 150 emplaced;collie battleship;collie spg;colonial battleship;colonial spg;exalt emplaced;huber emplaced;sarissa;stain;thunderbolt 150mm emplaced;titan;warden 150 emplaced;warden battleship;warden spg"
     },
     "ARC/RPG": {
         "Name": "ARC/RPG",
@@ -229,7 +229,7 @@
         "Damage": "675.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "arc;arcrpg;bac;beat;bonecar;bonelaw;bonesaw;bonewagon;mounted bonesaw;polybolos"
+        "Additional Names": "arc;arcrpg;bac;beat emplaced;bonecar;bonelaw;bonesaw;bonewagon;mounted bonesaw;polybolos emplaced"
     },
     "Hydra\u2019s Whisper": {
         "Name": "Hydra\u2019s Whisper",
@@ -285,7 +285,7 @@
         "Damage": "350.0",
         "DamageType": "IncendiaryHighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "hades net;katyusha;rocket scout tank;rocket st;rocket truck"
+        "Additional Names": "hades net (emplaced);katyusha;rocket scout tank;rocket st;rocket truck"
     },
     "Flame Ammo": {
         "Name": "Flame Ammo",
@@ -449,22 +449,12 @@
         "ObjectType": "Weapons",
         "Additional Names": "lordscar;std"
     },
-    "GA-6 Cestus (Double ATR Field Gun) ammo": {
-        "Name": "GA-6 Cestus (Double ATR Field Gun)",
-        "Dev Name": "ATRifleAmmo",
-        "Vehicle Dev Name": "FieldAT2C",
-        "Mount Dev Name": "FieldAT2CGunner",
-        "Damage": "93.75",
-        "DamageType": "AntiTankKinetic",
-        "ObjectType": "Weapons",
-        "Additional Names": "collie anti tank field gun;colonial anti tank field gun;collie atr field gun;cestus"
-    },
     "Duncan's Coin (ATR Field Gun) ammo": {
         "Name": "Duncan's Coin (ATR Field Gun)",
         "Dev Name": "ATRifleAmmo",
         "Vehicle Dev Name": "FieldAT2W",
         "Mount Dev Name": "FieldAT2WGunner",
-        "Damage": "140.625",
+        "Damage": "234.375",
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "warden anti tank field gun;warden atr field gun"
@@ -660,7 +650,7 @@
         "Damage": "82.5",
         "DamageType": "HeavyKinetic",
         "ObjectType": "Weapons",
-        "Additional Names": "collie emg;triple emg;serra"
+        "Additional Names": "collie emg emplaced;triple emg emplaced;serra emplaced"
     },
     "Huber Starbreaker 94.5mm ammo": {
         "Name": "Huber Starbreaker 94.5mm",
@@ -670,7 +660,7 @@
         "Damage": "2625.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "starbreaker"
+        "Additional Names": "starbreaker emplaced"
     },
     "DAE 2a-1 \u201cRuptura\u201d ammo": {
         "Name": "DAE 2a-1 \u201cRuptura\u201d",
@@ -680,7 +670,7 @@
         "Damage": "2362.5",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "ruptura"
+        "Additional Names": "ruptura emplaced"
     },
     "Lamentum mm.IV ammo": {
         "Name": "Lamentum mm.IV",
