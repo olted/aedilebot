@@ -125,6 +125,7 @@ def generate_vehicle_targets(vehicle_mined, names_vehicles, alias_vehicles):
         vehicle_targets_dict[vehicle["Name"]]["Min Base Penetration Chance"] = str(vehicle["Min Penetration Chance"])
         vehicle_targets_dict[vehicle["Name"]]["Max Base Penetration Chance"] = str(1-Decimal(str(vehicle["Min Tank Armour Percent"])))
         vehicle_targets_dict[vehicle["Name"]]["Mitigation Type"] = extract_suffix(vehicle["ArmourType"])
+        vehicle_targets_dict[vehicle["Name"]]["Disable Level"] = str(1-Decimal(str(vehicle["MinorDamagePercent"])))
         vehicle_targets_dict[vehicle["Name"]]["Repair Cost"] = str(vehicle["Repair Cost"])
         vehicle_targets_dict[vehicle["Name"]]["Tracks Disable Chance"] = str(vehicle["Disable Chance: Track"])
         vehicle_targets_dict[vehicle["Name"]]["Engine Disable Chance"] = str(vehicle["Disable Chance: Engine"])
