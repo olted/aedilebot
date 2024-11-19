@@ -235,7 +235,7 @@ def generate_base_weapons(alias_misc_weapons, ammo_dict, names_ammos):
             print("New weapon dev name (not in manual names_ammo.json): " + dev_name)
             new_key = data["Name"]
         weapons[new_key] = {}
-        weapons[new_key]["Name"] = data["Name"]
+        weapons[new_key]["Name"] = data["Name"] if data["Name"] is not None else new_key
         weapons[new_key]["Dev Name"] = dev_name
         weapons[new_key]["Damage"] = str(data["Damage"] if not "Kinetic" in data["Damage Type Display Name"] else data["Damage"]*1.25) # Kinetic Damage Modifier Average (Between 1 and 1.5)
         weapons[new_key]["DamageType"] = damage_type_name_pairs.get(data["Damage Type Display Name"], data["Damage Type Display Name"])
@@ -458,6 +458,9 @@ def get_all_names(dictionary, field_name="Additional Names"):
             additional_names.extend(value[field_name].split(";"))
 
         for name in additional_names:
+            if name is None:
+                print("error on: " + key)
+                continue
             name = name.lower()
             if name == "":
                 continue
@@ -700,11 +703,12 @@ def extract_name_from_mined(in_dict):
     return names
 
 if __name__ == "__main__":
-    save_dict_to_json(generate_all_weapons(alias_misc_weapons, ammos_mined,names_ammos,alias_vehicles,vehicle_mined, names_vehicles,vehicle_to_mount,mount_mined,alias_inf_weapons,inf_weapons_mined,names_inf_weapons, alias_emplacements, emplacements_mined, alias_tripods, names_tripods, tripods_mined, adjustments_weapons), os.path.join(DEV_PATH, "Weapons.json"))
-    save_dict_to_json(generate_damage(damage_profile_mined), os.path.join(DEV_PATH,DAMAGE))
+    #save_dict_to_json(generate_all_weapons(alias_misc_weapons, ammos_mined,names_ammos,alias_vehicles,vehicle_mined, names_vehicles,vehicle_to_mount,mount_mined,alias_inf_weapons,inf_weapons_mined,names_inf_weapons, alias_emplacements, emplacements_mined, alias_tripods, names_tripods, tripods_mined, adjustments_weapons), os.path.join(DEV_PATH, "Weapons.json"))
+    #save_dict_to_json(generate_damage(damage_profile_mined), os.path.join(DEV_PATH,DAMAGE))
     # cannot run facility yet because of lack of husk inplementation
     #save_dict_to_json(extract_alias(facilities_mined, targets, targets_dictionary), os.path.join(MANUAL_PATH,ALIAS_FACILITIES))
     #save_dict_to_json(extract_alias(emplacements_mined, targets, targets_dictionary), os.path.join(MANUAL_PATH,ALIAS_EMPLACEMENTS))
     #save_dict_to_json(extract_alias(player_built_mined, targets, targets_dictionary), os.path.join(MANUAL_PATH,ALIAS_PLAYER_BUILT))
     #save_dict_to_json(extract_alias(world_mined, targets, targets_dictionary), os.path.join(MANUAL_PATH,ALIAS_WORLD))
+    save_dict_to_json(generate_vehicle_targets(vehicle_mined, names_vehicles, alias_vehicles), os.path.join(MANUAL_PATH, "vehicle_targets.json"))
     pass
