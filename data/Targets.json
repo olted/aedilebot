@@ -7084,12 +7084,12 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "FacilitySiloOil": {
-        "Name": "FacilitySiloOil",
+    "Fuel Silo": {
+        "Name": "Fuel Silo",
         "Additional Names": "oil silo",
         "Code name": "FacilitySiloOil",
-        "Health": "900",
-        "Mitigation Type": "Tier2Structure",
+        "Health": "1200",
+        "Mitigation Type": "Tier1Structure",
         "Rmat cost": "",
         "Bmat cost": "",
         "Concrete cost": "",
