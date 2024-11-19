@@ -85,7 +85,7 @@
         "Damage": "240.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "mammon"
+        "Additional Names": "mammon;HE grenade"
     },
     "RPG": {
         "Name": "RPG",
