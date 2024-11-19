@@ -1,0 +1,499 @@
+{
+    "Anti-Tank Mine": {
+        "Name": "Anti-Tank Mine",
+        "Additional Names": "at mine;mine",
+        "Damage": "850",
+        "DamageType": "BPAntiTankExplosiveMineDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Sticky Grenade": {
+        "Name": "Sticky Grenade",
+        "Additional Names": "sticky",
+        "Damage": "450",
+        "DamageType": "BPAntiTankExplosiveStickyBombDamageType",
+        "ObjectType": "Weapons"
+    },
+    "White Ash": {
+        "Name": "White Ash",
+        "Additional Names": "flask",
+        "Damage": "350",
+        "DamageType": "BPAntiTankExplosiveStickyBombDamageType",
+        "ObjectType": "Weapons"
+    },
+    "20mm": {
+        "Name": "20mm",
+        "Additional Names": "atr",
+        "Damage": "187.5",
+        "DamageType": "BPAntiTankKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Howitzer Garrison Shell": {
+        "Name": "Howitzer Garrison Shell",
+        "Additional Names": "howi garrison shell;howie",
+        "Damage": "500",
+        "DamageType":"BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "AT Garrison Shell": {
+        "Name": "AT Garrison Shell",
+        "Additional Names": "atg;at garrison",
+        "Damage": "600",
+        "DamageType":"BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Lv20mm": {
+        "Name": "Lv20mm",
+        "Additional Names": "hwm20mm;highwayman 20mm;cestus;cestus20mm;cestus 20mm",
+        "Damage": "94",
+        "DamageType": "BPAntiTankKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "68mm": {
+        "Name": "68mm",
+        "Additional Names": "68",
+        "Damage": "600",
+        "DamageType": "BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Coastal Gun Shell": {
+        "Name": "Coastal Gun Shell",
+        "Additional Names": "",
+        "Damage": "1000",
+        "DamageType": "BPExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "ATRPG Shell": {
+        "Name": "ATRPG Shell",
+        "Additional Names": "venom;bane;atrpg;at rocket",
+        "Damage": "550",
+        "DamageType": "BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Ignifist": {
+        "Name": "Ignifist",
+        "Additional Names": "igni",
+        "Damage": "375",
+        "DamageType": "BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "ATRPG Indirect Shell": {
+        "Name": "ARCRPG Shell",
+        "Additional Names": "arcrpg;bonesaw;iatrpg;arc",
+        "Damage": "600",
+        "DamageType": "BPArmourPiercingNoBonusesDamageType",
+        "ObjectType": "Weapons"
+    },
+    "300mm": {
+        "Name": "300mm",
+        "Additional Names": "300",
+        "Damage": "1500",
+        "DamageType": "BPHighExplosiveRuinDamageType",
+        "ObjectType": "Weapons"
+    },
+    "250mm": {
+        "Name": "250mm",
+        "Additional Names": "250",
+        "Damage": "1000",
+        "DamageType": "BPDemolitionDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Satchel Charge": {
+        "Name": "Satchel Charge",
+        "Additional Names": "alligator charge;satchel",
+        "Damage": "300",
+        "DamageType": "BPDemolitionDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Harpa Grenade": {
+        "Name": "Harpa Grenade",
+        "Additional Names": "harpa;frag",
+        "Damage": "200",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "Bomastone Grenade": {
+        "Name": "Bomastone Grenade",
+        "Additional Names": "boma",
+        "Damage": "125",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons"
+    },
+    "Hydra's Whisper": {
+        "Name": "Hydra's Whisper",
+        "Additional Names": "hydra",
+        "Damage": "350",
+        "DamageType": "BPDemolitionDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HE Grenade (Mammon)": {
+        "Name": "HE Grenade (Mammon)",
+        "Additional Names": "mammon;he grenade;he",
+        "Damage": "228",
+        "DamageType": "BPExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Tremola Grenade": {
+        "Name": "Tremola Grenade",
+        "Additional Names": "tremola",
+        "Damage": "400",
+        "DamageType": "BPExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Havoc Charge": {
+        "Name": "Havoc Charge",
+        "Additional Names": "havoc",
+        "Damage": "1850",
+        "DamageType": "BPDemolitionDamageType",
+        "ObjectType": "Weapons"
+    },
+    "40mm": {
+        "Name": "40mm",
+        "Additional Names": "40",
+        "Damage": "600",
+        "DamageType": "BPExplosivePenetratingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "RPG Shell": {
+        "Name": "RPG Shell",
+        "Additional Names": "cutler;rpg",
+        "Damage": "550",
+        "DamageType": "BPExplosivePenetratingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "30mm": {
+        "Name": "30mm",
+        "Additional Names": "isg;30",
+        "Damage": "400",
+        "DamageType": "BPExplosivePenetratingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "12.7mm": {
+        "Name": "12.7mm",
+        "Additional Names": "hmg;127;12.7;ratcatcher;gast",
+        "Damage": "68.75",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Hv12.7mm": {
+        "Name": "Hv12.7mm",
+        "Additional Names": "FMG;hv127;hv12.7",
+        "Damage": "82.5",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Malone12.7mm": {
+        "Name": "Malone12.7mm",
+        "Additional Names": "malone 12.7mm;malone12.7",
+        "Damage": "44",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Nuke": {
+        "Name": "Nuke",
+        "Additional Names": "nuclear missile;atomic bomb;ballistic missile;nuke",
+        "Damage": "999999999",
+        "DamageType": "BPDemolitionDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HE Mortar Shell": {
+        "Name": "HE Mortar Shell",
+        "Additional Names": "mortar;he mortar",
+        "Damage": "300",
+        "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Shrapnel Mortar Shell": {
+        "Name": "Shrapnel Mortar Shell",
+        "Additional Names": "frag mortar;shrapnel mortar",
+        "Damage": "125",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons"
+    },
+    "120mm": {
+        "Name": "120mm",
+        "Additional Names": "",
+        "Damage": "400",
+        "DamageType": "BPHighExplosiveRuinDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HTD68mm": {
+        "Name": "HTD68mm",
+        "Additional Names": "hv68;htd 68mm;htd 68",
+        "Damage": "1050",
+        "DamageType": "BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Smelter40mm": {
+        "Name": "Smelter40mm",
+        "Additional Names": "smelter 40mm;smelter 40",
+        "Damage": "810",
+        "DamageType": "BPExplosivePenetratingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Spatha40mm": {
+        "Name": "Spatha40mm",
+        "Additional Names": "spatha 40mm;spatha 40",
+        "Damage": "720",
+        "DamageType": "BPExplosivePenetratingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Rampart68mm": {
+        "Name": "Rampart68mm",
+        "Additional Names": "rampart 68mm;rampart 68",
+        "Damage": "750",
+        "DamageType": "BPArmourPiercingDamageType",
+        "ObjectType": "Weapons"
+    },
+    "150mm": {
+        "Name": "150mm",
+        "Additional Names": "",
+        "Damage": "900",
+        "DamageType": "BPHighExplosiveRuinDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HV20mm": {
+        "Name": "HV20mm",
+        "Additional Names": "typhon;hv20",
+        "Damage": "234.375",
+        "DamageType": "BPAntiTankKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HV12.7mm": {
+        "Name": "HV12.7mm",
+        "Additional Names": "hv127;hv12.7",
+        "Damage": "103",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Lamentum12.7mm": {
+        "Name": "Lamentum12.7mm",
+        "Additional Names": "lamentum",
+        "Damage": "82.5",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Catara12.7mm": {
+        "Name": "Catara12.7mm",
+        "Additional Names": "catara",
+        "Damage": "44",
+        "DamageType": "BPHeavyKineticDamageType",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm": {
+        "Name": "7.62mm",
+        "Additional Names": "762; argenti;loughcaster",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Volta)": {
+        "Name": "7.62mm (Volta)",
+        "Additional Names": "volta",
+        "Damage": "87.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Fuscina)": {
+        "Name": "7.62mm (Fuscina)",
+        "Additional Names": "fuscina",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Blakerow)": {
+        "Name": "7.62mm (Blakerow)",
+        "Additional Names": "Blakerow",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Catena)": {
+        "Name": "7.62mm (Catena)",
+        "Additional Names": "Catena",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Howthorne)": {
+        "Name": "7.62mm (Howthorne)",
+        "Additional Names": "Howthorne",
+        "Damage": "44.4",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.92mm (auto mode)": {
+        "Name": "7.92mm (auto mode)",
+        "Additional Names": "792; dusk",
+        "Damage": "43.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.92mm (semi-auto mode)": {
+        "Name": "7.92mm (semi-auto mode)",
+        "Additional Names": "",
+        "Damage": "52.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.92mm (booker)": {
+        "Name": "7.92mm (booker)",
+        "Additional Names": "Hv792; booker",
+        "Damage": "63",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "8mm": {
+        "Name": "8mm",
+        "Additional Names": "pistol",
+        "Damage": "37.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    ".44": {
+        "Name": ".44",
+        "Additional Names": "revolver",
+        "Damage": "75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    ".44 (Hangman)": {
+        "Name": ".44 (Hangman)",
+        "Additional Names": "hangman",
+        "Damage": "97.5",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "Buckshot": {
+        "Name": "Buckshot",
+        "Additional Names": "shotgun",
+        "Damage": "225",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "Clancy-Raca": {
+        "Name": "Clancy-Raca",
+        "Additional Names": "",
+        "Damage": "126.5625",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "Auger": {
+        "Name": "Auger",
+        "Additional Names": "",
+        "Damage": "87.1875",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "9mm SMG": {
+        "Name": "9mm SMG",
+        "Additional Names": "smg;9mm",
+        "Damage": "33.75",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "9mm (Pitch Gun)": {
+        "Name": "9mm Pitch Gun",
+        "Additional Names": "pitch gun",
+        "Damage": "25.31",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "7.62mm (Sampo semi-auto mode)": {
+        "Name": "7.62mm (Sampo semi-auto mode)",
+        "Additional Names": "sampo",
+        "Damage": "56.25",
+        "DamageType": "LightKinetic",
+        "ObjectType": "Weapons"
+    },
+    "75mm": {
+        "Name": "75mm",
+        "Additional Names": "75",
+        "Damage": "1750",
+        "DamageType": "BPExplosivePenetratingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "FlameBackpackAmmo": {
+        "Name": "Flame Backpack Ammo",
+        "Additional Names": "flamethrower",
+        "Damage": "15",
+        "DamageType": "BPIncendiaryDamageType",
+        "ObjectType": "Weapons"
+    },
+    "FlameAmmo": {
+        "Name": "FlameAmmo",
+        "Additional Names": "",
+        "Damage": "25",
+        "DamageType": "BPIncendiaryDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HE Rocket": {
+        "Name": "HE Rocket",
+        "Additional Names": "katyusha rocket;he rocket;3c high explosive rocket",
+        "Damage": "350",
+        "DamageType": "BPIncendiaryHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "FireRocketAmmo": {
+        "Name": "Fire Rocket",
+        "Additional Names": "4c fire rocket;flame rocket",
+        "Damage": "145",
+        "DamageType": "BPIncendiaryHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "94.5mm": {
+        "Name": "94.5mm",
+        "Additional Names": "945;94.5",
+        "Damage": "1750",
+        "DamageType": "BPArmourPiercingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HV25 94.5mm": {
+        "Name": "HV94.5mm",
+        "Additional Names": "hv94.5mm;hv945;predator",
+        "Damage": "2187.5",
+        "DamageType": "BPArmourPiercingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HV75mm": {
+        "Name": "HV75mm",
+        "Additional Names": "ruptura 75mm;ruptura 75;stockade;stockade 75",
+        "Damage": "2362.5",
+        "DamageType": "BPExplosivePenetratingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "HV50 94.5mm": {
+        "Name": "HV50 94.5mm",
+        "Additional Names": "HHV94.5mm;starbreaker;starbreaker 945;starbreaker 94.5mm;stygian;styg",
+        "Damage": "2625",
+        "DamageType": "BPArmourPiercingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Lordscar94.5mm": {
+        "Name": "Lordscar94.5mm",
+        "Additional Names": "std;std 94.5mm;lordscar;lordscar 945;lordscar 94.5mm;lv94.5",
+        "Damage": "1200.5",
+        "DamageType": "BPArmourPiercingLargeDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Torpedo": {
+        "Name": "Torpedo",
+        "Additional Names": "",
+        "Damage": "3550",
+        "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "E680-S Rudder Lock (Sea Mine)": {
+        "Name": "E680-S Rudder Lock (Sea Mine)",
+        "Additional Names": "sea mine;naval mine",
+        "Damage": "1350",
+        "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    },
+    "Model-7 Evie Depth Charge": {
+        "Name": "Model-7 Evie Depth Charge",
+        "Additional Names": "depth charge;evie",
+        "Damage": "900",
+        "DamageType": "BPHighExplosiveDamageType",
+        "ObjectType": "Weapons"
+    }
+}
