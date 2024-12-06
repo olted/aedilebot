@@ -340,7 +340,7 @@
         "Damage": "3550.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "colonial sub;colonial submarine;nakki;trident;warden sub;warden submarine"
+        "Additional Names": "colonial sub;colonial submarine;nakki;trident;warden sub;warden submarine;torps;torpedo"
     },
     "Incendiary Mortar Shell": {
         "Name": "Incendiary Mortar Shell",

@@ -1519,10 +1519,9 @@
         "": "",
         "ObjectType": "Vehicles"
     },
-    
     "Duncan's Coin (ATR Field Gun)": {
         "Name": "Duncan's Coin (20mm Field Gun)",
-        "Additional Names": "warden anti tank field gun;warden atr field gun",
+        "Additional Names": "warden anti tank field gun;warden atr field gun;duncans Coin",
         "Cost": "",
         "Health": "1600",
         "Armour Health": "",
@@ -3029,7 +3028,7 @@
         "Main Gun Disable Chance": "0.0",
         "Secondary Gun Disable Chance": "0.0",
         "ObjectType": "Vehicles",
-        "Additional Names": "medical train car;train hospital"
+        "Additional Names": "medical train car;train hospital;blood tender"
     },
     "OilTanker": {
         "Name": "OilTanker",
