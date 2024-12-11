@@ -213,9 +213,13 @@ class DamageCalculator:
         if self.target_type != "Vehicles":
             raise bot.InvalidTypeError(self.target_name)
         final_damage = self.calculate_damage()
-        hits_to_disable = calculate_hits_to_reach_health(self.get_disable_health(), final_damage)
-        utils.debug_summary(self.weapon_name, self.target_name, final_damage, hits_to_disable)
-        return f"It takes {hits_to_disable} {self.weapon_name} to disable a {self.target_name}"
+        min_hits_to_disable = calculate_hits_to_reach_health(self.get_disable_health(), final_damage)
+        # consider low roll possibility
+        if self.weapon['DamageType'] in ["AntiTankExplosive", "Explosive", "HighExplosive", "ArmourPiercing", "Demolition"]:
+            max_hits = calculate_hits_to_reach_health(self.get_disable_health(), final_damage*0.95)
+            min_hits_to_disable = f"{min_hits_to_disable} to {max_hits}" if min_hits_to_disable < max_hits else min_hits_to_disable
+        utils.debug_summary(self.weapon_name, self.target_name, final_damage, min_hits_to_disable)
+        return f"It takes {min_hits_to_disable} {self.weapon_name} to disable a {self.target_name}"
 
 
 # general logic functions
