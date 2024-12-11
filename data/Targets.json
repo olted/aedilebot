@@ -2784,7 +2784,7 @@
     },
     "Flood Mk. IX Stain": {
         "Name": "Flood Mk. IX Stain",
-        "Additional Names": "warden spg;stain",
+        "Additional Names": "warden spg;stain;spg",
         "Cost": "-",
         "Health": "4800",
         "Armour Health": "12000",
