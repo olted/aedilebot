@@ -122,12 +122,17 @@ class DamageCalculator:
             return self.health * (1.005 - float(self.target["Disable Level"]))
         raise bot.InvalidTypeError
 
+    # returns rounded up hits to kill or a range of hits to kill for any non-kinetic damage
+    # this is due to foxhole having inconsistency for impact fuse (non-hitscan) weapons, which can lower damage done as low as around 95%
     def general_damage_calculator(self):
         final_damage = self.calculate_damage()
-        hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
-
-        utils.debug_summary(self.weapon_name, self.target_name, final_damage, hits_to_kill)
-        return hits_to_kill
+        min_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
+        utils.debug_summary(self.weapon_name, self.target_name, final_damage, min_hits_to_kill)
+        # consider low roll possibility
+        if self.weapon['DamageType'] in ["AntiTankExplosive", "Explosive", "HighExplosive", "ArmourPiercing", "Demolition"]:
+            max_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage*0.95)
+            return f"{min_hits_to_kill} to {max_hits_to_kill}" if min_hits_to_kill < max_hits_to_kill else min_hits_to_kill
+        return min_hits_to_kill
 
     def multitier_damage_calculator(self):
         if self.location_name:
@@ -162,6 +167,8 @@ class DamageCalculator:
             name = f"{main.clean_capitalize(self.location_name)} ({self.target_name})"
         else:
             name = self.target_name
+
+        
 
         ret_str = f"It takes {hits_to_kill} {self.weapon_name} to kill a {name}"
         if self.target == "meta":
