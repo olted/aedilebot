@@ -18,6 +18,8 @@ load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
 
+HTTPS_PROXY = os.getenv("https_proxy")
+
 class EntityNotFoundError(Exception):
     def __init__(self,name, message="The requested entity was not found. Please try again."):
         self.name = name
@@ -54,7 +56,7 @@ class BunkerSpecParseError(TargetNotFoundError):
 def run_discord_bot():
     intents = discord.Intents.default()
     intents.message_content = True
-    client = main.commands.Bot(command_prefix="!", intents=discord.Intents.all())
+    client = main.commands.Bot(command_prefix="!", intents=discord.Intents.all(), proxy=HTTPS_PROXY)
 
     @client.event
     async def on_ready():
