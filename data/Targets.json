@@ -6484,7 +6484,7 @@
     },
     "Naval Hull Segments": {
         "Name": "Naval Hull Segments",
-        "Additional Names": "",
+        "Additional Names": "hull segment",
         "Code name": "ShippingContainer",
         "Health": "1000",
         "Mitigation Type": "Tier1Structure",
@@ -6508,7 +6508,7 @@
     },
     "Naval Shell Plating": {
         "Name": "Naval Shell Plating",
-        "Additional Names": "",
+        "Additional Names": "shell plating",
         "Code name": "ShippingContainer",
         "Health": "1000",
         "Mitigation Type": "Tier1Structure",
@@ -6532,7 +6532,7 @@
     },
     "Naval Turbine Components": {
         "Name": "Naval Turbine Components",
-        "Additional Names": "",
+        "Additional Names": "turbine Component;turbine",
         "Code name": "ShippingContainer",
         "Health": "1000",
         "Mitigation Type": "Tier1Structure",

@@ -268,7 +268,7 @@
         "Damage": "400.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "fissura;gac;grenade launcher armoured car;knave"
+        "Additional Names": "tremola;fissura;gac;grenade launcher armoured car;knave"
     },
     "94.5mm": {
         "Name": "94.5mm",
@@ -706,5 +706,21 @@
         "DamageType": "AntiTankKineticStructure",
         "ObjectType": "Weapons",
         "Additional Names": "ghouse;garrison house;ghouse 20mm;AT pill"
+    },
+    "Large Ship AI Shell": {
+        "Name": "Large Ship AI Shell",
+        "Dev Name": "Large Ship AI Shell",
+        "Damage": "650.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "ship ai;ship ai mortar;large ship ai"
+    },
+    "Coastal Gun Shell": {
+        "Name": "Coastal Gun Shell",
+        "Dev Name": "Coastal Gun Shell",
+        "Damage": "1000.0",
+        "DamageType": "Explosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "coastal ai;coastal gun"
     }
 }
