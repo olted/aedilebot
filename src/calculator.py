@@ -129,7 +129,7 @@ class DamageCalculator:
         min_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
         utils.debug_summary(self.weapon_name, self.target_name, final_damage, min_hits_to_kill)
         # consider low roll possibility
-        if self.weapon['DamageType'] in ["AntiTankExplosive", "Explosive", "HighExplosive", "ArmourPiercing", "Demolition"]:
+        if self.weapon['Dev Name'] in ["ATRPGLightCAmmo", "ATRPGAmmo", "ATRPGIndirectAmmo", "RpgAmmo", "HELaunchedGrenade", "ATLaunchedGrenadeW", "ATGrenadeW", "StickyBomb", "MortarTankAmmo", "HEGrenade"]:
             max_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage*0.95)
             return f"{min_hits_to_kill} to {max_hits_to_kill}" if min_hits_to_kill < max_hits_to_kill else min_hits_to_kill
         return min_hits_to_kill

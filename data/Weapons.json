@@ -69,7 +69,7 @@
         "Damage": "450.0",
         "DamageType": "AntiTankExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "sticky"
+        "Additional Names": "sticky;stickies"
     },
     "A3 Harpa Fragmentation Grenade": {
         "Name": "A3 Harpa Fragmentation Grenade",
@@ -212,7 +212,7 @@
         "Damage": "550.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "at rocket;atrpg;bane;venom;carnyx"
+        "Additional Names": "at rocket;atrpg;bane;venom;carnyx;aprpg"
     },
     "Ignifist 30": {
         "Name": "Ignifist 30",
