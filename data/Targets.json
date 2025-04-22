@@ -3014,7 +3014,7 @@
     },
     "BMS Longrider": {
         "Name": "BMS Longrider",
-        "Additional Names": "train flatbed;train cart;flatbed car",
+        "Additional Names": "train flatbed;train cart;flatbed car;longrider",
         "Cost": "-",
         "Health": "1500",
         "Armour Health": "0",
