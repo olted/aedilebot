@@ -121,6 +121,7 @@
     },
     "Howitzer Garrison Shell": {
         "Name": "Howitzer Garrison Shell",
+        "Dev Name": "HowitzerAmmo",
         "Additional Names": "howi garrison shell;howie",
         "Damage": "500.0",
         "DamageType":"HighExplosive",
