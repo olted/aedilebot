@@ -420,7 +420,7 @@
     },
     "BMS Longhook (Base Ship)":{
         "Name": "BMS Longhook (Base Ship)",
-        "Additional Names": "base ship",
+        "Additional Names": "base ship;long hook",
         "Cost":"",
         "Health":"49500",
         "Armour Health":"49500",
