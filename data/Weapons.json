@@ -332,7 +332,7 @@
         "Damage": "1350.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "sea mine;water mine"
+        "Additional Names": "sea mine;water mine;rudderlock"
     },
     "Moray Torpedo": {
         "Name": "Moray Torpedo",
