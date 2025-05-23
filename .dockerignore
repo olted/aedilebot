@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git & version control
+.git
+.gitignore
+.gitattributes
+
+# Docker itself
+Dockerfile
+.dockerignore
+
+# Testing & coverage
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+*.cover
+.coverage.*
+test-results/
+
+# Editor & IDEs
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Application-specific (if you have config/secrets)
+.env
+.env.*
+secrets/
+*.db
+
+# Distribution/build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
