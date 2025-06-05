@@ -178,7 +178,7 @@ class DamageCalculator:
     def get_custom_kill_calculation(self):
         remaining_health = self.health - self.weapon1_hits * self.calculate_damage()
         if remaining_health <= 0:
-            return self.get_kill_calculation(self)
+            return self.get_kill_calculation()
         
         # set weapon2 for remaining health
         self.health = remaining_health
