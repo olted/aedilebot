@@ -1,9 +1,9 @@
 
-import parse
+from . import parse
 from fuzzywuzzy import fuzz
 import main
-import utils
-import bot
+from . import utils
+from . import bot
 from fuzzywuzzy import process
 
 

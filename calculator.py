@@ -1,9 +1,9 @@
 import math
-import parse
-import utils
-import fuzzy as fuzz
+from . import parse
+from . import utils
+from . import fuzzy as fuzz
 import main
-import bot
+from . import bot
 
 
 def calculate_hits_to_reach_health(health, damage):
@@ -366,7 +366,8 @@ def statsheet_handler(entity_name):
                 raw_hp = entity["Health"]
                 bmat_cost = entity["Bmat cost"]
                 repair_cost = entity["RepairCost"]
-                return entity_type,name,raw_hp,bmat_cost,repair_cost
+                code_name = entity["Code name"]
+                return entity_type,name,raw_hp,bmat_cost,repair_cost,code_name
                 
                     
         return "I could not process a request because the entity is not a valid weapon, structure or vehicle."

@@ -184,7 +184,7 @@ def get_bunker_spec(string):
 
 # Structure Json parser
 location_names = load_location_names(
-    os.path.join("data", "Location_names.json")
+    os.path.join("data", "plugins", "data", "Location_names.json")
 )
 
 
@@ -192,11 +192,11 @@ def check_if_location_name(name):
     return name in location_names
 
 
-targets = load_json_to_dict(os.path.join("data", "Targets.json"))
-damages = load_json_to_dict(os.path.join("data", "Damage.json"))
-weapons = load_json_to_dict(os.path.join("data", "Weapons.json"))
+targets = load_json_to_dict(os.path.join("data", "plugins", "data", "Targets.json"))
+damages = load_json_to_dict(os.path.join("data", "plugins", "data", "Damage.json"))
+weapons = load_json_to_dict(os.path.join("data", "plugins", "data", "Weapons.json"))
 all = weapons | targets
-bunker_stats = load_json_to_dict(os.path.join("data", "Bunker_piece.json"))
+bunker_stats = load_json_to_dict(os.path.join("data", "plugins", "data", "Bunker_piece.json"))
 
 
 targets_dictionary = get_all_names(targets)
