@@ -1,6 +1,10 @@
 from astrbot.api.event import filter, AstrMessageEvent, MessageEventResult
 from astrbot.api.star import Context, Star, register
 from astrbot.api import logger
+from astrbot.core import AstrBotConfig
+from astrbot.core.platform.sources.aiocqhttp.aiocqhttp_message_event import (
+    AiocqhttpMessageEvent,
+)
 import traceback
 from . import calculator
 import re
@@ -39,9 +43,12 @@ class BunkerSpecParseError(TargetNotFoundError):
 
 @register("foxhole", "FoxholeBot", "Foxhole 游戏数据查询插件", "1.0.0")
 class FoxholePlugin(Star):
-    def __init__(self, context: Context):
+    def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
-        
+        self.config = config
+        self.foxhole_group: List[str] = config.get(
+            "foxhole_group", []
+        )  # 启用此插件的群聊
     async def initialize(self):
         """初始化插件"""
         pass
@@ -81,7 +88,11 @@ class FoxholePlugin(Star):
             return ("在处理你的请求时发生了内部错误。请联系机器人的开发者。")
 
     @filter.command("foxholehelp")
-    async def help(self, event: AstrMessageEvent):
+    async def help(self, event: AiocqhttpMessageEvent):
+        group_id = event.get_group_id()
+        # 如果群聊不在检测列表中，则不进行检测
+        if group_id not in self.foxhole_group:
+            return
         """显示帮助信息"""
         help_text = (
             "欢迎使用 Foxhole 数据计算插件！以下是可用的命令：\n\n"
@@ -97,14 +108,22 @@ class FoxholePlugin(Star):
         yield event.plain_result(help_text)
 
     @filter.command("custom_kill")
-    async def custom_kill(self, event: AstrMessageEvent, target: str, weapon1: str, num1: int, weapon2: str):
+    async def custom_kill(self, event: AiocqhttpMessageEvent, target: str, weapon1: str, num1: int, weapon2: str):
         """计算使用指定数量的两种武器组合攻击目标的效果"""
+        group_id = event.get_group_id()
+        # 如果群聊不在检测列表中，则不进行检测
+        if group_id not in self.foxhole_group:
+            return
         result = self.handle_response_inner(weapon1, target, "custom_kill", num1, weapon2)
         yield event.plain_result(result)
 
     @filter.command("info")
-    async def statsheet(self, event: AstrMessageEvent, entity: str):
+    async def statsheet(self, event: AiocqhttpMessageEvent, entity: str):
         """查看任何实体的统计数据表"""
+        group_id = event.get_group_id()
+        # 如果群聊不在检测列表中，则不进行检测
+        if group_id not in self.foxhole_group:
+            return
         data = calculator.statsheet_handler(entity)
         result = f"**{data[1]}** 的统计数据表:\n\n"
         
@@ -165,9 +184,13 @@ class FoxholePlugin(Star):
 
 
     @filter.command("kill")
-    async def kill(self, event: AstrMessageEvent,
+    async def kill(self, event: AiocqhttpMessageEvent,
                     target: str,
                     weapon: str):
+        group_id = event.get_group_id()
+        # 如果群聊不在检测列表中，则不进行检测
+        if group_id not in self.foxhole_group:
+            return
         try:
             result = self.handle_response_inner(target=target, weapon=weapon, operation="kill", num1=0, weapon2=None)
             yield event.plain_result(result)
@@ -177,10 +200,13 @@ class FoxholePlugin(Star):
 
 #用@filter.regex构建一个how开头匹配的玩家消息
     @filter.regex(r"^how (many|much)(.*) to (kill|destroy|disable|dehusk)(.*)")
-    async def on_message(self, event: AstrMessageEvent):
-            message = event.message_str
-            response = handle_response(message)
-            yield event.plain_result(response)
+    async def on_message(self, event: AiocqhttpMessageEvent):
+        group_id = event.get_group_id()
+        if group_id not in self.foxhole_group:
+            return
+        message = event.message_str
+        response = handle_response(message)
+        yield event.plain_result(response)
 
 
 
