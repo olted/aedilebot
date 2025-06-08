@@ -178,73 +178,26 @@ class FoxholePlugin(Star):
         except Exception as e:
             yield event.plain_result(f"命令执行出错: {str(e)}")
 
-    @filter.regex(r"^？how (many|much)(.*) to (kill|destroy) (.*)")
-    async def handle_kill(self, event: AstrMessageEvent):
-        try:
-            message = event.message_str
-            pattern = r"^？how (many|much)(.*) to (kill|destroy) (.*)"
-            matches = re.search(pattern, message)
-            if matches:
-                weapon, target = matches.group(2).strip(), matches.group(4).strip()
-                if "size" in target:
-                    result = self.handle_response_inner(weapon, target, operation="bunker")
-                else:
-                    result = self.handle_response_inner(weapon, target)
-                yield event.plain_result(result)
-            else:
-                yield event.plain_result("消息格式不正确")
-        except Exception as e:
-            logger.error(f"[FoxholeBot] 处理消息时发生错误: {str(e)}")
-            yield event.plain_result(f"命令执行出错: {str(e)}")
 
-    @filter.regex(r"^？how (many|much)(.*) to disable (.*)")
-    async def handle_disable(self, event: AstrMessageEvent):
-        try:
+#用@filter.regex构建一个how开头匹配的玩家消息
+    @filter.regex(r"^how")
+    async def on_message(self, event: AstrMessageEvent):
             message = event.message_str
-            pattern = r"^？how (many|much)(.*) to disable (.*)"
-            matches = re.search(pattern, message)
-            if matches:
-                weapon, target = matches.group(2).strip(), matches.group(3).strip()
-                result = self.handle_response_inner(weapon, target, operation="disable")
-                yield event.plain_result(result)
-            else:
-                yield event.plain_result("消息格式不正确")
-        except Exception as e:
-            logger.error(f"[FoxholeBot] 处理消息时发生错误: {str(e)}")
-            yield event.plain_result(f"命令执行出错: {str(e)}")
+            response = handle_response(message)
+            yield event.plain_result(response)
 
-    @filter.regex(r"^？how (many|much)(.*) to dehusk (.*)")
-    async def handle_dehusk(self, event: AstrMessageEvent):
-        try:
-            message = event.message_str
-            pattern = r"^？how (many|much)(.*) to dehusk (.*)"
-            matches = re.search(pattern, message)
-            if matches:
-                weapon, target = matches.group(2).strip(), matches.group(3).strip()
-                result = self.handle_response_inner(weapon, target, operation="dehusk")
-                yield event.plain_result(result)
-            else:
-                yield event.plain_result("消息格式不正确")
-        except Exception as e:
-            logger.error(f"[FoxholeBot] 处理消息时发生错误: {str(e)}")
-            yield event.plain_result(f"命令执行出错: {str(e)}")
+
+
+
+
 
     async def terminate(self):
         """插件终止时的清理工作"""
         pass
 
-async def message_handler(message_, user_message):
-    # 检查消息是否以"？"开头
-    if not user_message.startswith("？"):
-        return
-    # 去掉"？"前缀后再处理
-    user_message = user_message[1:]
-    response = handle_response(user_message)
-    if response:
-        await message_.reply(response, mention_author = False)
 
-def handle_response(message_) -> str:
-    p_message = message_.lower()
+def handle_response(message) -> str:
+    p_message = message.lower()
     token_pair = re.findall('how (many|much)(.*) to (kill|destroy) (.*)', move_string_to_rear(p_message) )
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]

@@ -1,7 +1,7 @@
 
 from . import parse
 from fuzzywuzzy import fuzz
-import main
+from . import main
 from . import utils
 from . import bot
 from fuzzywuzzy import process

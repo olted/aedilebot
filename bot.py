@@ -2,13 +2,13 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import discord.utils
-import main
+from . import main
 import dotenv
 import os
 from dotenv import load_dotenv
 from . import calculator
 import re
-import parse
+from . import parse
 import typing
 from . import fuzzy as fuzz
 import traceback

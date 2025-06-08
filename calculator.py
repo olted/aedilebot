@@ -2,7 +2,7 @@ import math
 from . import parse
 from . import utils
 from . import fuzzy as fuzz
-import main
+from . import main
 from . import bot
 
 
