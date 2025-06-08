@@ -84,7 +84,7 @@ class FoxholePlugin(Star):
     async def help(self, event: AstrMessageEvent):
         """显示帮助信息"""
         help_text = (
-            "欢迎使用 Foxhole 数据查询插件！以下是可用的命令：\n\n"
+            "欢迎使用 Foxhole 数据计算插件！以下是可用的命令：\n\n"
             "📌 基础命令：\n"
             "- /foxholehelp - 显示此帮助信息\n"
             "- /info [名字] - 查看任何武器/建筑/载具的统计数据表\n"
