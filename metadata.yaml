@@ -1,0 +1,5 @@
+name: FoxholeBot # 这是你的插件的唯一识别名。
+desc: 散兵坑伤害计算器。 # 插件简短描述
+version: v1.0 # 插件版本号。格式：v1.1.1 或者 v1.1
+author: Loliiiico # 作者Foxhole_bot
+repo: https://https://github.com/uwuhhhj/astrbot_plugin_Foxhole_bot # 插件的仓库地址

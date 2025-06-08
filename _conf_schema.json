@@ -1,0 +1,9 @@
+{
+        "foxhole_group": {
+          "description": "检测违禁词的群聊白名单",
+          "type": "list",
+          "hint": "仅检测白名单的群聊，其他群聊不检测",
+          "default": []
+        }
+
+  }
