@@ -91,11 +91,7 @@ class FoxholePlugin(Star):
             "- /kill [目标] [武器] - 计算使用指定武器摧毁目标所需数量\n"
             "- /custom_kill [目标] [武器1] [数量1] [武器2] - 计算使用指定数量的两种武器组合攻击目标的效果\n\n"
             "💡 伤害计算示例：\n"
-            "- How much 150mm to kill Patridia?\n"
-            "- How many satchels to kill t3 bunker core husk?\n"
-            "- How many 68mm to disable HTD?\n"
-            "- How many satchels to kill Victa?\n"
-            "- How much 40mm to destroy bt pad?\n\n"
+            "- ^how (many|much)(.*) to (kill|destroy|disable|dehusk)(.*)\n"
             "祝您在前线好运！"
         )
         yield event.plain_result(help_text)
@@ -180,7 +176,7 @@ class FoxholePlugin(Star):
 
 
 #用@filter.regex构建一个how开头匹配的玩家消息
-    @filter.regex(r"^how")
+    @filter.regex(r"^how (many|much)(.*) to (kill|destroy|disable|dehusk)(.*)")
     async def on_message(self, event: AstrMessageEvent):
             message = event.message_str
             response = handle_response(message)

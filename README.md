@@ -28,7 +28,7 @@
 ---
 
 ## ✨ 示例（可以直接复制到频道试用）：
-
+^how (many|much)(.*) to (kill|destroy|disable|dehusk)(.*)
 - `How much 150mm to kill Patridia?`  
 - `How many satchels to kill t3 bunker core husk?`  
 - `How many 68mm to disable HTD?`  
