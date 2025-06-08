@@ -88,13 +88,7 @@ class FoxholePlugin(Star):
 
     @filter.command("foxholehelp")
     async def help(self, event: AiocqhttpMessageEvent):
-        group_id = event.get_group_id()
-        
-        print("group_id:",group_id)
-        # 如果群聊不在检测列表中，则不进行检测
-        if group_id not in self.foxhole_group:
-            print("not in group")
-            return
+
         """显示帮助信息"""
         help_text = (
             "欢迎使用 Foxhole 数据计算插件！以下是可用的命令：\n\n"
