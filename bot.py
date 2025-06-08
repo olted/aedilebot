@@ -1,7 +1,3 @@
-import discord
-from discord.ext import commands
-from discord import app_commands
-import discord.utils
 from . import main
 import dotenv
 import os
