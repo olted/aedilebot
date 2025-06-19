@@ -1,6 +1,16 @@
+# Core Discord bot library
+discord.py>=1.7.3
+
+# Fuzzy matching
+fuzzywuzzy>=0.18.0
+
+# Speed boost for fuzzywuzzy
+python-Levenshtein>=0.12.0
+
+# Environment variable loader
+python-dotenv>=1.0.0
+
+# Networking dependencies
 dnspython==1.16.0
 PyNaCl==1.4.0
 async-timeout==3.0.1
-discord
-fuzzywuzzy
-python-dotenv
