@@ -18,10 +18,10 @@
     "300mm": {
         "Name": "300mm",
         "Dev Name": "LRArtilleryAmmo",
-        "Damage": "1500.0",
+        "Damage": "3000.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "rail cannon;rail sc;rsc"
+        "Additional Names": "rail cannon;rail sc;rsc;sc"
     },
     "Mortar Shell": {
         "Name": "Mortar Shell",
@@ -39,13 +39,29 @@
         "ObjectType": "Weapons",
         "Additional Names": ""
     },
-    "250mm": {
-        "Name": "250mm",
+    "250mm \u201cPurity\u201c Shell": {
+        "Name": "250mm \u201cPurity\u201c Shell",
         "Dev Name": "MortarTankAmmo",
-        "Damage": "1000.0",
+        "Damage": "800.0",
         "DamageType": "Demolition",
         "ObjectType": "Weapons",
-        "Additional Names": "ballista;chief;chieftain;fm;fm250;svb"
+        "Additional Names": "ballista;chief;chieftain;fm;fm250;svb;250mm"
+    },
+    "250mm \u201cFury\u201c Shell": {
+        "Name": "250mm \u201cFury\u201c Shell",
+        "Dev Name": "MortarTankAmmoBR",
+        "Damage": "800.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": "fury shell;fury;alekto"
+    },
+    "Shatter Missile": {
+        "Name": "Shatter Missile",
+        "Dev Name": "DemolitionRocketAmmo",
+        "Damage": "250.0",
+        "DamageType": "Demolition",
+        "ObjectType": "Weapons",
+        "Additional Names": "King Jester - Mk. I-1;King Jester;rocket st;rocket scout tank;jester"
     },
     "Abisme AT-99 Mine": {
         "Name": "Abisme AT-99 Mine",
@@ -109,7 +125,7 @@
         "Damage": "400.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "30mm scout tank;30mm tankette;30mmST;brig;isg;roofette"
+        "Additional Names": "30mm scout tank;30mm tankette;30mmST;brig;isg;roofette;ghouse;garrison house;AT pill;AT pillbox;anti-tank pillbox"
     },
     "68mm": {
         "Name": "68mm",
@@ -186,7 +202,7 @@
     "Buckshot": {
         "Name": "Buckshot",
         "Dev Name": "ShotgunAmmo",
-        "Damage": "93.75",
+        "Damage": "87.5",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "Dragonfly;colonial shotgun"
@@ -290,8 +306,8 @@
     "3C-High Explosive Rocket": {
         "Name": "3C-High Explosive Rocket",
         "Dev Name": "HERocketAmmo",
-        "Damage": "350.0",
-        "DamageType": "IncendiaryHighExplosive",
+        "Damage": "700.0",
+        "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
         "Additional Names": "hades net (emplaced);katyusha;rocket scout tank;rocket st;rocket truck"
     },
@@ -635,7 +651,7 @@
         "Name": "No.4 The Pillory Scattergun",
         "Dev Name": "ShotgunAmmo",
         "Infantry Weapon Dev Name": "ShotgunW",
-        "Damage": "234.375",
+        "Damage": "140",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "Scattergun;warden shotgun"
@@ -699,14 +715,6 @@
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "typhon"
-    },
-    "Structure 20mm": {
-        "Name": "Structure 20mm",
-        "Dev Name": "StructureATRifleAmmo",
-        "Damage": "187.5",
-        "DamageType": "AntiTankKineticStructure",
-        "ObjectType": "Weapons",
-        "Additional Names": "ghouse;garrison house;ghouse 20mm;AT pill"
     },
     "Large Ship AI Shell": {
         "Name": "Large Ship AI Shell",
