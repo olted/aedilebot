@@ -80,6 +80,7 @@ def run_discord_bot():
         embed.add_field(name="/help", value="Provides you with this message! How neat is that?", inline=False)
         embed.add_field(name="/statsheet [entity]", value="Provides you with a statistics sheet of any entity in the calculator", inline=False)
         embed.add_field(name="/kill [target] [weapon]", value="Fulfills the same purpose as the prompt below with the help of autocomplete.", inline=False)
+        embed.add_field(name="/bunker_kill", value="Specify the bunker island you want to kill with detailed parameters. (If a modification is not an option, it means it has the same stat as a blank bunker such as engine room)", inline=False)
         embed.add_field(name="**Damage Calculator Prompt**", value='``How much|many [weapon] to destroy|kill|disable [target]``\nHere are some examples to try:\n\nHow much 150mm to kill Patridia?\nHow many satchels to kill t3 bunker core husk?\nHow many 68mm to disable HTD?\nHow many satchels to kill Victa?\nHow much 40mm to destroy bt pad?', inline=False)
         embed.set_footer(text="Good luck on the front!", icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498")
         await interaction.response.send_message(embed=embed)
