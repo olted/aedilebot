@@ -123,7 +123,8 @@ class DamageCalculator:
         if bunker_spec["size"] == 1:
             si = 1
         self.mitigation_type = tier_to_mitigation[tier]
-        si = si + min(si, 0.15*bunker_spec["green"]/(bunker_spec["green"]+bunker_spec["red"]))
+        if (bunker_spec["green"]+bunker_spec["red"]) > 0:
+            si = si + min(si, 0.15*bunker_spec["green"]/(bunker_spec["green"]+bunker_spec["red"]))
         self.si = si
         self.raw_health = raw_health
         return raw_health*si
