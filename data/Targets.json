@@ -1721,7 +1721,7 @@
     },
     "King Spire Mk. I (MGST)": {
         "Name": "King Spire Mk. I (MGST)",
-        "Additional Names": "mgst;scout tank;",
+        "Additional Names": "mgst;scout tank;kingspire;king spire",
         "Cost": "70",
         "Health": "1350",
         "Armour Health": "6000",
@@ -2732,7 +2732,7 @@
     },
     "R-17 \u201cRetiarius\u201d Skirmisher": {
         "Name": "R-17 \u201cRetiarius\u201d Skirmisher",
-        "Additional Names": "rocket truck;katyusha",
+        "Additional Names": "rocket truck;katyusha;retariatus;retairus",
         "Cost": "-",
         "Health": "900",
         "Armour Health": "0",
@@ -6380,7 +6380,7 @@
     },
     "Resource Transfer Station": {
         "Name": "Resource Transfer Station",
-        "Additional Names": "",
+        "Additional Names": "RTS",
         "Dev Name": "FacilityResourceTransfer1",
         "Health": "2200",
         "Mitigation Type": "Tier2Structure",
@@ -6404,7 +6404,7 @@
     },
     "Material Transfer Station": {
         "Name": "Material Transfer Station",
-        "Additional Names": "",
+        "Additional Names": "MTS",
         "Dev Name": "FacilityResourceTransfer2",
         "Health": "2200",
         "Mitigation Type": "Tier2Structure",
@@ -6546,9 +6546,9 @@
         "bIsDamagedWhileDrivingOver": "FALSE",
         "ObjectType": "Structures"
     },
-    "Facility Crane": {
-        "Name": "Facility Crane",
-        "Additional Names": "facility crane;static crane;stationary crane",
+    "BMS Foreman Stacker (Facility Crane)": {
+        "Name": "BMS Foreman Stacker (Facility Crane)",
+        "Additional Names": "facility crane;static crane;stationary crane;BMS Foreman Stacker;foreman stacker",
         "Dev Name": "FacilityCrane",
         "Health": "1000",
         "Mitigation Type": "Tier2Structure",

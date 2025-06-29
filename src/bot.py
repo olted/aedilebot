@@ -22,15 +22,9 @@ class EntityNotFoundError(Exception):
     def __init__(self,name, message="The requested entity was not found. Please try again."):
         self.name = name
         self.message = message
-        self.log_error()
         super().__init__(self.message)
     def show_message(self):
         return self.message
-    def log_error(self):
-        timestamp = datetime.datetime.now().isoformat()
-        log_entry = f"[{timestamp}] Entity not found: {self.name}\n"
-        with open("error_log.txt", "a") as file:
-            file.write(log_entry)
     
 class InvalidTypeError(EntityNotFoundError):
     def __init__(self, name, message="The entity was invalid for this operation. Please try again."):
@@ -99,7 +93,8 @@ def run_discord_bot():
                     weapon1: str,
                     num1: int,
                     weapon2: str):
-        await interaction.response.send_message(handle_response_inner(weapon1,target, "custom_kill", num1, weapon2))
+        query = f"Custom_kill query: target = {target}, weapon1 = {weapon1}, num1 = {str(num1)}, weapon2 = {weapon2}"
+        await interaction.response.send_message(handle_response_inner(weapon1,target, query, "custom_kill", num1, weapon2))
     
     @client.tree.command(name="bunker_kill")
     @app_commands.describe(
@@ -217,7 +212,8 @@ def run_discord_bot():
     async def kill(interaction: discord.Interaction,
                     target: str,
                     weapon: str):
-        await interaction.response.send_message(handle_response_inner(weapon,target))
+        query = f"kill query: target = {target}, weapon = {weapon}"
+        await interaction.response.send_message(handle_response_inner(weapon, target, query))
     
     @kill.autocomplete("target")
     @custom_kill.autocomplete("target")
@@ -284,7 +280,7 @@ def run_discord_bot():
     client.run(DEV_SERVER_TOKEN)
 
 # bot logic
-def handle_response_inner(weapon,target, operation="kill", num1=0, weapon2=None):
+def handle_response_inner(weapon,target, query = None, operation="kill", num1=0, weapon2=None):
     try:
         if operation=="kill":
             return calculator.general_kill_handler(weapon, target) #return calculator.relic_th_kill_handler(weapon, target)
@@ -299,18 +295,30 @@ def handle_response_inner(weapon,target, operation="kill", num1=0, weapon2=None)
     except ZeroDivisionError as e:
         return f"This weapon does no damage to this entity"
     except TargetNotFoundError as e:
+        log_error(TargetNotFoundError.__name__, query)
         return e.show_message()
     except InvalidTypeError as e:
+        log_error(InvalidTypeError.__name__, query)
         return e.show_message()
     except WeaponNotFoundError as e:
+        log_error(WeaponNotFoundError.__name__, query)
         return e.show_message()
     except EntityNotFoundError as e:
+        log_error(EntityNotFoundError.__name__, query)
         return e.show_message()
     except Exception as e:
         print(e)
         traceback.print_tb(e.__traceback__)
+        log_error(Exception.__name__, query)
         return ("Inner error happened during processing of your request. "
                 "Please, contact bot's devs about this.")
+
+
+def log_error(error_class, log_str):
+        timestamp = datetime.datetime.now().isoformat()
+        log_entry = f"[{timestamp}] {error_class}: {log_str}\n"
+        with open("error_log.txt", "a") as file:
+            file.write(log_entry)
 
 def handle_bunker_kill_command(weapon, total_size, tier, green_dots, red_dots, rg, mg, atg, howi, shelter, obs, core, ic, sc, ws, fortress, wet):
     bunker_spec = {}
@@ -340,16 +348,16 @@ def handle_response(message_) -> str:
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
         if "size" in target:
-            return handle_response_inner(weapon, target, operation="bunker")
-        return handle_response_inner(weapon, target)
+            return handle_response_inner(weapon, target, message_, operation="bunker")
+        return handle_response_inner(weapon, target, message_)
     
     token_pair = re.findall('how (many|much)(.*) to disable (.*)', p_message)
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]
-        return handle_response_inner(weapon, target, operation="disable")
+        return handle_response_inner(weapon, target, message_, operation="disable")
     
     token_pair = re.findall('how (many|much)(.*) to dehusk (.*)', main.move_string_to_rear(p_message))
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]
-        return handle_response_inner(weapon, target, operation="dehusk")
+        return handle_response_inner(weapon, target, message_, operation="dehusk")
 
