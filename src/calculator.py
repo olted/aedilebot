@@ -61,6 +61,7 @@ class DamageCalculator:
                     self.estimated = True
                 else:
                     self.estimated = False
+                self.shelters = 0
                 if "shelter" in args["bunker_spec"]:
                     self.shelters = args["bunker_spec"]["shelter"]
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
