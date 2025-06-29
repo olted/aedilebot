@@ -27,7 +27,9 @@ class DamageCalculator:
             self.target_type = self.target["ObjectType"]
             self.health = float(self.target["Health"])
         self.damage_value = float(self.weapon["Damage"])
-        self.damage_type = parse.damages[self.weapon['DamageType']]
+        self.damage_type = dict(parse.damages[self.weapon['DamageType']])
+        self.max_hits_to_kill = -1
+        self.min_real_damage = -1
 
         self.mitigation_type = None
         self.dmg_multiplier = None
@@ -59,6 +61,8 @@ class DamageCalculator:
                     self.estimated = True
                 else:
                     self.estimated = False
+                if "shelter" in args["bunker_spec"]:
+                    self.shelters = args["bunker_spec"]["shelter"]
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
                 self.breachable_health = self.calculate_breachable_health()
                 self.dmg_multiplier = self.get_bunker_wet_multipler(args["bunker_spec"]["wet"])
@@ -155,7 +159,21 @@ class DamageCalculator:
         real_damage = float(self.damage_value * float((1 - float(mitigation_value))))
         if self.dmg_multiplier is not None:
             real_damage *= self.dmg_multiplier
+        
+        if self.shelters > 0 and (self.damage_type["Name"] == "HighExplosive" or self.damage_type["Name"] == "IncendiaryHighExplosive"):
+            mitigation_bonus = self.get_shelter_bonus(self.shelters)
+            max_mitigation_value = float(self.damage_type[mitigation_type]) + mitigation_bonus
+            self.min_real_damage = math.ceil(float(self.damage_value * float((1 - max_mitigation_value))))
         return math.ceil(real_damage)
+    
+    def get_shelter_bonus(self, shelters):
+        shelters = min(9,shelters)
+        bonus = 0.15
+        total = 0
+        for i in range(shelters):
+            total += bonus
+            bonus /= 4
+        return total
 
     def get_disable_health(self):
         if "Disable Level" in self.target:
@@ -165,13 +183,16 @@ class DamageCalculator:
     # returns rounded up hits to kill or a range of hits to kill for any non-kinetic damage
     # this is due to foxhole having inconsistency for impact fuse (non-hitscan) weapons, which can lower damage done as low as around 95%
     def general_damage_calculator(self):
-        final_damage = self.calculate_damage()
-        min_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
-        utils.debug_summary(self.weapon_name, self.target_name, final_damage, min_hits_to_kill)
-        # consider low roll possibility
+        max_damage = self.calculate_damage()
+        min_hits_to_kill = calculate_hits_to_reach_health(self.health, max_damage)
+        if self.min_real_damage > 0:
+            self.max_hits_to_kill = calculate_hits_to_reach_health(self.health, self.min_real_damage)
+        utils.debug_summary(self.weapon_name, self.target_name, max_damage, min_hits_to_kill)
+        # consider low roll possibility and shelters
         if self.weapon['Dev Name'] in ["ATRPGLightCAmmo", "ATRPGAmmo", "ATRPGIndirectAmmo", "RpgAmmo", "HELaunchedGrenade", "ATLaunchedGrenadeW", "ATGrenadeW", "StickyBomb", "MortarTankAmmo", "HEGrenade"]:
-            max_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage*0.95)
-            return f"{min_hits_to_kill} to {max_hits_to_kill}" if min_hits_to_kill < max_hits_to_kill else min_hits_to_kill
+            self.max_hits_to_kill = max(self.max_hits_to_kill, calculate_hits_to_reach_health(self.health, max_damage*0.95))
+        if self.max_hits_to_kill > min_hits_to_kill:
+            return f"{min_hits_to_kill} to {self.max_hits_to_kill}" if min_hits_to_kill < self.max_hits_to_kill else min_hits_to_kill
         return min_hits_to_kill
 
     def multitier_damage_calculator(self):
