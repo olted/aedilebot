@@ -30,6 +30,7 @@ class DamageCalculator:
         self.damage_type = dict(parse.damages[self.weapon['DamageType']])
         self.max_hits_to_kill = -1
         self.min_real_damage = -1
+        self.shelters = 0
 
         self.mitigation_type = None
         self.dmg_multiplier = None
@@ -61,7 +62,6 @@ class DamageCalculator:
                     self.estimated = True
                 else:
                     self.estimated = False
-                self.shelters = 0
                 if "shelter" in args["bunker_spec"]:
                     self.shelters = args["bunker_spec"]["shelter"]
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
