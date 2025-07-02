@@ -7947,7 +7947,7 @@
     },
     "Intelligence Center 1x1": {
         "Name": "Intelligence Center",
-        "Additional Names": "",
+        "Additional Names": "intel center;ic",
         "Dev Name": "IntelCenter",
         "Health": "2550",
         "Mitigation Type": "Tier3Structure",
@@ -7963,7 +7963,7 @@
     },
     "Storm Cannon 1x1": {
         "Name": "Storm Cannon",
-        "Additional Names": "",
+        "Additional Names": "stormcannon;sc",
         "Dev Name": "LRArtillery",
         "Health": "2550",
         "Mitigation Type": "Tier3Structure",
@@ -7979,7 +7979,7 @@
     },
     "Storm Cannon Destroyed Husk": {
         "Name": "Storm Cannon Destroyed Husk",
-        "Additional Names": "",
+        "Additional Names": "stormcannon husk",
         "Dev Name": "LRArtilleryDestroyed",
         "Health": "4250",
         "Mitigation Type": "Tier3Structure",
