@@ -301,7 +301,7 @@
         "Damage": "145.0",
         "DamageType": "IncendiaryHighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "rocket halftrack;rocket ht"
+        "Additional Names": "rocket halftrack;rocket ht;fire rockets;4c rockets;4c"
     },
     "3C-High Explosive Rocket": {
         "Name": "3C-High Explosive Rocket",
@@ -309,7 +309,7 @@
         "Damage": "700.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "hades net (emplaced);katyusha;rocket scout tank;rocket st;rocket truck"
+        "Additional Names": "hades net (emplaced);katyusha;rocket scout tank;rocket st;rocket truck;3C rockets;3C;HE rockets"
     },
     "Flame Ammo": {
         "Name": "Flame Ammo",
