@@ -3,10 +3,13 @@ name: build-image-unstable
 on:
   push:
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   build:
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
