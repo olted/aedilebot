@@ -27,7 +27,10 @@ class DamageCalculator:
             self.target_type = self.target["ObjectType"]
             self.health = float(self.target["Health"])
         self.damage_value = float(self.weapon["Damage"])
-        self.damage_type = parse.damages[self.weapon['DamageType']]
+        self.damage_type = dict(parse.damages[self.weapon['DamageType']])
+        self.max_hits_to_kill = -1
+        self.min_real_damage = -1
+        self.shelters = 0
 
         self.mitigation_type = None
         self.dmg_multiplier = None
@@ -48,7 +51,21 @@ class DamageCalculator:
                 self.devastation = args["devastation"]
             if "bunker_spec" in args:
                 # set health and mitigation
+                if "red" not in args["bunker_spec"] or "green" not in args["bunker_spec"] or args["bunker_spec"]["red"] == -1 or args["bunker_spec"]["green"] == -1:
+                    # add estimates if red or green dots are not specified
+                    if "red" in args["bunker_spec"] and not args["bunker_spec"]["red"] == -1:
+                        args["bunker_spec"]["green"] = (args["bunker_spec"]["size"]*4 - args["bunker_spec"]["red"]) // 2
+                    elif "green" in args["bunker_spec"] and not args["bunker_spec"]["green"] == -1:
+                        args["bunker_spec"]["red"] = args["bunker_spec"]["size"]*4 - (args["bunker_spec"]["green"] * 2)
+                    else:
+                        args["bunker_spec"] |= self.estimate_red_green(args["bunker_spec"]["size"])
+                    self.estimated = True
+                else:
+                    self.estimated = False
+                if "shelter" in args["bunker_spec"]:
+                    self.shelters = args["bunker_spec"]["shelter"]
                 self.health = self.calculate_bunker_health(args["bunker_spec"])
+                self.breachable_health = self.calculate_breachable_health()
                 self.dmg_multiplier = self.get_bunker_wet_multipler(args["bunker_spec"]["wet"])
                 self.repair_cost = self.calculate_bunker_repair(args["bunker_spec"])
                 self.bunker_string = self.get_bunker_string(args["bunker_spec"])
@@ -59,15 +76,36 @@ class DamageCalculator:
         ret = None
         mod_str = ""
         for mod in bunker_spec:
-            if mod in parse.bunker_stats:
+            if mod in parse.bunker_stats and bunker_spec[mod] != 0:
+                mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
+            if mod == "red" or mod == "green":
                 mod_str += str(bunker_spec[mod]) + " " + mod + ", " 
         mod_str = "(" + tier_words[bunker_spec["tier"]] + ", " + str(bunker_spec["size"]) + " pieces, " + mod_str[:-2] + ")"
-        ratio = f"{self.health/self.repair_cost:.2f}" 
-        health_and_repair = "**" + str(math.ceil(self.health)) + " health** and **" +  str(math.ceil(self.repair_cost)) + " bmat repair cost** (" + ratio + " health/bmat)"
+        repair_ratio = f"{self.health/self.repair_cost:.2f}" 
+        breachable_percent = f"{(1-self.si)*100:.2f}" 
+        health_and_repair = "**" + str(math.ceil(self.health)) + " health** ("+ breachable_percent +"% breachable) and **" +  str(math.ceil(self.repair_cost)) + " bmat repair cost** (" + repair_ratio + " health/bmat)"
         ret = " with " + health_and_repair + " " + mod_str
         if 0 <= bunker_spec["wet"] < 24:
             ret = " that is " + str(bunker_spec["wet"]) + " hour wet" + ret
+        if self.estimated:
+            ret += " (red or green estimated due to not being specified)"
         return ret
+
+    # Estimate number of red and green dots for a bunker piece
+    # In case of imperfect rectangles, it will estimate more red.
+    def estimate_red_green(self, piece_num):
+        
+        width = math.isqrt(piece_num)
+        height = math.ceil(piece_num / width)
+
+        external_edges = 2 * (width + height)
+        total_edges = 4 * piece_num
+        internal_edges = (total_edges - external_edges) // 2
+
+        return {
+            'green': internal_edges,
+            'red': external_edges
+        }
 
     def get_bunker_wet_multipler(self, hours):
         if hours == 0:
@@ -90,7 +128,14 @@ class DamageCalculator:
         if bunker_spec["size"] == 1:
             si = 1
         self.mitigation_type = tier_to_mitigation[tier]
+        if (bunker_spec["green"]+bunker_spec["red"]) > 0:
+            si = si + min(si, 0.15*bunker_spec["green"]/(bunker_spec["green"]+bunker_spec["red"]))
+        self.si = si
+        self.raw_health = raw_health
         return raw_health*si
+    
+    def calculate_breachable_health(self):
+        return self.raw_health * (1-self.si)
 
     def calculate_bunker_repair(self, bunker_spec):
         repair = 0
@@ -115,7 +160,21 @@ class DamageCalculator:
         real_damage = float(self.damage_value * float((1 - float(mitigation_value))))
         if self.dmg_multiplier is not None:
             real_damage *= self.dmg_multiplier
+        
+        if self.shelters > 0 and (self.damage_type["Name"] == "HighExplosive" or self.damage_type["Name"] == "IncendiaryHighExplosive"):
+            mitigation_bonus = self.get_shelter_bonus(self.shelters)
+            max_mitigation_value = float(self.damage_type[mitigation_type]) + mitigation_bonus
+            self.min_real_damage = math.ceil(float(self.damage_value * float((1 - max_mitigation_value))))
         return math.ceil(real_damage)
+    
+    def get_shelter_bonus(self, shelters):
+        shelters = min(9,shelters)
+        bonus = 0.15
+        total = 0
+        for i in range(shelters):
+            total += bonus
+            bonus /= 4
+        return total
 
     def get_disable_health(self):
         if "Disable Level" in self.target:
@@ -125,13 +184,16 @@ class DamageCalculator:
     # returns rounded up hits to kill or a range of hits to kill for any non-kinetic damage
     # this is due to foxhole having inconsistency for impact fuse (non-hitscan) weapons, which can lower damage done as low as around 95%
     def general_damage_calculator(self):
-        final_damage = self.calculate_damage()
-        min_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage)
-        utils.debug_summary(self.weapon_name, self.target_name, final_damage, min_hits_to_kill)
-        # consider low roll possibility
-        if self.weapon['DamageType'] in ["AntiTankExplosive", "Explosive", "HighExplosive", "ArmourPiercing", "Demolition"]:
-            max_hits_to_kill = calculate_hits_to_reach_health(self.health, final_damage*0.95)
-            return f"{min_hits_to_kill} to {max_hits_to_kill}" if min_hits_to_kill < max_hits_to_kill else min_hits_to_kill
+        max_damage = self.calculate_damage()
+        min_hits_to_kill = calculate_hits_to_reach_health(self.health, max_damage)
+        if self.min_real_damage > 0:
+            self.max_hits_to_kill = calculate_hits_to_reach_health(self.health, self.min_real_damage)
+        utils.debug_summary(self.weapon_name, self.target_name, max_damage, min_hits_to_kill)
+        # consider low roll possibility and shelters
+        if self.weapon['Dev Name'] in ["ATRPGLightCAmmo", "ATRPGAmmo", "ATRPGIndirectAmmo", "RpgAmmo", "HELaunchedGrenade", "ATLaunchedGrenadeW", "ATGrenadeW", "StickyBomb", "MortarTankAmmo", "HEGrenade"]:
+            self.max_hits_to_kill = max(self.max_hits_to_kill, calculate_hits_to_reach_health(self.health, max_damage*0.95))
+        if self.max_hits_to_kill > min_hits_to_kill:
+            return f"{min_hits_to_kill} to {self.max_hits_to_kill}" if min_hits_to_kill < self.max_hits_to_kill else min_hits_to_kill
         return min_hits_to_kill
 
     def multitier_damage_calculator(self):
@@ -178,7 +240,7 @@ class DamageCalculator:
     def get_custom_kill_calculation(self):
         remaining_health = self.health - self.weapon1_hits * self.calculate_damage()
         if remaining_health <= 0:
-            return self.get_kill_calculation(self)
+            return self.get_kill_calculation()
         
         # set weapon2 for remaining health
         self.health = remaining_health
@@ -305,6 +367,18 @@ def general_bunker_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
     args["bunker_spec"] = parse.get_bunker_spec(target_fuzzy_name)
     if args["bunker_spec"] == None:
         raise bot.BunkerSpecParseError(target_fuzzy_name)
+
+    return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
+
+def command_bunker_kill_handler(weapon_fuzzy_name, bunker_spec):
+    args = {}
+    if weapon_fuzzy_name in parse.weapons_dictionary:
+        weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
+    else:
+        weapon_name = fuzz.fuzzy_match_weapon_name(weapon_fuzzy_name)
+    
+    target_name = "meta"
+    args["bunker_spec"] = bunker_spec
 
     return DamageCalculator(weapon_name, target_name, args).get_kill_calculation()
 

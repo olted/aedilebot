@@ -111,6 +111,11 @@ def get_bunker_spec(string):
         "generator": "eng",
         "generater": "eng",
         "howitzer": "hg",
+        "arty": "hg",
+        "artillery": "hg",
+        "shelter": "shelter",
+        "red": "red",
+        "green": "green"
     }
     words = (
         string.lower()
@@ -163,20 +168,22 @@ def get_bunker_spec(string):
             if word[-1] == "s" and word[:-1] in mod_words:
                 word = word[:-1]
         if word in mod_words:
-            if (
-                word == "bunker"
-                and i + 1 < len(word)
-                and words[i + 1] in mod_words
-            ):
-                # catch phrases like "bunker ramp"
-                word = words[i + 1]
+            # if word == "bunker" and i + 1 < len(words) and words[i + 1] in mod_words:
+            #     # catch phrases like "bunker ramp"
+            #     word = words[i + 1]
+            #     print("reached!! " + word)
+            # if (word == "arty" or word == "artillery") and i + 1 < len(words) and words[i + 1] == "shelter":
+            #     # catch phrases like "arty shelter"
+            #     word = "shelter"
             if i - 1 >= 0:
                 if words[i - 1].isdigit():
                     args[mod_words[word]] += int(words[i - 1])
-                    mod_count += int(words[i - 1])
+                    if word != "green" and word != "red":
+                        mod_count += int(words[i - 1])
                 else:
                     args[mod_words[word]] += 1
-                    mod_count += 1
+                    if word != "green" and word != "red":
+                        mod_count += 1
     if mod_count > args["size"]:
         return None
     return args
