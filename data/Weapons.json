@@ -135,6 +135,14 @@
         "ObjectType": "Weapons",
         "Additional Names": "Leary Shellbore 68mm;atht;bard;collie fat;collins;fat;ltd;nemesis;warden fat;atg;at garrison;AT Garrison Shell"
     },
+    "T1 ATG Shell": {
+        "Name": "T1 ATG Shell",
+        "Dev Name": "ATGT1Ammo",
+        "Damage": "300.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "t1 atg;t1 at garrison;t1 AT Garrison Shell;atg t1;at garrison t1;AT Garrison Shell t1"
+    },
     "Howitzer Garrison Shell": {
         "Name": "Howitzer Garrison Shell",
         "Dev Name": "HowitzerAmmo",
