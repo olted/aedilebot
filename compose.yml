@@ -3,4 +3,4 @@ services:
     # image: ghcr.io/eternaldeiwos/aedile:unstable
     build: .
     environment:
-      - DEV_SERVER_TOKEN=${DISCORD_BOT_TOKEN}
+      - DEV_SERVER_TOKEN=${DEV_SERVER_TOKEN}
