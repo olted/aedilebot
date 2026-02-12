@@ -125,7 +125,7 @@
         "Damage": "400.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "30mm scout tank;30mm tankette;30mmST;brig;isg;roofette;ghouse;garrison house;AT pill;AT pillbox;anti-tank pillbox"
+        "Additional Names": "30mm scout tank;30mm tankette;30mmST;brig;isg;roofette;ghouse;garrison house;ISG pill;ISG pillbox;infantry support gun pillbox"
     },
     "68mm": {
         "Name": "68mm",
@@ -134,6 +134,14 @@
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
         "Additional Names": "Leary Shellbore 68mm;atht;bard;collie fat;collins;fat;ltd;nemesis;warden fat;atg;at garrison;AT Garrison Shell"
+    },
+    "Anti-Tank Rifle Pillbox Ammo": {
+        "Name": "Anti-Tank Rifle Pillbox Ammo",
+        "Dev Name": "ATPillboxAmmo",
+        "Damage": "65",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "AT pill;AT pillbox;anti-tank pillbox"
     },
     "T1 ATG Shell": {
         "Name": "T1 ATG Shell",
