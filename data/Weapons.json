@@ -74,7 +74,7 @@
     "Alligator Charge": {
         "Name": "Alligator Charge",
         "Dev Name": "SatchelChargeW",
-        "Damage": "400.0",
+        "Damage": "550.0",
         "DamageType": "Demolition",
         "ObjectType": "Weapons",
         "Additional Names": "satchel"
@@ -183,13 +183,45 @@
         "ObjectType": "Weapons",
         "Additional Names": "Aalto (Semi);Aalto (single)"
     },
-    "20mm": {
-        "Name": "20mm",
+    "14.5mm": {
+        "Name": "14.5mm",
         "Dev Name": "ATRifleAmmo",
         "Damage": "187.5",
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "atac;atr;cestus;collie anti tank field gun;collie atr field gun;colonial anti tank field gun;colonial sniper atr;rail rifle;quickhatch;highwayman;hwm;sniper atr;warden atr"
+    },
+    "20mm": {
+        "Name": "20mm",
+        "Dev Name": "AircraftAmmo",
+        "Damage": "81.25",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "aircraft ammo;"
+    },
+    "Anti-Aircraft Shell": {
+        "Name": "Anti-Aircraft Shell",
+        "Dev Name": "AAAmmo",
+        "Damage": "1200",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "AA shell;zeal;bolas;flak shell"
+    },
+    "Mark II Raidbreaker": {
+        "Name": "Mark II Raidbreaker",
+        "Dev Name": "BomberAmmo",
+        "Damage": "1200",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "bomber ammo;bomber shell;raidbreaker;raid breaker"
+    },
+    "912 Shrike Rounds": {
+        "Name": "912 Shrike Rounds",
+        "Dev Name": "DiveBomberAmmo",
+        "Damage": "1050",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "dive bomb;dive bomber ammo;shrike rounds;"
     },
     "8mm": {
         "Name": "8mm",
@@ -359,13 +391,29 @@
         "ObjectType": "Weapons",
         "Additional Names": "sea mine;water mine;rudderlock;seamine"
     },
+    "E681-B Hullbreaker Mine": {
+        "Name": "E681-B Hullbreaker Mine",
+        "Dev Name": "SurfaceWaterMine",
+        "Damage": "650.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "surface mine;small sea mine;small water mine;Hullbreaker"
+    },
     "Moray Torpedo": {
         "Name": "Moray Torpedo",
         "Dev Name": "TorpedoAmmo",
         "Damage": "3550.0",
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
-        "Additional Names": "colonial sub;colonial submarine;nakki;trident;warden sub;warden submarine;torps;torpedo"
+        "Additional Names": "colonial sub;colonial submarine;nakki;trident;warden sub;warden submarine;moray;torps;torpedo"
+    },
+    "Quillback Torpedo": {
+        "Name": "Quillback Torpedo",
+        "Dev Name": "MiniTorpedoAmmo",
+        "Damage": "500.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "minitorpedo;mini torpedo;quillback;small torpedo"
     },
     "Incendiary Mortar Shell": {
         "Name": "Incendiary Mortar Shell",
