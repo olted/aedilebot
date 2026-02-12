@@ -8026,6 +8026,38 @@
         "StructuralIntegrity": "0.99",
         "ObjectType": "Structures"
     },
+    "SC-3 Aerial Interceptor Array 1x1": {
+        "Name": "SC-3 Aerial Interceptor Array",
+        "Additional Names": "radar array;large radar;radar",
+        "Dev Name": "FortLargeRadar",
+        "Health": "2550",
+        "Mitigation Type": "Tier3Structure",
+        "Cost: Rmat": "0",
+        "Cost: Bmat": "0",
+        "Cost: Concrete": "125.0",
+        "Cost: Excavation": "0",
+        "DecayStartHours": "120",
+        "DecayDurationHours": "60.0",
+        "RepairCost": "1200",
+        "StructuralIntegrity": "0.65",
+        "ObjectType": "Structures"
+    },
+    "SC-3 Aerial Interceptor Array Husk": {
+        "Name": "SC-3 Aerial Interceptor Array Husk",
+        "Additional Names": "radar array husk;large radar husk;radar husk",
+        "Dev Name": "FortLargeRadarDestroyed",
+        "Health": "4250",
+        "Mitigation Type": "Tier3Structure",
+        "Cost: Rmat": "0",
+        "Cost: Bmat": "0",
+        "Cost: Concrete": "15.0",
+        "Cost: Excavation": "0",
+        "DecayStartHours": "75",
+        "DecayDurationHours": "45",
+        "RepairCost": "250",
+        "StructuralIntegrity": "1",
+        "ObjectType": "Structures"
+    },
     "Bunker Ramp (T1)": {
         "Name": "Bunker Ramp (T1)",
         "Additional Names": "bunker ramp t1",
