@@ -195,6 +195,7 @@ def run_discord_bot():
         sc="storm cannon number (Optional)",
         ws="weather station number (Optional)",
         fortress="underground fortress number (Optional)",
+        radar="radar array number (Optional)",
         wet="hours since the bunker has been upgraded to T3 (Optional)",
     )
     @app_commands.choices(
@@ -222,6 +223,7 @@ def run_discord_bot():
         sc: int = 0,
         ws: int = 0,
         fortress: int = 0,
+        radar: int = 0,
         wet: int = 24,
     ):
         await interaction.response.send_message(
@@ -242,6 +244,7 @@ def run_discord_bot():
                 sc,
                 ws,
                 fortress,
+                radar,
                 wet,
             )
         )
@@ -492,6 +495,7 @@ def handle_bunker_kill_command(
     sc,
     ws,
     fortress,
+    radar,
     wet,
 ):
     bunker_spec = {}
@@ -510,6 +514,7 @@ def handle_bunker_kill_command(
     bunker_spec["sc"] = sc
     bunker_spec["ws"] = ws
     bunker_spec["fortress"] = fortress
+    bunker_spec["radar"] = radar
     bunker_spec["wet"] = wet
     return calculator.command_bunker_kill_handler(weapon, bunker_spec)
 
