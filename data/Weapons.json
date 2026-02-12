@@ -175,6 +175,14 @@
         "ObjectType": "Weapons",
         "Additional Names": "12.7;127;gast;hmg;ratcatcher"
     },
+    "Ship 12.7mm (+20% HV)": {
+        "Name": "Ship 12.7mm (+20% HV)",
+        "Dev Name": "MGAmmo",
+        "Damage": "82.5",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "hv 12.7;ship mg;ship 12.7;boat 12.7"
+    },
     "7.92mm": {
         "Name": "7.92mm",
         "Dev Name": "AssaultRifleAmmo",
@@ -206,6 +214,74 @@
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "aircraft ammo;"
+    },
+    "Ship 20mm (+20% HV)": {
+        "Name": "Ship 20mm (+20% HV)",
+        "Dev Name": "AircraftAmmo",
+        "Damage": "97.5",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "ship 20mm;ship AA ammo;boat 20mm;hv20mm;HV 20mm"
+    },
+    "Toxot-902 \"Blind Silver\" 20mm (+50% HV)": {
+        "Name": "Toxot-902 \"Blind Silver\" 20mm (+50% HV)",
+        "Dev Name": "AircraftAmmo",
+        "Vehicle Dev Name": "AircraftFighterC",
+        "Mount Dev Name": "AircraftFighterC_HMG",
+        "Damage": "121.875",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "colonial fighter 20mm;blind silver 20mm;harbinger 20mm"
+    },
+    "A51 Venti \"Daedalus\" 20mm (-10% LV)": {
+        "Name": "A51 Venti \"Daedalus\" 20mm (-10% LV)",
+        "Dev Name": "AircraftAmmo",
+        "Vehicle Dev Name": "AircraftScoutC",
+        "Mount Dev Name": "AircraftScoutC_HMG",
+        "Damage": "73.125",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "colonial scout 20mm;Daedalus 20mm;lv 20mm"
+    },
+    "Luminary Mk. IV Herald 20mm (-10% LV)": {
+        "Name": "Luminary Mk. IV Herald 20mm (-10% LV)",
+        "Dev Name": "AircraftAmmo",
+        "Vehicle Dev Name": "AircraftScoutW",
+        "Mount Dev Name": "AircraftScoutW_HMG",
+        "Damage": "73.125",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden scout 20mm;Herald 20mm"
+    },
+    "Luminary Mk. II Harbinger 20mm (+50% HV)": {
+        "Name": "Luminary Mk. II Harbinger 20mm (+50% HV)",
+        "Dev Name": "AircraftAmmo",
+        "Vehicle Dev Name": "AircraftFighterW",
+        "Mount Dev Name": "AircraftFighterW_Cannon",
+        "Damage": "121.875",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden fighter 20mm;luminary harbinger 20mm;harbinger 20mm;hv20mm;HV 20mm"
+    },
+    "Tulka I1.9 White Raven 20mm (+75% HV)": {
+        "Name": "Tulka I1.9 White Raven 20mm (+75% HV)",
+        "Dev Name": "AircraftAmmo",
+        "Vehicle Dev Name": "AircraftFighterW",
+        "Mount Dev Name": "AircraftFighterW_Cannon",
+        "Damage": "142.1875",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden fighter 20mm;luminary harbinger 20mm;harbinger 20mm;hv20mm;HV 20mm"
+    },
+    "Luminary Mk. II Harbinger 14.5mm (+50% HV)": {
+        "Name": "Luminary Mk. II Harbinger 14.5mm (+50% HV)",
+        "Dev Name": "ATRifleAmmo",
+        "Vehicle Dev Name": "AircraftFighterW",
+        "Mount Dev Name": "AircraftFighterW_HMG",
+        "Damage": "281.25",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "warden fighter 14.5mm;luminary harbinger 14.5mm;harbinger 14.5mm;"
     },
     "Anti-Aircraft Shell": {
         "Name": "Anti-Aircraft Shell",
@@ -414,6 +490,14 @@
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
         "Additional Names": "colonial sub;colonial submarine;nakki;trident;warden sub;warden submarine;moray;torps;torpedo"
+    },
+    "M925 Austringer Man-O-War Moray Torpedo (-30% LV)": {
+        "Name": "M925 Austringer Man-O-War Moray Torpedo (-30% LV)",
+        "Dev Name": "TorpedoAmmo",
+        "Damage": "2458.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "lv torpedo;lv torp;torpedo bomber;man-o-war;man of war"
     },
     "Quillback Torpedo": {
         "Name": "Quillback Torpedo",
