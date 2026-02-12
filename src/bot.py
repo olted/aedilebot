@@ -117,7 +117,7 @@ def run_discord_bot():
         )
         embed.add_field(
             name="Version",
-            value="0.8.61 (Up to date with foxhole U61)",
+            value="0.8.63 (Up to date with foxhole U63)",
             inline=False,
         )
         embed.set_thumbnail(
