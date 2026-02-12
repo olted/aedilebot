@@ -5126,7 +5126,7 @@
         "Name": "A0E-9 Rocket Platform",
         "Additional Names": "nuke site;nuke platform;nuke;rocket",
         "Dev Name": "RocketSite",
-        "Health": "3600",
+        "Health": "5000",
         "Mitigation Type": "Tier3Structure",
         "Rmat cost": "200",
         "Bmat cost": "0",
