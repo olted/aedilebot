@@ -573,7 +573,7 @@
     },
     "85K-a “Spatha”": {
         "Name": "85K-a “Spatha”",
-        "Additional Names": "",
+        "Additional Names": "spatha",
         "Cost": "165",
         "Health": "3650",
         "Armour Health": "13550",
@@ -1674,7 +1674,7 @@
     },
     "HC-7 \"Ballista\"": {
         "Name": "HC-7 \"Ballista\"",
-        "Additional Names": "",
+        "Additional Names": "ballista",
         "Cost": "155",
         "Health": "3300",
         "Armour Health": "11500",
@@ -3197,30 +3197,6 @@
         "Secondary Gun Disable Chance": "",
         "": "",
         "ObjectType": "Vehicles"
-    },
-    "LightTankWaterC": {
-        "Name": "LightTankWaterC",
-        "Additional Names": "",
-        "Cost": "135",
-        "Health": "1950",
-        "Armour Health": "9100",
-        "Min Base Penetration Chance": "0.33",
-        "Max Base Penetration Chance": "0.67",
-        "Mitigation Type": "Tier2Tank",
-        "Disable Level": "0.3",
-        "Repair Cost": "135",
-        "Speed": "",
-        "Slots": "1",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "",
-        "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "",
-        "Secondary Weapon": "",
-        "Tracks Disable Chance": "0.3",
-        "Engine Disable Chance": "0.2",
-        "Main Gun Disable Chance": "0.25",
-        "Secondary Gun Disable Chance": "0",
-        "": "",
-        "ObjectType": "Vehicles",
-        "Dev Name": "LightTankWaterC"
     },
     "BMS Stowheel (small shipping container cart)": {
         "Dev Name": "SmallTrainShipping",
@@ -5916,7 +5892,7 @@
     },
     "Aircraft Runway (Tier 1)": {
         "Name": "Aircraft Runway (Tier 1)",
-        "Additional Names": "",
+        "Additional Names": "t1 runway;runway t2",
         "Dev Name": "AircraftRunwayT1",
         "Health": "2000",
         "Mitigation Type": "Tier3Structure",
@@ -5940,7 +5916,7 @@
     },
     "Aircraft Runway (Tier 2)": {
         "Name": "Aircraft Runway (Tier 2)",
-        "Additional Names": "",
+        "Additional Names": "t2 runway;runway t2;runway",
         "Dev Name": "AircraftRunwayT2",
         "Health": "20000",
         "Mitigation Type": "Tier3Structure",
@@ -8346,7 +8322,7 @@
     },
     "Underground Fortress": {
         "Name": "Underground Fortress",
-        "Additional Names": "",
+        "Additional Names": "fortress",
         "Dev Name": "FortGarrisonStation",
         "Health": "10000",
         "Mitigation Type": "Tier3Structure",

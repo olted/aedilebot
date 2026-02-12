@@ -4,13 +4,13 @@ from collections import defaultdict
 
 
 def load_json_to_dict(filename):
-    with open(filename) as f:
+    with open(filename, encoding="utf-8") as f:
         dict = json.load(f)
         return dict
 
 
 def load_location_names(filename):
-    with open(filename) as f:
+    with open(filename, encoding="utf-8") as f:
         return f.read().split(";")
 
 
@@ -89,9 +89,9 @@ def get_bunker_spec(string):
         "mgg": "mg",
         "ammunition": "ammo",
         "ramp": "ramp",
-        "med" : "med",
-        "medical" : "med",
-        "hospital" : "med",
+        "med": "med",
+        "medical": "med",
+        "hospital": "med",
         "howitzer": "hg",
         "engine": "eng",
         "sc": "sc",
@@ -99,8 +99,8 @@ def get_bunker_spec(string):
         "ic": "ic",
         "intel": "ic",
         "intelligence": "ic",
-        "weather":"ws",
-        "weathers":"ws",
+        "weather": "ws",
+        "weathers": "ws",
         "base": "core",
         "core": "core",
         "storage": "ammo",
@@ -115,7 +115,7 @@ def get_bunker_spec(string):
         "artillery": "hg",
         "shelter": "shelter",
         "red": "red",
-        "green": "green"
+        "green": "green",
     }
     words = (
         string.lower()
