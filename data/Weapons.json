@@ -712,23 +712,23 @@
         "ObjectType": "Weapons",
         "Additional Names": "Scattergun;warden shotgun"
     },
-    "Leary Snare Trap 127 ammo": {
-        "Name": "Leary Snare Trap 127",
-        "Dev Name": "MGAmmo",
+    "Leary Snare Trap 20 ammo": {
+        "Name": "Leary Snare Trap 20",
+        "Dev Name": "AircraftAmmo",
         "Emplacement Dev Name": "EmplacedInfantryW",
         "Mount Dev Name": "EmplacedInfantryWGunner",
-        "Damage": "82.5",
-        "DamageType": "HeavyKinetic",
+        "Damage": "97.5",
+        "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "warden emg;emg;leary snare trap;warden emg unemplaced;emg unemplaced;leary snare trap unemplaced"
     },
     "DAE 1b-2 \u201cSerra\u201d ammo": {
         "Name": "DAE 1b-2 \u201cSerra\u201d",
-        "Dev Name": "MGAmmo",
+        "Dev Name": "AircraftAmmo",
         "Emplacement Dev Name": "EmplacedInfantryC",
         "Mount Dev Name": "EmplacedInfantryCGunner",
-        "Damage": "82.5",
-        "DamageType": "HeavyKinetic",
+        "Damage": "97.5",
+        "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "collie emg emplaced;triple emg emplaced;serra emplaced"
     },
