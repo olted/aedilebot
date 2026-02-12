@@ -3509,8 +3509,8 @@
         "ObjectType": "Vehicles",
         "Dev Name": "BattleTankDefensiveW"
     },
-    "12.7mm Anti Infantry Flak Gun (EMG) (Unemplaced)": {
-        "Name": "12.7mm Anti Infantry Flak Gun (EMG) (Unemplaced)",
+    "20mm Anti Infantry Flak Gun (EMG) (Unemplaced)": {
+        "Name": "20mm Anti Infantry Flak Gun (EMG) (Unemplaced)",
         "Additional Names": "warden emg;emg;leary snare trap;warden emg unemplaced;emg unemplaced;leary snare trap unemplaced",
         "Cost": "75",
         "Health": "1500",
@@ -3522,7 +3522,7 @@
         "Repair Cost": "100",
         "Speed": "",
         "Slots": "1",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "12.7mm (+20%) (35m,40m)",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "20mm (+20%) (40m,45m)",
         "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "3.5s (200r)",
         "Secondary Weapon": "",
         "Tracks Disable Chance": "",
@@ -3531,8 +3531,8 @@
         "Secondary Gun Disable Chance": "",
         "ObjectType": "Emplacements"
     },
-    "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)": {
-        "Name": "12.7mm Anti Infantry Flak Gun (EMG) (Emplaced)",
+    "20mm Anti Infantry Flak Gun (EMG) (Emplaced)": {
+        "Name": "20mm Anti Infantry Flak Gun (EMG) (Emplaced)",
         "Additional Names": "warden emg emplaced;emg emplaced",
         "Cost": "75",
         "Health": "6000",
@@ -3544,7 +3544,7 @@
         "Repair Cost": "100",
         "Speed": "",
         "Slots": "1",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "12.7mm (+20%) (35m,40m)",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "20mm (+20%) (40m,45m)",
         "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "3.5s (200r)",
         "Secondary Weapon": "",
         "Tracks Disable Chance": "",
@@ -3962,7 +3962,7 @@
         "Repair Cost": "100",
         "Speed": "",
         "Slots": "1",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "12.7mm (+20%) (35m,40m)",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "20mm (+20%) (40m,45m)",
         "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "6s (300 rounds)",
         "Secondary Weapon": "",
         "Tracks Disable Chance": "",
@@ -3984,7 +3984,7 @@
         "Repair Cost": "100",
         "Speed": "",
         "Slots": "1",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "12.7mm (+20%) (35m,40m)",
+        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "20mm (+20%) (40m,45m)",
         "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "6s (300 rounds)",
         "Secondary Weapon": "",
         "Tracks Disable Chance": "",
