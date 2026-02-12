@@ -7543,7 +7543,7 @@
         "DecayStartHours": "12.5",
         "DecayDurationHours": "28.846153",
         "RepairCost": "50",
-        "StructuralIntegrity": "0.74",
+        "StructuralIntegrity": "0.78",
         "ObjectType": "Structures"
     },
     "Artillery Garrison (T1) Breached Husk": {
@@ -7591,7 +7591,7 @@
         "DecayStartHours": "29.975002",
         "DecayDurationHours": "30.0",
         "RepairCost": "75",
-        "StructuralIntegrity": "0.74",
+        "StructuralIntegrity": "0.78",
         "ObjectType": "Structures"
     },
     "Artillery Garrison (T2) Breached Husk": {
@@ -7639,7 +7639,7 @@
         "DecayStartHours": "75.25001",
         "DecayDurationHours": "44.871796",
         "RepairCost": "120",
-        "StructuralIntegrity": "0.74",
+        "StructuralIntegrity": "0.78",
         "ObjectType": "Structures"
     },
     "Artillery Garrison (T3) Breached Husk": {
