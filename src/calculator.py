@@ -212,7 +212,7 @@ class DamageCalculator:
         return output_string + f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
 
     def get_kill_calculation(self):
-        if self.target_type == "Vehicles":
+        if self.target_type == "Vehicles" or self.target_type == "Aircraft_Parts":
             hits_to_kill = self.general_damage_calculator()  # vehicle_damage_calculator()
         elif self.target_type == "Multitier_structures":
             hits_to_kill = self.multitier_damage_calculator()
@@ -248,7 +248,7 @@ class DamageCalculator:
         self.damage_value = float(self.weapon["Damage"])
         self.damage_type = parse.damages[self.weapon['DamageType']]
         
-        if self.target_type == "Vehicles":
+        if self.target_type == "Vehicles" or self.target_type == "Aircraft_Parts":
             hits_to_kill = self.general_damage_calculator()  # vehicle_damage_calculator()
         elif self.target_type == "Multitier_structures":
             hits_to_kill = self.multitier_damage_calculator()
@@ -272,7 +272,7 @@ class DamageCalculator:
         return ret_str
 
     def get_disable_calculation(self):
-        if self.target_type != "Vehicles":
+        if self.target_type != "Vehicles" and self.target_type != "Aircraft_Parts":
             raise bot.InvalidTypeError(self.target_name)
         final_damage = self.calculate_damage()
         min_hits_to_disable = calculate_hits_to_reach_health(self.get_disable_health(), final_damage)
@@ -405,7 +405,7 @@ def statsheet_handler(entity_name):
                 decay_duration = entity["DecayDurationHours"]
                 entity_type = entity["ObjectType"]
                 return entity_type,name,raw_hp,mitigation,repair_cost,decay_start,decay_duration
-            elif entity["ObjectType"] == "Vehicles" or entity["ObjectType"] == "Emplacements" or entity[
+            elif entity["ObjectType"] == "Vehicles" or entity["ObjectType"] == "Aircraft_Parts" or entity["ObjectType"] == "Emplacements" or entity[
                     "ObjectType"] == "Tripods":
                     entity_type = entity["ObjectType"]
                     name = entity["Name"]
