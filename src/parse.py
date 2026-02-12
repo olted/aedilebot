@@ -48,7 +48,8 @@ def get_husk_names(names_dictionary):
 def get_vehicle_names(dictionary, field_name="Additional Names"):
     names_dictionary = {}
     for key, value in dictionary.items():
-        if value["ObjectType"] != "Vehicles":
+        # for now treat aircraft parts as vehicles
+        if value["ObjectType"] != "Vehicles" and value["ObjectType"] != "Aircraft_Parts":
             continue
         additional_names = [value["Name"]]
 

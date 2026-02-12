@@ -267,7 +267,7 @@ def run_discord_bot():
             embed.add_field(name="Repair Cost", value=data[5], inline=True)
             # embed.add_field(name="Decay Start", value=data[4], inline=True)
             # embed.add_field(name="Time to Decay", value=data[6], inline=True)
-        elif data[0] in ["Vehicles", "Tripods", "Emplacements"]:
+        elif data[0] in ["Vehicles", "Tripods", "Emplacements","Aircraft_Parts"]:
             embed.add_field(name="Raw Health", value=data[2], inline=True)
             embed.add_field(name="Mitigation Type", value=data[3], inline=True)
             if data[6] != "0":
