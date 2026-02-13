@@ -102,10 +102,12 @@ def run_discord_bot():
         print(f"{client.user} is now running")
         try:
             synced = await client.tree.sync()
-            print(f"Synced {len(synced)} commands")
+            print(f"Synced {len(synced)} commands:")
+            for cmd in synced:
+                print(f"  - {cmd.name}")
             main.list_guilds(client)
         except Exception as e:
-            print(e)
+            print(f"Sync error: {e}")
 
     @client.tree.command(name="help")
     async def help(interaction: discord.Interaction):
