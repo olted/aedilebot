@@ -352,10 +352,18 @@ def run_discord_bot():
         await interaction.response.send_message(
             handle_response_inner(weapon, target, query)
         )
+    
+    @client.tree.command(name="disable")
+    async def disable(interaction: discord.Interaction, target: str, weapon: str):
+        query = f"disable query: target = {target}, weapon = {weapon}"
+        await interaction.response.send_message(
+            handle_response_inner(weapon, target, query, "disable")
+        )
 
+    @disable.autocomplete("target")
     @kill.autocomplete("target")
     @custom_kill.autocomplete("target")
-    async def kill_autocompletion(
+    async def kill_autocompletion_target(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
@@ -387,10 +395,11 @@ def run_discord_bot():
                         break
         return data
 
+    @disable.autocomplete("weapon")
     @custom_kill.autocomplete("weapon1")
     @custom_kill.autocomplete("weapon2")
     @kill.autocomplete("weapon")
-    async def kill_autocompletion(
+    async def kill_autocompletion_weapon(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
         data = []
