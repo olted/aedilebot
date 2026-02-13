@@ -231,7 +231,7 @@
         "Damage": "121.875",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
-        "Additional Names": "colonial fighter 20mm;blind silver 20mm;harbinger 20mm"
+        "Additional Names": "colonial fighter 20mm;blind silver 20mm"
     },
     "A51 Venti \"Daedalus\" 20mm (-10% LV)": {
         "Name": "A51 Venti \"Daedalus\" 20mm (-10% LV)",
@@ -241,7 +241,7 @@
         "Damage": "73.125",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
-        "Additional Names": "colonial scout 20mm;Daedalus 20mm;lv 20mm"
+        "Additional Names": "colonial scout 20mm;Daedalus 20mm;lv 20mm;Daedalus"
     },
     "Luminary Mk. IV Herald 20mm (-10% LV)": {
         "Name": "Luminary Mk. IV Herald 20mm (-10% LV)",
@@ -251,7 +251,7 @@
         "Damage": "73.125",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
-        "Additional Names": "warden scout 20mm;Herald 20mm"
+        "Additional Names": "warden scout 20mm;Herald 20mm;Herald"
     },
     "Luminary Mk. II Harbinger 20mm (+50% HV)": {
         "Name": "Luminary Mk. II Harbinger 20mm (+50% HV)",
@@ -261,7 +261,7 @@
         "Damage": "121.875",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
-        "Additional Names": "warden fighter 20mm;luminary harbinger 20mm;harbinger 20mm;hv20mm;HV 20mm"
+        "Additional Names": "warden fighter 20mm;luminary harbinger 20mm;harbinger 20mm;hv20mm;HV 20mm;harbringer"
     },
     "Tulka I1.9 White Raven 20mm (+75% HV)": {
         "Name": "Tulka I1.9 White Raven 20mm (+75% HV)",
@@ -281,7 +281,7 @@
         "Damage": "281.25",
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
-        "Additional Names": "warden fighter 14.5mm;luminary harbinger 14.5mm;harbinger 14.5mm;"
+        "Additional Names": "warden fighter 14.5mm;luminary harbinger 14.5mm;harbinger 14.5mm;harbinger 14.5;"
     },
     "Anti-Aircraft Shell": {
         "Name": "Anti-Aircraft Shell",

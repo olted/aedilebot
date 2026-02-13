@@ -9620,7 +9620,7 @@
     "A51 Venti “Daedalus”": {
         "Dev Name": "AircraftScoutC",
         "Name": "A51 Venti “Daedalus”",
-        "Additional Names": "colonial scout aircraft;collie scout aircraft",
+        "Additional Names": "colonial scout aircraft;collie scout aircraft;colonial scout plane;collie scout plane",
         "Cost": "80",
         "Health": "500",
         "Armour Health": "0",
@@ -9643,7 +9643,7 @@
     "Luminary Mk. IV Herald": {
         "Dev Name": "AircraftScoutW",
         "Name": "Luminary Mk. IV Herald",
-        "Additional Names": "warden scout aircraft",
+        "Additional Names": "warden scout aircraft;warden scout plane",
         "Cost": "80",
         "Health": "500",
         "Armour Health": "0",
@@ -9758,7 +9758,7 @@
     "Das Krokodil by VAC": {
         "Dev Name": "FreighterLight",
         "Name": "Das Krokodil by VAC",
-        "Additional Names": "light freighter",
+        "Additional Names": "krokodil;korkodil;Das Krokodil",
         "Cost": "100",
         "Health": "1500",
         "Armour Health": "0",
@@ -9781,7 +9781,7 @@
     "Type B - “Lucian”": {
         "Dev Name": "Gunboat2C",
         "Name": "Type B - “Lucian”",
-        "Additional Names": "colonial siege boat",
+        "Additional Names": "colonial siege boat;lucian;rocket boat",
         "Cost": "100",
         "Health": "1800",
         "Armour Health": "9100",
@@ -9804,7 +9804,7 @@
     "81f-f Ronan Blackguard": {
         "Dev Name": "Gunboat2W",
         "Name": "81f-f Ronan Blackguard",
-        "Additional Names": "warden siege boat",
+        "Additional Names": "warden siege boat;250 boat",
         "Cost": "100",
         "Health": "2000",
         "Armour Health": "9500",
@@ -9873,7 +9873,7 @@
     "K-81e “Sombre”": {
         "Dev Name": "LightBoatInfantryC",
         "Name": "K-81e “Sombre”",
-        "Additional Names": "colonial infantry boat",
+        "Additional Names": "colonial infantry boat;colonial AA boat;Sombre",
         "Cost": "100",
         "Health": "1500",
         "Armour Health": "7000",
@@ -9896,7 +9896,7 @@
     "68A-4 Ronan Fathomer": {
         "Dev Name": "LightBoatInfantryW",
         "Name": "68A-4 Ronan Fathomer",
-        "Additional Names": "warden infantry boat",
+        "Additional Names": "warden infantry boat;warden AA boat;Fathomer;aa boat",
         "Cost": "125",
         "Health": "1800",
         "Armour Health": "7500",
@@ -9919,7 +9919,7 @@
     "Strider": {
         "Dev Name": "MediumBoatC",
         "Name": "Strider",
-        "Additional Names": "colonial gunship",
+        "Additional Names": "colonial gunship;colonial medium boat",
         "Cost": "100",
         "Health": "2300",
         "Armour Health": "8500",
@@ -9942,7 +9942,7 @@
     "Rinnspeir Ornitier-Class Gunship": {
         "Dev Name": "MediumBoatW",
         "Name": "Rinnspeir Ornitier-Class Gunship",
-        "Additional Names": "warden gunship",
+        "Additional Names": "warden gunship;warden medium boat;medium boat",
         "Cost": "90",
         "Health": "2050",
         "Armour Health": "9100",
