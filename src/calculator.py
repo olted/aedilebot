@@ -290,6 +290,9 @@ class DamageCalculator:
 # If boolean is true, result was successful and str contains result.
 # If boolean is false, result was unsuccessful and str contains error message
 def general_kill_handler(weapon_fuzzy_name, target_fuzzy_name):
+    if (result := easter_egg_check(weapon_fuzzy_name,target_fuzzy_name)) is not None:
+        return result
+
     args = None
     if weapon_fuzzy_name in parse.weapons_dictionary:
         weapon_name = parse.weapons_dictionary[weapon_fuzzy_name]
@@ -446,3 +449,40 @@ def statsheet_handler(entity_name):
         return "I could not process a request because the entity is not a valid weapon, structure or vehicle."
     except:
         return bot.EntityNotFoundError(entity_name)
+
+# whimsy
+def easter_egg_check(weapon_fuzzy_name, target_fuzzy_name):
+    easter_eggs = [
+        ("Watch Tower", "Scout Plane", 1, 95)
+    ]
+    for weapon, target, hits, threshold in easter_eggs:
+        if fuzz.normalized_ratio_equal(weapon_fuzzy_name,weapon,threshold) and fuzz.normalized_partial_ratio_equal(target_fuzzy_name,target,threshold):
+            return f"It takes {hits} {weapon} to kill a {target}"
+    return None
+
+#                                                .--.
+#                                                `.  \
+#                                                  \  \
+#                                                   .  \
+#                                                   :   .
+#                                                   |    .
+#                                                   |    :
+#                                                   |    |
+#   ..._  ___                                       |    |
+#  `."".`''''""--..___                              |    |
+#  ,-\  \             ""-...__         _____________/    |
+#  / ` " '                    `""""""""                  .
+#  \                                                      L
+#  (>                                                      \
+# /                                                         \
+# \_    ___..---.                                            L
+#   `--'         '.                                           \
+#                  .                                           \_
+#                 _/`.                                           `.._
+#              .'     -.                                             `.
+#             /     __.-Y     /''''''-...___,...--------.._            |
+#            /   _."    |    /                ' .      \   '---..._    |
+#           /   /      /    /                _,. '    ,/           |   |
+#           \_,'     _.'   /              /''     _,-'            _|   |
+#                   '     /               `-----''               /     |
+#                   `...-'                                       `...-'

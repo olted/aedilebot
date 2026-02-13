@@ -5,6 +5,7 @@ import main
 import utils
 import bot
 from fuzzywuzzy import process
+import re
 
 
 
@@ -156,4 +157,27 @@ def fuzzy_match_weapon_name_command(name):
             if score > 60:
                  good_score_list.append(key)
         return good_score_list
-        
+
+# no space, all lowercase, singular only
+def normalize(text: str) -> str:
+    text = re.sub(r"\s+", " ", text.lower().strip()) 
+    words = text.split()
+    words = [singularize(w) for w in words]
+    return "".join(words)
+
+def singularize(word: str) -> str:
+    if word.endswith("ies"):
+        return word[:-3] + "y"
+    if word.endswith("ses"):
+        return word[:-2]  # e.g. classes -> class
+    if word.endswith("s") and not word.endswith("ss"):
+        return word[:-1]
+    return word
+
+def normalized_partial_ratio_equal(a: str, b: str, c: int = 98) -> bool:
+    print(fuzz.partial_ratio(normalize(a), normalize(b)))
+    return fuzz.partial_ratio(normalize(a), normalize(b)) >= c
+
+def normalized_ratio_equal(a: str, b: str, c: int = 98) -> bool:
+    print(fuzz.ratio(normalize(a), normalize(b)))
+    return fuzz.ratio(normalize(a), normalize(b)) >= c
