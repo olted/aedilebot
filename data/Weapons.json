@@ -205,7 +205,7 @@
         "Damage": "187.5",
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
-        "Additional Names": "atac;atr;cestus;collie anti tank field gun;collie atr field gun;colonial anti tank field gun;colonial sniper atr;rail rifle;quickhatch;highwayman;hwm;sniper atr;warden atr"
+        "Additional Names": "14.5;atac;atr;cestus;collie anti tank field gun;collie atr field gun;colonial anti tank field gun;colonial sniper atr;rail rifle;quickhatch;highwayman;hwm;sniper atr;warden atr"
     },
     "20mm": {
         "Name": "20mm",
