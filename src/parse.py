@@ -21,6 +21,7 @@ def get_all_names(dictionary, field_name="Additional Names"):
 
         if field_name in value:
             additional_names.extend(value[field_name].split(";"))
+        additional_names.append(key) if key not in additional_names else None # add key to list of alias if not already
 
         for name in additional_names:
             name = name.lower()
