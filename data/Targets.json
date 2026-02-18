@@ -145,7 +145,7 @@
     },
     "40-45 “Smelter” Heavy Field Gun (HVFAT)": {
         "Name": "40-45 “Smelter”",
-        "Additional Names": "hv40;hv40mm",
+        "Additional Names": "hv40;hv40mm;smelter",
         "Cost": "40",
         "Health": "4000",
         "Armour Health": "0",
@@ -310,29 +310,6 @@
         "": "",
         "ObjectType": "Vehicles",
         "Dev Name": "GunboatW"
-    },
-    "74c-2 Ronan Meteora Gunboat (DGB)": {
-        "Name": "74c-2 Ronan Meteora Gunboat (DGB)",
-        "Additional Names": "dgb;meteora",
-        "Cost": "160",
-        "Health": "1320",
-        "Armour Health": "0",
-        "Min Base Penetration Chance": "1",
-        "Max Base Penetration Chance": "1",
-        "Mitigation Type": "Tier1Tank",
-        "Disable Level": "0.5",
-        "Repair Cost": "160",
-        "Speed": "",
-        "Slots": "30",
-        "Main Weapon (damage bonus)(max range, reach)(artillery range)": "2x 120mm(50m-100m)",
-        "Reload time (pre-reload+reload) (magazine size) (artillery spread?)": "2s (2.5m-16.5m)",
-        "Secondary Weapon": "",
-        "Tracks Disable Chance": "0",
-        "Engine Disable Chance": "0",
-        "Main Gun Disable Chance": "0",
-        "Secondary Gun Disable Chance": "0",
-        "": "",
-        "ObjectType": "Vehicles"
     },
     "Titan Class Battleship": {
         "Name": "Titan",
