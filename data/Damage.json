@@ -218,7 +218,7 @@
     "Shrapnel": {
         "Name": "Shrapnel",
         "-": "None",
-        "LightVehicle": "0.4",
+        "LightVehicle": "0.85",
         "Tier1Tank": "0.85",
         "Tier2Tank": "0.99",
         "Tier0Structure": "1.0",
