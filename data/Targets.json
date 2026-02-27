@@ -6780,7 +6780,7 @@
         "ObjectType": "Structures"
     },
     "Aircraft Maintenance Factory Husk": {
-        "Name": "Aircraft Maintenance Factory",
+        "Name": "Aircraft Maintenance Factory Husk",
         "Additional Names": "aircraft fac husk",
         "Dev Name": "FacilityFactoryAircraftDestroyed",
         "Health": "6000",
