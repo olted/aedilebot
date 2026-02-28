@@ -138,7 +138,7 @@
     "Anti-Tank Rifle Pillbox Ammo": {
         "Name": "Anti-Tank Rifle Pillbox Ammo",
         "Dev Name": "ATPillboxAmmo",
-        "Damage": "65",
+        "Damage": "81",
         "DamageType": "AntiTankKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "AT pill;AT pillbox;anti-tank pillbox"
