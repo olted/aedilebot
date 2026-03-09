@@ -361,8 +361,15 @@ def run_discord_bot():
         await interaction.response.send_message(
             handle_response_inner(weapon, target, query, "disable")
         )
+    
+    @client.tree.command(name="dehusk")
+    async def dehusk(interaction: discord.Interaction, target: str, weapon: str):
+        query = f"dehusk query: target = {target}, weapon = {weapon}"
+        await interaction.response.send_message(
+            handle_response_inner(weapon, target, query, "dehusk")
+        )
 
-    @disable.autocomplete("target")
+
     @kill.autocomplete("target")
     @custom_kill.autocomplete("target")
     async def kill_autocompletion_target(
@@ -396,8 +403,75 @@ def run_discord_bot():
                             usedlist[v[0]] = True
                         break
         return data
+    
+    @disable.autocomplete("target")
+    async def disable_autocompletion_target(
+        interaction: discord.Interaction, current: str
+    ) -> typing.List[app_commands.Choice[str]]:
+        data = []
+        usedlist = {}
+        guess = fuzz.fuzzy_match_target_name_command(current, parse.vehicle_dictionary)
+        value = [
+            fuzz.fuzzy_match_target_name(v, parse.vehicle_dictionary) for v in guess if v.lower() == v
+        ]
+        combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
+        for possible_value in combined:
+            if len(data) == 20:
+                break
+            if possible_value.lower() != possible_value:
+                if possible_value not in usedlist:
+                    data.append(
+                        app_commands.Choice(
+                            name=possible_value, value=possible_value
+                        )
+                    )
+                    usedlist[possible_value] = True
+            else:
+                for v in value:
+                    if possible_value in v:
+                        if v[0] not in usedlist:
+                            data.append(
+                                app_commands.Choice(name=v[0], value=v[0])
+                            )
+                            usedlist[v[0]] = True
+                        break
+        return data
+
+    @dehusk.autocomplete("target")
+    async def dehusk_autocompletion_target(
+        interaction: discord.Interaction, current: str
+    ) -> typing.List[app_commands.Choice[str]]:
+        data = []
+        usedlist = {}
+        guess = fuzz.fuzzy_match_target_name_command(current, parse.husk_dictionary)
+        value = [
+            fuzz.fuzzy_match_target_name(v, parse.husk_dictionary) for v in guess if v.lower() == v
+        ]
+        combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
+        for possible_value in combined:
+            if len(data) == 20:
+                break
+            if possible_value.lower() != possible_value:
+                if possible_value not in usedlist:
+                    data.append(
+                        app_commands.Choice(
+                            name=possible_value, value=possible_value
+                        )
+                    )
+                    usedlist[possible_value] = True
+            else:
+                for v in value:
+                    if possible_value in v:
+                        if v[0] not in usedlist:
+                            data.append(
+                                app_commands.Choice(name=v[0], value=v[0])
+                            )
+                            usedlist[v[0]] = True
+                        break
+        return data
 
     @disable.autocomplete("weapon")
+    @dehusk.autocomplete("weapon")
     @custom_kill.autocomplete("weapon1")
     @custom_kill.autocomplete("weapon2")
     @kill.autocomplete("weapon")

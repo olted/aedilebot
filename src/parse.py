@@ -116,6 +116,12 @@ def get_bunker_spec(string):
         "arty": "hg",
         "artillery": "hg",
         "shelter": "shelter",
+        "uf": "fortress",
+        "fort": "fortress",
+        "underground": "fortress",
+        "radar": "radar",
+        "aerial": "radar",
+        "array": "radar",
         "red": "red",
         "green": "green",
     }

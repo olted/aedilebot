@@ -129,22 +129,22 @@ def fuzzy_perfect_match_any_command(name):
             good_score_list.append(key)
     return good_score_list
 
-def fuzzy_match_target_name_command(name):
+def fuzzy_match_target_name_command(name, targets_dictionary = parse.targets_dictionary):
         good_score_list = []
         num_perfect = 0
-        for key, value in parse.targets_dictionary.items():
+        for key, value in targets_dictionary.items():
             score = fuzz.token_set_ratio(name,key)
             if score > 60:
                 good_score_list.append(key)
                 if score == 100:
                  num_perfect+=1
                  if num_perfect>5:
-                      return fuzzy_perfect_match_target_name_command(name)
+                      return fuzzy_perfect_match_target_name_command(name, targets_dictionary)
         return good_score_list
 
-def fuzzy_perfect_match_target_name_command(name):
+def fuzzy_perfect_match_target_name_command(name, targets_dictionary = parse.targets_dictionary):
     good_score_list = []
-    for key, value in parse.targets_dictionary.items():
+    for key, value in targets_dictionary.items():
         score = fuzz.token_sort_ratio(name,key)
         if score > 60:
              good_score_list.append(key)
