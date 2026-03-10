@@ -5869,7 +5869,7 @@
     },
     "Aircraft Runway (Tier 1)": {
         "Name": "Aircraft Runway (Tier 1)",
-        "Additional Names": "t1 runway;runway t2",
+        "Additional Names": "t1 runway;runway t1;airfield t1;t1 airfield",
         "Dev Name": "AircraftRunwayT1",
         "Health": "2000",
         "Mitigation Type": "Tier3Structure",
@@ -5893,7 +5893,7 @@
     },
     "Aircraft Runway (Tier 2)": {
         "Name": "Aircraft Runway (Tier 2)",
-        "Additional Names": "t2 runway;runway t2;runway",
+        "Additional Names": "t2 runway;runway t2;runway;airfield t2;t2 airfield;airfield",
         "Dev Name": "AircraftRunwayT2",
         "Health": "20000",
         "Mitigation Type": "Tier3Structure",
@@ -6805,7 +6805,7 @@
     },
     "Ammunition Factory": {
         "Name": "Ammunition Factory",
-        "Additional Names": "ammo fac",
+        "Additional Names": "ammo fac;large shell factory;lsf;Rocket Battery Workshop",
         "Dev Name": "FacilityFactoryAmmo",
         "Health": "3000",
         "Mitigation Type": "Tier2Structure",
@@ -6829,7 +6829,7 @@
     },
     "Ammunition Factory Husk": {
         "Name": "Ammunition Factory Husk",
-        "Additional Names": "ammo fac husk",
+        "Additional Names": "ammo fac husk;large shell factory husk;lsf husk;Rocket Battery Workshop husk",
         "Dev Name": "FacilityFactoryAmmoDestroyed",
         "Health": "6000",
         "Mitigation Type": "Tier2Structure",
