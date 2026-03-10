@@ -8539,7 +8539,7 @@
     },
     "Underground Fortress": {
         "Name": "Underground Fortress",
-        "Additional Names": "fortress",
+        "Additional Names": "fortress;uf",
         "Dev Name": "FortGarrisonStation",
         "Health": "10000",
         "Mitigation Type": "Tier3Structure",
