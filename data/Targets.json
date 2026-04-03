@@ -6301,7 +6301,7 @@
     },
     "Concrete Foundation (all sizes)": {
         "Name": "Concrete Foundation (all sizes)",
-        "Additional Names": "concrete foundation;concrete foundation 2x2",
+        "Additional Names": "concrete foundation;concrete foundation 2x2;conc foundation",
         "Dev Name": "Foundation012x2T3",
         "Health": "4000",
         "Mitigation Type": "Trench",
