@@ -13,7 +13,7 @@
         "Damage": "600.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "collie lt;colonial light tank;colonial lt;devitt;falch;falchion;hac;ironhide;kran;kranesca;kranny;lt;mpt;phalanx;silverhand;svh;toaster;warden light tank;warden lt"
+        "Additional Names": "spatha;collie lt;colonial light tank;colonial lt;devitt;falch;falchion;hac;ironhide;kran;kranesca;kranny;lt;mpt;phalanx;silverhand;svh;toaster;warden light tank;warden lt"
     },
     "300mm": {
         "Name": "300mm",
@@ -291,6 +291,14 @@
         "ObjectType": "Weapons",
         "Additional Names": "AA shell;zeal;bolas;flak shell"
     },
+    "Absol Anti-Aircraft Rounds": {
+        "Name": "Absol Anti-Aircraft Rounds",
+        "Dev Name": "LightAAAmmo",
+        "Damage": "600",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "light AA shell;light flak shell;light AA;mobile AA;Absol;Sagaris;colonial AA tank;colonial AA LT;colonial mobile AA;Birdeater;warden AA tank;warden AA LT;warden mobile AA;mobile AA;AA tank"
+    },
     "Mark II Raidbreaker": {
         "Name": "Mark II Raidbreaker",
         "Dev Name": "BomberAmmo",
@@ -361,7 +369,7 @@
         "Damage": "375.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": ""
+        "Additional Names": "igni;ignifist"
     },
     "150mm": {
         "Name": "150mm",
@@ -481,7 +489,7 @@
         "Damage": "650.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "surface mine;small sea mine;small water mine;Hullbreaker"
+        "Additional Names": "surface mine;small sea mine;small water mine;Hullbreaker;Emissary;Daedalus"
     },
     "Moray Torpedo": {
         "Name": "Moray Torpedo",
@@ -490,6 +498,14 @@
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
         "Additional Names": "colonial sub;colonial submarine;nakki;trident;warden sub;warden submarine;moray;torps;torpedo"
+    },
+    "Tenta Torpedo": {
+        "Name": "Tenta Torpedo",
+        "Dev Name": "AircraftTorpedoAmmo",
+        "Damage": "1500.0",
+        "DamageType": "HighExplosive",
+        "ObjectType": "Weapons",
+        "Additional Names": "medium torpedo;med torp;medium torp;aircraft torp;air torp;aircraft torpedo;warden torpedo bomber;torpedo bomber;M925 Austringer Man-O-War;torp bomber"
     },
     "M925 Austringer Man-O-War Moray Torpedo (-30% LV)": {
         "Name": "M925 Austringer Man-O-War Moray Torpedo (-30% LV)",
@@ -505,7 +521,7 @@
         "Damage": "500.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "minitorpedo;mini torpedo;quillback;small torpedo"
+        "Additional Names": "minitorpedo;mini torpedo;quillback;small torpedo;minitorp;mini torp;Perdix"
     },
     "Incendiary Mortar Shell": {
         "Name": "Incendiary Mortar Shell",
@@ -550,16 +566,6 @@
         "DamageType": "HeavyKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "warden fmg"
-    },
-    "85K-a \u201cSpatha\u201d ammo": {
-        "Name": "85K-a \u201cSpatha\u201d",
-        "Dev Name": "LightTankAmmo",
-        "Vehicle Dev Name": "MediumTankOffensiveC",
-        "Mount Dev Name": "MediumTankOffensiveCGunner",
-        "Damage": "660.0",
-        "DamageType": "Explosive",
-        "ObjectType": "Weapons",
-        "Additional Names": "spatha"
     },
     "Noble Widow MK. XIV (HTD) ammo": {
         "Name": "Noble Widow MK. XIV (HTD)",
@@ -673,7 +679,7 @@
         "Name": "Clancy-Raca M4",
         "Dev Name": "RifleAmmo",
         "Infantry Weapon Dev Name": "SniperRifleW",
-        "Damage": "126.5625",
+        "Damage": "87.1875",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons",
         "Additional Names": "Clancy-Raca;warden sniper"
@@ -799,10 +805,10 @@
         "Name": "No.4 The Pillory Scattergun",
         "Dev Name": "ShotgunAmmo",
         "Infantry Weapon Dev Name": "ShotgunW",
-        "Damage": "140",
+        "Damage": "78.75",
         "DamageType": "LightKinetic",
         "ObjectType": "Weapons",
-        "Additional Names": "Scattergun;warden shotgun"
+        "Additional Names": "Scattergun;warden shotgun;Pillory"
     },
     "Leary Snare Trap 20 ammo": {
         "Name": "Leary Snare Trap 20",
