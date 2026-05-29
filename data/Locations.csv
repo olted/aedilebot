@@ -124,7 +124,7 @@ The Oarbreaker Isles,Posterus,Small Relic
 The Oarbreaker Isles,Silver,Medium Relic
 The Oarbreaker Isles,The Dirk,Large Relic
 Farranac Coast,The Jade Cove,Town Center TH
-Farranac Coast,Victa,Post Office Th
+Farranac Coast,Victa,Post Office TH
 Farranac Coast,Pleading Wharf,Large Relic
 Farranac Coast,Macha's Keening,Post Office TH
 Farranac Coast,Huskhollow,Post Office TH
@@ -172,7 +172,7 @@ Endless Shore,Enduring Wake,School TH
 Endless Shore,The Old Jack Tar,Small Relic
 Endless Shore,Sidhe Fall,Large Relic
 Endless Shore,Tuatha Watchpost,Post Office TH
-Endless Shore,Brackish Point,Post office TH
+Endless Shore,Brackish Point,Post Office TH
 Godcrofts,The Axehead,Post Office TH
 Godcrofts,Argosa,Small Relic
 Godcrofts,Exile,Medium Relic
@@ -215,18 +215,18 @@ Deadlands,The Pits,Medium Relic
 Deadlands,The Salt Farms,Post Office TH
 Deadlands,Sun's Hollow,Medium Relic
 Deadlands,Liberation Point,School TH
-Deadlands,Brine Glen,Post office
-Deadlands,Callahan's Boot,Post office TH
+Deadlands,Brine Glen,Post Office
+Deadlands,Callahan's Boot,Post Office TH
 Deadlands,The Salt March,Medium Relic
-Deadlands,The Spine,Post office TH
-Deadlands,Iron's End,Large relic
+Deadlands,The Spine,Post Office TH
+Deadlands,Iron's End,Large Relic
 Deadlands,Callahan's Gate,School TH
 Marban Hollow,Maiden's Veil,School TH
 Marban Hollow,The Spitrocks,Small Relic
 Marban Hollow,Lockheed,Post Office TH
 Marban Hollow,Sanctum,Medium Relic
 Marban Hollow,Checkpoint Bua,Small Relic
-Marban Hollow,Oster Wall,Large relic
+Marban Hollow,Oster Wall,Large Relic
 Marban Hollow,Mox,Small Relic
 Weathered Expanse,The Weathering Halls,Post Office
 Weathered Expanse,Crow's Nest,Post Office
@@ -235,7 +235,7 @@ Weathered Expanse,Huntsfort,Small Relic
 Weathered Expanse,Necropolis,Medium Relic
 Weathered Expanse,Shattered Advanced,Large Relic
 Weathered Expanse,Spirit Watch,Small Relic
-Weathered Expanse,Wightwalk,Post office
+Weathered Expanse,Wightwalk,Post Office
 Morgen's Crossing,Allsight,Town Center TH
 Morgen's Crossing,Lividus,Post Office TH
 Morgen's Crossing,Quietus,School TH
@@ -250,8 +250,8 @@ Callum's Cape,Lookout,Small Relic
 Callum's Cape,Ire,Small Relic
 The Moors,Ogmaran,Town Center TH
 The Moors,The Wind Hills,Large Relic
-The Moors,The Cut,Post office TH
-The Moors,MacConmara Barrows,Post office TH
+The Moors,The Cut,Post Office TH
+The Moors,MacConmara Barrows,Post Office TH
 The Moors,Wiccwalk,Medium Relic
 The Moors,Morrighan's Grave,School TH
 The Moors,Luch's Workshop,Post Office TH
@@ -271,23 +271,23 @@ Callahan's Passage,The Procession,Large Relic
 Callahan's Passage,White Chapel,Post Office TH
 Callahan's Passage,Cragstown,Post Office TH
 Viper Pit,Kirknell,Town Center TH
-Viper Pit,Blackthroat,post Office
+Viper Pit,Blackthroat,Post Office
 Viper Pit,The Friars,Large Relic
 Viper Pit,Fort Viper,Small Relic
 Viper Pit,Moltworth,Post Office
-Viper Pit,Fleck Crossing,Small relic
+Viper Pit,Fleck Crossing,Small Relic
 Viper Pit,Serenity's Blight,School
 Viper Pit,Earl Crowley,Post Office
 Clanshead Valley,The King,School TH
-Clanshead Valley,The Pike,Post office
-Clanshead Valley,Fort Ealar,Large Sized Relic
+Clanshead Valley,The Pike,Post Office
+Clanshead Valley,Fort Ealar,Large Relic
 Clanshead Valley,Fallen Crown,Small Relic
 Clanshead Valley,Fort Esterwild,Medium Relic
 Clanshead Valley,Sweetholt,Small Relic
 Clanshead Valley,Fort Windham,Medium Relic
 Speaking Woods,Tine,Town Center TH
 Speaking Woods,Sotto Bank,Post Office TH
-Speaking Woods,Stem,medium Relic
+Speaking Woods,Stem,Medium Relic
 Speaking Woods,Fort Blather,Medium Relic
 Speaking Woods,Wound,Large Relic
 Speaking Woods,The filament,School TH
@@ -307,14 +307,14 @@ Reaching Trail,Limestone Holdfast,Large Relic
 Howl County,Great Warden Dam,Town Center TH
 Howl County,Slipgate Outpost,Large Relic
 Howl County,Hungry Wolf,School
-Howl County,Teller Farm,Post office
+Howl County,Teller Farm,Post Office
 Howl County,Fort Rider,Medium Relic
-Howl County,Little Lamb,Post office
+Howl County,Little Lamb,Post Office
 Howl County,SickleShire,Large Relic
 Howl County,Fort Red,Small Relic
 Basin Sionnach,Cuttail Station,Town Center TH
 Basin Sionnach,The Den,School
-Basin Sionnach,Lamplight,small relic
+Basin Sionnach,Lamplight,Small Relic
 Basin Sionnach,Basinhome,Large Relic
 Basin Sionnach,Sess,School TH
 Basin Sionnach,Stoic,Medium Relic
@@ -322,9 +322,9 @@ Sableport,Barronhome,Town Center
 Sableport,Cinderwick,School
 Sableport,Talonsfort,Medium Relic
 Sableport,The Whetstone,Large Relic
-Sableport,Light's End,Post office 
+Sableport,Light's End,Post Office 
 Sableport,The Pendant,Medium Relic
-Sableport,The Robin's Nest,Small relic
+Sableport,The Robin's Nest,Small Relic
 King's Cage,The Mancle,Town Center
 King's Cage,Slipchain,Small Relic
 King's Cage,Eastknife,Large Relic
@@ -348,7 +348,7 @@ Reavers Pass,Scuttletown,Post Office
 Reavers Pass,The Bilge,Small Relic
 Reavers Pass,Thimble Base,Small Relic
 Stema Landing,Acies Overlook,Small Relic
-Stema Landing,Alchimio Estate,Town center
+Stema Landing,Alchimio Estate,Town Center
 Stema Landing,Base Ferveret,Small Relic
 Stema Landing,The Flair,Small Relic
 Stema Landing,The Spearhead,Post Office

@@ -25,8 +25,11 @@ def load_locations_from_csv(filename):
 def load_locations_into_targets(location_dict, targets_dict):
     type_key_map = {
         "Post Office TH": "Town Base (Post Office)",
+        "Post Office": "Town Base (Post Office)",
         "Town Center TH": "Town Base (Town Centre)",
+        "Town Center": "Town Base (Town Centre)",
         "School TH": "Town Base (School)",
+        "School": "Town Base (School)",
         "Small Relic": "Small Relic Base",
         "Medium Relic": "Medium Relic Base",
         "Large Relic": "Large Relic Base",
@@ -42,6 +45,8 @@ def load_locations_into_targets(location_dict, targets_dict):
                     targets_dict[target_key]["Additional Names"] = location_name
             else:
                 print(f"WARNING: target key {target_key} not found in targets dictionary")
+        else:
+            print(f"WARNING: location type {location_type} not found in type key map")
 
 
 def get_all_names(dictionary, field_name="Additional Names"):
