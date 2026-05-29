@@ -1,0 +1,427 @@
+﻿ORIGIN,Teichotima,Town Center TH
+ORIGIN,Finis,Post Office TH
+ORIGIN,Arise,Medium Relic
+ORIGIN,World Star,Small Relic
+ORIGIN,Initium,School TH
+ORIGIN,Dormio,Large Relic
+ORIGIN,The Steel Road,Medium Relic
+ASH FIELDS,Ashtown,School TH
+ASH FIELDS,The Calamity,Medium Relic
+ASH FIELDS,Electi,School TH
+ASH FIELDS,Camp Omega,Large Relic
+ASH FIELDS,Cometa,Small Relic
+ASH FIELDS,The Ashfort,Small Relic
+ASH FIELDS,Sootflow,Large Relic
+RED RIVER,Cannonsmoke,Town Center TH
+RED RIVER,Minos,Post Office TH
+RED RIVER,Penance,School TH
+RED RIVER,Fort Matchwood,Small Relic
+RED RIVER,Climb,Medium Relic
+RED RIVER,Camp Upsilon,Medium Relic
+RED RIVER,Victoria Hill,Large Relic
+RED RIVER,Judicium,Post Office TH
+KALOKAI,Baccae Ridge,Town Center TH
+KALOKAI,Night's Regret,Large Relic
+KALOKAI,Hallow,School TH
+KALOKAI,Sourtooth,Medium Relic
+KALOKAI,Sweethearth,Post Office TH
+KALOKAI,Camp Tau,Small Relic
+KALOKAI,Lost Greensward,Medium Relic
+ACRITHIA,Patridia,Town Center TH
+ACRITHIA,Swordfort,Medium Relic
+ACRITHIA,Thetus ring,School TH
+ACRITHIA,Heir Apparent,Small Relic
+ACRITHIA,Camp Omicron,Large Relic
+ACRITHIA,Legion Ranch,Post Office TH
+ACRITHIA,The Brinehold,Small Relic
+ACRITHIA,Nereid Keep,Medium Relic
+TERMINUS,Therizo,Town Center TH
+TERMINUS,Thunderbolt,Medium Relic
+TERMINUS,Warlord's Stead,School TH
+TERMINUS,Cerberus Wake,Large Relic
+TERMINUS,Bloody Palm Fort,Large Relic
+TERMINUS,Winding Bolas,Small Relic
+THE FINGERS,The Old Captain,School TH
+THE FINGERS,Captain's Dread,Medium Relic
+THE FINGERS,Fort Barley,Medium Relic
+THE FINGERS,Headman's Villa,Post Office
+THE FINGERS,Plankhouse,Small Relic
+THE FINGERS,Second Man,Medium Relic
+THE FINGERS,Tethys Base,Medium Relic
+THE FINGERS,The Tusk,Large Relic
+THE FINGERS,Titancall,Medium Relic
+Fisherman's Row,Eidolo,School TH
+Fisherman's Row,Arcadia,School TH
+Fisherman's Row,Black Well,Post Office
+Fisherman's Row,Dankana Post,Medium Relic
+Fisherman's Row,Fort Ember,Medium Relic
+Fisherman's Row,Hangman's Court,Small Relic
+Fisherman's Row,Oceanwatch,Large Relic
+Fisherman's Row,Peripti Landing,Medium Relic
+Fisherman's Row,The Satyr Stone,Large Relic
+Westgate,Longstone,Town Center TH
+Westgate,Zeus' Demise,Large Relic
+Westgate,Wyattwick,Medium Relic
+Westgate,Westgate Keep,Small Relic
+Westgate,Lost Partition,Medium Relic
+Westgate,Kingstone,Post Office TH
+Westgate,Lord's Mouth,Post Office TH
+Westgate,Rancher's fast,Medium Relic
+Westgate,Holdfast,Small Relic
+Westgate,The Gallows,School TH
+The Heartlands,Blemish,Town Center TH
+The Heartlands,Barronswall,Medium Relic
+The Heartlands,Deeplaw Post,Post Office TH
+The Heartlands,Proexi,School TH
+The Heartlands,The Breach,School TH
+The Heartlands,Barrony Ranch,Small Relic
+The Heartlands,The Plough,Medium Relic
+The Heartlands,Greenfield Orchard,Post Office TH
+The Heartlands,Fort Providence,Large Relic
+The Heartlands,Oleander Homstead,Post Office TH
+Great March,Sitaria,School TH
+Great March,Leto,School TH
+Great March,The Swan,Post Office TH
+Great March,Dendro Field,Medium Relic
+Great March,Remnant Villa,Post Office TH
+Great March,Camp Senti,Large Relic
+Great March,Violethome,Post Office TH
+Great March,Myrmidon's Stay,Post Office TH
+Great March,Lionsfort,Large Relic
+Shackled Chasm,Silk Farms,Town Center TH
+Shackled Chasm,Reflection,School TH
+Shackled Chasm,Limewood Holdfast,Small Relic
+Shackled Chasm,Gorgan Grove,Small Relic
+Shackled Chasm,Savages,Post Office TH
+Shackled Chasm,The Bell Toll,Large Relic
+Shackled Chasm,The Vanguard,Post Office TH
+Shackled Chasm,Simo's Run,Large Relic
+Shackled Chasm,Firstmarch,Small Relic
+Shackled Chasm,The Grave of Rastus,Post Office TH
+Allod's Bight,Mercy's Wail,Town Center TH
+Allod's Bight,The Turncoat,Large Relic
+Allod's Bight,Belaying Trace,Medium Relic
+Allod's Bight,Homesick,Small Relic
+Allod's Bight,Rumhold,Small Relic
+Allod's Bight,Scurvyshire,School TH
+Allod's Bight,The Stone Plank,Small Relic
+Tempest Island,Liar's Haven,School TH
+Tempest Island,Blackwatch ,Large Relic
+Tempest Island,Isle of Psyche,Small Relic
+Tempest Island,Plana Fada,School TH
+Tempest Island,Reef,Large Relic
+Tempest Island,Surge Gate,School TH
+Tempest Island,The Gale,Small Relic
+Tempest Island,The Iris,School TH
+Tempest Island,The Rush,Post Office
+The Oarbreaker Isles,The Conclave,Post Office TH
+The Oarbreaker Isles,Fort Fogwood,Medium Relic
+The Oarbreaker Isles,Integrum,School TH
+The Oarbreaker Isles,Gold ,Large Relic
+The Oarbreaker Isles,Grisly Refuge,Large Relic
+The Oarbreaker Isles,Partisan Island,Large Relic
+The Oarbreaker Isles,Posterus,Small Relic
+The Oarbreaker Isles,Silver,Medium Relic
+The Oarbreaker Isles,The Dirk,Large Relic
+Farranac Coast,The Jade Cove,Town Center TH
+Farranac Coast,Victa,Post Office Th
+Farranac Coast,Pleading Wharf,Large Relic
+Farranac Coast,Macha's Keening,Post Office TH
+Farranac Coast,Huskhollow,Post Office TH
+Farranac Coast,Scarp of Ambrose,Small Relic
+Farranac Coast,Terra,Medium Relic
+Farranac Coast,Mara,School TH
+Farranac Coast,Scythe,Medium Relic
+Farranac Coast,Transient valley ,Small Relic
+Farranac Coast,The Bone Haft,Post Office TH
+Loch Mor,Feirmor,School TH
+Loch Mor,Tomb of the First,Medium Relic
+Loch Mor,Market Road,Large Relic
+Loch Mor,The Roilfort,Small Relic
+Loch Mor,Moon's Copse,Small Relic
+Loch Mor,Westmarch,Medium Relic
+Loch Mor,Mercy's Wish,Post Office TH
+Umbral Wildwood,Thunderfoot,Post Office TH
+Umbral Wildwood,Goldenroot Ranch,Large Relic
+Umbral Wildwood,Sentry,Post Office TH
+Umbral Wildwood,Atropos fate,Small Relic
+Umbral Wildwood,Hermit's Rest,School TH
+Umbral Wildwood,Lachesis' Tally,Large Relic
+Umbral Wildwood,The Foundry,School TH
+Umbral Wildwood,Vagrant Bastion,Medium Relic
+Umbral Wildwood,Clotho's Refuge,Small Relic
+Umbral Wildwood,Amethyst,Post Office TH
+Umbral Wildwood,Stray,Post Office TH
+The Drowned Vale,The Baths,School TH
+The Drowned Vale,Vessel,Post Office TH
+The Drowned Vale,Splinter Pens,Large Relic
+The Drowned Vale,Coaldrifter Stead,Post Office TH
+The Drowned Vale,Bootnap,Post Office TH
+The Drowned Vale,The Wash,Medium Relic
+The Drowned Vale,Eastmarch,Medium Relic
+The Drowned Vale,Singing Serpents,Small Relic
+The Drowned Vale,The Saltcaps,Post Office TH
+The Drowned Vale,Loggerhead,School TH
+The Drowned Vale,Wisp's Warning,Medium Relic
+Endless Shore,Saltbrook Channel,Town Center TH
+Endless Shore,Iron Junction,Post Office TH
+Endless Shore,The Overland,Medium Relic
+Endless Shore,Woodbind,School TH
+Endless Shore,Wellchurch,Post Office TH
+Endless Shore,Enduring Wake,School TH
+Endless Shore,The Old Jack Tar,Small Relic
+Endless Shore,Sidhe Fall,Large Relic
+Endless Shore,Tuatha Watchpost,Post Office TH
+Endless Shore,Brackish Point,Post office TH
+Godcrofts,The Axehead,Post Office TH
+Godcrofts,Argosa,Small Relic
+Godcrofts,Exile,Medium Relic
+Godcrofts,Fleecewatch,Small Relic
+Godcrofts,Isawa,School TH
+Godcrofts,Lipsia,Large Relic
+Godcrofts,Protos,Large Relic
+Godcrofts,Saegio,Medium Relic
+Godcrofts,Ursa Base,Large Relic
+Nevish Line ,The Scrying Belt,Town Center TH
+Nevish Line ,Princefal,Large Relic
+Nevish Line ,Tomb Father,Medium Relic
+Nevish Line ,Grief Mother,Small Relic
+Nevish Line ,Blackcoat Way,Post Office TH
+Nevish Line ,Blinding Stones,Small Relic
+Nevish Line ,Mistle Shrine,School TH
+Nevish Line ,Unruly,Medium Relic
+Stonecradle,Buckler Sound,Town Center TH
+Stonecradle,The Long Fast,Medium Relic
+Stonecradle,The Heir's Knife,Small Relic
+Stonecradle,World's End,Small Relic
+Stonecradle,The Cord,Small Relic
+Stonecradle,Fading Lights,School TH
+Stonecradle,Trammel Pool,Medium Relic
+Stonecradle,The Reach,Large Relic
+Stonecradle,The Dais,Medium Relic
+Linn of Mercy,Ulster Falls,School TH
+Linn of Mercy,The Last Grove,Small Relic
+Linn of Mercy,The First Coin,School TH
+Linn of Mercy,The Crimson Gardens,Post Office TH
+Linn of Mercy,Hardline,Large Relic
+Linn of Mercy,The Long Whine,Post Office TH
+Linn of Mercy,Rotdust,Post Office TH
+Linn of Mercy,Lathair,Small Relic
+Linn of Mercy,Outwich Ranch,Post Office TH
+Linn of Mercy,Fort Duncan,Medium Relic
+Linn of Mercy,The Praire Bazaar,Post Office TH
+Deadlands,Abandoned Ward,Town Center TH
+Deadlands,The Pits,Medium Relic
+Deadlands,The Salt Farms,Post Office TH
+Deadlands,Sun's Hollow,Medium Relic
+Deadlands,Liberation Point,School TH
+Deadlands,Brine Glen,Post office
+Deadlands,Callahan's Boot,Post office TH
+Deadlands,The Salt March,Medium Relic
+Deadlands,The Spine,Post office TH
+Deadlands,Iron's End,Large relic
+Deadlands,Callahan's Gate,School TH
+Marban Hollow,Maiden's Veil,School TH
+Marban Hollow,The Spitrocks,Small Relic
+Marban Hollow,Lockheed,Post Office TH
+Marban Hollow,Sanctum,Medium Relic
+Marban Hollow,Checkpoint Bua,Small Relic
+Marban Hollow,Oster Wall,Large relic
+Marban Hollow,Mox,Small Relic
+Weathered Expanse,The Weathering Halls,Post Office
+Weathered Expanse,Crow's Nest,Post Office
+Weathered Expanse,Frostmarch,Medium Relic
+Weathered Expanse,Huntsfort,Small Relic
+Weathered Expanse,Necropolis,Medium Relic
+Weathered Expanse,Shattered Advanced,Large Relic
+Weathered Expanse,Spirit Watch,Small Relic
+Weathered Expanse,Wightwalk,Post office
+Morgen's Crossing,Allsight,Town Center TH
+Morgen's Crossing,Lividus,Post Office TH
+Morgen's Crossing,Quietus,School TH
+Morgen's Crossing,Bastard's Block,Medium Relic
+Morgen's Crossing,Eversus,Small Relic
+Callum's Cape,Callum's Keep,Town Center TH
+Callum's Cape,Scouts Jest,Large Relic
+Callum's Cape,Naofa,Small Relic
+Callum's Cape,Camp Hollow,Medium Relic
+Callum's Cape,Holdout,School TH
+Callum's Cape,Lookout,Small Relic
+Callum's Cape,Ire,Small Relic
+The Moors,Ogmaran,Town Center TH
+The Moors,The Wind Hills,Large Relic
+The Moors,The Cut,Post office TH
+The Moors,MacConmara Barrows,Post office TH
+The Moors,Wiccwalk,Medium Relic
+The Moors,Morrighan's Grave,School TH
+The Moors,Luch's Workshop,Post Office TH
+The Moors,Borderlane,Small Relic
+The Moors,Reaching River,Large Relic
+The Moors,The Spade,Medium Relic
+The Moors,headstone,Post Office TH
+The Moors,Gravekeeper's Holdfast,Large Relic
+Callahan's Passage,Lochan Berth,Post Office TH
+Callahan's Passage,Crumbling Post,School
+Callahan's Passage,The Crumbling Passage,Small Relic
+Callahan's Passage,Overlook Hill,School TH
+Callahan's Passage,Scath Passing,Medium Relic
+Callahan's Passage,Solas Gorge,Post Office TH
+Callahan's Passage,The Latch,School TH
+Callahan's Passage,The Procession,Large Relic
+Callahan's Passage,White Chapel,Post Office TH
+Callahan's Passage,Cragstown,Post Office TH
+Viper Pit,Kirknell,Town Center TH
+Viper Pit,Blackthroat,post Office
+Viper Pit,The Friars,Large Relic
+Viper Pit,Fort Viper,Small Relic
+Viper Pit,Moltworth,Post Office
+Viper Pit,Fleck Crossing,Small relic
+Viper Pit,Serenity's Blight,School
+Viper Pit,Earl Crowley,Post Office
+Clanshead Valley,The King,School TH
+Clanshead Valley,The Pike,Post office
+Clanshead Valley,Fort Ealar,Large Sized Relic
+Clanshead Valley,Fallen Crown,Small Relic
+Clanshead Valley,Fort Esterwild,Medium Relic
+Clanshead Valley,Sweetholt,Small Relic
+Clanshead Valley,Fort Windham,Medium Relic
+Speaking Woods,Tine,Town Center TH
+Speaking Woods,Sotto Bank,Post Office TH
+Speaking Woods,Stem,medium Relic
+Speaking Woods,Fort Blather,Medium Relic
+Speaking Woods,Wound,Large Relic
+Speaking Woods,The filament,School TH
+Speaking Woods,Hush,Small Relic
+Speaking Woods,Inari Base,Medium Relic
+Reaching Trail,Elksford,Post Office TH
+Reaching Trail,Nightchurch,Post Office TH
+Reaching Trail,Harpy,Small Relic
+Reaching Trail,Fort Mac Conaill,Medium Relic
+Reaching Trail,Reprieve,Post Office TH
+Reaching Trail,The Ark,Large Relic
+Reaching Trail,Mousetrap,Post Office TH
+Reaching Trail,Ice Ranch,Post Office TH
+Reaching Trail,Brodytown,Post Office TH
+Reaching Trail,Dwyerstown,Post Office TH
+Reaching Trail,Limestone Holdfast,Large Relic
+Howl County,Great Warden Dam,Town Center TH
+Howl County,Slipgate Outpost,Large Relic
+Howl County,Hungry Wolf,School
+Howl County,Teller Farm,Post office
+Howl County,Fort Rider,Medium Relic
+Howl County,Little Lamb,Post office
+Howl County,SickleShire,Large Relic
+Howl County,Fort Red,Small Relic
+Basin Sionnach,Cuttail Station,Town Center TH
+Basin Sionnach,The Den,School
+Basin Sionnach,Lamplight,small relic
+Basin Sionnach,Basinhome,Large Relic
+Basin Sionnach,Sess,School TH
+Basin Sionnach,Stoic,Medium Relic
+Sableport,Barronhome,Town Center
+Sableport,Cinderwick,School
+Sableport,Talonsfort,Medium Relic
+Sableport,The Whetstone,Large Relic
+Sableport,Light's End,Post office 
+Sableport,The Pendant,Medium Relic
+Sableport,The Robin's Nest,Small relic
+King's Cage,The Mancle,Town Center
+King's Cage,Slipchain,Small Relic
+King's Cage,Eastknife,Large Relic
+King's Cage,Den of Knaves,Medium Relic
+King's Cage,The Bailie,Small Relic
+King's Cage,Gibbet Fields,Post Office
+King's Cage,Scarlethold,Medium Relic
+Clahstra,The Treasury,Post Office
+Clahstra,Bewailing Fort,Medium Relic
+Clahstra,East Narthex,Post Office
+Clahstra,The Vault,Medium Relic
+Clahstra,Third Chapter,School
+Clahstra,Transept,Small Relic
+Clahstra,Watchful Nave,Medium Relic
+Clahstra,Weephome,Large Relic
+Reavers Pass,Keelhaul,School TH
+Reavers Pass,Breakwater,School TH
+Reavers Pass,Clay Coffer,Small Relic
+Reavers Pass,Fort Rictus,Large Relic
+Reavers Pass,Scuttletown,Post Office
+Reavers Pass,The Bilge,Small Relic
+Reavers Pass,Thimble Base,Small Relic
+Stema Landing,Acies Overlook,Small Relic
+Stema Landing,Alchimio Estate,Town center
+Stema Landing,Base Ferveret,Small Relic
+Stema Landing,The Flair,Small Relic
+Stema Landing,The Spearhead,Post Office
+Stema Landing,The wane,Small Relic
+Stema Landing,Ustio,Large Relic
+Stema Landing,Verge Wing,Small Relic
+Stlican Shelf,Port of Rime,Town Center
+Stlican Shelf,Briar,Medium Relic
+Stlican Shelf,Cavilltown,Post Office
+Stlican Shelf,Fort Hoarfrost,Large Relic
+Stlican Shelf,The Old Mourn,Medium Relic
+Stlican Shelf,The South Wind,Large Relic
+Stlican Shelf,Thornhold,Small Relic
+Stlican Shelf,Vulpine Watch,School TH
+Olavi's Wake,Koskinla,Town Center
+Olavi's Wake,Ilmari Bridge,Large Relic
+Olavi's Wake,Yoohja,Medium Relic
+Olavi's Wake,Kulkue,Town Center
+Pari Peak,Kohina Base,Small Relic
+Pari Peak,Little Raakkua,Town Center
+Pari Peak,Itaan,Small Relic
+Pari Peak,Pariah,Post Office
+Pari Peak,Camp Surista,Large Relic
+Palantine Berm,Underlook,Small Relic
+Palantine Berm,Windburn Landing,Large Relic
+Palantine Berm,Dryfeld,Medium Relic
+Palantine Berm,Vendett,School TH
+Palantine Berm,Leiri Hermanni,Medium Relic
+Palantine Berm,The Droll,Town Center
+Palantine Berm,The Pippeli Stones,Medium Relic
+The Gutter,Kuoppa,School TH
+The Gutter,Salaoja Road,Medium Relic
+The Gutter,Lost Kaivo,Medium Relic
+The Gutter,The Parras,Post Office
+The Gutter,Rikki Sarana,Small Relic
+The Gutter,Rotko Camp,Large Relic
+The Gutter,Suojus,Large Relic
+Kuura Strand,Faden Point,School TH
+Kuura Strand,Talven,Small Relic
+Kuura Strand,Suosalo,Post Office
+Kuura Strand,Menneen,Small Relic
+Kuura Strand,Lumia,Medium Relic
+Kuura Strand,Martti,Town Center
+Onyx,Dexam,School TH
+Onyx,The Waif,Small Relic
+Onyx,The Brink,Post Office
+Onyx,Beholder's Span,Large Relic
+Onyx,Cisterna Run,Small Relic
+Onyx,Garland,Town Center
+Wresta,Argan Isle,Medium Relic
+Wresta,Garion Slip,Large Relic
+Wresta,Scallyhold,Town Center
+Wresta,Toad's Plinth,Medium Relic
+Wresta,Adripio,Post Office
+Wresta,Ratchet,Medium Relic
+Wresta,Latro Manor,School TH
+Tyrant Foothills,Azmar,Post Office
+Tyrant Foothills,Scrapegrace,Medium Relic
+Tyrant Foothills,Onioncap,Large Relic
+Tyrant Foothills,Lugria,School TH
+Tyrant Foothills,Duelist's Scarp,Large Relic
+Tyrant Foothills,Northern Sky Hold,Large Relic
+Tyrant Foothills,Bandolier Base,Medium Relic
+Piper's Enclave,House of Lyterius,Town Center
+Piper's Enclave,Reedhurst,Large Relic
+Piper's Enclave,Pan's Villa,Town Center
+Piper's Enclave,Maenalius Cove,Small Relic
+Piper's Enclave,Syrinx Pass,School TH
+Piper's Enclave,Aegocerus Fortress,Medium Relic
+L ykos Isle,The Squall,Medium Relic
+L ykos Isle,Fort Guile,Medium Relic
+L ykos Isle,Astutia,Small Relic
+L ykos Isle,Cyrus,Post Office
+L ykos Isle,Erebus Islet,Medium Relic
+L ykos Isle,Marudia,Small Relic
+L ykos Isle,Aetherwood,School TH

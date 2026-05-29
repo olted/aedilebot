@@ -197,19 +197,13 @@ class DamageCalculator:
         return min_hits_to_kill
 
     def multitier_damage_calculator(self):
-        if self.location_name:
-            output_string = \
-                f"Hits to kill {main.clean_capitalize(self.location_name)} ({self.target_name}) with {self.weapon_name}: "
-        else:
-            output_string = f"Hits to kill {self.target_name} with {self.weapon_name}: "
-
         if self.damage_type == "BPDemolitionDamageType":
-            return output_string + f"{calculate_hits_to_reach_health(self.health, self.calculate_damage('Tier3GarrisonHouse'))}"
+            return f"{calculate_hits_to_reach_health(self.health, self.calculate_damage('Tier3GarrisonHouse'))}"
 
         t = [calculate_hits_to_reach_health(self.health, self.calculate_damage("Tier1GarrisonHouse")),
              calculate_hits_to_reach_health(self.health, self.calculate_damage("Tier2GarrisonHouse")),
              calculate_hits_to_reach_health(self.health, self.calculate_damage("Tier3GarrisonHouse"))]
-        return output_string + f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
+        return f"{t[0]} (Tier 1) {t[1]} (Tier 2) {t[2]} (Tier 3)"
 
     def get_kill_calculation(self):
         if self.target_type == "Vehicles" or self.target_type == "Aircraft_Parts":

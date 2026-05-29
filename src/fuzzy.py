@@ -32,8 +32,8 @@ def fuzzy_match_target_name(name, targets_dictionary = parse.targets_dictionary)
                 raise bot.TargetOfTypeNotFoundError(name)
             else:
                 raise bot.TargetNotFoundError(name)
-        if parse.check_if_location_name(max_key):
-            tokens["location_name"] = max_key
+        if parse.check_if_location_name(name):
+            tokens["location_name"] = name
         if len(good_score_list)>1:  #this is INSANELY inefficient and yet I can't find a proper solution to the bug this fixes
                 max_score = 0          #in the amount of time I currently have to work on this so it'll have to do. We're not low on processing time anyway.
                 max_key = None

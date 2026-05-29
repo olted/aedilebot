@@ -1,5 +1,6 @@
 import json
 import os
+import csv
 from collections import defaultdict
 
 
@@ -9,9 +10,38 @@ def load_json_to_dict(filename):
         return dict
 
 
-def load_location_names(filename):
-    with open(filename, encoding="utf-8") as f:
-        return f.read().split(";")
+def load_locations_from_csv(filename):
+    locations_dict = {}
+    with open(filename, encoding="utf-8", newline="") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if len(row) >= 3:
+                hex_name = row[0].strip()
+                location_name = row[1].strip()
+                location_type = row[2].strip()
+                locations_dict[location_name] = location_type
+    return locations_dict
+
+def load_locations_into_targets(location_dict, targets_dict):
+    type_key_map = {
+        "Post Office TH": "Town Base (Post Office)",
+        "Town Center TH": "Town Base (Town Centre)",
+        "School TH": "Town Base (School)",
+        "Small Relic": "Small Relic Base",
+        "Medium Relic": "Medium Relic Base",
+        "Large Relic": "Large Relic Base",
+    }
+    # add location names as additional names to targets
+    for location_name, location_type in location_dict.items():
+        if location_type in type_key_map:
+            target_key = type_key_map[location_type]
+            if target_key in targets_dict:
+                if "Additional Names" in targets_dict[target_key]:
+                    targets_dict[target_key]["Additional Names"] += ";" + location_name
+                else:
+                    targets_dict[target_key]["Additional Names"] = location_name
+            else:
+                print(f"WARNING: target key {target_key} not found in targets dictionary")
 
 
 def get_all_names(dictionary, field_name="Additional Names"):
@@ -198,16 +228,17 @@ def get_bunker_spec(string):
 
 
 # Structure Json parser
-location_names = load_location_names(
-    os.path.join("data", "Location_names.json")
+locations_dictionary = load_locations_from_csv(
+    os.path.join("data", "Locations.csv")
 )
 
 
 def check_if_location_name(name):
-    return name in location_names
+    return any(name.casefold() == k.casefold() for k in locations_dictionary)
 
 
 targets = load_json_to_dict(os.path.join("data", "Targets.json"))
+load_locations_into_targets(locations_dictionary, targets)
 damages = load_json_to_dict(os.path.join("data", "Damage.json"))
 weapons = load_json_to_dict(os.path.join("data", "Weapons.json"))
 all = weapons | targets
