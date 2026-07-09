@@ -313,7 +313,7 @@
         "Damage": "950",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "dive bomb;dive bomber ammo;shrike rounds;"
+        "Additional Names": "dive bomb;dive bomber ammo;shrike rounds;divebomb"
     },
     "8mm": {
         "Name": "8mm",
@@ -417,7 +417,7 @@
         "Damage": "400.0",
         "DamageType": "Explosive",
         "ObjectType": "Weapons",
-        "Additional Names": "tremola;fissura;gac;grenade launcher armoured car;knave"
+        "Additional Names": "tremola;fissura;gac;grenade launcher armoured car;knave;lunaire"
     },
     "94.5mm": {
         "Name": "94.5mm",
