@@ -858,9 +858,9 @@
         "ObjectType": "Weapons",
         "Additional Names": "ship ai;ship ai mortar;large ship ai"
     },
-    "Anti-Air Gun Shell": {
-        "Name": "Anti-Air Gun Shell",
-        "Dev Name": "Anti-Air Gun Shell",
+    "AI Anti-Air Gun Shell": {
+        "Name": "AI Anti-Air Gun Shell",
+        "Dev Name": "AI Anti-Air Gun Shell",
         "Damage": "2400.0",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
