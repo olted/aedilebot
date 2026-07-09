@@ -213,7 +213,7 @@
         "Damage": "81.25",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
-        "Additional Names": "aircraft ammo;"
+        "Additional Names": "aircraft ammo;warden fighter 20mm;luminary harbinger 20mm;harbinger 20mm;harbringer;colonial fighter 20mm;blind silver 20mm;blind silver"
     },
     "Ship 20mm (+20% HV)": {
         "Name": "Ship 20mm (+20% HV)",
@@ -223,52 +223,32 @@
         "ObjectType": "Weapons",
         "Additional Names": "ship 20mm;ship AA ammo;boat 20mm;hv20mm;HV 20mm"
     },
-    "Toxot-902 \"Blind Silver\" 20mm (+50% HV)": {
-        "Name": "Toxot-902 \"Blind Silver\" 20mm (+50% HV)",
-        "Dev Name": "AircraftAmmo",
-        "Vehicle Dev Name": "AircraftFighterC",
-        "Mount Dev Name": "AircraftFighterC_HMG",
-        "Damage": "121.875",
-        "DamageType": "Shrapnel",
-        "ObjectType": "Weapons",
-        "Additional Names": "colonial fighter 20mm;blind silver 20mm"
-    },
-    "A51 Venti \"Daedalus\" 20mm (-10% LV)": {
-        "Name": "A51 Venti \"Daedalus\" 20mm (-10% LV)",
+    "A51 Venti \"Daedalus\" 20mm (-33% LV)": {
+        "Name": "A51 Venti \"Daedalus\" 20mm (-33% LV)",
         "Dev Name": "AircraftAmmo",
         "Vehicle Dev Name": "AircraftScoutC",
         "Mount Dev Name": "AircraftScoutC_HMG",
-        "Damage": "73.125",
+        "Damage": "53.625",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "colonial scout 20mm;Daedalus 20mm;lv 20mm;Daedalus"
     },
-    "Luminary Mk. IV Herald 20mm (-10% LV)": {
-        "Name": "Luminary Mk. IV Herald 20mm (-10% LV)",
+    "Luminary Mk. IV Herald 20mm (-33% LV)": {
+        "Name": "Luminary Mk. IV Herald 20mm (-33% LV)",
         "Dev Name": "AircraftAmmo",
         "Vehicle Dev Name": "AircraftScoutW",
         "Mount Dev Name": "AircraftScoutW_HMG",
-        "Damage": "73.125",
+        "Damage": "53.625",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "warden scout 20mm;Herald 20mm;Herald"
     },
-    "Luminary Mk. II Harbinger 20mm (+50% HV)": {
-        "Name": "Luminary Mk. II Harbinger 20mm (+50% HV)",
+    "Tulka I1.9 White Raven 20mm (+25% HV)": {
+        "Name": "Tulka I1.9 White Raven 20mm (+25% HV)",
         "Dev Name": "AircraftAmmo",
         "Vehicle Dev Name": "AircraftFighterW",
         "Mount Dev Name": "AircraftFighterW_Cannon",
-        "Damage": "121.875",
-        "DamageType": "Shrapnel",
-        "ObjectType": "Weapons",
-        "Additional Names": "warden fighter 20mm;luminary harbinger 20mm;harbinger 20mm;hv20mm;HV 20mm;harbringer"
-    },
-    "Tulka I1.9 White Raven 20mm (+75% HV)": {
-        "Name": "Tulka I1.9 White Raven 20mm (+75% HV)",
-        "Dev Name": "AircraftAmmo",
-        "Vehicle Dev Name": "AircraftFighterW",
-        "Mount Dev Name": "AircraftFighterW_Cannon",
-        "Damage": "142.1875",
+        "Damage": "101.5625",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "warden sea fighter 20mm;White Raven 20mm;warden light fighter aircraft;white raven;amphibious fighter;warden sea fighter"
@@ -877,6 +857,14 @@
         "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
         "Additional Names": "ship ai;ship ai mortar;large ship ai"
+    },
+    "Anti-Air Gun Shell": {
+        "Name": "Anti-Air Gun Shell",
+        "Dev Name": "Anti-Air Gun Shell",
+        "Damage": "2400.0",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "anti air ai;ai aa gun;aa ai"
     },
     "Coastal Gun Shell": {
         "Name": "Coastal Gun Shell",
