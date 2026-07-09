@@ -9815,7 +9815,7 @@
     "Tulka P4 Welkinrive": {
         "Dev Name": "AircraftBomberW",
         "Name": "Tulka P4 Welkinrive",
-        "Additional Names": "warden bomber",
+        "Additional Names": "warden bomber;bomber",
         "Cost": "-",
         "Health": "10000",
         "Armour Health": "0",
@@ -9838,7 +9838,7 @@
     "Mergo-4 “Myrmidon”": {
         "Dev Name": "AircraftDiveC",
         "Name": "Mergo-4 “Myrmidon”",
-        "Additional Names": "colonial dive bomber",
+        "Additional Names": "colonial dive bomber;dive bomber",
         "Cost": "250",
         "Health": "5500",
         "Armour Health": "0",
