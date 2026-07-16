@@ -7209,7 +7209,7 @@
     },
     "Foundation (NOT concrete) (all sizes)": {
         "Name": "Foundation (NOT concrete) (all sizes)",
-        "Additional Names": "foundation, foundation 2x2",
+        "Additional Names": "foundation; foundation 2x2",
         "Dev Name": "Foundation012x2T1",
         "Health": "2000",
         "Mitigation Type": "Trench",

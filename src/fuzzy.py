@@ -5,16 +5,14 @@ import main
 import utils
 import bot
 from fuzzywuzzy import process
-import re
-
 
 
 # fuzzy stuff
 # If they return true, they need to return proper location/vehicle/structure name.
 
-
  #stygian slang <->
 def fuzzy_match_target_name(name, targets_dictionary = parse.targets_dictionary):
+        name = utils.normalize(name)
         max_score = 0
         max_key = None
         max_value = None
@@ -47,8 +45,8 @@ def fuzzy_match_target_name(name, targets_dictionary = parse.targets_dictionary)
         utils.debug_fuzzy(name,good_score_list,max_value)
         return max_value, tokens
 
-        
 def fuzzy_match_weapon_name(name):
+    name = utils.normalize(name)
     good_score_list = []
     max_score = 0
     max_value = None
@@ -74,6 +72,7 @@ def fuzzy_match_weapon_name(name):
     return max_value
 
 def fuzzy_match_any(name):
+    name = utils.normalize(name)
     max_score = 0
     max_value = None
     num_perfect = 0
@@ -95,6 +94,7 @@ def fuzzy_match_any(name):
     return output
 
 def fuzzy_perfect_match_any(name):
+    name = utils.normalize(name)
     max_score = 0
     max_value = None
     for key,value in parse.all_dictionary.items():
@@ -109,6 +109,7 @@ def fuzzy_perfect_match_any(name):
     return output
 
 def fuzzy_match_any_command(name):
+    name = utils.normalize(name)
     good_score_list = []
     num_perfect = 0
     for key,value in parse.all_dictionary.items():
@@ -130,6 +131,7 @@ def fuzzy_perfect_match_any_command(name):
     return good_score_list
 
 def fuzzy_match_target_name_command(name, targets_dictionary = parse.targets_dictionary):
+        name = utils.normalize(name)
         good_score_list = []
         num_perfect = 0
         for key, value in targets_dictionary.items():
@@ -151,6 +153,7 @@ def fuzzy_perfect_match_target_name_command(name, targets_dictionary = parse.tar
     return good_score_list
 
 def fuzzy_match_weapon_name_command(name):
+        name = utils.normalize(name)
         good_score_list = []
         for key, value in parse.weapons_dictionary.items():
             score = fuzz.token_set_ratio(name,key)
@@ -158,26 +161,10 @@ def fuzzy_match_weapon_name_command(name):
                  good_score_list.append(key)
         return good_score_list
 
-# no space, all lowercase, singular only
-def normalize(text: str) -> str:
-    text = re.sub(r"\s+", " ", text.lower().strip()) 
-    words = text.split()
-    words = [singularize(w) for w in words]
-    return "".join(words)
-
-def singularize(word: str) -> str:
-    if word.endswith("ies"):
-        return word[:-3] + "y"
-    if word.endswith("ses"):
-        return word[:-2]  # e.g. classes -> class
-    if word.endswith("s") and not word.endswith("ss"):
-        return word[:-1]
-    return word
-
 def normalized_partial_ratio_equal(a: str, b: str, c: int = 98) -> bool:
-    print(fuzz.partial_ratio(normalize(a), normalize(b)))
-    return fuzz.partial_ratio(normalize(a), normalize(b)) >= c
+    print(fuzz.partial_ratio(utils.normalize(a), utils.normalize(b)))
+    return fuzz.partial_ratio(utils.normalize(a), utils.normalize(b)) >= c
 
 def normalized_ratio_equal(a: str, b: str, c: int = 98) -> bool:
-    print(fuzz.ratio(normalize(a), normalize(b)))
-    return fuzz.ratio(normalize(a), normalize(b)) >= c
+    print(fuzz.ratio(utils.normalize(a), utils.normalize(b)))
+    return fuzz.ratio(utils.normalize(a), utils.normalize(b)) >= c

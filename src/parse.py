@@ -2,6 +2,7 @@ import json
 import os
 import csv
 from collections import defaultdict
+import utils
 
 
 def load_json_to_dict(filename):
@@ -59,7 +60,7 @@ def get_all_names(dictionary, field_name="Additional Names"):
         additional_names.append(key) if key not in additional_names else None # add key to list of alias if not already
 
         for name in additional_names:
-            name = name.lower()
+            name = utils.normalize(utils.move_string_to_rear(name))
             if name == "":
                 continue
             if name in names_dictionary:
@@ -93,7 +94,7 @@ def get_vehicle_names(dictionary, field_name="Additional Names"):
             additional_names.extend(value[field_name].split(";"))
 
         for name in additional_names:
-            name = name.lower()
+            name = utils.normalize(utils.move_string_to_rear(name))
             if name == "" or name in names_dictionary:
                 continue
             names_dictionary[name] = key
@@ -239,7 +240,7 @@ locations_dictionary = load_locations_from_csv(
 
 
 def check_if_location_name(name):
-    return any(name.casefold() == k.casefold() for k in locations_dictionary)
+    return any(utils.normalize(name) == utils.normalize(k) for k in locations_dictionary)
 
 
 targets = load_json_to_dict(os.path.join("data", "Targets.json"))

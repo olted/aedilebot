@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import discord.utils
 import main
 import dotenv
 import os
@@ -13,6 +12,7 @@ import typing
 import fuzzy as fuzz
 import traceback
 import datetime
+import utils
 import string
 
 load_dotenv()
@@ -609,7 +609,7 @@ def handle_response(message_) -> str:
 
     token_pair = re.findall(
         "how (many|much)(.*) to (kill|destroy) (.*)",
-        main.move_string_to_rear(p_message),
+        utils.move_string_to_rear(p_message),
     )
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][3]
@@ -628,7 +628,7 @@ def handle_response(message_) -> str:
 
     token_pair = re.findall(
         "how (many|much)(.*) to dehusk (.*)",
-        main.move_string_to_rear(p_message),
+        utils.move_string_to_rear(p_message),
     )
     if len(token_pair) >= 1:
         weapon, target = token_pair[0][1], token_pair[0][2]

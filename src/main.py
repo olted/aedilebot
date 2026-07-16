@@ -12,7 +12,7 @@ import bot
 import calculator
 
 utils.debugging = True
-move_to_rear_string_list = [ "t1","t2","t3","unemplaced","unentrenched","emplaced", "entrenched","tier 1", "tier 2","tier 3","concrete"]
+
 # text processing functions
 def clean_capitalize(str):
     result = ""
@@ -26,23 +26,6 @@ def clean_capitalize(str):
         return str
     else:
         return result
-    
-
-    
-def move_string_to_rear(string):
-    tier_dictionary = { "tier 1":"t1","tier 2":"t2","tier 3":"t3","concrete":"t3"}
-    for replacement_string in move_to_rear_string_list:
-        if replacement_string in string:
-            if replacement_string in ["tier 1","tier 2","tier 3","concrete"]:
-                new_string = tier_dictionary[replacement_string]
-                return string.replace(replacement_string, "") + " " + str(new_string)
-            if replacement_string in ["unemplaced","unentrenched"]:
-                return string.replace(replacement_string, "")
-            if replacement_string in ["emplaced","entrenched"]:
-                return string.replace(replacement_string, "") + " " + str("emplaced")
-            if replacement_string in ["t1","t2","t3"]:
-                return string.replace(replacement_string, "") + " " + str(replacement_string)
-    return string
 
 
 async def message_handler(message_, user_message):
