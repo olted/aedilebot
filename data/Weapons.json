@@ -223,6 +223,14 @@
         "ObjectType": "Weapons",
         "Additional Names": "ship 20mm;ship AA ammo;boat 20mm;hv20mm;HV 20mm"
     },
+    "Daimon aK-5 “Harpy” 20mm (+25% HV)": {
+        "Name": "Daimon aK-5 “Harpy” 20mm (+25% HV)",
+        "Dev Name": "AircraftAmmo",
+        "Damage": "101.5625",
+        "DamageType": "Shrapnel",
+        "ObjectType": "Weapons",
+        "Additional Names": "harpy 20mm;harpy 20mm ammo;harpy mg ammo;colonial heavy fighter 20mm;heavy fighter 20mm"
+    },
     "A51 Venti \"Daedalus\" 20mm (-33% LV)": {
         "Name": "A51 Venti \"Daedalus\" 20mm (-33% LV)",
         "Dev Name": "AircraftAmmo",
@@ -252,6 +260,14 @@
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
         "Additional Names": "warden sea fighter 20mm;White Raven 20mm;warden light fighter aircraft;white raven;amphibious fighter;warden sea fighter"
+    },
+    "Daimon aK-5 “Harpy” 14.5mm (+25% HV)": {
+        "Name": "Daimon aK-5 “Harpy” 14.5mm (+25% HV)",
+        "Dev Name": "ATRifleAmmo",
+        "Damage": "234.375",
+        "DamageType": "AntiTankKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "harpy 14.5mm;harpy 14.5mm ammo;harpy atr ammo;harpy at;colonial heavy fighter 14.5mm;heavy fighter 14.5mm"
     },
     "Luminary Mk. II Harbinger 14.5mm (+50% HV)": {
         "Name": "Luminary Mk. II Harbinger 14.5mm (+50% HV)",
@@ -283,7 +299,7 @@
         "Name": "Mark II Raidbreaker",
         "Dev Name": "BomberAmmo",
         "Damage": "1200",
-        "DamageType": "HighExplosive",
+        "DamageType": "BombHighExplosive",
         "ObjectType": "Weapons",
         "Additional Names": "bomber ammo;bomber shell;raidbreaker;raid breaker"
     },
@@ -869,8 +885,8 @@
     "Coastal Gun Shell": {
         "Name": "Coastal Gun Shell",
         "Dev Name": "Coastal Gun Shell",
-        "Damage": "1000.0",
-        "DamageType": "Explosive",
+        "Damage": "900.0",
+        "DamageType": "HighExplosive",
         "ObjectType": "Weapons",
         "Additional Names": "coastal ai;coastal gun"
     }

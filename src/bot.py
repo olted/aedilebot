@@ -119,7 +119,7 @@ def run_discord_bot():
         )
         embed.add_field(
             name="Version",
-            value="0.8.65 (Up to date with foxhole U65)",
+            value="0.8.66 (Up to date with foxhole U66)",
             inline=False,
         )
         embed.set_thumbnail(
@@ -533,7 +533,10 @@ def handle_response_inner(
                 weapon, num1, weapon2, target
             )
     except ZeroDivisionError as e:
-        return f"This weapon does no damage to this entity"
+        message = str(e)
+        if "does no damage to this entity" in message:
+            return message
+        return "This weapon does no damage to this entity"
     except TargetNotFoundError as e:
         log_error(TargetNotFoundError.__name__, query)
         return e.show_message()

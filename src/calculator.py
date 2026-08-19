@@ -160,6 +160,11 @@ class DamageCalculator:
         real_damage = float(self.damage_value * float((1 - float(mitigation_value))))
         if self.dmg_multiplier is not None:
             real_damage *= self.dmg_multiplier
+
+        if real_damage == 0:
+            raise ZeroDivisionError(
+                f"This weapon ({self.weapon_name}) does no damage to this entity ({self.target_name})."
+            )
         
         if self.shelters > 0 and (self.damage_type["Name"] == "HighExplosive" or self.damage_type["Name"] == "IncendiaryHighExplosive"):
             mitigation_bonus = self.get_shelter_bonus(self.shelters)
