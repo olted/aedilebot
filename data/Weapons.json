@@ -285,7 +285,7 @@
         "Damage": "1200",
         "DamageType": "Shrapnel",
         "ObjectType": "Weapons",
-        "Additional Names": "AA shell;zeal;bolas;flak shell"
+        "Additional Names": "AA shell;zeal;bolas;flak shell;flak"
     },
     "Absol Anti-Aircraft Rounds": {
         "Name": "Absol Anti-Aircraft Rounds",

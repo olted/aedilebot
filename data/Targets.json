@@ -6561,7 +6561,7 @@
     },
     "Metalworks Factory Husk": {
         "Name": "Metalworks Factory Husk",
-        "Additional Names": "metalworks factory;",
+        "Additional Names": "",
         "Dev Name": "FacilityRefinery2",
         "Health": "6000",
         "Mitigation Type": "Tier2Structure",
