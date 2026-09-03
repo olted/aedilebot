@@ -133,7 +133,7 @@
         "Damage": "600.0",
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
-        "Additional Names": "Leary Shellbore 68mm;atht;bard;collie fat;collins;fat;ltd;nemesis;warden fat;atg;at garrison;AT Garrison Shell"
+        "Additional Names": "Leary Shellbore 68mm;atht;bard;collie fat;collins;fat;ltd;nemesis;warden fat;at garrison;AT Garrison Shell"
     },
     "Anti-Tank Rifle Pillbox Ammo": {
         "Name": "Anti-Tank Rifle Pillbox Ammo",
@@ -150,6 +150,30 @@
         "DamageType": "ArmourPiercing",
         "ObjectType": "Weapons",
         "Additional Names": "t1 atg;t1 at garrison;t1 AT Garrison Shell;atg t1;at garrison t1;AT Garrison Shell t1"
+    },
+    "T2 ATG Shell": {
+        "Name": "T2 ATG Shell",
+        "Dev Name": "ATGT2Ammo",
+        "Damage": "600.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "t2 atg;t2 at garrison;t2 AT Garrison Shell;atg t2;at garrison t2;AT Garrison Shell t2"
+    },
+    "T3 ATG Shell": {
+        "Name": "T3 ATG Shell",
+        "Dev Name": "ATGT3Ammo",
+        "Damage": "600.0",
+        "DamageType": "ArmourPiercing",
+        "ObjectType": "Weapons",
+        "Additional Names": "atg;t3 atg;t3 at garrison;t3 AT Garrison Shell;atg t3;at garrison t3;AT Garrison Shell t3"
+    },
+    "Rifle Garrison ammo": {
+        "Name": "Rifle Garrison ammo",
+        "Dev Name": "RGammo",
+        "Damage": "50.0",
+        "DamageType": "HeavyKinetic",
+        "ObjectType": "Weapons",
+        "Additional Names": "rg;rifle garrison;rifle garrison ammo;rg ammo"
     },
     "Howitzer Garrison Shell": {
         "Name": "Howitzer Garrison Shell",
@@ -173,7 +197,7 @@
         "Damage": "68.75",
         "DamageType": "HeavyKinetic",
         "ObjectType": "Weapons",
-        "Additional Names": "12.7;127;gast;hmg;ratcatcher"
+        "Additional Names": "12.7;127;gast;hmg;ratcatcher;mg garrison;machine gun garrison"
     },
     "Ship 12.7mm (+20% HV)": {
         "Name": "Ship 12.7mm (+20% HV)",
