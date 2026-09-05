@@ -196,7 +196,7 @@ class DamageCalculator:
         utils.debug_summary(self.weapon_name, self.target_name, max_damage, min_hits_to_kill)
         # consider low roll possibility and shelters
         if self.weapon['Dev Name'] in ["ATRPGLightCAmmo", "ATRPGAmmo", "ATRPGIndirectAmmo", "RpgAmmo", "HELaunchedGrenade", "ATLaunchedGrenadeW", "ATGrenadeW", "StickyBomb", "MortarTankAmmo", "HEGrenade"]:
-            self.max_hits_to_kill = max(self.max_hits_to_kill, calculate_hits_to_reach_health(self.health, max_damage*0.95))
+            self.max_hits_to_kill = max(self.max_hits_to_kill, calculate_hits_to_reach_health(self.health, max_damage*0.94))
         if self.max_hits_to_kill > min_hits_to_kill:
             return f"{min_hits_to_kill} to {self.max_hits_to_kill}" if min_hits_to_kill < self.max_hits_to_kill else min_hits_to_kill
         return min_hits_to_kill
