@@ -18,6 +18,7 @@ import string
 load_dotenv()
 DEPLOYMENT_TOKEN = os.getenv("DEPLOYMENT_TOKEN")
 DEV_SERVER_TOKEN = os.getenv("DEV_SERVER_TOKEN")
+MESSAGE_CONTENT_INTENT = os.getenv("MESSAGE_CONTENT_INTENT")
 
 HTTPS_PROXY = os.getenv("https_proxy")
 
@@ -92,6 +93,8 @@ class BunkerSpecParseError(TargetNotFoundError):
 
 def run_discord_bot():
     intents = discord.Intents.default()
+    if MESSAGE_CONTENT_INTENT and MESSAGE_CONTENT_INTENT.lower() == "true":
+        intents.message_content = True
     client = main.commands.Bot(
         command_prefix=commands.when_mentioned, intents=intents, proxy=HTTPS_PROXY
     )

@@ -152,6 +152,7 @@ Configure the bot using the [`src/.env`](src/.env.sample) file:
 | `DEPLOYMENT_TOKEN` | Discord bot token for production  | Yes      |
 | `DEV_SERVER_TOKEN` | Discord bot token for development | Optional |
 | `https_proxy`      | HTTP proxy URL if needed          | Optional |
+| `MESSAGE_CONTENT_INTENT` | Use privileged message content intent. `True` if you want bot to answer without pinging  | Optional |
 
 ### Discord Bot Setup
 
