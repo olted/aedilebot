@@ -92,9 +92,8 @@ class BunkerSpecParseError(TargetNotFoundError):
 
 def run_discord_bot():
     intents = discord.Intents.default()
-    intents.message_content = True
     client = main.commands.Bot(
-        command_prefix="!", intents=intents, proxy=HTTPS_PROXY
+        command_prefix=commands.when_mentioned, intents=intents, proxy=HTTPS_PROXY
     )
 
     @client.event
