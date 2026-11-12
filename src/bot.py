@@ -92,6 +92,69 @@ class BunkerSpecParseError(TargetNotFoundError):
         super().__init__(name, message)
 
 
+def _statsheet_autocomplete_matches(current):
+    matches = []
+    used_values = set()
+    if len(current) > 1:
+        guess = fuzz.fuzzy_match_any_command(current)
+        for possible_value in guess:
+            if possible_value.lower() != possible_value and len(matches) < 20:
+                if possible_value not in used_values:
+                    matches.append((possible_value, possible_value))
+                    used_values.add(possible_value)
+            elif possible_value.lower() == possible_value and len(matches) < 20:
+                value = fuzz.fuzzy_match_any(possible_value)["max_value"]
+                if value not in used_values:
+                    matches.append((value, value))
+                    used_values.add(value)
+    return matches
+
+
+def _target_autocomplete_matches(current, targets_dictionary):
+    matches = []
+    used_values = set()
+    guess = fuzz.fuzzy_match_target_name_command(current, targets_dictionary)
+    value = [
+        fuzz.fuzzy_match_target_name(v, targets_dictionary)
+        for v in guess
+        if v.lower() == v
+    ]
+    combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
+    for possible_value in combined:
+        if len(matches) == 20:
+            break
+        if possible_value.lower() != possible_value:
+            if possible_value not in used_values:
+                matches.append((possible_value, possible_value))
+                used_values.add(possible_value)
+        else:
+            for candidate in value:
+                if possible_value in candidate:
+                    if candidate[0] not in used_values:
+                        matches.append((candidate[0], candidate[0]))
+                        used_values.add(candidate[0])
+                    break
+    return matches
+
+
+def _weapon_autocomplete_matches(current):
+    matches = []
+    used_values = set()
+    if len(current) > 1:
+        guess = fuzz.fuzzy_match_weapon_name_command(current)
+        for possible_value in guess:
+            if possible_value.lower() != possible_value and len(matches) < 20:
+                if possible_value not in used_values:
+                    matches.append((possible_value, possible_value))
+                    used_values.add(possible_value)
+            elif possible_value.lower() == possible_value and len(matches) < 20:
+                value = fuzz.fuzzy_match_weapon_name(possible_value)
+                if value not in used_values:
+                    matches.append((value, value))
+                    used_values.add(value)
+    return matches
+
+
 def run_discord_bot():
     intents = discord.Intents.default()
     if MESSAGE_CONTENT_INTENT and MESSAGE_CONTENT_INTENT.lower() == "true":
@@ -335,29 +398,13 @@ def run_discord_bot():
     async def statsheet_autocompletion(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
-        data = []
-        usedlist = []
-        if len(current) > 1:
-            guess = fuzz.fuzzy_match_any_command(current)
-            for possible_value in guess:
-                if possible_value.lower() != possible_value and len(data) < 20:
-                    if possible_value not in usedlist:
-                        data.append(
-                            app_commands.Choice(
-                                name=possible_value, value=possible_value
-                            )
-                        )
-                        usedlist.append(possible_value)
-                elif (
-                    possible_value.lower() == possible_value and len(data) < 20
-                ):
-                    value = fuzz.fuzzy_match_any(possible_value)["max_value"]
-                    if value not in usedlist:
-                        data.append(
-                            app_commands.Choice(name=value, value=value)
-                        )
-                        usedlist.append(value)
-        return data
+        matches = await asyncio.to_thread(
+            _statsheet_autocomplete_matches, current
+        )
+        return [
+            app_commands.Choice(name=name, value=value)
+            for name, value in matches
+        ]
 
     @client.tree.command(name="kill")
     async def kill(interaction: discord.Interaction, target: str, weapon: str):
@@ -392,100 +439,37 @@ def run_discord_bot():
     async def kill_autocompletion_target(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
-        data = []
-        usedlist = {}
-        guess = fuzz.fuzzy_match_target_name_command(current)
-        value = [
-            fuzz.fuzzy_match_target_name(v) for v in guess if v.lower() == v
+        matches = await asyncio.to_thread(
+            _target_autocomplete_matches, current, parse.targets_dictionary
+        )
+        return [
+            app_commands.Choice(name=name, value=value)
+            for name, value in matches
         ]
-        combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
-        for possible_value in combined:
-            if len(data) == 20:
-                break
-            if possible_value.lower() != possible_value:
-                if possible_value not in usedlist:
-                    data.append(
-                        app_commands.Choice(
-                            name=possible_value, value=possible_value
-                        )
-                    )
-                    usedlist[possible_value] = True
-            else:
-                for v in value:
-                    if possible_value in v:
-                        if v[0] not in usedlist:
-                            data.append(
-                                app_commands.Choice(name=v[0], value=v[0])
-                            )
-                            usedlist[v[0]] = True
-                        break
-        return data
     
     @disable.autocomplete("target")
     async def disable_autocompletion_target(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
-        data = []
-        usedlist = {}
-        guess = fuzz.fuzzy_match_target_name_command(current, parse.vehicle_dictionary)
-        value = [
-            fuzz.fuzzy_match_target_name(v, parse.vehicle_dictionary) for v in guess if v.lower() == v
+        matches = await asyncio.to_thread(
+            _target_autocomplete_matches, current, parse.vehicle_dictionary
+        )
+        return [
+            app_commands.Choice(name=name, value=value)
+            for name, value in matches
         ]
-        combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
-        for possible_value in combined:
-            if len(data) == 20:
-                break
-            if possible_value.lower() != possible_value:
-                if possible_value not in usedlist:
-                    data.append(
-                        app_commands.Choice(
-                            name=possible_value, value=possible_value
-                        )
-                    )
-                    usedlist[possible_value] = True
-            else:
-                for v in value:
-                    if possible_value in v:
-                        if v[0] not in usedlist:
-                            data.append(
-                                app_commands.Choice(name=v[0], value=v[0])
-                            )
-                            usedlist[v[0]] = True
-                        break
-        return data
 
     @dehusk.autocomplete("target")
     async def dehusk_autocompletion_target(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
-        data = []
-        usedlist = {}
-        guess = fuzz.fuzzy_match_target_name_command(current, parse.husk_dictionary)
-        value = [
-            fuzz.fuzzy_match_target_name(v, parse.husk_dictionary) for v in guess if v.lower() == v
+        matches = await asyncio.to_thread(
+            _target_autocomplete_matches, current, parse.husk_dictionary
+        )
+        return [
+            app_commands.Choice(name=name, value=value)
+            for name, value in matches
         ]
-        combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
-        for possible_value in combined:
-            if len(data) == 20:
-                break
-            if possible_value.lower() != possible_value:
-                if possible_value not in usedlist:
-                    data.append(
-                        app_commands.Choice(
-                            name=possible_value, value=possible_value
-                        )
-                    )
-                    usedlist[possible_value] = True
-            else:
-                for v in value:
-                    if possible_value in v:
-                        if v[0] not in usedlist:
-                            data.append(
-                                app_commands.Choice(name=v[0], value=v[0])
-                            )
-                            usedlist[v[0]] = True
-                        break
-        return data
 
     @disable.autocomplete("weapon")
     @dehusk.autocomplete("weapon")
@@ -495,30 +479,13 @@ def run_discord_bot():
     async def kill_autocompletion_weapon(
         interaction: discord.Interaction, current: str
     ) -> typing.List[app_commands.Choice[str]]:
-        data = []
-        usedlist = []
-        if len(current) > 1:
-            guess = fuzz.fuzzy_match_weapon_name_command(current)
-            print(guess)
-            for possible_value in guess:
-                if possible_value.lower() != possible_value and len(data) < 20:
-                    if possible_value not in usedlist:
-                        data.append(
-                            app_commands.Choice(
-                                name=possible_value, value=possible_value
-                            )
-                        )
-                        usedlist.append(possible_value)
-                elif (
-                    possible_value.lower() == possible_value and len(data) < 20
-                ):
-                    value = fuzz.fuzzy_match_weapon_name(possible_value)
-                    if value not in usedlist:
-                        data.append(
-                            app_commands.Choice(name=value, value=value)
-                        )
-                        usedlist.append(value)
-        return data
+        matches = await asyncio.to_thread(
+            _weapon_autocomplete_matches, current
+        )
+        return [
+            app_commands.Choice(name=name, value=value)
+            for name, value in matches
+        ]
 
     @client.event
     async def on_message(message):
