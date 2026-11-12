@@ -1,3 +1,4 @@
+import asyncio
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -175,11 +176,17 @@ def run_discord_bot():
         weapon2: str,
     ):
         query = f"Custom_kill query: target = {target}, weapon1 = {weapon1}, num1 = {str(num1)}, weapon2 = {weapon2}"
-        await interaction.response.send_message(
-            handle_response_inner(
-                weapon1, target, query, "custom_kill", num1, weapon2
-            )
+        await interaction.response.defer(thinking=True)
+        result = await asyncio.to_thread(
+            handle_response_inner,
+            weapon1,
+            target,
+            query,
+            "custom_kill",
+            num1,
+            weapon2,
         )
+        await interaction.edit_original_response(content=result)
 
     @client.tree.command(name="bunker_kill")
     @app_commands.describe(
@@ -230,32 +237,34 @@ def run_discord_bot():
         radar: int = 0,
         wet: int = 24,
     ):
-        await interaction.response.send_message(
-            handle_bunker_kill_command(
-                weapon,
-                total_size,
-                tier.value,
-                green_dots,
-                red_dots,
-                rg,
-                mg,
-                atg,
-                howi,
-                shelter,
-                obs,
-                core,
-                ic,
-                sc,
-                ws,
-                fortress,
-                radar,
-                wet,
-            )
+        await interaction.response.defer(thinking=True)
+        result = await asyncio.to_thread(
+            handle_bunker_kill_command,
+            weapon,
+            total_size,
+            tier.value,
+            green_dots,
+            red_dots,
+            rg,
+            mg,
+            atg,
+            howi,
+            shelter,
+            obs,
+            core,
+            ic,
+            sc,
+            ws,
+            fortress,
+            radar,
+            wet,
         )
+        await interaction.edit_original_response(content=result)
 
     @client.tree.command(name="statsheet")
     async def statsheet(interaction: discord.Interaction, entity: str):
-        data = calculator.statsheet_handler(entity)
+        await interaction.response.defer(thinking=True)
+        data = await asyncio.to_thread(calculator.statsheet_handler, entity)
         embed = discord.Embed(title=data[1], color=0x992D22)
         embed.set_thumbnail(
             url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498"
@@ -320,7 +329,7 @@ def run_discord_bot():
             text="Good luck on the front!",
             icon_url="https://media.discordapp.net/attachments/884587111624368158/1077553561010982922/g839.png?width=570&height=498",
         )
-        await interaction.response.send_message(embed=embed)
+        await interaction.edit_original_response(embed=embed)
 
     @statsheet.autocomplete("entity")
     async def statsheet_autocompletion(
@@ -353,23 +362,29 @@ def run_discord_bot():
     @client.tree.command(name="kill")
     async def kill(interaction: discord.Interaction, target: str, weapon: str):
         query = f"kill query: target = {target}, weapon = {weapon}"
-        await interaction.response.send_message(
-            handle_response_inner(weapon, target, query)
+        await interaction.response.defer(thinking=True)
+        result = await asyncio.to_thread(
+            handle_response_inner, weapon, target, query
         )
+        await interaction.edit_original_response(content=result)
     
     @client.tree.command(name="disable")
     async def disable(interaction: discord.Interaction, target: str, weapon: str):
         query = f"disable query: target = {target}, weapon = {weapon}"
-        await interaction.response.send_message(
-            handle_response_inner(weapon, target, query, "disable")
+        await interaction.response.defer(thinking=True)
+        result = await asyncio.to_thread(
+            handle_response_inner, weapon, target, query, "disable"
         )
+        await interaction.edit_original_response(content=result)
     
     @client.tree.command(name="dehusk")
     async def dehusk(interaction: discord.Interaction, target: str, weapon: str):
         query = f"dehusk query: target = {target}, weapon = {weapon}"
-        await interaction.response.send_message(
-            handle_response_inner(weapon, target, query, "dehusk")
+        await interaction.response.defer(thinking=True)
+        result = await asyncio.to_thread(
+            handle_response_inner, weapon, target, query, "dehusk"
         )
+        await interaction.edit_original_response(content=result)
 
 
     @kill.autocomplete("target")
