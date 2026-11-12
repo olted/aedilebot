@@ -11,7 +11,7 @@ import fuzzy as fuzz
 import bot
 import calculator
 
-utils.debugging = True
+utils.debugging = False
 
 # text processing functions
 def clean_capitalize(str):
