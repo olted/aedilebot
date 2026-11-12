@@ -162,9 +162,7 @@ def fuzzy_match_weapon_name_command(name):
         return good_score_list
 
 def normalized_partial_ratio_equal(a: str, b: str, c: int = 98) -> bool:
-    print(fuzz.partial_ratio(utils.normalize(a), utils.normalize(b)))
     return fuzz.partial_ratio(utils.normalize(a), utils.normalize(b)) >= c
 
 def normalized_ratio_equal(a: str, b: str, c: int = 98) -> bool:
-    print(fuzz.ratio(utils.normalize(a), utils.normalize(b)))
     return fuzz.ratio(utils.normalize(a), utils.normalize(b)) >= c
