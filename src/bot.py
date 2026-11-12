@@ -98,15 +98,12 @@ def _statsheet_autocomplete_matches(current):
     if len(current) > 1:
         guess = fuzz.fuzzy_match_any_command(current)
         for possible_value in guess:
-            if possible_value.lower() != possible_value and len(matches) < 20:
-                if possible_value not in used_values:
-                    matches.append((possible_value, possible_value))
-                    used_values.add(possible_value)
-            elif possible_value.lower() == possible_value and len(matches) < 20:
-                value = fuzz.fuzzy_match_any(possible_value)["max_value"]
-                if value not in used_values:
-                    matches.append((value, value))
-                    used_values.add(value)
+            if len(matches) == 20:
+                break
+            value = parse.all_dictionary.get(possible_value)
+            if value is not None and value not in used_values:
+                matches.append((value, value))
+                used_values.add(value)
     return matches
 
 
@@ -114,26 +111,13 @@ def _target_autocomplete_matches(current, targets_dictionary):
     matches = []
     used_values = set()
     guess = fuzz.fuzzy_match_target_name_command(current, targets_dictionary)
-    value = [
-        fuzz.fuzzy_match_target_name(v, targets_dictionary)
-        for v in guess
-        if v.lower() == v
-    ]
-    combined = [v[0] for v in value] + [g for g in guess if g.lower() != g]
-    for possible_value in combined:
+    for possible_value in guess:
         if len(matches) == 20:
             break
-        if possible_value.lower() != possible_value:
-            if possible_value not in used_values:
-                matches.append((possible_value, possible_value))
-                used_values.add(possible_value)
-        else:
-            for candidate in value:
-                if possible_value in candidate:
-                    if candidate[0] not in used_values:
-                        matches.append((candidate[0], candidate[0]))
-                        used_values.add(candidate[0])
-                    break
+        value = targets_dictionary.get(possible_value)
+        if value is not None and value not in used_values:
+            matches.append((value, value))
+            used_values.add(value)
     return matches
 
 
@@ -143,15 +127,12 @@ def _weapon_autocomplete_matches(current):
     if len(current) > 1:
         guess = fuzz.fuzzy_match_weapon_name_command(current)
         for possible_value in guess:
-            if possible_value.lower() != possible_value and len(matches) < 20:
-                if possible_value not in used_values:
-                    matches.append((possible_value, possible_value))
-                    used_values.add(possible_value)
-            elif possible_value.lower() == possible_value and len(matches) < 20:
-                value = fuzz.fuzzy_match_weapon_name(possible_value)
-                if value not in used_values:
-                    matches.append((value, value))
-                    used_values.add(value)
+            if len(matches) == 20:
+                break
+            value = parse.weapons_dictionary.get(possible_value)
+            if value is not None and value not in used_values:
+                matches.append((value, value))
+                used_values.add(value)
     return matches
 
 
