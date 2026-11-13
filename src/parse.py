@@ -60,7 +60,7 @@ def get_all_names(dictionary, field_name="Additional Names"):
         additional_names.append(key) if key not in additional_names else None # add key to list of alias if not already
 
         for name in additional_names:
-            name = utils.normalize(utils.move_string_to_rear(name))
+            name = utils.normalize_alias(name)
             if name == "":
                 continue
             if name in names_dictionary:
@@ -77,8 +77,10 @@ def get_husk_names(names_dictionary):
     husk_names_dict = {}
     for key, value in names_dictionary.items():
         if "husk" in key.lower():
-            husk_names_dict[key] = value
-            husk_names_dict[key.replace("husk", "")] = value
+            husk_names_dict[utils.normalize_alias(key)] = value
+            husk_alias = utils.normalize_alias(key.replace("husk", ""))
+            if husk_alias:
+                husk_names_dict[husk_alias] = value
     return husk_names_dict
 
 
@@ -94,7 +96,7 @@ def get_vehicle_names(dictionary, field_name="Additional Names"):
             additional_names.extend(value[field_name].split(";"))
 
         for name in additional_names:
-            name = utils.normalize(utils.move_string_to_rear(name))
+            name = utils.normalize_alias(name)
             if name == "" or name in names_dictionary:
                 continue
             names_dictionary[name] = key

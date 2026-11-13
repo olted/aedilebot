@@ -388,16 +388,17 @@ def command_bunker_kill_handler(weapon_fuzzy_name, bunker_spec):
 def statsheet_handler(entity_name):
     try:
         entity = fuzz.fuzzy_match_any(entity_name)
+        canonical_name = entity["max_value"]
     
         if entity["type"] == "Weapons":
-            entity = parse.weapons[fuzz.fuzzy_match_weapon_name(entity_name)]
+            entity = parse.weapons[canonical_name]
             name = entity["Name"]
             damage = entity["Damage"]
             damage_type = entity["DamageType"]
             entity_type = entity["ObjectType"]
             return entity_type,name,damage,damage_type
         else:
-            entity = parse.targets[fuzz.fuzzy_match_target_name(entity_name)[0]]
+            entity = parse.targets[canonical_name]
             if entity["ObjectType"] == "Structures":
                 name = entity["Name"]
                 raw_hp = entity["Health"]

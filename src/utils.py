@@ -20,18 +20,26 @@ def debug_fuzzy(input , key_list, key):
 # canonicalizing synonymous phrases for tiers
 move_to_rear_string_list = [ "t1","t2","t3","unemplaced","unentrenched","emplaced", "entrenched","tier 1", "tier 2","tier 3","concrete"]
 tier_dictionary = { "tier 1":"t1","tier 2":"t2","tier 3":"t3","concrete":"t3"}
+
+
+def _whole_phrase_pattern(phrase: str) -> str:
+    escaped_phrase = re.escape(phrase).replace(r"\ ", r"\s+")
+    return rf"(?<!\w){escaped_phrase}(?!\w)"
+
+
 def move_string_to_rear(string):
     for replacement_string in move_to_rear_string_list:
-        if replacement_string in string:
+        pattern = _whole_phrase_pattern(replacement_string)
+        if re.search(pattern, string, flags=re.IGNORECASE):
             if replacement_string in ["tier 1","tier 2","tier 3","concrete"]:
                 new_string = tier_dictionary[replacement_string]
-                return string.replace(replacement_string, "") + " " + str(new_string)
+                return re.sub(pattern, "", string, flags=re.IGNORECASE) + " " + new_string
             if replacement_string in ["unemplaced","unentrenched"]:
-                return string.replace(replacement_string, "")
+                return re.sub(pattern, "", string, flags=re.IGNORECASE)
             if replacement_string in ["emplaced","entrenched"]:
-                return string.replace(replacement_string, "") + " " + str("emplaced")
+                return re.sub(pattern, "", string, flags=re.IGNORECASE) + " emplaced"
             if replacement_string in ["t1","t2","t3"]:
-                return string.replace(replacement_string, "") + " " + str(replacement_string)
+                return re.sub(pattern, "", string, flags=re.IGNORECASE) + " " + replacement_string
     return string
 
 # shrink space, all lowercase, singular only, strip leading "a" or "an"
@@ -45,6 +53,12 @@ def normalize(text: str) -> str:
         words = words[1:]
     words = [singularize(w) for w in words]
     return " ".join(words)
+
+
+def normalize_alias(text: str) -> str:
+    """Normalize an entity name using the same rules as alias generation."""
+    return normalize(move_string_to_rear(text))
+
 
 def singularize(word: str) -> str:
     result = inflector.singular_noun(word)

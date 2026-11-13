@@ -102,7 +102,8 @@ def _statsheet_autocomplete_matches(current):
                 break
             value = parse.all_dictionary.get(possible_value)
             if value is not None and value not in used_values:
-                matches.append((value, value))
+                # Show the canonical name but submit the exact matched alias.
+                matches.append((value, possible_value))
                 used_values.add(value)
     return matches
 
@@ -116,7 +117,9 @@ def _target_autocomplete_matches(current, targets_dictionary):
             break
         value = targets_dictionary.get(possible_value)
         if value is not None and value not in used_values:
-            matches.append((value, value))
+            # Display the canonical name, but pass the matched alias key so
+            # command handlers can resolve it directly through this mapping.
+            matches.append((value, possible_value))
             used_values.add(value)
     return matches
 
@@ -131,7 +134,8 @@ def _weapon_autocomplete_matches(current):
                 break
             value = parse.weapons_dictionary.get(possible_value)
             if value is not None and value not in used_values:
-                matches.append((value, value))
+                # Show the canonical name but submit the exact matched alias.
+                matches.append((value, possible_value))
                 used_values.add(value)
     return matches
 
